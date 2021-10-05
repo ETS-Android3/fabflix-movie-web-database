@@ -36,7 +36,14 @@ function handleMovieResult(resultData) {
         rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
         rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
         // rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
-        rowHTML += "<th>" + resultData[i]["movie_stars"] + "</th>";
+        rowHTML +=
+        "<th>" +
+        // Add a link to single-movie.html with id passed with GET url parameter
+        '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
+        + resultData[i]["movie_stars"] +
+        '</a>' +
+        "</th>";
+        // rowHTML += "<th>" + resultData[i]["movie_stars"] + "</th>";
         // rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
 
         rowHTML += "</tr>";
