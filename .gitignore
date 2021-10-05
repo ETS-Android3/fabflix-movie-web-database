@@ -171,4 +171,7 @@ buildNumber.properties
 
 
 *.xml
+.idea
+META-INF
+
 
