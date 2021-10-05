@@ -53,8 +53,8 @@ public class SingleMovieServlet extends HttpServlet {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
-            String query = "Select distinct sName, movies.*\n" +
-                    "From (Select distinct stars.name as sName, sim.movieId as sMovie from stars, stars_in_movies as sim where stars.id = sim.starId ) as s, movies\n" +
+            String query = "Select distinct sName, sId, movies.*\n" +
+                    "From (Select distinct stars.name as sName, stars.id as sId, sim.movieId as sMovie from stars, stars_in_movies as sim where stars.id = sim.starId ) as s, movies\n" +
                     "Where movies.id = sMovie and movies.id = ?" +
                     "Order by sName";
 
@@ -78,6 +78,7 @@ public class SingleMovieServlet extends HttpServlet {
                 String movieYear = rs.getString("year");
                 String movieDirector = rs.getString("director");
                 String movieStars = rs.getString("sName");
+                String star_id = rs.getString("sId");
 
                 // Create a JsonObject based on the data we retrieve from rs
 
@@ -87,6 +88,7 @@ public class SingleMovieServlet extends HttpServlet {
                 jsonObject.addProperty("movie_year", movieYear);
                 jsonObject.addProperty("movie_director", movieDirector);
                 jsonObject.addProperty("movie_stars", movieStars);
+                jsonObject.addProperty("star_id", star_id);
 
                 jsonArray.add(jsonObject);
             }

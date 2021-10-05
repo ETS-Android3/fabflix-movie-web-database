@@ -61,7 +61,13 @@ function handleResult(resultData) {
     for (let i = 0; i < Math.min(10, resultData.length); i++) {
         let rowHTML = "";
         rowHTML += "<tr>";
-        rowHTML += "<th>" + resultData[i]["movie_stars"] + "</th>";
+        rowHTML +=
+            "<th>" +
+            // Add a link to single-movie.html with id passed with GET url parameter
+            '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
+            + resultData[i]["movie_stars"] +
+            '</a>' +
+            "</th>";
         // rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
         // rowHTML += "<th>" + resultData[i]["movie_rating"] + "</th>";
         rowHTML += "</tr>";

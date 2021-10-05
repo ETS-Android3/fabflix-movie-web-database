@@ -51,7 +51,7 @@ public class MoviesServlet extends HttpServlet {
             String query = "Select distinct sName, sId, movies.*\n" +
                     "From (Select distinct stars.name as sName, stars.id as sId, sim.movieId as sMovie from stars, stars_in_movies as sim where stars.id = sim.starId ) as s, movies\n" +
                     "Where movies.id = sMovie\n" +
-                    "Order by sName;";
+                    "Order by sName";
 
             // Perform the query
             ResultSet rs = statement.executeQuery(query);
