@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cs122b-p1:war exploded">
+    <output-path>$PROJECT_DIR$/cs122b-p1/target/cs122b-fall21-team5</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>cs122b-p1</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cs122b-p1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.25" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.8" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/cs122b-p1/target/cs122b-fall21-team5/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="cs122b-p1/web/Web" />
+    </root>
+  </artifact>
+</component>
