@@ -53,8 +53,16 @@ public class SingleStarServlet extends HttpServlet {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
-            String query = "SELECT * from stars as s, stars_in_movies as sim, movies as m " +
-                    "where m.id = sim.movieId and sim.starId = s.id and s.id = ?";
+            String query = "SELECT movies.*, s.name as star, s.id as sId, s.birthYear as birthYear, g.name as genre, ratings.rating\n" +
+                    "FROM movies, \n" +
+                    "ratings,\n" +
+                    "(SELECT stars.*, sim.movieId as smId\n" +
+                    "FROM stars, stars_in_movies as sim\n" +
+                    "WHERE stars.id = sim.starId) as s,\n" +
+                    "(SELECT genres.*, gim.movieId as gmId\n" +
+                    "FROM genres, genres_in_movies as gim\n" +
+                    "WHERE genres.id = gim.genreId) as g\n" +
+                    "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND s.id = ?";
 
             // Declare our statement
             PreparedStatement statement = conn.prepareStatement(query);
@@ -71,11 +79,11 @@ public class SingleStarServlet extends HttpServlet {
             // Iterate through each row of rs
             while (rs.next()) {
 
-                String starId = rs.getString("starId");
-                String starName = rs.getString("name");
+                String starId = rs.getString("sId");
+                String starName = rs.getString("star");
                 String starDob = rs.getString("birthYear");
 
-                String movieId = rs.getString("movieId");
+                String movieId = rs.getString("movies.id");
                 String movieTitle = rs.getString("title");
                 String movieYear = rs.getString("year");
                 String movieDirector = rs.getString("director");

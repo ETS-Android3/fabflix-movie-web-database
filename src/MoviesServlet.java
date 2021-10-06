@@ -48,10 +48,16 @@ public class MoviesServlet extends HttpServlet {
             // Declare our statement
             Statement statement = conn.createStatement();
 
-            String query = "Select distinct sName, sId, movies.*\n" +
-                    "From (Select distinct stars.name as sName, stars.id as sId, sim.movieId as sMovie from stars, stars_in_movies as sim where stars.id = sim.starId ) as s, movies\n" +
-                    "Where movies.id = sMovie\n" +
-                    "Order by sName";
+            String query = "SELECT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                    "FROM movies, \n" +
+                    "ratings,\n" +
+                    "(SELECT stars.*, sim.movieId as smId\n" +
+                    "FROM stars, stars_in_movies as sim\n" +
+                    "WHERE stars.id = sim.starId) as s,\n" +
+                    "(SELECT genres.*, gim.movieId as gmId\n" +
+                    "FROM genres, genres_in_movies as gim\n" +
+                    "WHERE genres.id = gim.genreId) as g\n" +
+                    "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id ORDER BY rating DESC";
 
             // Perform the query
             ResultSet rs = statement.executeQuery(query);
@@ -64,10 +70,10 @@ public class MoviesServlet extends HttpServlet {
                 String movie_title = rs.getString("title");
                 String movie_year = rs.getString("year");
                 String movie_director = rs.getString("director");
-//                String movie_genres = rs.getString("genres");
-                String movie_stars = rs.getString("sName");
+                String movie_genres = rs.getString("genre");
+                String movie_stars = rs.getString("star");
                 String star_id = rs.getString("sId");
-//                String movie_ratings = rs.getString("ratings");
+                String movie_ratings = rs.getString("rating");
 
                 // Create a JsonObject based on the data we retrieve from rs
                 JsonObject jsonObject = new JsonObject();
@@ -75,11 +81,10 @@ public class MoviesServlet extends HttpServlet {
                 jsonObject.addProperty("movie_title", movie_title);
                 jsonObject.addProperty("movie_year", movie_year);
                 jsonObject.addProperty("movie_director", movie_director);
-//                jsonObject.addProperty("movie_genres", movie_genres);
+                jsonObject.addProperty("movie_genres", movie_genres);
                 jsonObject.addProperty("movie_stars", movie_stars);
                 jsonObject.addProperty("star_id", star_id);
-
-//                jsonObject.addProperty("movie_ratings", movie_ratings);
+                jsonObject.addProperty("movie_ratings", movie_ratings);
 
                 jsonArray.add(jsonObject);
             }

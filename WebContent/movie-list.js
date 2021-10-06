@@ -19,38 +19,56 @@ function handleMovieResult(resultData) {
     // Populate the star table
     // Find the empty table body by id "star_table_body"
     let movieTableBodyElement = jQuery("#movie_table_body");
+    let starGenreTableBody = jQuery("#stars_genres_body")
 
-    // Iterate through resultData, no more than 10 entries
-    for (let i = 0; i < Math.min(20, resultData.length); i++) {
+    let movie_dup = "";
 
-        // Concatenate the html tags with resultData jsonObject
+    let count = 20; //only the top 20 movies
+
+    for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
-        rowHTML += "<tr>";
-        rowHTML +=
-            "<th>" +
-            // Add a link to single-movie.html with id passed with GET url parameter
-            '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
-            + resultData[i]["movie_title"] +     // display star_name for the link text
-            '</a>' +
-            "</th>";
-        rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
-        rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
-        // rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
-        rowHTML +=
-        "<th>" +
-        // Add a link to single-movie.html with id passed with GET url parameter
-        '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
-        + resultData[i]["movie_stars"] +
-        '</a>' +
-        "</th>";
-        // rowHTML += "<th>" + resultData[i]["movie_stars"] + "</th>";
-        // rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
+        if (count > 0)
+        {
+            rowHTML += "<tr>";
 
-        rowHTML += "</tr>";
+            if (movie_dup.localeCompare(resultData[i]["movie_title"])) //not equal
+            {
+                rowHTML +=
+                    "<th>" +
+                    // Add a link to single-movie.html with id passed with GET url parameter
+                    '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
+                    + resultData[i]["movie_title"] +     // display star_name for the link text
+                    '</a>' +
+                    "</th>";
 
-        // Append the row created to the table body, which will refresh the page
-        movieTableBodyElement.append(rowHTML);
-    }
+                movie_dup = resultData[i]["movie_title"];
+
+                rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
+                rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
+                rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
+                rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
+                rowHTML +=
+                    "<th>" +
+                    // Add a link to single-movie.html with id passed with GET url parameter
+                    '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
+                    + resultData[i]["movie_stars"] +
+                    '</a>' +
+                    "</th>";
+
+                count--;
+            }
+
+            }
+
+            rowHTML += "</tr>";
+            movieTableBodyElement.append(rowHTML);
+        }
+
+
+
+
+
+
 }
 
 

@@ -53,7 +53,7 @@ public class SingleMovieServlet extends HttpServlet {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
-            String query = "SELECT movies.*, s.name as star, g.name as genre, ratings.rating\n" +
+            String query = "SELECT movies.*, s.name as star, smId, g.name as genre, ratings.rating\n" +
                     "FROM movies, \n" +
                     "ratings,\n" +
                     "(SELECT stars.*, sim.movieId as smId\n" +
@@ -84,6 +84,7 @@ public class SingleMovieServlet extends HttpServlet {
                 String movieYear = rs.getString("year");
                 String movieDirector = rs.getString("director");
                 String movieStars = rs.getString("star");
+                String starId = rs.getString("smId");
                 String movieGenre = rs.getString("genre");
                 String movieRating = rs.getString("rating");
 
@@ -95,6 +96,7 @@ public class SingleMovieServlet extends HttpServlet {
                 jsonObject.addProperty("movie_year", movieYear);
                 jsonObject.addProperty("movie_director", movieDirector);
                 jsonObject.addProperty("movie_stars", movieStars);
+                jsonObject.addProperty("star_id",starId);
                 jsonObject.addProperty("movie_genre", movieGenre);
                 jsonObject.addProperty("movie_rating", movieRating);
 

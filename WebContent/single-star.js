@@ -56,20 +56,28 @@ function handleResult(resultData) {
     // Find the empty table body by id "movie_table_body"
     let movieTableBodyElement = jQuery("#movie_table_body");
 
+    let mov_dup = [];
+
     // Concatenate the html tags with resultData jsonObject to create table rows
-    for (let i = 0; i < Math.min(10, resultData.length); i++) {
+    for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
         rowHTML += "<tr>";
-        rowHTML +=
-            "<th>" +
-            // Add a link to single-movie.html with id passed with GET url parameter
-            '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
-            + resultData[i]["movie_title"] +     // display star_name for the link text
-            '</a>' +
-            "</th>";
-        rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
-        rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
-        rowHTML += "</tr>";
+
+        if (!mov_dup.includes(resultData[i]["movie_title"]))
+        {
+            rowHTML +=
+                "<th>" +
+                // Add a link to single-movie.html with id passed with GET url parameter
+                '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
+                + resultData[i]["movie_title"] +     // display star_name for the link text
+                '</a>' +
+                "</th>";
+            rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
+            rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
+            rowHTML += "</tr>";
+            mov_dup.push(resultData[i]["movie_title"]);
+        }
+
 
         // Append the row created to the table body, which will refresh the page
         movieTableBodyElement.append(rowHTML);
