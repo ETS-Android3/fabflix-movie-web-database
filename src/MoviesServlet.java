@@ -48,7 +48,7 @@ public class MoviesServlet extends HttpServlet {
             // Declare our statement
             Statement statement = conn.createStatement();
 
-            String query = "SELECT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+            String query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
                     "FROM movies, \n" +
                     "ratings,\n" +
                     "(SELECT stars.*, sim.movieId as smId\n" +

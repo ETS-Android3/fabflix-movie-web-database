@@ -56,12 +56,17 @@ function handleMovieResult(resultData) {
                     "</th>";
 
                 count--;
+
+                rowHTML += "</tr>";
+                movieTableBodyElement.append(rowHTML);
             }
 
-            }
+        }
 
-            rowHTML += "</tr>";
-            movieTableBodyElement.append(rowHTML);
+        else
+        {
+            break;
+        }
         }
 
 
