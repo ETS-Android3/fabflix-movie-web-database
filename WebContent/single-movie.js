@@ -47,7 +47,8 @@ function handleResult(resultData) {
     // append two html <p> created to the h3 body, which will refresh the page
     movieInfoElement.append("<p>Movie Title: " + resultData[0]["movie_title"] + "</p>" +
         "<p>Release Year: " + resultData[0]["movie_year"] + "</p>" +
-        "<p>Director: " + resultData[0]["movie_director"] + "</p>");
+        "<p>Director: " + resultData[0]["movie_director"] + "</p>" +
+        "<p>Rating: " + resultData[0]["movie_rating"] + "</p>");
 
     console.log("handleResult: populating movie table from resultData");
 
@@ -57,34 +58,53 @@ function handleResult(resultData) {
 
     let genreTableBodyElement = jQuery("#genre_table_body");
 
+    let star_dup = []; // hold star
+    let genre_dup = [];
+
+
     // Concatenate the html tags with resultData jsonObject to create table rows
-    for (let i = 0; i < Math.min(10, resultData.length); i++) {
+    for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
         rowHTML += "<tr>";
-        rowHTML +=
-            "<th>" +
-            // Add a link to single-movie.html with id passed with GET url parameter
-            '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
-            + resultData[i]["movie_stars"] +
-            '</a>' +
-            "</th>";
-        // rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
-        // rowHTML += "<th>" + resultData[i]["movie_rating"] + "</th>";
-        rowHTML += "</tr>";
 
+        if (!star_dup.includes(resultData[i]["movie_stars"]))
+        {
+
+            rowHTML +=
+                "<th>" +
+                // Add a link to single-moviestar.html with id passed with GET url parameter
+                '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
+                + resultData[i]["movie_stars"] +
+                '</a>' +
+                "</th>";
+
+            star_dup.push(resultData[i]["movie_stars"]);
+        }
+        rowHTML += "</tr>";
         // Append the row created to the table body, which will refresh the page
         starTableBodyElement.append(rowHTML);
-    }
 
-    for (let i = 0; i < Math.min(10, resultData.length); i++) {
-        let rowHTML = "";
+        rowHTML = "";
         rowHTML += "<tr>";
-        // rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
-        rowHTML += "</tr>";
 
+        if (!genre_dup.includes(resultData[i]["movie_genre"]))
+        {
+
+            rowHTML += "<th>" + resultData[i]["movie_genre"] + "</th>";
+
+            genre_dup.push(resultData[i]["movie_genre"]);
+        }
+
+        rowHTML += "</tr>";
         // Append the row created to the table body, which will refresh the page
         genreTableBodyElement.append(rowHTML);
+
+
+
     }
+
+
+
 
 
 }
