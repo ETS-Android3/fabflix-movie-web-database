@@ -39,6 +39,7 @@ public class SingleMovieServlet extends HttpServlet {
 
         response.setContentType("application/json"); // Response mime type
 
+
         // Retrieve parameter id from url request.
         String id = request.getParameter("id");
 

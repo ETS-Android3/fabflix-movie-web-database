@@ -21,36 +21,22 @@
 </head>
 <body>
 
+<h1>FabFlix Home</h1>
+
 <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="browse-genre.html">Genres</a></li>
+    <li><a href="#Title">A-Z Index</a></li>
+
     <li><a href="movie-list.html">Movie List</a></li>
 </ul>
 
-<h1>FabFlix Home</h1>
+
+<div class="search-container">
+    <input id="movieSearch" name="userSearch" type="text" placeholder="Search for a movie...">
+    <input type="submit" value="Search">
+</div>
 
 
-
-<input id="movieSearch" type="text" placeholder="Search for a movie...">
-
-<table id=movie_table class="table table-striped">
-    <!-- Create a table header -->
-    <thead>
-    <tr style="color: black; background:#7ea3ab;">
-        <!-- Titles of each column-->
-        <th>Title</th>
-        <th>Release Year</th>
-        <th>Director</th>
-        <th>Ratings</th>
-        <th>Genres</th>
-        <th>Stars</th>
-    </tr>
-    </thead>
-
-    <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
-    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
-    <tbody id=movie_table_body></tbody>
-
-</table>
 
 
 

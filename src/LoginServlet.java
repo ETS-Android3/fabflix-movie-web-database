@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 //            String query = String.format("SELECT email, password from customers WHERE email = '%s' AND PASSWORD = '%s'", email, password);
             String query = String.format("SELECT email, password from customers WHERE email = '%s'", email);
 
-            // Perform the query
+
             ResultSet rs = statement.executeQuery(query);
 
             JsonObject responseJsonObject = new JsonObject();
