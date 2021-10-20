@@ -53,8 +53,7 @@ public class LoginServlet extends HttpServlet {
 
             // Login success:
             if (rs.next()) {
-
-                if (rs.getString("password") == pswd )
+                if (rs.getString("password").equals(pswd))
                 {
                     // Create a JsonObject based on the data we retrieve from rs
 //                    JsonObject responseJsonObject = new JsonObject();
