@@ -40,7 +40,10 @@ public class MoviesServlet extends HttpServlet {
 
         response.setContentType("application/json"); // Response mime type
 
+        // browse features
+
         String genre = request.getParameter("genre");
+        String index = request.getParameter("char");
 
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
@@ -51,10 +54,11 @@ public class MoviesServlet extends HttpServlet {
             // Declare our statement
             Statement statement = conn.createStatement();
 
-            String query = "";
+            String query;
 
             if (genre != null){
-                query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+
+                query ="SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
                         "FROM movies, \n" +
                         "ratings,\n" +
                         "(SELECT stars.*, sim.movieId as smId\n" +
@@ -68,7 +72,7 @@ public class MoviesServlet extends HttpServlet {
 
             }
 
-            else {
+            else { // browse by index
 
                 query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
                         "FROM movies, \n" +
@@ -82,6 +86,12 @@ public class MoviesServlet extends HttpServlet {
                         "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id ORDER BY rating DESC";
 
             }
+
+
+
+//            PreparedStatement statement = conn.prepareStatement(query);
+//            ResultSet rs = statement.executeQuery();
+
 
             // Perform the query
             ResultSet rs = statement.executeQuery(query);
