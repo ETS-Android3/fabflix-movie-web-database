@@ -8,3 +8,5 @@ server.
 3. Soobin Woo: Single star/single movie/movie list page
 Tristin Bui: create_table.sql, deploy, sql queries for servlets
 
+
+SUBSTRING MATCH DESIGN: 'LIKE' predicate  used in MoviesServlet for search queries to filter the movie list
