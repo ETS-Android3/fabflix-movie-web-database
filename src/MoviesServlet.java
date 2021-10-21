@@ -45,6 +45,12 @@ public class MoviesServlet extends HttpServlet {
         String genre = request.getParameter("genre");
         String index = request.getParameter("char");
 
+        // Search Queries
+        String title = request.getParameter("search_title");
+        String year = request.getParameter("search_year");
+        String director = request.getParameter("search_director");
+        String star = request.getParameter("search_star");
+
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
 
@@ -54,7 +60,7 @@ public class MoviesServlet extends HttpServlet {
             // Declare our statement
             Statement statement = conn.createStatement();
 
-            String query;
+            String query = "";
 
             if(!genre.equals("null")){
 
@@ -71,9 +77,12 @@ public class MoviesServlet extends HttpServlet {
                         String.format("g.name = '%s' ORDER BY rating DESC ", genre);
             }
 
-            else { // browse by index
+            else if (!index.equals("null")) { // browse by index
                 if (index.equals("*"))
                 {
+
+                    // REGEX PATTERN FROM:
+                    // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
                     query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
                             "FROM movies, \n" +
                             "ratings,\n" +
@@ -100,10 +109,25 @@ public class MoviesServlet extends HttpServlet {
                             "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.title LIKE " +
                             String.format("'%s%%' ORDER BY rating DESC", index);
                 }
-
             }
 
-            System.out.println(genre.getClass());
+            else{
+
+                if(!title.isEmpty())
+                {
+                    query = titleQuery(title);
+                }
+
+                if (!director.isEmpty()){
+                    query = directorQuery(director);
+                }
+
+                if (!star.isEmpty()){
+                    query = starQuery(star);
+                }
+            }
+
+
 
 
 
@@ -168,4 +192,51 @@ public class MoviesServlet extends HttpServlet {
         // Always remember to close db connection after usage. Here it's done by try-with-resources
 
     }
+
+    private String titleQuery(String title){
+        String query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                "FROM movies, \n" +
+                "ratings,\n" +
+                "(SELECT stars.*, sim.movieId as smId\n" +
+                "FROM stars, stars_in_movies as sim\n" +
+                "WHERE stars.id = sim.starId) as s,\n" +
+                "(SELECT genres.*, gim.movieId as gmId\n" +
+                "FROM genres, genres_in_movies as gim\n" +
+                "WHERE genres.id = gim.genreId) as g\n" +
+                "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.title LIKE " +
+                String.format("'%%%s%%' ORDER BY rating DESC", title);
+        return query;
+    };
+
+    private String directorQuery(String director){
+        String query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                "FROM movies, \n" +
+                "ratings,\n" +
+                "(SELECT stars.*, sim.movieId as smId\n" +
+                "FROM stars, stars_in_movies as sim\n" +
+                "WHERE stars.id = sim.starId) as s,\n" +
+                "(SELECT genres.*, gim.movieId as gmId\n" +
+                "FROM genres, genres_in_movies as gim\n" +
+                "WHERE genres.id = gim.genreId) as g\n" +
+                "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.director LIKE " +
+                String.format("'%s%%' ORDER BY rating DESC", director);
+
+        return query;
+    };
+
+    private String starQuery(String star){
+        String query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                "FROM movies, \n" +
+                "ratings,\n" +
+                "(SELECT stars.*, sim.movieId as smId\n" +
+                "FROM stars, stars_in_movies as sim\n" +
+                "WHERE stars.id = sim.starId) as s,\n" +
+                "(SELECT genres.*, gim.movieId as gmId\n" +
+                "FROM genres, genres_in_movies as gim\n" +
+                "WHERE genres.id = gim.genreId) as g\n" +
+                "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND s.name LIKE " +
+                String.format("'%s%%' ORDER BY rating DESC", star);
+
+        return query;
+    };
 }

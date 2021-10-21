@@ -98,11 +98,18 @@ function handleMovieResult(resultData) {
  */
 let movieGenre = getParameterByName('genre');
 let searchChar = getParameterByName('char');
+let searchTitle = getParameterByName('search_title');
+let searchYear = getParameterByName('search_year');
+let searchDirector = getParameterByName('search_director');
+let searchStar = getParameterByName('search_star');
+
+
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method
-    url: "api/movies?genre=" + movieGenre + '&' + 'char=' + searchChar, // Setting request url, which is mapped by StarsServlet in Stars.java
+    url: "api/movies?genre=" + movieGenre + '&' + 'char=' + searchChar + '&'+ "search_title=" + searchTitle +
+    "&search_year=" + searchYear + "&search_director=" + searchDirector + "&search_star=" + searchStar, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 });
