@@ -56,7 +56,7 @@ public class MoviesServlet extends HttpServlet {
 
             String query;
 
-            if (genre != null){
+            if(!genre.equals("null")){
 
                 query ="SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
                         "FROM movies, \n" +
@@ -68,24 +68,42 @@ public class MoviesServlet extends HttpServlet {
                         "FROM genres, genres_in_movies as gim\n" +
                         "WHERE genres.id = gim.genreId) as g\n" +
                         "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND " +
-                        String.format("g.name = '%s'", genre);
-
+                        String.format("g.name = '%s' ORDER BY rating DESC ", genre);
             }
 
             else { // browse by index
-
-                query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
-                        "FROM movies, \n" +
-                        "ratings,\n" +
-                        "(SELECT stars.*, sim.movieId as smId\n" +
-                        "FROM stars, stars_in_movies as sim\n" +
-                        "WHERE stars.id = sim.starId) as s,\n" +
-                        "(SELECT genres.*, gim.movieId as gmId\n" +
-                        "FROM genres, genres_in_movies as gim\n" +
-                        "WHERE genres.id = gim.genreId) as g\n" +
-                        "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id ORDER BY rating DESC";
+                if (index.equals("*"))
+                {
+                    query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                            "FROM movies, \n" +
+                            "ratings,\n" +
+                            "(SELECT stars.*, sim.movieId as smId\n" +
+                            "FROM stars, stars_in_movies as sim\n" +
+                            "WHERE stars.id = sim.starId) as s,\n" +
+                            "(SELECT genres.*, gim.movieId as gmId\n" +
+                            "FROM genres, genres_in_movies as gim\n" +
+                            "WHERE genres.id = gim.genreId) as g\n" +
+                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.title REGEXP '^[^0-9A-Za-z]' " +
+                            "ORDER BY rating DESC";
+                }
+                else
+                {
+                    query = "SELECT DISTINCT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
+                            "FROM movies, \n" +
+                            "ratings,\n" +
+                            "(SELECT stars.*, sim.movieId as smId\n" +
+                            "FROM stars, stars_in_movies as sim\n" +
+                            "WHERE stars.id = sim.starId) as s,\n" +
+                            "(SELECT genres.*, gim.movieId as gmId\n" +
+                            "FROM genres, genres_in_movies as gim\n" +
+                            "WHERE genres.id = gim.genreId) as g\n" +
+                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.title LIKE " +
+                            String.format("'%s%%' ORDER BY rating DESC", index);
+                }
 
             }
+
+            System.out.println(genre.getClass());
 
 
 
