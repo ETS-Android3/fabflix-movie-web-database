@@ -72,7 +72,7 @@ public class MoviesServlet extends HttpServlet {
                             "(SELECT genres.*, gim.movieId as gmId\n" +
                             "FROM genres, genres_in_movies as gim\n" +
                             "WHERE genres.id = gim.genreId) as g\n" +
-                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id ";
+                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id";
 
             if(genre != null && !genre.isEmpty()){
                 query += String.format(" AND g.name = '%s' ORDER BY rating DESC ", genre);
