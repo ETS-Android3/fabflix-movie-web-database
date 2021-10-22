@@ -51,6 +51,9 @@ public class MoviesServlet extends HttpServlet {
         String director = request.getParameter("search_director");
         String star = request.getParameter("search_star");
 
+        // User filter/sort
+        String mvct = request.getParameter("mvct");
+
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
 
@@ -71,11 +74,11 @@ public class MoviesServlet extends HttpServlet {
                             "WHERE genres.id = gim.genreId) as g\n" +
                             "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND ";
 
-            if(!genre.equals("null")){
+            if(genre != null){
                 query += String.format("g.name = '%s' ORDER BY rating DESC ", genre);
             }
 
-            else if (!index.equals("null")) { // browse by index
+            else if (index != null) { // browse by index
                 if (index.equals("*")){
                     // REGEX PATTERN FROM:
                     // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
@@ -119,12 +122,7 @@ public class MoviesServlet extends HttpServlet {
                 }
             }
 
-
-
-
-
-//            PreparedStatement statement = conn.prepareStatement(query);
-//            ResultSet rs = statement.executeQuery();
+//            query += String.format("LIMIT %s", mvct);
 
 
             // Perform the query
