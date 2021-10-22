@@ -27,6 +27,9 @@
             <a class="navbar-brand" href="#">Fabflix</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="index.html">Search</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="browse-genre.html">Genres</a>
         </li>
         <li class="nav-item">
@@ -36,7 +39,27 @@
 </nav>
 
 
-<h1 class="page-header">Movie List</h1>
+
+<nav class="navbar">
+    <ul class="pagination">
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="max-results">10</span> per page
+            </a>
+
+            <div class="dropdown-menu" id="pagination" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">25</a>
+                <a class="dropdown-item" href="#">50</a>
+                <a class="dropdown-item" href="#">100</a>
+            </div>
+        </div>
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+
+
 
 
 

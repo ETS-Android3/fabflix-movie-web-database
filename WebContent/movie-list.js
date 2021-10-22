@@ -7,6 +7,16 @@
  *      1. Use jQuery to talk to backend API to get the json data.
  *      2. Populate the data to correct html elements.
  */
+function getSelectedPagination(){
+    let maxPgCount;
+    // get user selected pagination
+    jQuery("#pagination a"). on("click", function (){
+        maxPgCount = $(this).text();
+        $("#max-results").text(maxPgCount);
+    })
+
+    return maxPgCount;
+}
 
 function getParameterByName(target) {
     // Get request URL
@@ -29,17 +39,16 @@ function getParameterByName(target) {
  * Handles the data returned by the API, read the jsonObject and populate data into html elements
  * @param resultData jsonObject
  */
-function handleMovieResult(resultData) {
+function handleMovieResult(resultData, pagination) {
     console.log("handleMovieResult: populating star table from resultData");
 
     // Populate the star table
     // Find the empty table body by id "star_table_body"
     let movieTableBodyElement = jQuery("#movie_table_body");
-    let starGenreTableBody = jQuery("#stars_genres_body")
 
     let movie_dup = "";
 
-    let count = 20; //only the top 20 movies
+    let count = pagination; //only the top 20 movies
 
     for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
@@ -84,12 +93,6 @@ function handleMovieResult(resultData) {
             break;
         }
         }
-
-
-
-
-
-
 }
 
 
@@ -103,7 +106,7 @@ let searchYear = getParameterByName('search_year');
 let searchDirector = getParameterByName('search_director');
 let searchStar = getParameterByName('search_star');
 
-
+let pagination = getSelectedPagination();
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({
@@ -111,5 +114,5 @@ jQuery.ajax({
     method: "GET", // Setting request method
     url: "api/movies?genre=" + movieGenre + '&' + 'char=' + searchChar + '&'+ "search_title=" + searchTitle +
     "&search_year=" + searchYear + "&search_director=" + searchDirector + "&search_star=" + searchStar, // Setting request url, which is mapped by StarsServlet in Stars.java
-    success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
+    success: (resultData) => handleMovieResult(resultData, pagination) // Setting callback function to handle data returned successfully by the StarsServlet
 });
