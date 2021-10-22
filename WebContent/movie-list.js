@@ -48,7 +48,7 @@ function handleMovieResult(resultData, pagination) {
 
     let movie_dup = "";
 
-    let count = pagination; //only the top 20 movies
+    let count = 25; //only the top 20 movies
 
     for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
