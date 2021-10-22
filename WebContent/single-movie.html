@@ -21,18 +21,27 @@
 </head>
 <body>
 
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="movie-list.html">Movie List</a></li>
-</ul>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="navbar-brand" href="#">Fabflix</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="browse-genre.html">Genres</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="browse-title.html">A-Z Index</a>
+        </li>
+    </ul>
+</nav>
 
 <!-- H3 body is left empty here, will be populated with the data retrieved with single-movie.js -->
 <!-- single-movie.js will find this html element by it's id "star_info" -->
-<h3 id="movie_info"></h3>
+<h3 class="page-header" id="movie_info"></h3>
 
 <table id=movie_table class="table table-striped">
-    <thead>
-    <tr style="color: black; background:#7ea3ab;">
+    <thead class="thead-dark">
+    <tr>
         <th>Stars</th>
 
     </tr>
@@ -42,8 +51,8 @@
     <!-- single-movie.js will find this html element by it's id "movie_table_body" -->
     <tbody id=star_table_body></tbody>
 
-    <thead>
-    <tr style="color: black; background:#7ea3ab;">
+    <thead class="thead-light">
+    <tr>
         <th>Genre</th>
     </tr>
     </thead>
