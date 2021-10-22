@@ -50,6 +50,11 @@ function buildURLQuery(){
         query += "search_star=" + searchStar;
     }
 
+    if (!(query === "api/movies?"))
+    {
+        query += "&";
+    }
+
     return query;
 
 }
@@ -84,13 +89,15 @@ function handleMovieResult(resultData) {
 
     let movie_dup = "";
 
-    // let count = 10; //default
+    let count = resultData[0]["count"]; //default
+
+    console.log(count);
 
 
     for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
-        // if (count > 0)
-        // {
+        if (count > 0)
+        {
             rowHTML += "<tr>";
 
             if (movie_dup.localeCompare(resultData[i]["movie_title"])) //not equal
@@ -117,18 +124,18 @@ function handleMovieResult(resultData) {
                     '</a>' +
                     "</th>";
 
-                // count--;
+                count--;
 
                 rowHTML += "</tr>";
                 movieTableBodyElement.append(rowHTML);
             }
 
-        // }
-        //
-        // else
-        // {
-        //     break;
-        // }
+        }
+
+        else
+        {
+            break;
+        }
         }
 }
 
@@ -152,6 +159,6 @@ console.log(mvCount);
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method
-    url: mvListURL + "&mvct=" + mvCount, // Setting request url, which is mapped by StarsServlet in Stars.java
+    url: mvListURL + "mvct=" + mvCount, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 });

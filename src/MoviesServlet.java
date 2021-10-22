@@ -72,52 +72,52 @@ public class MoviesServlet extends HttpServlet {
                             "(SELECT genres.*, gim.movieId as gmId\n" +
                             "FROM genres, genres_in_movies as gim\n" +
                             "WHERE genres.id = gim.genreId) as g\n" +
-                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND ";
+                            "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id ";
 
-            if(genre != null){
-                query += String.format("g.name = '%s' ORDER BY rating DESC ", genre);
+            if(genre != null && !genre.isEmpty()){
+                query += String.format(" AND g.name = '%s' ORDER BY rating DESC ", genre);
             }
 
-            else if (index != null) { // browse by index
+            else if (index != null && !index.isEmpty()) { // browse by index
                 if (index.equals("*")){
                     // REGEX PATTERN FROM:
                     // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
-                    query += "movies.title REGEXP '^[^0-9A-Za-z]' ORDER BY rating DESC";
+                    query += " AND movies.title REGEXP '^[^0-9A-Za-z]' ORDER BY rating DESC";
                 }
                 else{
-                    query += "movies.title LIKE " + String.format("'%s%%' ORDER BY rating DESC", index);
+                    query += " AND movies.title LIKE " + String.format("'%s%%' ORDER BY rating DESC", index);
                 }
             }
 
             else{
-                int and = 0;
 
-                if(!title.isEmpty())
+                if(title != null && !title.isEmpty())
                 {
+                    query += " AND ";
                     query = queryGenerator(query, title, 1);
-                    and++;
+
                 }
 
-                if (!year.isEmpty()){
-                    if(and > 0){
-                        query += " AND ";
-                    }
+                if (year != null && !year.isEmpty()){
+
+                    query += " AND ";
+
                     query = queryGenerator(query, year, 2);
-                    and++;
+
                 }
 
-                if (!director.isEmpty()){
-                    if(and > 0){
-                        query += " AND ";
-                    }
+                if (director != null && !director.isEmpty()){
+
+                    query += " AND ";
+
                     query = queryGenerator(query, director, 3);
-                    and++;
+
                 }
 
-                if (!star.isEmpty()){
-                    if(and > 0){
-                        query += " AND ";
-                    }
+                if (star != null && !star.isEmpty()){
+
+                    query += " AND ";
+
                     query = queryGenerator(query, star, 4);
                 }
             }
@@ -151,6 +151,7 @@ public class MoviesServlet extends HttpServlet {
                 jsonObject.addProperty("movie_stars", movie_stars);
                 jsonObject.addProperty("star_id", star_id);
                 jsonObject.addProperty("movie_ratings", movie_ratings);
+                jsonObject.addProperty("count",mvct);
 
 
                 jsonArray.add(jsonObject);
