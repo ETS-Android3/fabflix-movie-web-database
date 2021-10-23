@@ -54,16 +54,7 @@ public class SingleMovieServlet extends HttpServlet {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
-            String query = "SELECT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n" +
-                    "FROM movies, \n" +
-                    "ratings,\n" +
-                    "(SELECT stars.*, sim.movieId as smId\n" +
-                    "FROM stars, stars_in_movies as sim\n" +
-                    "WHERE stars.id = sim.starId) as s,\n" +
-                    "(SELECT genres.*, gim.movieId as gmId\n" +
-                    "FROM genres, genres_in_movies as gim\n" +
-                    "WHERE genres.id = gim.genreId) as g\n" +
-                    "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.id = ?";
+            String query = "SELECT * FROM stars_in_movies as sim, movies as m WHERE sim.movieId = m.id AND sim.starId = ?";
 
             // Declare our statement
             PreparedStatement statement = conn.prepareStatement(query);
