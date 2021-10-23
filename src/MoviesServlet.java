@@ -125,8 +125,8 @@ public class MoviesServlet extends HttpServlet {
             }
 
             query = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id ORDER BY movies.id";
-            String query2 = "SELECT stars.*, sim.movieId as smId FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId ORDER BY smId;";
-            String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId ORDER BY gmId";
+            String query2 = "SELECT stars.*, sim.movieId as smId FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId ORDER BY smId";
+            String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId ORDER BY gmId, genres.name ASC";
 
 //            query += String.format("LIMIT %s", mvct);
 

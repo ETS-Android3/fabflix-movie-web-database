@@ -99,36 +99,31 @@ function handleMovieResult(resultData) {
         if (count > 0)
         {
             rowHTML += "<tr>";
+            rowHTML +=
+                "<th>" +
+                // Add a link to single-movie.html with id passed with GET url parameter
+                '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
+                + resultData[i]["movie_title"] +     // display star_name for the link text
+                '</a>' +
+                "</th>";
 
-            if (movie_dup.localeCompare(resultData[i]["movie_title"])) //not equal
-            {
-                rowHTML +=
-                    "<th>" +
-                    // Add a link to single-movie.html with id passed with GET url parameter
-                    '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
-                    + resultData[i]["movie_title"] +     // display star_name for the link text
-                    '</a>' +
-                    "</th>";
+            movie_dup = resultData[i]["movie_title"];
 
-                movie_dup = resultData[i]["movie_title"];
-
-                rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
-                rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
-                rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
-                rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
-                rowHTML +=
-                    "<th>" +
-                    // Add a link to single-movie.html with id passed with GET url parameter
-                    '<a href="single-star.html?id=' + resultData[i]['star_id'] + '">'
-                    + resultData[i]["movie_stars"] +
-                    '</a>' +
-                    "</th>";
-
-                count--;
-
-                rowHTML += "</tr>";
-                movieTableBodyElement.append(rowHTML);
+            rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
+            rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
+            rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
+            rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
+            let stars = [];
+            for (let j = 0; j < 3; j++){
+                // Add a link to single-star.html with id passed with GET url parameter
+                stars.push('<a href="single-star.html?id=' + resultData[i]['movie_stars'][j]['star_id'] + '">'
+                    + resultData[i]["movie_stars"][j]['star'] +
+                    '</a>')
             }
+            rowHTML += "<th>" + stars.join(", ") + "</th>";
+
+            rowHTML += "</tr>";
+            movieTableBodyElement.append(rowHTML)
 
         }
 
