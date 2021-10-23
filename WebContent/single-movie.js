@@ -39,6 +39,7 @@ function getParameterByName(target) {
 function handleResult(resultData) {
 
     console.log("handleResult: populating movie info from resultData");
+    console.log(resultData);
 
     // populate the star info h3
     // find the empty h3 body by id "star_info"
@@ -66,7 +67,6 @@ function handleResult(resultData) {
     for (let i = 0; i < resultData.length; i++) {
         let rowHTML = "";
         rowHTML += "<tr>";
-
         if (!star_dup.includes(resultData[i]["movie_stars"]))
         {
 
@@ -90,7 +90,8 @@ function handleResult(resultData) {
         if (!genre_dup.includes(resultData[i]["movie_genre"]))
         {
 
-            rowHTML += "<th>" + resultData[i]["movie_genre"] + "</th>";
+            rowHTML += "<th>" + '<a href="movie-list.html?genre=' + resultData[i]['movie_genre'] + '">'
+                + resultData[i]['movie_genre'] + '</a>' + "</th>";
 
             genre_dup.push(resultData[i]["movie_genre"]);
         }
