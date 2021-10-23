@@ -38,6 +38,7 @@ function getParameterByName(target) {
 
 function handleResult(resultData) {
 
+    console.log(resultData);
     console.log("handleResult: populating star info from resultData");
 
     // populate the star info h3
