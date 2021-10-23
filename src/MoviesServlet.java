@@ -65,38 +65,42 @@ public class MoviesServlet extends HttpServlet {
             Statement statement2 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             Statement statement3 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-            String query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id";
-            String query2 = "SELECT stars.*, sim.movieId as smId FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId";
-            String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId";
+            String query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id";                   // ONLY MOVIES AND RATING
+            String query2 = "SELECT stars.*, sim.* FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId";       // ONLY ONLY STARS
+            String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId";  // ONLY GENRES
 
             if(genre != null && !genre.isEmpty()){
                 query1 =    "SELECT movies.*, ratings.rating " +
                             "FROM movies, ratings, genres_in_movies as gim, genres " +
                             "WHERE genres.name = " +
-                            String.format("'%%%s%%' ", genre) +
+                            String.format("'%s' ", genre) +
                             "AND genres.id = gim.genreId AND gim.movieId = movies.id AND ratings.movieId = movies.id";
 
-                query2 =    "SELECT stars.*, sim.movieId as smId FROM " +
-                            "stars, stars_in_movies as sim, genres_in_movies as gim, genres " +
+                query2 =    "SELECT stars.*, sim.*" +
+                            "FROM stars, stars_in_movies as sim, genres_in_movies as gim, genres " +
                             "WHERE genres.name = " +
-                            String.format("'%%%s%%' ", genre) +
-                            "AND genres.id = gim.genreId AND gim.movieId = movies.id AND stars.id = sim.starId";
+                            String.format("'%s' ", genre) +
+                            "AND genres.id = gim.genreId AND gim.movieId = sim.movieId AND stars.id = sim.starId";
 
                 query3 =    "SELECT genres.*, gim.movieId as gmId " +
-                            "FROM genres, genres_in_movies as gim " +
-                            "WHERE genrs.name = " +
-                            String.format("'%%%s%%' ", genre) +
-                            "AND genres.id = gim.genreId";
+                            "FROM genres, genres_in_movies as gim, " +
+                            "(" + query1 + ") as q "+
+                            "WHERE q.id = gim.movieId AND gim.genreId = genres.id";
             }
 
             else if (index != null && !index.isEmpty()) { // browse by index
                 if (index.equals("*")){
                     // REGEX PATTERN FROM:
                     // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
-                    query1 += " AND movies.title REGEXP '^[^0-9A-Za-z]' ORDER BY rating DESC";
+                    query1 +=   " AND movies.title REGEXP '^[^0-9A-Za-z]'";
+                    
+                    query2 =    "SELECT stars.*, sim.*" +
+                                "FROM stars, stars_in_movies as sim, movies " +
+                                "WHERE movies.title REGEXP '^[^0-9A-Za-z]'" +
+                                "AND stars.id = sim.starId AND sim.movieId = movies.id";
                 }
                 else{
-                    query1 += " AND movies.title LIKE " + String.format("'%s%%' ORDER BY rating DESC", index);
+                    query1 += " AND movies.title LIKE " + String.format("'%s%%'", index);
                 }
             }
 
@@ -134,7 +138,7 @@ public class MoviesServlet extends HttpServlet {
             }
 
             query1 += " ORDER BY movies.id";
-            query2 += " ORDER BY smId";
+            query2 += " ORDER BY sim.movieId";
             query3 += " ORDER BY gmId, genres.name ASC";
 
             // Perform the query
@@ -155,7 +159,7 @@ public class MoviesServlet extends HttpServlet {
                 JsonArray stars = new JsonArray();
                 
                 while(rs_stars.next()){
-                    if(!rs_stars.getString("smId").equals(movie_id)){
+                    if(!rs_stars.getString("sim.movieId").equals(movie_id)){
                         rs_stars.previous();
                         break;
                     }
