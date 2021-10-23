@@ -94,7 +94,7 @@ function handleMovieResult(resultData) {
     console.log(count);
 
 
-    for (let i = 0; i < Math.min(100, resultData.length); i++) {
+    for (let i = 0; i < Math.min(10, resultData.length); i++) {
         let rowHTML = "";
         if (count > 0)
         {
@@ -112,9 +112,14 @@ function handleMovieResult(resultData) {
             rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
             rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
             rowHTML += "<th>" + resultData[i]["movie_ratings"] + "</th>";
-            rowHTML += "<th>" + resultData[i]["movie_genres"] + "</th>";
+            let genres = [];
+            for (let j = 0; j < Math.min(3,resultData[i]['movie_genres'].length); j++){
+                genres.push('<a href="movie-list.html?genre=' + resultData[i]['movie_genres'][j] + '">'
+                    + resultData[i]['movie_genres'][j] + '</a>');
+            }
+            rowHTML += "<th>" + genres.join(", ") + "</th>";
             let stars = [];
-            for (let j = 0; j < 3; j++){
+            for (let j = 0; j < Math.min(3,resultData[i]['movie_stars'].length); j++){
                 // Add a link to single-star.html with id passed with GET url parameter
                 stars.push('<a href="single-star.html?id=' + resultData[i]['movie_stars'][j]['star_id'] + '">'
                     + resultData[i]["movie_stars"][j]['star'] +
