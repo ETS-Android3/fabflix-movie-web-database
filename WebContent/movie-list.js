@@ -94,7 +94,7 @@ function handleMovieResult(resultData) {
     console.log(count);
 
 
-    for (let i = 0; i < resultData.length; i++) {
+    for (let i = 0; i < Math.min(100, resultData.length); i++) {
         let rowHTML = "";
         if (count > 0)
         {
@@ -161,4 +161,4 @@ jQuery.ajax({
     method: "GET", // Setting request method
     url: mvListURL + "mvct=" + mvCount, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
-});
+}); 
