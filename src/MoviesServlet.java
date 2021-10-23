@@ -66,7 +66,7 @@ public class MoviesServlet extends HttpServlet {
             Statement statement3 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
             String query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id";                   // ONLY MOVIES AND RATING
-            String query2 = "SELECT stars.*, sim.* FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId";       // ONLY ONLY STARS
+            String query2 = "SELECT stars.*, sim.* FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId";                     // ONLY ONLY STARS
             String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId";  // ONLY GENRES
 
             if(genre != null && !genre.isEmpty()){
@@ -75,17 +75,6 @@ public class MoviesServlet extends HttpServlet {
                             "WHERE genres.name = " +
                             String.format("'%s' ", genre) +
                             "AND genres.id = gim.genreId AND gim.movieId = movies.id AND ratings.movieId = movies.id";
-
-                query2 =    "SELECT stars.*, sim.*" +
-                            "FROM stars, stars_in_movies as sim, genres_in_movies as gim, genres " +
-                            "WHERE genres.name = " +
-                            String.format("'%s' ", genre) +
-                            "AND genres.id = gim.genreId AND gim.movieId = sim.movieId AND stars.id = sim.starId";
-
-                query3 =    "SELECT genres.*, gim.movieId as gmId " +
-                            "FROM genres, genres_in_movies as gim, " +
-                            "(" + query1 + ") as q "+
-                            "WHERE q.id = gim.movieId AND gim.genreId = genres.id";
             }
 
             else if (index != null && !index.isEmpty()) { // browse by index
@@ -93,53 +82,48 @@ public class MoviesServlet extends HttpServlet {
                     // REGEX PATTERN FROM:
                     // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
                     query1 +=   " AND movies.title REGEXP '^[^0-9A-Za-z]'";
-                    
-                    query2 =    "SELECT stars.*, sim.*" +
-                                "FROM stars, stars_in_movies as sim, movies " +
-                                "WHERE movies.title REGEXP '^[^0-9A-Za-z]'" +
-                                "AND stars.id = sim.starId AND sim.movieId = movies.id";
                 }
                 else{
-                    query1 += " AND movies.title LIKE " + String.format("'%s%%'", index);
+                    query1 +=   " AND movies.title LIKE " + String.format("'%s%%'", index);
                 }
             }
-
+            
             else{
+                
+                if (star != null && !star.isEmpty()){
+                    query1 = queryGenerator(query1, star, 1);
+                }
 
                 if(title != null && !title.isEmpty())
                 {
                     query1 += " AND ";
-                    query1 = queryGenerator(query1, title, 1);
-
+                    query1 = queryGenerator(query1, title, 2);
                 }
-
+                
                 if (year != null && !year.isEmpty()){
-
                     query1 += " AND ";
-
-                    query1 = queryGenerator(query1, year, 2);
-
+                    query1 = queryGenerator(query1, year, 3);
                 }
-
+                
                 if (director != null && !director.isEmpty()){
-
                     query1 += " AND ";
-
-                    query1 = queryGenerator(query1, director, 3);
-
-                }
-
-                if (star != null && !star.isEmpty()){
-
-                    query1 += " AND ";
-
-                    query1 = queryGenerator(query1, star, 4);
+                    query1 = queryGenerator(query1, director, 4);
                 }
             }
-
             query1 += " ORDER BY movies.id";
-            query2 += " ORDER BY sim.movieId";
-            query3 += " ORDER BY gmId, genres.name ASC";
+
+            query2 =    "SELECT stars.*, sim.* " +
+                        "FROM stars, stars_in_movies as sim, " +
+                        "(" + query1 + ") as q " +
+                        "WHERE q.id = sim.movieId AND stars.id = sim.starId " +
+                        "ORDER BY sim.movieId";
+
+            query3 =    "SELECT genres.*, gim.movieId as gmId " +
+                        "FROM genres, genres_in_movies as gim, " +
+                        "(" + query1 + ") as q "+
+                        "WHERE q.id = gim.movieId AND gim.genreId = genres.id " +
+                        "ORDER BY gmId, genres.name ASC";
+            
 
             // Perform the query
             ResultSet rs_movie = statement1.executeQuery(query1);
@@ -233,17 +217,21 @@ public class MoviesServlet extends HttpServlet {
     private String queryGenerator(String query, String search, int type){
         String tail = "";
         switch(type){
-            case 1:
+            case 1:                     // "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id"; 
+                String newQuery =   "SELECT movies.*, ratings.rating " +
+                                    "FROM movies, ratings, stars_in_movies as sim, stars " +
+                                    "WHERE stars.name LIKE " +
+                                    String.format("'%%%s%%' ", search) +
+                                    "AND stars.id = sim.starId AND sim.movieId = movies.id AND ratings.movieId = movies.id";
+                return newQuery;
+            case 2:
                 tail = "movies.title LIKE " + String.format("'%%%s%%'", search);
                 break;
-            case 2:
+            case 3:
                 tail = "movies.year LIKE " + String.format("%s", search);
                 break;
-            case 3:
-                tail = "movies.director LIKE " + String.format("'%%%s%%'", search);
-                break;
             case 4:
-                tail = "s.name LIKE " + String.format("'%%%s%%'", search);
+                tail = "movies.director LIKE " + String.format("'%%%s%%'", search);
                 break;
         }
 
