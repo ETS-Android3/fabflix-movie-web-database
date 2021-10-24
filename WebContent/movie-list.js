@@ -12,7 +12,7 @@ function getSelectedPagination(){
     jQuery("#pagination a"). on("click", function (){
         maxPgCount = $(this).text();
         console.log("selected:" + maxPgCount);
-        // $("#max-results").text(maxPgCount);
+        $("#max-results").text(maxPgCount);
     })
 
     let reload= new URL(window.location);
@@ -20,6 +20,23 @@ function getSelectedPagination(){
     console.log(reload);
     window.location.assign(reload);
 }
+
+function incrementPage(){
+
+    let page = parseInt($("#page-num").text());
+    page++; // increment page
+    let reload= new URL(window.location);
+    console.log(page);
+    reload.searchParams.set("page", page.toString());
+    console.log(reload);
+    window.location.assign(reload);
+}
+
+function decrementPage(){
+    console.log("hi");
+}
+
+
 
 function getParameterByName(target) {
     // Get request URL
@@ -133,9 +150,10 @@ let maxPgCount;
 // get user selected pagination
 jQuery("#pagination a"). on("click", function (){
     maxPgCount = $(this).text();
-    console.log(maxPgCount);
-    $("#max-results").text(maxPgCount);
 })
+jQuery("#max-results").text(mvCount);
+
+jQuery("#prev-btn").val(page);
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({
