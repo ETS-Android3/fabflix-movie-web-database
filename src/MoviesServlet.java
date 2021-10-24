@@ -53,6 +53,12 @@ public class MoviesServlet extends HttpServlet {
 
         // User filter/sort
         String mvct = request.getParameter("mvct");
+        String page = request.getParameter("page");
+
+        int mvct_num = Integer.parseInt(mvct);
+        int page_num = Integer.parseInt(page) - 1;
+        int offset_num = mvct_num * page_num;
+        String offset = Integer.toString(offset_num);
 
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
@@ -67,7 +73,7 @@ public class MoviesServlet extends HttpServlet {
 
             String query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id";                   // ONLY MOVIES AND RATING
 
-            if(genre != null && !genre.isEmpty()){
+            if(genre != null && !genre.isEmpty() && !genre.equals("null")){
                 query1 =    "SELECT movies.*, ratings.rating " +
                             "FROM movies, ratings, genres_in_movies as gim, genres " +
                             "WHERE genres.name = " +
@@ -75,7 +81,7 @@ public class MoviesServlet extends HttpServlet {
                             "AND genres.id = gim.genreId AND gim.movieId = movies.id AND ratings.movieId = movies.id";
             }
 
-            else if (index != null && !index.isEmpty()) { // browse by index
+            else if (index != null && !index.isEmpty() && !index.equals("null")) { // browse by index
                 if (index.equals("*")){
                     // REGEX PATTERN FROM:
                     // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
@@ -88,28 +94,32 @@ public class MoviesServlet extends HttpServlet {
             
             else{
                 
-                if (star != null && !star.isEmpty()){
+                if (star != null && !star.isEmpty() && !star.equals("null")){
                     query1 = queryGenerator(query1, star, 1);
                 }
 
-                if(title != null && !title.isEmpty())
+                if(title != null && !title.isEmpty() && !title.equals("null"))
                 {
                     query1 += " AND ";
                     query1 = queryGenerator(query1, title, 2);
                 }
                 
-                if (year != null && !year.isEmpty()){
+                if (year != null && !year.isEmpty() && !year.equals("null")){
                     query1 += " AND ";
                     query1 = queryGenerator(query1, year, 3);
                 }
                 
-                if (director != null && !director.isEmpty()){
+                if (director != null && !director.isEmpty() && !director.equals("null")){
                     query1 += " AND ";
                     query1 = queryGenerator(query1, director, 4);
                 }
                 
             }
-            query1 += " ORDER BY movies.id";
+            query1 +=   " ORDER BY movies.id" +
+                        " LIMIT " +
+                        String.format("%s", mvct) +
+                        " OFFSET " +
+                        String.format("%s", offset);
 
             String query2 =    "SELECT stars.*, sim.* " +
                         "FROM stars, stars_in_movies as sim, " +
