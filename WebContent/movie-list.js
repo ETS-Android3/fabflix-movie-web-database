@@ -21,57 +21,6 @@ function getSelectedPagination(){
     window.location.assign(reload);
 }
 
-
-
-function buildURLQuery(){
-    let query = "api/movies?";
-
-    let movieGenre = getParameterByName('genre');
-    let searchChar = getParameterByName('char');
-    let searchTitle = getParameterByName('search_title');
-    let searchYear = getParameterByName('search_year');
-    let searchDirector = getParameterByName('search_director');
-    let searchStar = getParameterByName('search_star');
-    let mvCount = getParameterByName('mvct') || 10;
-
-    // browsing queries
-    if (movieGenre != null){
-        query += "genre=" + movieGenre;
-    }
-    if (searchChar != null){
-        query += "char=" + searchChar;
-    }
-    // searching queries
-    if (searchTitle != null){
-        query += "search_title=" + searchTitle + "&";
-    }
-    if (searchYear != null){
-        query += "search_year=" + searchYear + "&";
-    }
-    if (searchDirector != null){
-        query += "search_director=" + searchDirector + "&";
-    }
-    if (searchStar != null){
-        query += "search_star=" + searchStar + "&";
-    }
-
-    if (!(query === "api/movies?"))
-    {
-        query += "&";
-    }
-    //
-    // query += "genre=" + movieGenre + "&";
-    // query += "char=" + searchChar + "&";
-    // query += "search_title=" + searchTitle + "&";
-    // query += "search_year=" + searchYear + "&";
-    // query += "search_director=" + searchDirector + "&";
-    // query += "search_star=" + searchStar + "&";
-    // query += "mvct=" + mvCount;
-
-    return query;
-
-}
-
 function getParameterByName(target) {
     // Get request URL
     let url = window.location.href;
@@ -107,8 +56,6 @@ function handleMovieResult(resultData) {
     let movie_dup = "";
 
     let count = resultData[0]["count"]; //default
-
-    console.log("handling mvList: count =" + count);
 
 
     for (let i = 0; i < Math.min(count, resultData.length); i++) {
@@ -171,8 +118,7 @@ let searchYear = getParameterByName('search_year');
 let searchDirector = getParameterByName('search_director');
 let searchStar = getParameterByName('search_star');
 let mvCount = getParameterByName('mvct') || 10;
-
-console.log("mvCount = " + mvCount);
+let page = getParameterByName('page') || 1;
 
 let query = "genre=" + movieGenre + "&";
 query += "char=" + searchChar + "&";
@@ -180,7 +126,8 @@ query += "search_title=" + searchTitle + "&";
 query += "search_year=" + searchYear + "&";
 query += "search_director=" + searchDirector + "&";
 query += "search_star=" + searchStar + "&";
-query += "mvct=" + mvCount;
+query += "mvct=" + mvCount + "&";
+query += "page=" + page; // starting item on page
 
 let maxPgCount;
 // get user selected pagination
