@@ -66,8 +66,6 @@ public class MoviesServlet extends HttpServlet {
             Statement statement3 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
             String query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id";                   // ONLY MOVIES AND RATING
-            String query2 = "SELECT stars.*, sim.* FROM stars, stars_in_movies as sim WHERE stars.id = sim.starId";                     // ONLY ONLY STARS
-            String query3 = "SELECT genres.*, gim.movieId as gmId FROM genres, genres_in_movies as gim WHERE genres.id = gim.genreId";  // ONLY GENRES
 
             if(genre != null && !genre.isEmpty()){
                 query1 =    "SELECT movies.*, ratings.rating " +
@@ -109,20 +107,21 @@ public class MoviesServlet extends HttpServlet {
                     query1 += " AND ";
                     query1 = queryGenerator(query1, director, 4);
                 }
+                
             }
             query1 += " ORDER BY movies.id";
 
-            query2 =    "SELECT stars.*, sim.* " +
+            String query2 =    "SELECT stars.*, sim.* " +
                         "FROM stars, stars_in_movies as sim, " +
                         "(" + query1 + ") as q " +
-                        "WHERE q.id = sim.movieId AND stars.id = sim.starId " +
-                        "ORDER BY sim.movieId";
-
-            query3 =    "SELECT genres.*, gim.movieId as gmId " +
+                        "WHERE q.id = sim.movieId AND stars.id = sim.starId" +
+                        " ORDER BY sim.movieId";
+            
+            String query3 =    "SELECT genres.*, gim.movieId as gmId " +
                         "FROM genres, genres_in_movies as gim, " +
-                        "(" + query1 + ") as q "+
-                        "WHERE q.id = gim.movieId AND gim.genreId = genres.id " +
-                        "ORDER BY gmId, genres.name ASC";
+                        "(" + query1 + ") as q " +
+                        "WHERE q.id = gim.movieId AND gim.genreId = genres.id" +
+                        " ORDER BY gmId, genres.name ASC";
             
 
             // Perform the query
