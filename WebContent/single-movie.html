@@ -41,6 +41,9 @@
         <li class="nav-item">
             <a class="nav-link" href="movie-list.html">Movie List</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="shop-cart.html">Checkout</a>
+        </li>
     </ul>
 </nav>
 
@@ -48,7 +51,18 @@
 <!-- single-movie.js will find this html element by it's id "star_info" -->
 <h3 class="page-header" id="movie_info"></h3>
 
+<!--<button id=cart-btn onclick="handleCartInfo()">Add to Cart</button>-->
+
+
+
 <table id=movie_table class="table table-striped">
+    <thead class="thead-light">
+    <tr>
+        <th>Add to Cart</th>
+    </tr>
+    </thead>
+    <tbody id=cart_btn></tbody>
+
     <thead class="thead-light">
     <tr>
         <th>Stars</th>

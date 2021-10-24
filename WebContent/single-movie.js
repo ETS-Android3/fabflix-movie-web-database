@@ -8,7 +8,16 @@
  *      2. Use jQuery to talk to backend API to get the json data.
  *      3. Populate the data to correct html elements.
  */
+function handleCartInfo(movieId){
 
+    $.ajax("api/movies", {
+        dataType: "json",
+        method: "POST",
+        data: { movieId: movieId},
+        success: resultDataString => { alert(`Added to cart.`); },
+        error: resultDataString => { alert(`Could not add to cart.`); }
+    });
+}
 
 /**
  * Retrieve parameter from request URL, matching by parameter name
@@ -59,13 +68,24 @@ function handleResult(resultData) {
 
     let genreTableBodyElement = jQuery("#genre_table_body");
 
+    let cartBtn = jQuery("#cart_btn");
+
     let star_dup = []; // hold star
     let genre_dup = [];
+
+    let rowHTML = "";
+
+    rowHTML += "<tr>";
+    rowHTML += "<th>" + '<button onclick="handleCartInfo(\'' + resultData[0]['movie_id'] + '\')">' + "Add to Cart" +  // display star_name for the link text
+        '</button>' + "</th>";
+    rowHTML += "</tr>";
+    cartBtn.append(rowHTML);
 
 
     // Concatenate the html tags with resultData jsonObject to create table rows
     for (let i = 0; i < resultData.length; i++) {
-        let rowHTML = "";
+
+        rowHTML = "";
         rowHTML += "<tr>";
         if (!star_dup.includes(resultData[i]["movie_stars"]))
         {
