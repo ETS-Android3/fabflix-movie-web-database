@@ -26,14 +26,16 @@ function incrementPage(){
     let page = parseInt($("#page-num").text());
     page++; // increment page
     let reload= new URL(window.location);
-    console.log(page);
     reload.searchParams.set("page", page.toString());
-    console.log(reload);
     window.location.assign(reload);
 }
 
 function decrementPage(){
-    console.log("hi");
+    let page = parseInt($("#page-num").text());
+    page--; // increment page
+    let reload= new URL(window.location);
+    reload.searchParams.set("page", page.toString());
+    window.location.assign(reload);
 }
 
 
@@ -153,7 +155,10 @@ jQuery("#pagination a"). on("click", function (){
 })
 jQuery("#max-results").text(mvCount);
 
-jQuery("#prev-btn").val(page);
+jQuery("#prev-btn").on("click", function(){
+    $(this).text();
+});
+jQuery("#page-num").text(page);
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({
