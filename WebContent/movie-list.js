@@ -32,10 +32,24 @@ function incrementPage(){
 
 function decrementPage(){
     let page = parseInt($("#page-num").text());
-    page--; // increment page
-    let reload= new URL(window.location);
-    reload.searchParams.set("page", page.toString());
-    window.location.assign(reload);
+    if (page > 1){
+        page--; // increment page
+        let reload= new URL(window.location);
+        reload.searchParams.set("page", page.toString());
+        window.location.assign(reload);
+    }
+
+}
+
+function handleCartInfo(movieId){
+
+    $.ajax("api/movies", {
+        dataType: "json",
+        method: "POST",
+        data: { movieId: movieId},
+        success: resultDataString => { alert(`Added to cart.`); },
+        error: resultDataString => { alert(`Could not add to cart.`); }
+    });
 }
 
 
@@ -72,16 +86,20 @@ function handleMovieResult(resultData) {
     // Find the empty table body by id "movie_table_body"
     let movieTableBodyElement = jQuery("#movie_table_body");
 
-    let movie_dup = "";
+    // let movie_dup = "";
 
     let count = resultData[0]["count"]; //default
 
 
     for (let i = 0; i < Math.min(count, resultData.length); i++) {
         let rowHTML = "";
+
         if (count > 0)
         {
             rowHTML += "<tr>";
+
+            rowHTML += "<th>" + '<button onclick="handleCartInfo(\'' + resultData[i]['movie_id'] + '\')">' + "Add to Cart" +  // display star_name for the link text
+            '</button>' + "</th>";
             rowHTML +=
                 "<th>" +
                 // Add a link to single-movie.html with id passed with GET url parameter
@@ -90,7 +108,7 @@ function handleMovieResult(resultData) {
                 '</a>' +
                 "</th>";
 
-            movie_dup = resultData[i]["movie_title"];
+            // movie_dup = resultData[i]["movie_title"];
 
             rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
             rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";

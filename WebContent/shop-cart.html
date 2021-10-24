@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Movie List Page</title>
+    <title>Shopping Cart Page</title>
 </head>
 <body>
 
@@ -43,51 +43,31 @@
 
 
 
-<nav class="navbar">
-    <ul class="pagination">
-        <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span id="max-results">10</span> per page
-            </a>
-
-            <div class="dropdown-menu" id="pagination" onclick="getSelectedPagination()">
-                <a class="dropdown-item" href="#">10</a>
-                <a class="dropdown-item" href="#">25</a>
-                <a class="dropdown-item" href="#">50</a>
-                <a class="dropdown-item" href="#">100</a>
-            </div>
-        </div>
-        <li class="page-item" id="prev-btn" onclick="decrementPage()"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item">Page <span id="page-num">1 </span></li>
-        <li class="page-item" id="next-btn" onclick="incrementPage()"><a class="page-link" href="#">Next</a></li>
-    </ul>
-</nav>
 
 
 
 
+<!--&lt;!&ndash; Id "star_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS &ndash;&gt;-->
+<!--<table id=movie_table class="table table-striped">-->
+<!--    &lt;!&ndash; Create a table header &ndash;&gt;-->
+<!--    <thead class="thead-light">-->
+<!--    <tr>-->
+<!--        &lt;!&ndash; Titles of each column&ndash;&gt;-->
+<!--        <th>Add to Cart</th>-->
+<!--        <th>Title</th>-->
+<!--        <th>Release Year</th>-->
+<!--        <th>Director</th>-->
+<!--        <th>Ratings</th>-->
+<!--        <th>Genres</th>-->
+<!--        <th>Stars</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
 
-<!-- Id "star_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
-<table id=movie_table class="table table-striped">
-    <!-- Create a table header -->
-    <thead class="thead-light">
-    <tr>
-        <!-- Titles of each column-->
-        <th>Cart</th>
-        <th>Title</th>
-        <th>Release Year</th>
-        <th>Director</th>
-        <th>Ratings</th>
-        <th>Genres</th>
-        <th>Stars</th>
-    </tr>
-    </thead>
+<!--    &lt;!&ndash; Table body is left empty here, will be populated with the data retrieved with index.js &ndash;&gt;-->
+<!--    &lt;!&ndash; Again, id "star_table_body" is useful for jQuery to find this html element &ndash;&gt;-->
+<!--    <tbody id=movie_table_body></tbody>-->
 
-    <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
-    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
-    <tbody id=movie_table_body></tbody>
-
-</table>
+<!--</table>-->
 
 <!-- Load jQuery and Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -98,7 +78,7 @@
 <!-- The path is relative to index.html, since these two files are in the same directory -->
 <!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
      otherwise the url is relative to the root path-->
-<script src="movie-list.js"></script>
+<script src="shop-cart.js"></script>
 </body>
 
 
