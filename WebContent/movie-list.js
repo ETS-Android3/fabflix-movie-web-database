@@ -8,16 +8,20 @@
  *      2. Populate the data to correct html elements.
  */
 function getSelectedPagination(){
-    let maxPgCount;
-    // get user selected pagination
+
     jQuery("#pagination a"). on("click", function (){
         maxPgCount = $(this).text();
-        console.log(maxPgCount);
-        $("#max-results").text(maxPgCount);
+        console.log("selected:" + maxPgCount);
+        // $("#max-results").text(maxPgCount);
     })
 
-    return maxPgCount;
+    let reload= new URL(window.location);
+    reload.searchParams.set("mvct", maxPgCount);
+    console.log(reload);
+    window.location.assign(reload);
 }
+
+
 
 function buildURLQuery(){
     let query = "api/movies?";
@@ -28,6 +32,7 @@ function buildURLQuery(){
     let searchYear = getParameterByName('search_year');
     let searchDirector = getParameterByName('search_director');
     let searchStar = getParameterByName('search_star');
+    let mvCount = getParameterByName('mvct') || 10;
 
     // browsing queries
     if (movieGenre != null){
@@ -47,13 +52,21 @@ function buildURLQuery(){
         query += "search_director=" + searchDirector + "&";
     }
     if (searchStar != null){
-        query += "search_star=" + searchStar;
+        query += "search_star=" + searchStar + "&";
     }
 
     if (!(query === "api/movies?"))
     {
         query += "&";
     }
+    //
+    // query += "genre=" + movieGenre + "&";
+    // query += "char=" + searchChar + "&";
+    // query += "search_title=" + searchTitle + "&";
+    // query += "search_year=" + searchYear + "&";
+    // query += "search_director=" + searchDirector + "&";
+    // query += "search_star=" + searchStar + "&";
+    // query += "mvct=" + mvCount;
 
     return query;
 
@@ -82,19 +95,23 @@ function getParameterByName(target) {
  */
 function handleMovieResult(resultData) {
     console.log("handleMovieResult: populating star table from resultData");
+
+    // testing purposes
+    console.log(window.location.href);
     console.log(resultData);
+
     // Populate the star table
-    // Find the empty table body by id "star_table_body"
+    // Find the empty table body by id "movie_table_body"
     let movieTableBodyElement = jQuery("#movie_table_body");
 
     let movie_dup = "";
 
     let count = resultData[0]["count"]; //default
 
-    console.log(count);
+    console.log("handling mvList: count =" + count);
 
 
-    for (let i = 0; i < Math.min(10, resultData.length); i++) {
+    for (let i = 0; i < Math.min(count, resultData.length); i++) {
         let rowHTML = "";
         if (count > 0)
         {
@@ -144,21 +161,39 @@ function handleMovieResult(resultData) {
  * Once this .js is loaded, following scripts will be executed by the browser
  */
 
-let mvListURL = buildURLQuery();
-console.log(mvListURL);
+// let mvListURL = buildURLQuery();
+// console.log(mvListURL);
 
-console.log(getSelectedPagination());
-
+let movieGenre = getParameterByName('genre');
+let searchChar = getParameterByName('char');
+let searchTitle = getParameterByName('search_title');
+let searchYear = getParameterByName('search_year');
+let searchDirector = getParameterByName('search_director');
+let searchStar = getParameterByName('search_star');
 let mvCount = getParameterByName('mvct') || 10;
-console.log(mvCount);
 
-// "api/movies?genre=" + movieGenre + '&' + 'char=' + searchChar + '&'+ "search_title=" + searchTitle +
-// "&search_year=" + searchYear + "&search_director=" + searchDirector + "&search_star=" + searchStar,
+console.log("mvCount = " + mvCount);
+
+let query = "genre=" + movieGenre + "&";
+query += "char=" + searchChar + "&";
+query += "search_title=" + searchTitle + "&";
+query += "search_year=" + searchYear + "&";
+query += "search_director=" + searchDirector + "&";
+query += "search_star=" + searchStar + "&";
+query += "mvct=" + mvCount;
+
+let maxPgCount;
+// get user selected pagination
+jQuery("#pagination a"). on("click", function (){
+    maxPgCount = $(this).text();
+    console.log(maxPgCount);
+    $("#max-results").text(maxPgCount);
+})
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method
-    url: mvListURL + "mvct=" + mvCount, // Setting request url, which is mapped by StarsServlet in Stars.java
+    url: "api/movies?" + query, // Setting request url, which is mapped by StarsServlet in Stars.java
     success: (resultData) => handleMovieResult(resultData) // Setting callback function to handle data returned successfully by the StarsServlet
 }); 
