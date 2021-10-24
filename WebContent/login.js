@@ -5,8 +5,9 @@ let login_form = $("#login_form");
  * @param resultDataString jsonObject
  */
 function handleLoginResult(resultDataString) {
-    console.log(resultDataString);
+
     let resultDataJson = JSON.parse(resultDataString);
+    console.log(resultDataJson);
 
     console.log("handle login response");
     console.log(resultDataJson);
@@ -20,7 +21,9 @@ function handleLoginResult(resultDataString) {
         // error messages on <div> with id "login_error_message"
         console.log("show error message");
         console.log(resultDataJson["message"]);
-        $("#login_error_message").text(resultDataJson["message"]);
+        let error_msg = document.getElementById('login_error_msg');
+        error_msg.innerHTML = resultDataJson["message"];
+
     }
 }
 
