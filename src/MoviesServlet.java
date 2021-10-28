@@ -147,11 +147,11 @@ public class MoviesServlet extends HttpServlet {
 
             if(sort != null && !sort.isEmpty() && sort.equals("title")){
                 query1 += " ORDER BY movies.title " +
-                String.format("%s,", tOrder) + " ratings.rating " +
+                String.format("%s,", tOrder) + " movies.rating " +
                 String.format("%s", rOrder);
             }
             else if(sort != null && !sort.isEmpty() && sort.equals("rating")){
-                query1 += " ORDER BY ratings.rating " +
+                query1 += " ORDER BY movies.rating " +
                 String.format("%s,", rOrder) + " movies.title " +
                 String.format("%s", tOrder);
             }
