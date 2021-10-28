@@ -82,7 +82,7 @@ public class MoviesServlet extends HttpServlet {
             Statement statement2 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             Statement statement3 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-            String query1 = "SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId";
+            String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies";
 
             if(genre != null && !genre.isEmpty() && !genre.equals("null")){
                 query1 =    "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres " +

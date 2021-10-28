@@ -88,7 +88,7 @@ function handleMovieResult(resultData) {
 
     // let movie_dup = "";
 
-    let count = resultData["count"]; //default
+    let count = resultData[0]["count"]; //default
 
 
     for (let i = 0; i < Math.min(count, resultData.length); i++) {
