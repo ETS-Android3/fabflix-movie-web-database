@@ -82,13 +82,13 @@ public class MoviesServlet extends HttpServlet {
             Statement statement2 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             Statement statement3 = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-            String query1 = "SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId";
+            String query1 = "SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId";
 
             if(genre != null && !genre.isEmpty() && !genre.equals("null")){
-                query1 =    "SELECT m.* FROM (" + query1 + ") as m, genres_in_movies as gim, genres " +
+                query1 =    "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres " +
                             "WHERE genres.name = " +
                             String.format("'%s' ", genre) +
-                            "AND genres.id = gim.genreId AND gim.movieId = m.id";
+                            "AND genres.id = gim.genreId AND gim.movieId = movies.id";
             }
 
             else if (index != null && !index.isEmpty() && !index.equals("null")) { // browse by index
@@ -321,10 +321,10 @@ public class MoviesServlet extends HttpServlet {
         String tail = "";
         switch(type){
             case 1:                     // "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId = movies.id"; 
-                String newQuery =   "SELECT m.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as m, stars_in_movies as sim, stars " +
+                String newQuery =   "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars " +
                                     "WHERE stars.name LIKE " +
                                     String.format("'%%%s%%' ", search) +
-                                    "AND stars.id = sim.starId AND sim.movieId = m.id";
+                                    "AND stars.id = sim.starId AND sim.movieId = movies.id";
 
                 return newQuery;
             case 2:
