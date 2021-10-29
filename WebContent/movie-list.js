@@ -192,8 +192,8 @@ let mvCount = getParameterByName('mvct') || 10;
 let page = getParameterByName('page') || 1;
 
 let sort = getParameterByName('sort') || 'title';
-let tOrder = getParameterByName('title_order') || 'asc';
-let rOrder = getParameterByName('rating_order') || 'asc';
+let tOrder = getParameterByName('title_order') || 'desc';
+let rOrder = getParameterByName('rating_order') || 'desc';
 
 let query = "genre=" + movieGenre + "&";
 query += "char=" + searchChar + "&";

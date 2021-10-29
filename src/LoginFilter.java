@@ -39,9 +39,9 @@ public class LoginFilter implements Filter {
 
     private boolean isUrlAllowedWithoutLogin(String requestURI) {
         /*
-         Setup your own rules here to allow accessing some resources without logging in
-         Always allow your own login related requests(html, js, servlet, etc..)
-         You might also want to allow some CSS files, etc..
+         * Setup your own rules here to allow accessing some resources without logging
+         * in Always allow your own login related requests(html, js, servlet, etc..) You
+         * might also want to allow some CSS files, etc..
          */
         return allowedURIs.stream().anyMatch(requestURI.toLowerCase()::endsWith);
     }
@@ -50,6 +50,7 @@ public class LoginFilter implements Filter {
         allowedURIs.add("login.html");
         allowedURIs.add("login.js");
         allowedURIs.add("api/login");
+        allowedURIs.add("login.css");
     }
 
     public void destroy() {

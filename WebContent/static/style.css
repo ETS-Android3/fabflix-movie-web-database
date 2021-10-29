@@ -1,5 +1,11 @@
+/* MOVIE LIST PAGE */
 .pageNavigation {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 1%;
+}
+
+.pageNavigation > p {
+  font-size: 200%;
+  margin-top: 9px;
 }
