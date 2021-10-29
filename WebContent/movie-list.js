@@ -191,27 +191,15 @@ let searchStar = getParameterByName('search_star');
 let mvCount = getParameterByName('mvct') || 10;
 let page = getParameterByName('page') || 1;
 
-let sort = getParameterByName('sort') || 'title';
-let tOrder = getParameterByName('title_order') || 'asc';
-let rOrder = getParameterByName('rating_order') || 'asc';
-
-let query = "genre=" + movieGenre + "&";
-query += "char=" + searchChar + "&";
-query += "search_title=" + searchTitle + "&";
-query += "search_year=" + searchYear + "&";
-query += "search_director=" + searchDirector + "&";
-query += "search_star=" + searchStar + "&";
-query += "mvct=" + mvCount + "&";
-query += "page=" + page + "&"; // starting item on page
-query += "sort=" + sort + "&";
-query += "title_order=" + tOrder + "&";
-query += "rating_order=" + rOrder;
-
+let sort = getParameterByName('sort') || 'Default';
+let tOrder = getParameterByName('title_order') || 'Default';
+let rOrder = getParameterByName('rating_order') || 'Default';
 
 let maxPgCount;
 let sortBy;
 let sortTitle;
 let sortRating;
+
 // get user selected item-count
 jQuery("#item-count a").on("click", function (){
     maxPgCount = $(this).text();
@@ -243,6 +231,31 @@ jQuery("#prev-btn").on("click", function(){
     $(this).text();
 });
 jQuery("#page-num").text(page);
+
+if(tOrder == 'Default' || tOrder == "A ➜ Z"){
+    tOrder = "asc";
+}
+else if(tOrder == "Z ➜ A"){
+    tOrder = "desc";
+}
+if(rOrder == 'Default' || rOrder == "Low to High"){
+    rOrder = "asc";
+}
+else if(rOrder == "High to Low"){
+    rOrder = "desc";
+}
+
+let query = "genre=" + movieGenre + "&";
+query += "char=" + searchChar + "&";
+query += "search_title=" + searchTitle + "&";
+query += "search_year=" + searchYear + "&";
+query += "search_director=" + searchDirector + "&";
+query += "search_star=" + searchStar + "&";
+query += "mvct=" + mvCount + "&";
+query += "page=" + page + "&"; // starting item on page
+query += "sort=" + sort + "&";
+query += "title_order=" + tOrder + "&";
+query += "rating_order=" + rOrder;
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 jQuery.ajax({

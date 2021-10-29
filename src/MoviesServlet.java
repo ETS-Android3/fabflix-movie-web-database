@@ -60,8 +60,9 @@ public class MoviesServlet extends HttpServlet {
         String rOrder = request.getParameter("rating_order");
 
         boolean sorting = false;
-        if(sort != null){
+        if(!sort.equals("Default")){
             sorting = true;
+            sort = sort.toLowerCase();
             tOrder = tOrder.toUpperCase();
             rOrder = rOrder.toUpperCase();
         }
