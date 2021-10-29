@@ -16,6 +16,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="static/style.css">
 
     <title>Movie List Page</title>
 </head>
@@ -45,29 +47,71 @@
 </nav>
 
 
+<div class="pageNavigation">
+    <!--Prev/Next Buttons-->
+    <button type="button" class="btn btn-link" id="prev-btn" onclick="decrementPage()"><a class="page-link" href="#">Previous</a></button>
+    <!-- <li class="page-item" id="prev-btn" onclick="decrementPage()"><a class="page-link" href="#">Previous</a></li> -->
+    <p>Page <span id="page-num">1 </span></p>
+    <button type="button" class="btn btn-link" id="prev-btn" onclick="incrementPage()"><a class="page-link" href="#">Next</a></button>
+
+</div>
+
+
 
 <nav class="navbar">
     <ul class="pagination">
+        <!--Select Items Per Page-->
         <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span id="max-results">10</span> per page
             </a>
 
-            <div class="dropdown-menu" id="pagination" onclick="getSelectedPagination()">
+            <div class="dropdown-menu" id="item-count" onclick="getSelectedItemCount()">
                 <a class="dropdown-item" href="#">10</a>
                 <a class="dropdown-item" href="#">25</a>
                 <a class="dropdown-item" href="#">50</a>
                 <a class="dropdown-item" href="#">100</a>
             </div>
         </div>
-        <li class="page-item" id="prev-btn" onclick="decrementPage()"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item">Page <span id="page-num">1 </span></li>
-        <li class="page-item" id="next-btn" onclick="incrementPage()"><a class="page-link" href="#">Next</a></li>
+        <!--Sort By Dropdown-->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort By: <span id="sort-btn">???</span> 
+            </a>
+                    
+            <div class="dropdown-menu" id="sort-first" onclick="getSelectedSort()">
+                <a class="dropdown-item" href="#">title</a>
+                <a class="dropdown-item" href="#">rating</a>
+            </div>
+
+        </div>  
+        <!--Sort Title-->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort Title: <span id="title-btn">???</span> 
+            </a>
+                    
+            <div class="dropdown-menu" id="sort-title" onclick="getTitleSort()">
+                <a class="dropdown-item" href="#">asc</a>
+                <a class="dropdown-item" href="#">desc</a>
+            </div>
+        </div>
+        <!--Sort Rating-->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort Rating: <span id="rating-btn">???</span> 
+            </a>
+                    
+            <div class="dropdown-menu" id="sort-rating" onclick="getRatingSort()">
+                <a class="dropdown-item" href="#">Ascending</a>
+                <a class="dropdown-item" href="#">Descending</a>
+            </div>
+        </div>
+
+        </div>
+
     </ul>
 </nav>
-
-
-
 
 
 <!-- Id "star_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
@@ -91,6 +135,12 @@
     <tbody id=movie_table_body></tbody>
 
 </table>
+
+
+
+
+    
+
 
 <!-- Load jQuery and Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

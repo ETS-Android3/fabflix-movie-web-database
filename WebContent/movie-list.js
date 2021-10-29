@@ -7,9 +7,9 @@
  *      1. Use jQuery to talk to backend API to get the json data.
  *      2. Populate the data to correct html elements.
  */
-function getSelectedPagination(){
+function getSelectedItemCount(){
 
-    jQuery("#pagination a"). on("click", function (){
+    jQuery("#item-count a").on("click", function (){
         maxPgCount = $(this).text();
         console.log("selected:" + maxPgCount);
         $("#max-results").text(maxPgCount);
@@ -17,6 +17,40 @@ function getSelectedPagination(){
 
     let reload= new URL(window.location);
     reload.searchParams.set("mvct", maxPgCount);
+    console.log(reload);
+    window.location.assign(reload);
+}
+
+function getSelectedSort(){
+    jQuery("#sort-first a").on("click", function (){
+        sortBy = $(this).text();
+        $("#sort-btn").text(sortBy);
+    })
+
+    let reload= new URL(window.location);
+    reload.searchParams.set("sort", sortBy);
+    console.log(reload);
+    window.location.assign(reload);
+}
+
+function getTitleSort(){
+    jQuery("#sort-title a").on("click", function (){
+        sortTitle = $(this).text();
+        $("#title-btn").text(sortTitle);
+    })
+    let reload= new URL(window.location);
+    reload.searchParams.set("title_order", sortTitle);
+    console.log(reload);
+    window.location.assign(reload);
+}
+
+function getRatingSort(){
+    jQuery("#sort-rating a").on("click", function (){
+        sortRating = $(this).text();
+        $("#rating-btn").text(sortRating);
+    })
+    let reload= new URL(window.location);
+    reload.searchParams.set("rating_order", sortRating);
     console.log(reload);
     window.location.assign(reload);
 }
@@ -157,6 +191,10 @@ let searchStar = getParameterByName('search_star');
 let mvCount = getParameterByName('mvct') || 10;
 let page = getParameterByName('page') || 1;
 
+let sort = getParameterByName('sort') || 'title';
+let tOrder = getParameterByName('title_order') || 'asc';
+let rOrder = getParameterByName('rating_order') || 'asc';
+
 let query = "genre=" + movieGenre + "&";
 query += "char=" + searchChar + "&";
 query += "search_title=" + searchTitle + "&";
@@ -164,15 +202,43 @@ query += "search_year=" + searchYear + "&";
 query += "search_director=" + searchDirector + "&";
 query += "search_star=" + searchStar + "&";
 query += "mvct=" + mvCount + "&";
-query += "page=" + page; // starting item on page
+query += "page=" + page + "&"; // starting item on page
+query += "sort=" + sort + "&";
+query += "title_order=" + tOrder + "&";
+query += "rating_order=" + rOrder;
+
 
 let maxPgCount;
-// get user selected pagination
-jQuery("#pagination a"). on("click", function (){
+let sortBy;
+let sortTitle;
+let sortRating;
+// get user selected item-count
+jQuery("#item-count a").on("click", function (){
     maxPgCount = $(this).text();
 })
 jQuery("#max-results").text(mvCount);
 
+
+// // set user selected sort
+jQuery("#sort-first a").on("click", function (){
+    sortBy = $(this).text();
+})
+$('#sort-btn').text(sort);
+
+
+//get user selected title sort
+jQuery("#sort-title a").on("click", function (){
+    sortTitle = $(this).text();
+})
+jQuery("#title-btn").text(tOrder);
+
+// get user selceted rating sort
+jQuery("#sort-title a").on("click", function (){
+    sortRating = $(this).text();
+})
+jQuery("#title-btn").text(rOrder);
+
+// update page number
 jQuery("#prev-btn").on("click", function(){
     $(this).text();
 });
