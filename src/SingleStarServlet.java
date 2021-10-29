@@ -53,50 +53,67 @@ public class SingleStarServlet extends HttpServlet {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
-            String query = "SELECT s.*, sim.starId as sId, m.* FROM stars_in_movies as sim, movies as m, stars as s WHERE sim.movieId = m.id AND sim.starId = ? AND s.id = sim.starId";
+            String query1 = "SELECT movies.* FROM movies, stars, stars_in_movies as sim " +
+                            "WHERE stars.id = ? " +
+                            "AND stars.id = sim.starId AND sim.movieId = movies.id " +
+                            "ORDER BY movies.year DESC, movies.title ASC";
 
+            String query2 = "SELECT * FROM stars WHERE stars.id = ?";
             // Declare our statement
-            PreparedStatement statement = conn.prepareStatement(query);
+            PreparedStatement statement1 = conn.prepareStatement(query1);
+            PreparedStatement statement2 = conn.prepareStatement(query2);
 
             // Set the parameter represented by "?" in the query to the id we get from url,
             // num 1 indicates the first "?" in the query
-            statement.setString(1, id);
+            statement1.setString(1, id);
+            statement2.setString(1, id);
 
             // Perform the query
-            ResultSet rs = statement.executeQuery();
-
-            JsonArray jsonArray = new JsonArray();
+            ResultSet rs_movie = statement1.executeQuery();
+            ResultSet rs_star = statement2.executeQuery();
 
             // Iterate through each row of rs
-            while (rs.next()) {
+            rs_star.next();
+            String starId = rs_star.getString("id");
+            String starName = rs_star.getString("name");
+            String starDob = rs_star.getString("birthYear");
+            if(starDob == null){
+                starDob = "N/A";
+            }
 
-                String starId = rs.getString("sId");
-                String starName = rs.getString("name");
-                String starDob = rs.getString("birthYear");
+            JsonArray movies = new JsonArray();
 
-                String movieId = rs.getString("m.id");
-                String movieTitle = rs.getString("title");
-                String movieYear = rs.getString("year");
-                String movieDirector = rs.getString("director");
+            while (rs_movie.next()) {
+                String movieId = rs_movie.getString("id");
+                String movieTitle = rs_movie.getString("title");
+                String movieYear = rs_movie.getString("year");
+                String movieDirector = rs_movie.getString("director");
 
                 // Create a JsonObject based on the data we retrieve from rs
+                JsonObject movie = new JsonObject();
 
-                JsonObject jsonObject = new JsonObject();
-                jsonObject.addProperty("star_id", starId);
-                jsonObject.addProperty("star_name", starName);
-                jsonObject.addProperty("star_dob", starDob);
-                jsonObject.addProperty("movie_id", movieId);
-                jsonObject.addProperty("movie_title", movieTitle);
-                jsonObject.addProperty("movie_year", movieYear);
-                jsonObject.addProperty("movie_director", movieDirector);
+                movie.addProperty("movie_id", movieId);
+                movie.addProperty("movie_title", movieTitle);
+                movie.addProperty("movie_year", movieYear);
+                movie.addProperty("movie_director", movieDirector);
 
-                jsonArray.add(jsonObject);
+                movies.add(movie);
             }
-            rs.close();
-            statement.close();
+
+            JsonObject star = new JsonObject();
+
+            star.addProperty("star_id", starId);
+            star.addProperty("star_name", starName);
+            star.addProperty("star_dob", starDob);
+            star.add("movies", movies);
+
+            rs_movie.close();
+            rs_star.close();
+            statement1.close();
+            statement2.close();
 
             // Write JSON string to output
-            out.write(jsonArray.toString());
+            out.write(star.toString());
             // Set response status to 200 (OK)
             response.setStatus(200);
 

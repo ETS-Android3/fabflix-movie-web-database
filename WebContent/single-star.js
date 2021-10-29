@@ -46,8 +46,8 @@ function handleResult(resultData) {
     let starInfoElement = jQuery("#star_info");
 
     // append two html <p> created to the h3 body, which will refresh the page
-    starInfoElement.append("<p>Star Name: " + resultData[0]["star_name"] + "</p>" +
-        "<p>Date Of Birth: " + resultData[0]["star_dob"] + "</p>");
+    starInfoElement.append("<p>Star Name: " + resultData["star_name"] + "</p>" +
+        "<p>Date of Birth: " + resultData["star_dob"] + "</p>");
 
 
 
@@ -60,23 +60,23 @@ function handleResult(resultData) {
     let mov_dup = [];
 
     // Concatenate the html tags with resultData jsonObject to create table rows
-    for (let i = 0; i < resultData.length; i++) {
+    for (let i = 0; i < resultData["movies"].length; i++) {
         let rowHTML = "";
         rowHTML += "<tr>";
 
-        if (!mov_dup.includes(resultData[i]["movie_title"]))
+        if (!mov_dup.includes(resultData["movies"][i]["movie_title"]))
         {
             rowHTML +=
                 "<th>" +
                 // Add a link to single-movie.html with id passed with GET url parameter
-                '<a href="single-movie.html?id=' + resultData[i]['movie_id'] + '">'
-                + resultData[i]["movie_title"] +     // display star_name for the link text
+                '<a href="single-movie.html?id=' + resultData["movies"][i]['movie_id'] + '">'
+                + resultData["movies"][i]["movie_title"] +     // display star_name for the link text
                 '</a>' +
                 "</th>";
-            rowHTML += "<th>" + resultData[i]["movie_year"] + "</th>";
-            rowHTML += "<th>" + resultData[i]["movie_director"] + "</th>";
+            rowHTML += "<th>" + resultData["movies"][i]["movie_year"] + "</th>";
+            rowHTML += "<th>" + resultData["movies"][i]["movie_director"] + "</th>";
             rowHTML += "</tr>";
-            mov_dup.push(resultData[i]["movie_title"]);
+            mov_dup.push(resultData["movies"][i]["movie_title"]);
         }
 
 

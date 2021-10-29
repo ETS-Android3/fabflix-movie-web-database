@@ -1,4 +1,4 @@
-1. [LINK]
+1. https://youtu.be/k5y0whito7c
 
 3. Deploying our application with Tomcat involved packaging our maven project
 which resulted in a war file being created that can moved into the tomcat
