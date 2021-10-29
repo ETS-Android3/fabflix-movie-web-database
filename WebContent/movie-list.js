@@ -233,10 +233,10 @@ jQuery("#sort-title a").on("click", function (){
 jQuery("#title-btn").text(tOrder);
 
 // get user selceted rating sort
-jQuery("#sort-title a").on("click", function (){
+jQuery("#sort-rating a").on("click", function (){
     sortRating = $(this).text();
 })
-jQuery("#title-btn").text(rOrder);
+jQuery("#rating-btn").text(rOrder);
 
 // update page number
 jQuery("#prev-btn").on("click", function(){
