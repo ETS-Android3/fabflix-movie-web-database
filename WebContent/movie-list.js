@@ -7,6 +7,8 @@
  *      1. Use jQuery to talk to backend API to get the json data.
  *      2. Populate the data to correct html elements.
  */
+var lastPage = false;
+
 function getSelectedItemCount(){
 
     jQuery("#item-count a").on("click", function (){
@@ -58,7 +60,9 @@ function getRatingSort(){
 function incrementPage(){
 
     let page = parseInt($("#page-num").text());
-    page++; // increment page
+    if(!lastPage){
+        page++; // increment page
+    }
     let reload= new URL(window.location);
     reload.searchParams.set("page", page.toString());
     window.location.assign(reload);
@@ -67,7 +71,7 @@ function incrementPage(){
 function decrementPage(){
     let page = parseInt($("#page-num").text());
     if (page > 1){
-        page--; // increment page
+        page--; // decrement page
         let reload= new URL(window.location);
         reload.searchParams.set("page", page.toString());
         window.location.assign(reload);
@@ -123,7 +127,9 @@ function handleMovieResult(resultData) {
     // let movie_dup = "";
 
     let count = resultData[0]["count"]; //default
-
+    if(resultData.length < 100){
+        lastPage = true;
+    }
 
     for (let i = 0; i < Math.min(count, resultData.length); i++) {
         let rowHTML = "";
