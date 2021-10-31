@@ -4,8 +4,6 @@ function handleShoppingCart(resultData){
 
     let checkoutTable = jQuery("#checkout_table_body");
 
-
-
 };
 
 // jQuery.ajax("api/movies", {
@@ -15,11 +13,13 @@ function handleShoppingCart(resultData){
 //     success: resultDataString => { alert(`Added to cart.`); },
 //     error: resultDataString => { alert(`Could not add to cart.`); }
 
-let movieId = getParameterByName('id');
+let movieTitle = getParameterByName('cart_movie');
+let movieQuant = getParameterByName('cart_quant');
 
 $.ajax({
+    
     dataType: "json",
     method: "POST",
-    url: "api/shopping-cart?" + "movieId=" + movieId,
+    url: "api/shopping-cart?" + "cart_movie=" + movieTitle + "&cart_quant=" + movieQuant,
     success: (resultData) => handleShoppingCart(resultData)
 })

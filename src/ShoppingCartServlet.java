@@ -1,5 +1,6 @@
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.mysql.cj.ParseInfo;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -8,12 +9,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import java.util.HashMap;
 
 // Declaring a WebServlet called ShoppingCartServlet, which maps to url "/api/shopping-cart"
 @WebServlet(name = "ShoppingCartServlet", urlPatterns = "/api/shopping-cart")
@@ -36,13 +40,7 @@ public class ShoppingCartServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        response.setContentType("application/json"); // Response mime type
-
-        // Retrieve parameter id from url request.
-        String id = request.getParameter("id");
-
-        // The log message can be found in localhost log
-        request.getServletContext().log("getting id: " + id);
+        response.setContentType("text/html");
 
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
@@ -52,57 +50,27 @@ public class ShoppingCartServlet extends HttpServlet {
         try (Connection conn = dataSource.getConnection()) {
             // Get a connection from dataSource
 
-            // Construct a query with parameter represented by "?"
-            String query = "SELECT movies.*, s.name as star, s.id as sId, g.name as genre, ratings.rating\n"
-                    + "FROM movies, \n" + "ratings,\n" + "(SELECT stars.*, sim.movieId as smId\n"
-                    + "FROM stars, stars_in_movies as sim\n" + "WHERE stars.id = sim.starId) as s,\n"
-                    + "(SELECT genres.*, gim.movieId as gmId\n" + "FROM genres, genres_in_movies as gim\n"
-                    + "WHERE genres.id = gim.genreId) as g\n"
-                    + "WHERE ratings.movieId = movies.id AND smID = movies.id AND gmId = movies.id AND movies.id = ?";
+            // Statement statement = conn.createStatement();
 
-            // Declare our statement
-            PreparedStatement statement = conn.prepareStatement(query);
+            // movie and quantity user wants to add to their cart
+            String movie = request.getParameter("cart_movie");
+            String quant = request.getParameter("cart_quant");
 
-            // Set the parameter represented by "?" in the query to the id we get from url,
-            // num 1 indicates the first "?" in the query
-            statement.setString(1, id);
+            HashMap<String, Integer> shoppingCart = new HashMap<>();
 
-            // Perform the query
-            ResultSet rs = statement.executeQuery();
+            HttpSession session = request.getSession();
+            ;
+            session.setAttribute("cart", shoppingCart);
 
-            JsonArray jsonArray = new JsonArray();
-
-            // Iterate through each row of rs
-            while (rs.next()) {
-
-                String movieId = rs.getString("id");
-                String movieTitle = rs.getString("title");
-                String movieYear = rs.getString("year");
-                String movieDirector = rs.getString("director");
-                String movieStars = rs.getString("star");
-                String starId = rs.getString("sId");
-                String movieGenre = rs.getString("genre");
-                String movieRating = rs.getString("rating");
-
-                // Create a JsonObject based on the data we retrieve from rs
-
-                JsonObject jsonObject = new JsonObject();
-                jsonObject.addProperty("movie_id", movieId);
-                jsonObject.addProperty("movie_title", movieTitle);
-                jsonObject.addProperty("movie_year", movieYear);
-                jsonObject.addProperty("movie_director", movieDirector);
-                jsonObject.addProperty("movie_stars", movieStars);
-                jsonObject.addProperty("star_id", starId);
-                jsonObject.addProperty("movie_genre", movieGenre);
-                jsonObject.addProperty("movie_rating", movieRating);
-
-                jsonArray.add(jsonObject);
+            if (movie != null && quant != null) {
+                shoppingCart.put(movie, Integer.parseInt(quant));
             }
-            rs.close();
-            statement.close();
 
-            // Write JSON string to output
-            out.write(jsonArray.toString());
+            // TO-DO : send shopping cart to JS (?)
+            JsonObject cartObj = new JsonObject();
+
+            // statement.close();
+
             // Set response status to 200 (OK)
             response.setStatus(200);
 

@@ -59,19 +59,24 @@ function getRatingSort(){
 
 function incrementPage(){
 
-    let page = parseInt($("#page-num").text());
+    page = parseInt($("#page-num").text());
+    console.log(lastPage, page);
     if(!lastPage){
+        console.log("incrementing: ",page);
         page++; // increment page
+        jQuery("#page-num").text(page);
+        let reload= new URL(window.location);
+        reload.searchParams.set("page", page.toString());
+        window.location.assign(reload);
     }
-    let reload= new URL(window.location);
-    reload.searchParams.set("page", page.toString());
-    window.location.assign(reload);
-}
 
+}
 function decrementPage(){
-    let page = parseInt($("#page-num").text());
+    page = parseInt($("#page-num").text());
+    console.log("decrementing: ",page);
     if (page > 1){
         page--; // decrement page
+        jQuery("#page-num").text(page);
         let reload= new URL(window.location);
         reload.searchParams.set("page", page.toString());
         window.location.assign(reload);
@@ -79,16 +84,17 @@ function decrementPage(){
 
 }
 
+// TO-DO : fix cart handling
 function handleCartInfo(movieId){
 
-    $.ajax("api/movies", {
-        dataType: "json",
-        method: "POST",
-        data: { movieId: movieId},
-        success: resultDataString => { alert(`Added to cart.`); },
-        error: resultDataString => { alert(`Could not add to cart.`); }
-    });
-}
+//     $.ajax("api/movies", {
+//         dataType: "json",
+//         method: "POST",
+//         data: { movieId: movieId},
+//         success: resultDataString => { alert(`Added to cart.`); },
+//         error: resultDataString => { alert(`Could not add to cart.`); }
+//     });
+// }
 
 
 
@@ -119,6 +125,8 @@ function handleMovieResult(resultData) {
     // testing purposes
     console.log(window.location.href);
     console.log(resultData);
+
+    lastPage = false;
 
     // Populate the star table
     // Find the empty table body by id "movie_table_body"
@@ -232,10 +240,11 @@ jQuery("#sort-rating a").on("click", function (){
 })
 jQuery("#rating-btn").text(rOrder);
 
-// update page number
+// // update page number
 jQuery("#prev-btn").on("click", function(){
     $(this).text();
 });
+
 jQuery("#page-num").text(page);
 
 if(tOrder == 'Default' || tOrder == "A ➜ Z"){
