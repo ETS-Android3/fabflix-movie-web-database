@@ -3,6 +3,12 @@ body {
   color: rgb(214, 214, 214);
   font-family: "Roboto", sans-serif;
 }
+.employee-login {
+  background-color: rgb(206, 219, 241);
+  color: rgba(20, 48, 80, 0.726);
+  font-family: "Roboto", sans-serif;
+}
+
 h2 {
   font-size: 450%;
   font-weight: 600;
