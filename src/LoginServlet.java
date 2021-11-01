@@ -1,4 +1,5 @@
 import com.google.gson.JsonObject;
+import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -12,7 +13,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.Statement;
+// import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 @WebServlet(name = "LoginServlet", urlPatterns = "/api/login")
 public class LoginServlet extends HttpServlet {
@@ -27,8 +29,10 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
@@ -37,26 +41,26 @@ public class LoginServlet extends HttpServlet {
 
         try (Connection conn = dataSource.getConnection()) {
 
-            // Declare our statement
-            Statement statement = conn.createStatement();
+            // // Declare our statement
+            // Statement statement = conn.createStatement();
 
             String email = request.getParameter("email");
             String pswd = request.getParameter("password");
 
-//            String query = String.format("SELECT email, password from customers WHERE email = '%s' AND PASSWORD = '%s'", email, password);
+            // String query = String.format("SELECT email, password from customers WHERE
+            // email = '%s' AND PASSWORD = '%s'", email, password);
             String query = String.format("SELECT email, password from customers WHERE email = '%s'", email);
 
-
-            ResultSet rs = statement.executeQuery(query);
+            PreparedStatement statement = conn.prepareStatement(query);
+            ResultSet rs = statement.executeQuery();
 
             JsonObject responseJsonObject = new JsonObject();
 
             // Login success:
             if (rs.next()) {
-                if (rs.getString("password").equals(pswd))
-                {
+                if (rs.getString("password").equals(pswd)) {
                     // Create a JsonObject based on the data we retrieve from rs
-//                    JsonObject responseJsonObject = new JsonObject();
+                    // JsonObject responseJsonObject = new JsonObject();
 
                     // set this user into the session
                     request.getSession().setAttribute("user", new User(email, pswd));
@@ -68,7 +72,7 @@ public class LoginServlet extends HttpServlet {
                 }
 
                 else { // wrong password
-//                    JsonObject responseJsonObject = new JsonObject();
+                       // JsonObject responseJsonObject = new JsonObject();
                     responseJsonObject.addProperty("status", "fail");
                     // Log to localhost log
                     request.getServletContext().log("Login failed");
@@ -77,21 +81,22 @@ public class LoginServlet extends HttpServlet {
                     response.getWriter().write(responseJsonObject.toString());
                 }
 
-
             } else {
                 // Login fail
-//                JsonObject responseJsonObject = new JsonObject();
+                // JsonObject responseJsonObject = new JsonObject();
                 responseJsonObject.addProperty("status", "fail");
                 // Log to localhost log
                 request.getServletContext().log("Login failed");
                 responseJsonObject.addProperty("message", "User (" + email + ") doesn't exist");
                 response.getWriter().write(responseJsonObject.toString());
-                // sample error messages. in practice, it is not a good idea to tell user which one is incorrect/not exist.
-//                if (!email.equals(user_email)) {
-//                    responseJsonObject.addProperty("message", "user " + email + " doesn't exist");
-//                } else {
-//                    responseJsonObject.addProperty("message", "incorrect password");
-//                }
+                // sample error messages. in practice, it is not a good idea to tell user which
+                // one is incorrect/not exist.
+                // if (!email.equals(user_email)) {
+                // responseJsonObject.addProperty("message", "user " + email + " doesn't
+                // exist");
+                // } else {
+                // responseJsonObject.addProperty("message", "incorrect password");
+                // }
             }
 
         } catch (Exception e) {
@@ -106,8 +111,6 @@ public class LoginServlet extends HttpServlet {
         } finally {
             out.close();
         }
-
-
 
     }
 }

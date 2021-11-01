@@ -85,16 +85,23 @@ function decrementPage(){
 }
 
 // TO-DO : fix cart handling
-function handleCartInfo(movieId){
+function handleCartInfo(movieTitle){
 
-//     $.ajax("api/movies", {
-//         dataType: "json",
-//         method: "POST",
-//         data: { movieId: movieId},
-//         success: resultDataString => { alert(`Added to cart.`); },
-//         error: resultDataString => { alert(`Could not add to cart.`); }
-//     });
-// }
+    // $.ajax("api/shopping-cart", {
+    //     dataType: "json",
+    //     method: "POST",
+    //     data: { movieTitle: movieTitle},
+    //     success: resultDataString => { alert(`Added to cart.`); },
+    //     error: resultDataString => { alert(`Could not add to cart.`); }
+    // });
+
+    console.log("shop-cart.html?cart_movie=" + movieTitle);
+    location.href = "shop-cart.html?cart_movie=" + movieTitle;
+
+    // reload.searchParams.set("cart_movie", movieTitle);
+    // console.log(reload);
+    // window.location.assign(reload);
+}
 
 
 
@@ -146,8 +153,10 @@ function handleMovieResult(resultData) {
         {
             rowHTML += "<tr>";
 
-            rowHTML += "<th>" + '<button onclick="handleCartInfo(\'' + resultData[i]['movie_id'] + '\')">' + "Add to Cart" +  // display star_name for the link text
+            rowHTML += "<th>" + '<button onclick="handleCartInfo(\'' + resultData[i]['movie_title'] + '\')">' + "Add to Cart" +  // display star_name for the link text
             '</button>' + "</th>";
+            // rowHTML += "<th>" + '<button href="shop-cart.html?cart_movie="' + resultData[i]['movie_title'] + '">Add to Cart' +  // display star_name for the link text
+            // '</button>' + "</th>";
             rowHTML +=
                 "<th>" +
                 // Add a link to single-movie.html with id passed with GET url parameter
@@ -273,6 +282,7 @@ query += "title_order=" + tOrder + "&";
 query += "rating_order=" + rOrder;
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
+
 jQuery.ajax({
     dataType: "json", // Setting return data type
     method: "GET", // Setting request method

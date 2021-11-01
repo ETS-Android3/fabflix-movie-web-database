@@ -1,5 +1,7 @@
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.mysql.cj.protocol.Resultset;
+import com.mysql.cj.xdevapi.Result;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -13,13 +15,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.Statement;
-
+// import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 // Declaring a WebServlet called StarsServlet, which maps to url "/api/stars"
 @WebServlet(name = "GenreServlet", urlPatterns = "/api/genre")
 public class GenreServlet extends HttpServlet {
-
 
     // Create a dataSource which registered in web.
     private DataSource dataSource;
@@ -33,7 +34,8 @@ public class GenreServlet extends HttpServlet {
     }
 
     /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -41,17 +43,20 @@ public class GenreServlet extends HttpServlet {
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
 
-        // Get a connection from dataSource and let resource manager close the connection after usage.
+        // Get a connection from dataSource and let resource manager close the
+        // connection after usage.
         try (Connection conn = dataSource.getConnection()) {
 
             // Declare our statement
-            Statement statement = conn.createStatement();
+            // Statement statement = conn.createStatement();
 
             String query = "SELECT name FROM genres ORDER BY name ";
 
+            PreparedStatement statement = conn.prepareStatement(query);
 
             // Perform the query
-            ResultSet rs = statement.executeQuery(query);
+            // ResultSet rs = statement.executeQuery(query);
+            ResultSet rs = statement.executeQuery();
 
             JsonArray jsonArray = new JsonArray();
 
@@ -62,7 +67,7 @@ public class GenreServlet extends HttpServlet {
                 // Create a JsonObject based on the data we retrieve from rs
                 JsonObject jsonObject = new JsonObject();
                 jsonObject.addProperty("genre", genre_name);
-;
+                ;
 
                 jsonArray.add(jsonObject);
             }
@@ -90,7 +95,8 @@ public class GenreServlet extends HttpServlet {
             out.close();
         }
 
-        // Always remember to close db connection after usage. Here it's done by try-with-resources
+        // Always remember to close db connection after usage. Here it's done by
+        // try-with-resources
 
     }
 }

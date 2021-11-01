@@ -15,8 +15,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
 import java.util.HashMap;
 
 // Declaring a WebServlet called ShoppingCartServlet, which maps to url "/api/shopping-cart"
@@ -50,11 +48,10 @@ public class ShoppingCartServlet extends HttpServlet {
         try (Connection conn = dataSource.getConnection()) {
             // Get a connection from dataSource
 
-            // Statement statement = conn.createStatement();
-
             // movie and quantity user wants to add to their cart
             String movie = request.getParameter("cart_movie");
-            String quant = request.getParameter("cart_quant");
+
+            // String quant = request.getParameter("cart_quant");
 
             HashMap<String, Integer> shoppingCart = new HashMap<>();
 
@@ -62,14 +59,12 @@ public class ShoppingCartServlet extends HttpServlet {
             ;
             session.setAttribute("cart", shoppingCart);
 
-            if (movie != null && quant != null) {
-                shoppingCart.put(movie, Integer.parseInt(quant));
-            }
+            // if (movie != null && quant != null) {
+            // shoppingCart.put(movie, Integer.parseInt(quant));
+            // }
 
             // TO-DO : send shopping cart to JS (?)
             JsonObject cartObj = new JsonObject();
-
-            // statement.close();
 
             // Set response status to 200 (OK)
             response.setStatus(200);

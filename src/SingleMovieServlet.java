@@ -12,9 +12,9 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
+import java.sql.PreparedStatement;
 
 // Declaring a WebServlet called SingleMovieServlet, which maps to url "/api/single-movie"
 @WebServlet(name = "SingleMovieServlet", urlPatterns = "/api/single-movie")
@@ -34,12 +34,11 @@ public class SingleMovieServlet extends HttpServlet {
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-     * response)
+     *      response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         response.setContentType("application/json"); // Response mime type
-
 
         // Retrieve parameter id from url request.
         String id = request.getParameter("id");
@@ -50,26 +49,24 @@ public class SingleMovieServlet extends HttpServlet {
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
 
-        // Get a connection from dataSource and let resource manager close the connection after usage.
+        // Get a connection from dataSource and let resource manager close the
+        // connection after usage.
         try (Connection conn = dataSource.getConnection()) {
             // Get a connection from dataSource
 
             // Construct a query with parameter represented by "?"
             String query1 = "SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId WHERE movies.id = ?";
 
-            String query2 = "SELECT stars.id, stars.name, s.movieId " +
-                            "FROM stars, (SELECT stars_in_movies.*, counter.count FROM stars_in_movies " +
-                            "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter " +
-                            "ON counter.starId = stars_in_movies.starId) as s, " +
-                            "(" + query1 + ") as q " +
-                            "WHERE q.id = s.movieId AND stars.id = s.starId " +
-                            "ORDER BY s.movieId, s.count DESC, stars.name ASC";
+            String query2 = "SELECT stars.id, stars.name, s.movieId "
+                    + "FROM stars, (SELECT stars_in_movies.*, counter.count FROM stars_in_movies "
+                    + "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter "
+                    + "ON counter.starId = stars_in_movies.starId) as s, " + "(" + query1 + ") as q "
+                    + "WHERE q.id = s.movieId AND stars.id = s.starId "
+                    + "ORDER BY s.movieId, s.count DESC, stars.name ASC";
 
-            String query3 = "SELECT genres.name, g.movieId " +
-                            "FROM genres, genres_in_movies as g, " +
-                            "(" + query1 + ") as q " +
-                            "WHERE q.id = g.movieId AND g.genreId = genres.id " +
-                            "ORDER BY g.movieId, genres.name ASC";
+            String query3 = "SELECT genres.name, g.movieId " + "FROM genres, genres_in_movies as g, " + "(" + query1
+                    + ") as q " + "WHERE q.id = g.movieId AND g.genreId = genres.id "
+                    + "ORDER BY g.movieId, genres.name ASC";
 
             // Declare our statement
             PreparedStatement statement1 = conn.prepareStatement(query1);
@@ -93,10 +90,10 @@ public class SingleMovieServlet extends HttpServlet {
             String movieYear = rs_movie.getString("year");
             String movieDirector = rs_movie.getString("director");
             String movieRating = rs_movie.getString("rating");
-            if(movieRating == null){
+            if (movieRating == null) {
                 movieRating = "0";
             }
-            
+
             // Iterate through each row of rs
             JsonArray stars = new JsonArray();
 
@@ -126,7 +123,7 @@ public class SingleMovieServlet extends HttpServlet {
             movieObj.addProperty("movie_rating", movieRating);
             movieObj.add("movie_stars", stars);
             movieObj.add("movie_genres", genres);
-            
+
             rs_movie.close();
             rs_stars.close();
             rs_genres.close();
@@ -153,7 +150,8 @@ public class SingleMovieServlet extends HttpServlet {
             out.close();
         }
 
-        // Always remember to close db connection after usage. Here it's done by try-with-resources
+        // Always remember to close db connection after usage. Here it's done by
+        // try-with-resources
 
     }
 
