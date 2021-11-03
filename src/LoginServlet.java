@@ -35,9 +35,25 @@ public class LoginServlet extends HttpServlet {
      *      response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
+
+        // Verify reCAPTCHA
+        try {
+            RecaptchaVerifyUtils.verify(gRecaptchaResponse);
+        } catch (Exception e) {
+            // Write error message JSON object to output
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("status", "fail");
+            jsonObject.addProperty("message", "reCAPTCHA verification failed");
+            request.getServletContext().log("reCAPTCHA failed");
+            response.getWriter().write(jsonObject.toString());
+
+            return;
+        }
 
         try (Connection conn = dataSource.getConnection()) {
 
