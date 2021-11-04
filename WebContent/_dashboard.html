@@ -38,25 +38,28 @@
 
     <div class=insert_star>
         <h2>Insert a New Star</h2>
-        <form id="new_star" method="get" action="_dashboard.html">
+        <form id="new_star_form" method="get" action="#">
             <label><b>Star Name</b></label>
             <label>
-                <input name="new_star_name" placeholder="New star name..." type="text" required>
+                <input name="new_star_name" placeholder="(First, Last).." type="text" required>
             </label>
             <br>
             <label><b>Birth Year</b></label>
             <label>
-                <input name="new_star_year" placeholder="New star birth year..." type="text">
+                <input name="new_star_year" placeholder="(YYYY)..." type="text">
             </label>
             <br>
             <label>
                 <input class="submit-btn" type="submit" value="Insert Star">
             </label>
         </form>
+        <br>
+        <h3 id="add_star_msg"></h3>
+
     </div>
 
     <div>
-        <form id="login_form" method="post" action="#">
+        <form id="metadata" method="get" action="metadata">
             <br>
             <input class="submit-btn" type="submit" value="View Movie Data">
         </form>
@@ -92,7 +95,7 @@
     <!-- The path is relative to single-movie.html, since these two files are in the same directory -->
     <!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
          otherwise the url is relative to the root path-->
-    <script src="_dashboard.js"></script>
+    <script src="./_dashboard.js"></script>
     </body>
     
     

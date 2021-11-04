@@ -16,8 +16,8 @@ import java.sql.ResultSet;
 // import java.sql.Statement;
 import java.sql.PreparedStatement;
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/api/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet(name = "EmployeeLoginServlet", urlPatterns = "/api/login-employee")
+public class EmployeeLoginServlet extends HttpServlet {
 
     // Create a dataSource which registered in web.
     private DataSource dataSource;
@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
             String email = request.getParameter("email");
             String pswd = request.getParameter("password");
 
-            String query = "SELECT email, password from customers WHERE email = ? ";
+            String query = "SELECT email, password from employees WHERE email = ? ";
 
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setString(1, email);
