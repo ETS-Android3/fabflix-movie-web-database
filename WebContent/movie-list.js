@@ -142,7 +142,7 @@ function handleMovieResult(resultData) {
     // let movie_dup = "";
 
     let count = resultData[0]["count"]; //default
-    if(resultData.length < 100){
+    if(resultData.length < count){
         lastPage = true;
     }
 

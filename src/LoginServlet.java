@@ -16,6 +16,8 @@ import java.sql.ResultSet;
 // import java.sql.Statement;
 import java.sql.PreparedStatement;
 
+import org.jasypt.util.password.StrongPasswordEncryptor;
+
 @WebServlet(name = "LoginServlet", urlPatterns = "/api/login")
 public class LoginServlet extends HttpServlet {
 
@@ -35,9 +37,25 @@ public class LoginServlet extends HttpServlet {
      *      response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
+
+        // Verify reCAPTCHA
+        try {
+            RecaptchaVerifyUtils.verify(gRecaptchaResponse);
+        } catch (Exception e) {
+            // Write error message JSON object to output
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("status", "fail");
+            jsonObject.addProperty("message", "reCAPTCHA verification failed");
+            request.getServletContext().log("reCAPTCHA failed");
+            response.getWriter().write(jsonObject.toString());
+
+            return;
+        }
 
         try (Connection conn = dataSource.getConnection()) {
 
@@ -57,7 +75,8 @@ public class LoginServlet extends HttpServlet {
 
             // Login success:
             if (rs.next()) {
-                if (rs.getString("password").equals(pswd)) {
+                String encryptedPassword = rs.getString("password");
+                if (new StrongPasswordEncryptor().checkPassword(pswd, encryptedPassword)) {
                     // Create a JsonObject based on the data we retrieve from rs
                     // JsonObject responseJsonObject = new JsonObject();
 

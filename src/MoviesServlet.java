@@ -160,11 +160,19 @@ public class MoviesServlet extends HttpServlet {
             query1 += " LIMIT " + String.format("%s", mvct) + " OFFSET " + String.format("%s", offset);
 
             // count query from https://stackoverflow.com/a/53212180
+            // String query2 = "SELECT stars.id, stars.name, s.movieId "
+            //         + "FROM stars, (SELECT stars_in_movies.*, counter.count FROM stars_in_movies "
+            //         + "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter "
+            //         + "ON counter.starId = stars_in_movies.starId) as s, " + "(" + query1 + ") as q "
+            //         + "WHERE q.id = s.movieId AND stars.id = s.starId "
+            //         + "ORDER BY s.movieId, s.count DESC, stars.name ASC";
+            
             String query2 = "SELECT stars.id, stars.name, s.movieId "
-                    + "FROM stars, (SELECT stars_in_movies.*, counter.count FROM stars_in_movies "
+                    + "FROM stars, (SELECT sim.*, counter.count FROM (SELECT stars_in_movies.* FROM stars_in_movies, (" + query1 + ") as q "
+                    + "WHERE stars_in_movies.movieId = q.id) as sim "
                     + "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter "
-                    + "ON counter.starId = stars_in_movies.starId) as s, " + "(" + query1 + ") as q "
-                    + "WHERE q.id = s.movieId AND stars.id = s.starId "
+                    + "ON counter.starId = sim.starId) as s "
+                    + "WHERE stars.id = s.starId "
                     + "ORDER BY s.movieId, s.count DESC, stars.name ASC";
 
             String query3 = "SELECT genres.name, g.movieId " + "FROM genres, genres_in_movies as g, " + "(" + query1
