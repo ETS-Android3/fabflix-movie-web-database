@@ -16,6 +16,8 @@ import java.sql.ResultSet;
 // import java.sql.Statement;
 import java.sql.PreparedStatement;
 
+import org.jasypt.util.password.StrongPasswordEncryptor;
+
 @WebServlet(name = "LoginServlet", urlPatterns = "/api/login")
 public class LoginServlet extends HttpServlet {
 
@@ -74,7 +76,8 @@ public class LoginServlet extends HttpServlet {
 
             // Login success:
             if (rs.next()) {
-                if (rs.getString("password").equals(pswd)) {
+                String encryptedPassword = rs.getString("password");
+                if (new StrongPasswordEncryptor().checkPassword(pswd, encryptedPassword)) {
                     // Create a JsonObject based on the data we retrieve from rs
                     // JsonObject responseJsonObject = new JsonObject();
 
