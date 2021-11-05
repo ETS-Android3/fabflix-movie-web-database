@@ -41,12 +41,12 @@
         <form id="new_star_form" method="get" action="#">
             <label><b>Star Name</b></label>
             <label>
-                <input name="new_star_name" placeholder="(First, Last).." type="text" required>
+                <input name="new_star_name" placeholder="(First, Last)" type="text" required>
             </label>
             <br>
             <label><b>Birth Year</b></label>
             <label>
-                <input name="new_star_year" placeholder="(YYYY)..." type="text">
+                <input name="new_star_year" placeholder="(YYYY)" type="text">
             </label>
             <br>
             <label>
@@ -59,25 +59,21 @@
     </div>
 
     <div>
-        <form id="metadata" method="get" action="metadata">
+        <button id="metadata-btn" type="button">View Movie Data</button>
+        <!-- <form id="metadata_form" method="get" action="#">
             <br>
             <input class="submit-btn" type="submit" value="View Movie Data">
-        </form>
+        </form> -->
     </div>
 
-    <table id=db_table class="table table-striped">
-        <!-- Create a table header -->
-        <thead class="thead-light">
-        <tr>
-            <!-- Titles of each column-->
-            <th></th>
-        </tr>
-        </thead>
-        <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
-        <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
-        <tbody id=db_table_body></tbody>
+    <div id="table_names"></div>
     
-    </table>
+    <div id="column_names">
+        <h3 id=column_table_name></h3>
+    </div>
+
+
+
 
 
 

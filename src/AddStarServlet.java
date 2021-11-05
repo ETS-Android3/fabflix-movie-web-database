@@ -1,5 +1,4 @@
 import com.google.gson.JsonObject;
-import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;

@@ -1,5 +1,4 @@
 import com.google.gson.JsonObject;
-import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -13,7 +12,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-// import java.sql.Statement;
 import java.sql.PreparedStatement;
 
 import org.jasypt.util.password.StrongPasswordEncryptor;
@@ -36,6 +34,10 @@ public class LoginServlet extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)
      */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        doPost(request, response);
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
 
@@ -131,4 +133,5 @@ public class LoginServlet extends HttpServlet {
         }
 
     }
+
 }

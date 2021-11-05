@@ -1,6 +1,5 @@
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.mysql.cj.jdbc.DatabaseMetaData;
-import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -13,6 +12,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 
@@ -29,25 +29,50 @@ public class MetadataServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+        response.setContentType("application/json");
+
+        String tableType = request.getParameter("type");
+
+        PrintWriter out = response.getWriter();
 
         try (Connection conn = dataSource.getConnection()) {
             // TO-DO : get metadata
             DatabaseMetaData dbData = conn.getMetaData();
 
-            ResultSet rs = dbData.getTables(null, null, null, new String[] { "TABLE" });
+            ResultSet rs;
 
-            while (rs.next()) {
-                String table = rs.getString("TABLE_NAME");
+            if (tableType != null) {
+                rs = dbData.getColumns("moviedb", null, tableType, null);
 
-                JsonObject tableJson = new JsonObject();
-                tableJson.addProperty("table_name", table);
+                JsonArray columns = new JsonArray();
+                columns.add(tableType); // first index will hold table_name!
+                while (rs.next()) {
+                    String column = rs.getString("COLUMN_NAME");
+                    columns.add(column);
+                }
+
+                out.write(columns.toString());
             }
+
+            else {
+                rs = dbData.getTables("moviedb", null, null, null);
+
+                JsonArray tables = new JsonArray();
+                while (rs.next()) {
+                    String table = rs.getString("TABLE_NAME");
+                    tables.add(table);
+                }
+
+                out.write(tables.toString());
+            }
+
+            rs.close();
 
         } catch (Exception e) {
             // Write error message JSON object to output
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("errorMessage", e.getMessage());
+            // write to output
             out.write(jsonObject.toString());
 
             // Set response status to 500 (Internal Server Error)
