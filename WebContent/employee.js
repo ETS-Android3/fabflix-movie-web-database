@@ -15,7 +15,7 @@ function handleLoginResult(resultDataString) {
 
     // If login succeeds, it will redirect the user to index.html
     if (resultDataJson["status"] === "success") {
-        window.location.replace("dashboard.html");
+        window.location.replace("_dashboard.html");
     } else {
         // If login fails, the web page will display
         // error messages on <div> with id "login_error_message"
@@ -41,7 +41,7 @@ function submitLoginForm(formSubmitEvent) {
     formSubmitEvent.preventDefault();
 
     $.ajax(
-        "api/login", {
+        "api/login-employee", {
             method: "POST",
             // Serialize the login form to the data sent by POST request
             data: login_form.serialize(),
