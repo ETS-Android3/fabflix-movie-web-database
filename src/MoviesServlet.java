@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 // import java.sql.Statement;
 import java.sql.PreparedStatement;
 
@@ -108,27 +107,6 @@ public class MoviesServlet extends HttpServlet {
                         "AND stars.id = sim.starId AND sim.movieId = movies.id";
             }
 
-            // private String queryGenerator(String query, String search, int type) {
-            //     String tail = "";
-            //     switch (type) {
-            //         case 1: // "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId =
-            //                 // movies.id";
-                        // String newQuery = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars "
-                        //         + "WHERE stars.name LIKE ?" + String.format("'%%%s%%' ", search)
-                        //         + "AND stars.id = sim.starId AND sim.movieId = movies.id";
-        
-            //             return newQuery;
-            //         case 2:
-            //             tail = "movies.title LIKE " + String.format("'%%%s%%'", search);
-            //             break;
-            //         case 3:
-            //             tail = "movies.year LIKE " + String.format("%s", search);
-            //             break;
-            //         case 4:
-            //             tail = "movies.director LIKE " + String.format("'%%%s%%'", search);
-            //             break;
-            //     }
-
             if (sort != null && !sort.isEmpty() && sort.equals("title")) {
                 query1 += " ORDER BY movies.title";
                 if(tOrder.equals("desc")){
@@ -167,13 +145,6 @@ public class MoviesServlet extends HttpServlet {
                     ResultSet.CONCUR_READ_ONLY);
 
             // count query from https://stackoverflow.com/a/53212180
-            // String query2 = "SELECT stars.id, stars.name, s.movieId "
-            //         + "FROM stars, (SELECT stars_in_movies.*, counter.count FROM stars_in_movies "
-            //         + "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter "
-            //         + "ON counter.starId = stars_in_movies.starId) as s, " + "(" + query1 + ") as q "
-            //         + "WHERE q.id = s.movieId AND stars.id = s.starId "
-            //         + "ORDER BY s.movieId, s.count DESC, stars.name ASC";
-            
             String query2 = "SELECT stars.id, stars.name, s.movieId "
                     + "FROM stars, (SELECT sim.*, counter.count FROM (SELECT stars_in_movies.* FROM stars_in_movies, (" + query1 + ") as q "
                     + "WHERE stars_in_movies.movieId = q.id) as sim "
@@ -268,9 +239,7 @@ public class MoviesServlet extends HttpServlet {
                     statement2.setString(i, "^[^0-9A-Za-z]");
                     statement3.setString(i, "^[^0-9A-Za-z]");
                     i++;
-                    // query1 += " WHERE movies.title REGEXP '^[^0-9A-Za-z]'";
                 } else {
-                    // query1 += " WHERE movies.title LIKE " + String.format("'%s%%'", index);
                     statement1.setString(i, index);
                     statement2.setString(i, index);
                     statement3.setString(i, index);
@@ -427,8 +396,6 @@ public class MoviesServlet extends HttpServlet {
                 JsonArray genres = new JsonArray();
 
                 while (rs_genres.next()) {
-                    // ResultSetMetaData debugdata = rs_genres.getMetaData();
-                    // String debuggggg = debugdata.getColumnName(2);
                     if (!rs_genres.getString("movieId").equals(movie_id)) {
                         rs_genres.previous();
                         break;
