@@ -45,11 +45,25 @@ public class MoviesServlet extends HttpServlet {
         String genre = request.getParameter("genre");
         String index = request.getParameter("char");
 
+        if (index != null && !index.isEmpty() && !index.equals("null") && !index.equals("*")) {
+            index = index + "%";
+        }
+
         // Search Queries
         String title = request.getParameter("search_title");
         String year = request.getParameter("search_year");
         String director = request.getParameter("search_director");
         String star = request.getParameter("search_star");
+
+        if (title != null && !title.isEmpty() && !title.equals("null")) {
+            title = "%" + title + "%";
+        }
+        if (director != null && !director.isEmpty() && !director.equals("null")) {
+            director = "%" + director + "%";
+        }
+        if (star != null && !star.isEmpty() && !star.equals("null")) {
+            star = "%" + star + "%";
+        }
 
         // User filter/sort
         String mvct = request.getParameter("mvct");
@@ -62,14 +76,11 @@ public class MoviesServlet extends HttpServlet {
         if (!sort.equals("Default")) {
             sorting = true;
             sort = sort.toLowerCase();
-            tOrder = tOrder.toUpperCase();
-            rOrder = rOrder.toUpperCase();
         }
 
         int mvct_num = Integer.parseInt(mvct);
         int page_num = Integer.parseInt(page) - 1;
         int offset_num = mvct_num * page_num;
-        String offset = Integer.toString(offset_num);
 
         // Output stream to STDOUT
         PrintWriter out = response.getWriter();
@@ -78,86 +89,82 @@ public class MoviesServlet extends HttpServlet {
         // connection after usage.
         try (Connection conn = dataSource.getConnection()) {
 
-            // Declare our statement
-            // Statement statement1 =
-            // conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
-            // ResultSet.CONCUR_READ_ONLY);
-            // Statement statement2 =
-            // conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
-            // ResultSet.CONCUR_READ_ONLY);
-            // Statement statement3 =
-            // conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
-            // ResultSet.CONCUR_READ_ONLY);
-
-            String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies";
+            String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies " +
+                            "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) " +
+                            "AND (movies.year LIKE ? or ? is null) " +
+                            "AND (movies.director LIKE ? or ? is null)";
 
             if (genre != null && !genre.isEmpty() && !genre.equals("null")) {
-                query1 = "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres "
-                        + "WHERE genres.name = " + String.format("'%s' ", genre)
-                        + "AND genres.id = gim.genreId AND gim.movieId = movies.id";
+                query1 = "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres " +
+                        "WHERE genres.name = ?" +
+                        "AND genres.id = gim.genreId AND gim.movieId = movies.id";
+            }
+            else if (star != null && !star.isEmpty() && !star.equals("null")) {
+                query1 = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars " +
+                        "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) " +
+                        "AND (movies.year LIKE ? or ? is null) " +
+                        "AND (movies.director LIKE ? or ? is null) " +
+                        "AND stars.name LIKE ? " +
+                        "AND stars.id = sim.starId AND sim.movieId = movies.id";
             }
 
-            else if (index != null && !index.isEmpty() && !index.equals("null")) { // browse by index
-                if (index.equals("*")) {
-                    // REGEX PATTERN FROM:
-                    // https://stackoverflow.com/questions/1051583/fetch-rows-where-first-character-is-not-alphanumeric
-                    query1 += " WHERE movies.title REGEXP '^[^0-9A-Za-z]'";
-                } else {
-                    query1 += " WHERE movies.title LIKE " + String.format("'%s%%'", index);
-                }
-            }
-
-            else {
-                boolean and = false;
-
-                if (star != null && !star.isEmpty() && !star.equals("null")) {
-                    query1 = queryGenerator(query1, star, 1);
-                    and = true;
-                }
-
-                if (title != null && !title.isEmpty() && !title.equals("null")) {
-                    if (and) {
-                        query1 += " AND ";
-                    } else {
-                        query1 += " WHERE ";
-                    }
-                    query1 = queryGenerator(query1, title, 2);
-                    and = true;
-                }
-
-                if (year != null && !year.isEmpty() && !year.equals("null")) {
-                    if (and) {
-                        query1 += " AND ";
-                    } else {
-                        query1 += " WHERE ";
-                    }
-                    query1 = queryGenerator(query1, year, 3);
-                    and = true;
-                }
-
-                if (director != null && !director.isEmpty() && !director.equals("null")) {
-                    if (and) {
-                        query1 += " AND ";
-                    } else {
-                        query1 += " WHERE ";
-                    }
-                    query1 = queryGenerator(query1, director, 4);
-                    and = true;
-                }
-
-            }
+            // private String queryGenerator(String query, String search, int type) {
+            //     String tail = "";
+            //     switch (type) {
+            //         case 1: // "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId =
+            //                 // movies.id";
+                        // String newQuery = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars "
+                        //         + "WHERE stars.name LIKE ?" + String.format("'%%%s%%' ", search)
+                        //         + "AND stars.id = sim.starId AND sim.movieId = movies.id";
+        
+            //             return newQuery;
+            //         case 2:
+            //             tail = "movies.title LIKE " + String.format("'%%%s%%'", search);
+            //             break;
+            //         case 3:
+            //             tail = "movies.year LIKE " + String.format("%s", search);
+            //             break;
+            //         case 4:
+            //             tail = "movies.director LIKE " + String.format("'%%%s%%'", search);
+            //             break;
+            //     }
 
             if (sort != null && !sort.isEmpty() && sort.equals("title")) {
-                query1 += " ORDER BY movies.title " + String.format("%s,", tOrder) + " movies.rating "
-                        + String.format("%s", rOrder);
+                query1 += " ORDER BY movies.title";
+                if(tOrder.equals("desc")){
+                    query1 += " DESC, movies.rating";
+                }
+                else{
+                    query1 += " ASC, movies.rating";
+                }
+                if(rOrder.equals("asc")){
+                    query1 += " ASC";
+                }
+                else{
+                    query1 += " DESC";
+                }
             } else if (sort != null && !sort.isEmpty() && sort.equals("rating")) {
-                query1 += " ORDER BY movies.rating " + String.format("%s,", rOrder) + " movies.title "
-                        + String.format("%s", tOrder);
+                query1 += " ORDER BY movies.rating";
+                if(rOrder.equals("asc")){
+                    query1 += " ASC, movies.title";
+                }
+                else{
+                    query1 += " DESC, movies.title";
+                }
+                if(tOrder.equals("desc")){
+                    query1 += " DESC";
+                }
+                else{
+                    query1 += " ASC";
+                }
             } else {
                 query1 += " ORDER BY movies.id";
             }
 
-            query1 += " LIMIT " + String.format("%s", mvct) + " OFFSET " + String.format("%s", offset);
+            query1 += " LIMIT ? OFFSET ?";
+
+            PreparedStatement statement1 = conn.prepareStatement(query1, ResultSet.TYPE_SCROLL_INSENSITIVE,
+                    ResultSet.CONCUR_READ_ONLY);
 
             // count query from https://stackoverflow.com/a/53212180
             // String query2 = "SELECT stars.id, stars.name, s.movieId "
@@ -191,8 +198,19 @@ public class MoviesServlet extends HttpServlet {
 
                 if (!sort.isEmpty() && sort.equals("title")) {
                     if (sorting) {
-                        String orderString = "ORDER BY q.title " + String.format("%s, ", tOrder) + "q.rating "
-                                + String.format("%s, ", rOrder);
+                        String orderString = "ORDER BY q.title "; // tOrder, rOrder
+                        if(tOrder.equals("desc")){
+                            orderString += "DESC, q.rating ";
+                        }
+                        else{
+                            orderString += "ASC, q.rating ";
+                        }
+                        if(rOrder.equals("asc")){
+                            orderString += "ASC, ";
+                        }
+                        else{
+                            orderString += "DESC, ";
+                        }
                         query2 += orderString + "s.count DESC, stars.name ASC";
                         query3 += orderString + "g.name ASC";
                     } else {
@@ -201,8 +219,19 @@ public class MoviesServlet extends HttpServlet {
                     }
                 } else if (!sort.isEmpty() && sort.equals("rating")) {
                     if (sorting) {
-                        String orderString = " ORDER BY q.rating " + String.format("%s, ", rOrder) + "q.title "
-                                + String.format("%s, ", tOrder);
+                        String orderString = "ORDER BY q.rating ";
+                        if(rOrder.equals("asc")){
+                            orderString += "ASC, q.title ";
+                        }
+                        else{
+                            orderString += "DESC, q.title ";
+                        }
+                        if(tOrder.equals("desc")){
+                            orderString += "DESC, ";
+                        }
+                        else{
+                            orderString += "ASC, ";
+                        }
                         query2 += orderString + "s.count DESC, stars.name ASC";
                         query3 += orderString + "g.name ASC";
                     } else {
@@ -215,17 +244,152 @@ public class MoviesServlet extends HttpServlet {
                 }
             }
 
-            // Perform the query
-            // ResultSet rs_movie = statement1.executeQuery(query1);
-            // ResultSet rs_stars = statement2.executeQuery(query2);
-            // ResultSet rs_genres = statement3.executeQuery(query3);
-
-            PreparedStatement statement1 = conn.prepareStatement(query1, ResultSet.TYPE_SCROLL_INSENSITIVE,
-                    ResultSet.CONCUR_READ_ONLY);
             PreparedStatement statement2 = conn.prepareStatement(query2, ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
             PreparedStatement statement3 = conn.prepareStatement(query3, ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
+
+
+            int i = 1;
+
+            if (index != null && !index.isEmpty() && !index.equals("null")) { // browse by index
+                if (index.equals("*")) {
+                    statement1.setString(i, "^[^0-9A-Za-z]");
+                    statement2.setString(i, "^[^0-9A-Za-z]");
+                    statement3.setString(i, "^[^0-9A-Za-z]");
+                    i++;
+
+                    statement1.setString(i, "^[^0-9A-Za-z]");
+                    statement2.setString(i, "^[^0-9A-Za-z]");
+                    statement3.setString(i, "^[^0-9A-Za-z]");
+                    i++;
+
+                    statement1.setString(i, "^[^0-9A-Za-z]");
+                    statement2.setString(i, "^[^0-9A-Za-z]");
+                    statement3.setString(i, "^[^0-9A-Za-z]");
+                    i++;
+                    // query1 += " WHERE movies.title REGEXP '^[^0-9A-Za-z]'";
+                } else {
+                    // query1 += " WHERE movies.title LIKE " + String.format("'%s%%'", index);
+                    statement1.setString(i, index);
+                    statement2.setString(i, index);
+                    statement3.setString(i, index);
+                    i++;
+
+                    statement1.setString(i, index);
+                    statement2.setString(i, index);
+                    statement3.setString(i, index);
+                    i++;
+
+                    statement1.setString(i, index);
+                    statement2.setString(i, index);
+                    statement3.setString(i, index);
+                    i++;
+                }
+            }
+            else{
+                if (title != null && !title.isEmpty() && !title.equals("null")) {
+                    statement1.setString(i, title);
+                    statement2.setString(i, title);
+                    statement3.setString(i, title);
+                    i++;
+
+                    statement1.setString(i, title);
+                    statement2.setString(i, title);
+                    statement3.setString(i, title);
+                    i++;
+
+                    statement1.setString(i, title);
+                    statement2.setString(i, title);
+                    statement3.setString(i, title);
+                    i++;
+                }
+                else{
+                    statement1.setNull(i, java.sql.Types.VARCHAR);
+                    statement2.setNull(i, java.sql.Types.VARCHAR);
+                    statement3.setNull(i, java.sql.Types.VARCHAR);
+                    i++;
+
+                    statement1.setNull(i, java.sql.Types.VARCHAR);
+                    statement2.setNull(i, java.sql.Types.VARCHAR);
+                    statement3.setNull(i, java.sql.Types.VARCHAR);
+                    i++;
+
+                    statement1.setNull(i, java.sql.Types.VARCHAR);
+                    statement2.setNull(i, java.sql.Types.VARCHAR);
+                    statement3.setNull(i, java.sql.Types.VARCHAR);
+                    i++;
+                }
+            }
+
+            if (year != null && !year.isEmpty() && !year.equals("null")) {
+                statement1.setString(i, year);
+                statement2.setString(i, year);
+                statement3.setString(i, year);
+                i++;
+    
+                statement1.setString(i, year);
+                statement2.setString(i, year);
+                statement3.setString(i, year);
+                i++;
+            }
+            else{
+                statement1.setNull(i, java.sql.Types.VARCHAR);
+                statement2.setNull(i, java.sql.Types.VARCHAR);
+                statement3.setNull(i, java.sql.Types.VARCHAR);
+                i++;
+    
+                statement1.setNull(i, java.sql.Types.VARCHAR);
+                statement2.setNull(i, java.sql.Types.VARCHAR);
+                statement3.setNull(i, java.sql.Types.VARCHAR);
+                i++;
+            }
+
+            if (director != null && !director.isEmpty() && !director.equals("null")) {  
+                statement1.setString(i, director);
+                statement2.setString(i, director);
+                statement3.setString(i, director);
+                i++;
+    
+                statement1.setString(i, director);
+                statement2.setString(i, director);
+                statement3.setString(i, director);
+                i++;
+            }
+            else{
+                statement1.setNull(i, java.sql.Types.VARCHAR);
+                statement2.setNull(i, java.sql.Types.VARCHAR);
+                statement3.setNull(i, java.sql.Types.VARCHAR);
+                i++;
+    
+                statement1.setNull(i, java.sql.Types.VARCHAR);
+                statement2.setNull(i, java.sql.Types.VARCHAR);
+                statement3.setNull(i, java.sql.Types.VARCHAR);
+                i++;
+            }
+
+            if (genre != null && !genre.isEmpty() && !genre.equals("null")) {
+                statement1.setString(i, genre);
+                statement2.setString(i, genre);
+                statement3.setString(i, genre);
+                i++;
+            }
+            else if (star != null && !star.isEmpty() && !star.equals("null")) {
+                statement1.setString(i, star);
+                statement2.setString(i, star);
+                statement3.setString(i, star);
+                i++;
+            }
+
+            // Pagination parameters
+            statement1.setInt(i, mvct_num);
+            statement2.setInt(i, mvct_num);
+            statement3.setInt(i, mvct_num);
+            i++;
+
+            statement1.setInt(i, offset_num);
+            statement2.setInt(i, offset_num);
+            statement3.setInt(i, offset_num);
 
             ResultSet rs_movie = statement1.executeQuery();
             ResultSet rs_stars = statement2.executeQuery();
@@ -318,29 +482,5 @@ public class MoviesServlet extends HttpServlet {
         // Always remember to close db connection after usage. Here it's done by
         // try-with-resources
 
-    }
-
-    private String queryGenerator(String query, String search, int type) {
-        String tail = "";
-        switch (type) {
-            case 1: // "SELECT movies.*, ratings.rating FROM movies, ratings WHERE ratings.movieId =
-                    // movies.id";
-                String newQuery = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars "
-                        + "WHERE stars.name LIKE " + String.format("'%%%s%%' ", search)
-                        + "AND stars.id = sim.starId AND sim.movieId = movies.id";
-
-                return newQuery;
-            case 2:
-                tail = "movies.title LIKE " + String.format("'%%%s%%'", search);
-                break;
-            case 3:
-                tail = "movies.year LIKE " + String.format("%s", search);
-                break;
-            case 4:
-                tail = "movies.director LIKE " + String.format("'%%%s%%'", search);
-                break;
-        }
-
-        return query + tail;
     }
 }
