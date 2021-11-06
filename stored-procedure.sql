@@ -28,7 +28,7 @@ IF (movie_exists = 0) THEN
     SET msg = CONCAT(msg, ' added.');
     
     IF (star_exists = 0) THEN
-		SET star_id = CONCAT('tt', (CONVERT(SUBSTRING((SELECT max(id) from stars), 3), UNSIGNED)) + 1);
+		SET star_id = CONCAT('nm', (CONVERT(SUBSTRING((SELECT max(id) from stars), 3), UNSIGNED)) + 1);
         INSERT INTO stars(id, name) VALUES(star_id, singleStar);
 		SET msg = 'star ';
 		SET msg = CONCAT(msg, star_id);

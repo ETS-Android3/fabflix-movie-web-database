@@ -24,11 +24,14 @@ function handleAddStar(resultData){
 
     console.log(resultData["message"]);
 
+
     let rs_msg = document.getElementById('add_star_msg');
-    rs_msg.innerHTML = resultData["message"];
+    rs_msg.innerHTML = resultData["message"];     
+
 }
 
 function submitNewStar(formSubmitEvent){
+    formSubmitEvent.preventDefault();
     console.log("submit new star");
     $.ajax(
         "api/add-star",{
@@ -53,6 +56,7 @@ function handleAddMovie(resultData){
 }
 
 function submitNewMovie(formSubmitEvent){
+    formSubmitEvent.preventDefault();
     console.log("submit new movie");
     $.ajax(
         "api/add-movie", {

@@ -46,26 +46,32 @@ public class AddStarServlet extends HttpServlet {
 
             String star_name = request.getParameter("star_name");
             String star_year = request.getParameter("new_star_year"); // can be null
-            String star_id = "ns"; // random star_id for new stars ; add id count to this
-            star_id += id_count;
-            star_id += star_name.length();
+            String star_id = "nm"; // random star_id for new stars ; add id count to this
 
-            String query = "";
-
-            if (star_name != null) {
-
-                if (!star_year.isEmpty()) {
-                    query = String.format("INSERT INTO stars(id, name, birthYear) VALUES ('%s', '%s', %s);", star_id,
-                            star_name, star_year);
-                } else {
-                    query = String.format("INSERT INTO stars(id, name) VALUES ('%s', '%s');", star_id, star_name);
-                }
-
+            if (star_year.isEmpty()) {
+                star_year = null;
             }
 
-            id_count++;
+            PreparedStatement idQuery = conn.prepareStatement("select max(id) as maxID from stars");
+            ResultSet rs = idQuery.executeQuery();
+            String maxId = "0";
+            while (rs.next()) {
+                maxId = rs.getString("maxID");
+            }
 
+            star_id += (Integer.parseInt(maxId.substring(maxId.length() - 7)) + 1);
+
+            String query = "INSERT INTO stars VALUES (?, ?, ?)";
             PreparedStatement statement = conn.prepareStatement(query);
+
+            statement.setString(1, star_id);
+            statement.setString(2, star_name);
+            if (star_year != null) {
+                statement.setInt(3, Integer.parseInt(star_year));
+            } else {
+                statement.setNull(3, java.sql.Types.INTEGER);
+            }
+
             int rows_affected = statement.executeUpdate();
 
             JsonObject responseJsonObject = new JsonObject();

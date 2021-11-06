@@ -64,7 +64,6 @@ public class AddMovieServlet extends HttpServlet {
                 out.write(responseJsonObj.toString());
             }
 
-
         } catch (Exception e) {
 
             // Write error message JSON object to output
