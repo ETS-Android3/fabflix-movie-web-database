@@ -1,16 +1,15 @@
 public class Star {
     private String name;
-	private String dob;
+	private int dob;
 	
     public String getName(){return name;}
-    public String getDob(){return dob;}
+    public int getDob(){return dob;}
 	
 	public void setName (String name){
 		this.name= name;
 	}
 	
-	public void setDOB (String dob){
+	public void setDob (int dob){
 		this.dob = dob;
 	}
-	
 }
