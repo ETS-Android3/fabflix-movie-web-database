@@ -29,12 +29,20 @@ public class LoginFilter implements Filter {
             return;
         }
 
+        // if (httpRequest.getRequestURI().contains("employee")) {
+        // if (httpRequest.getSession().getAttribute("user") == null) {
+        // httpResponse.sendRedirect("_dashboard.html");
+        // }
+        // }
+
         // Redirect to login page if the "user" attribute doesn't exist in session
+
         if (httpRequest.getSession().getAttribute("user") == null) {
             httpResponse.sendRedirect("login.html");
         } else {
             chain.doFilter(request, response);
         }
+
     }
 
     private boolean isUrlAllowedWithoutLogin(String requestURI) {
@@ -51,6 +59,10 @@ public class LoginFilter implements Filter {
         allowedURIs.add("login.js");
         allowedURIs.add("api/login");
         allowedURIs.add("login.css");
+        // allowedURIs.add("_dashboard.html");
+        // allowedURIs.add("_dashboard.js");
+        // allowedURIs.add("api/login-employee");
+
     }
 
     public void destroy() {

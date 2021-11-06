@@ -25,43 +25,46 @@ IF (movie_exists = 0) THEN
     INSERT INTO movies VALUES(movie_id, title, year, director);
     SET msg = 'movie ';
 	SET msg = CONCAT(msg, movie_id);
-    SET msg = CONCAT(msg, ' added.');
+    SET msg = CONCAT(msg, ' added.\n');
     
     IF (star_exists = 0) THEN
 		SET star_id = CONCAT('nm', (CONVERT(SUBSTRING((SELECT max(id) from stars), 3), UNSIGNED)) + 1);
         INSERT INTO stars(id, name) VALUES(star_id, singleStar);
-		SET msg = 'star ';
+		SET msg = CONCAT(msg,'star ');
 		SET msg = CONCAT(msg, star_id);
-		SET msg = CONCAT(msg, ' added.');
+		SET msg = CONCAT(msg, ' added.\n');
 	ELSE 
 		SET star_id = (SELECT id from STARS WHERE name = singleStar LIMIT 1);
-		SET msg = 'star ';
+		SET msg = CONCAT(msg,'star ');
 		SET msg = CONCAT(msg, movie_id);
-		SET msg = CONCAT(msg, ' exists.');
+		SET msg = CONCAT(msg, ' exists.\n');
 	END IF;
     
     INSERT INTO stars_in_movies VALUES(star_id, movie_id);
-	SET msg = "(stars_in_movies) star: ";
+	SET msg = CONCAT(msg, "(stars_in_movies) star: ");
 	SET msg = CONCAT(msg, star_id);
     SET msg = CONCAT(msg, ' movie');
     SET msg = CONCAT(msg, movie_id);
-    SET msg = CONCAT(msg, ' added');
+    SET msg = CONCAT(msg, ' added.\n');
 
 	IF (genre_exists = 0) THEN
 		INSERT INTO genres(name) VALUES(singleGenre);
         SET genre_id = (SELECT max(id) FROM genres);
-        SET msg = "genre ";
-        SET msg = CONCAT(result, genre_id);
-        SET msg = CONCAT(result, " added.");
+        SET msg = CONCAT(msg, "genre ");
+        SET msg = CONCAT(msg, genre_id);
+        SET msg = CONCAT(msg, " added.\n");
 	ELSE
 		SET genre_id = (SELECT id FROM genres WHERE name = singleGenre);
+        SET msg = CONCAT(msg, "genre ");
+        SET msg = CONCAT(msg, genre_id);
+        SET msg = CONCAT(msg, " exists.\n");
 	END IF;
 	INSERT INTO genres_in_movies VALUES(genre_id, movie_id);
-	SET msg = "(genres_in_movies) genre: ";
+	SET msg = CONCAT(msg, "(genres_in_movies) genre: ");
 	SET msg = CONCAT(msg, genre_id);
-    SET msg = CONCAT(msg, ' movie');
+    SET msg = CONCAT(msg, ' movie ');
     SET msg = CONCAT(msg, movie_id);
-    SET msg = CONCAT(msg, ' added');
+    SET msg = CONCAT(msg, ' added.\n');
 
     
     ELSE
