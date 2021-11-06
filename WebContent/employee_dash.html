@@ -1,0 +1,142 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-movie.js to populate the data into empty elements.
+    -->
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <title>Employee Dashboard</title>
+    </head>
+    <body>
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Fabflix</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="employee.html">Employee Login</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <div class=insert_star>
+        <h2>Insert a New Star</h2>
+        <form id="new_star_form" method="get" action="#">
+            <label><b>Star Name</b></label>
+            <br>
+            <label>
+                <input name="star_name" placeholder="First, Last.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Birth Year</b></label>
+            <br>
+            <label>
+                <input name="new_star_year" placeholder="YYYY" type="text">
+            </label>
+            <br>
+            <label>
+                <input class="submit-btn" type="submit" value="Insert Star">
+            </label>
+        </form>
+        <br>
+        <h3 id="add_star_msg"></h3>
+
+    </div>
+
+    <div class=insert_movie>
+        <h2>Insert a New Movie</h2>
+        <form id="new_movie_form" method="get" action="#">
+            <label><b>Title</b></label>
+            <br>
+            <label>
+                <input name="movie-title" placeholder="Movie Title.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Director</b></label>
+            <br>
+            <label>
+                <input name="movie-director" placeholder="Movie Director.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Year</b></label>
+            <br>
+            <label>
+                <input name="movie-year" placeholder="YYYY" type="text" required>
+            </label>
+            <br>
+            <label><b>Star</b></label>
+            <br>
+            <label>
+                <input name="mstar_name" placeholder="First, Last.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Genre</b></label>
+            <br>
+            <label>
+                <input name="movie-genre" placeholder="Movie Genre.." type="text" required>
+            </label>
+            <br>
+            <label>
+                <input class="submit-btn" type="submit" value="Insert Movie">
+            </label>
+        </form>
+        <br>
+        <h3 id="add_movie_msg"></h3>
+        
+    </div>
+
+    <div>
+        <button id="metadata-btn" type="button">View Movie Data</button>
+        <!-- <form id="metadata_form" method="get" action="#">
+            <br>
+            <input class="submit-btn" type="submit" value="View Movie Data">
+        </form> -->
+    </div>
+
+    <div id="table_names"></div>
+    
+    <div id="column_names">
+        <h3 id=column_table_name></h3>
+    </div>
+
+
+
+
+
+
+
+
+    
+    
+    
+    <!-- Load jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Load our own JS file -->
+    <!-- The path is relative to single-movie.html, since these two files are in the same directory -->
+    <!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+         otherwise the url is relative to the root path-->
+    <script src="./employee_dash.js"></script>
+    </body>
+    
+    
+    </html>

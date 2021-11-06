@@ -78,11 +78,12 @@ public class AddStarServlet extends HttpServlet {
 
             if (rows_affected == 1) {
                 responseJsonObject.addProperty("status", "success");
-                responseJsonObject.addProperty("message", String.format("%s was successfully added!", star_name));
+                responseJsonObject.addProperty("message",
+                        String.format("%s (%s) was successfully added!", star_name, star_id));
 
             } else {
                 responseJsonObject.addProperty("status", "failed");
-                responseJsonObject.addProperty("message", String.format("Could not add %s", star_name));
+                responseJsonObject.addProperty("message", String.format("Could not add %s (%s)", star_name, star_id));
 
             }
 
