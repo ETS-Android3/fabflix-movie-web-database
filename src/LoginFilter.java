@@ -29,12 +29,6 @@ public class LoginFilter implements Filter {
             return;
         }
 
-        // if (httpRequest.getRequestURI().contains("employee")) {
-        // if (httpRequest.getSession().getAttribute("user") == null) {
-        // httpResponse.sendRedirect("_dashboard.html");
-        // }
-        // }
-
         // Redirect to login page if the "user" attribute doesn't exist in session
 
         if (httpRequest.getSession().getAttribute("user") == null) {

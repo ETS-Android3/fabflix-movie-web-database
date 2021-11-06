@@ -1,11 +1,10 @@
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.io.File;
+import java.io.FileWriter;
+import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -16,6 +15,7 @@ import org.xml.sax.SAXException;
 
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -76,10 +76,10 @@ public class StarParser extends DefaultHandler{
     }
 
     public static void main(String[] args) throws Exception {
-        Set<String> startable = new HashSet<String>();
+        HashMap<Star,String> startable = new HashMap<Star, String>(); // {Star.name : Star.id}
         
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/moviedb", "root", "Pwner419123@");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/moviedb", "mytestuser", "My6$Password");
 
         SAXParserFactory spf = SAXParserFactory.newInstance();
         StarParser starparser = new StarParser();
@@ -99,15 +99,60 @@ public class StarParser extends DefaultHandler{
             ie.printStackTrace();
         }
 
-        String query = "SELECT * FROM stars";
-        PreparedStatement startablestatement = conn.prepareStatement(query, ResultSet.TYPE_SCROLL_INSENSITIVE,
-                    ResultSet.CONCUR_READ_ONLY);
-        ResultSet rs_stars = startablestatement.executeQuery();
 
-        while(rs_stars.next()){
-            startable.add(rs_stars.getString("name"));
+        // SETTING STAR ID FROM MAX ID
+        String idQuery = "select max(id) as maxID from stars";
+        PreparedStatement starIds = conn.prepareStatement(idQuery, ResultSet.TYPE_SCROLL_INSENSITIVE,
+                ResultSet.CONCUR_READ_ONLY);
+        String maxId = "0";
+        Integer tempId = 0;
+
+        ResultSet rs_ids = starIds.executeQuery();
+        while(rs_ids.next()){
+            maxId = rs_ids.getString("maxID");
+            tempId = (Integer.parseInt(maxId.substring(maxId.length() - 7)) + 1);
         }
 
-        System.out.println(starparser.getStars());
+        // INSERTING INTO DB
+//        String insertStars = "INSERT INTO stars VALUES (?, ?, ?)";
+        String insertStars = "LOAD DATA LOCAL INFILE 'StarsData.txt'\n" +
+                "INTO TABLE stars\n" +
+                "FIELDS TERMINATED BY ','\n" +
+                "LINES TERMINATED BY '$'\n" +
+                "(id, name, birthYear)\n" +
+                "SET birthYear = nullif(@birthYear,\"0\");";
+
+
+        for (Star elem : starparser.getStars()){
+            String star_id = "nm";
+//                System.out.println(elem.getName() +  " = " +elem.getDob());
+            star_id += (tempId);
+            System.out.println(star_id + "\n");
+            startable.put(elem, star_id);
+            tempId++;
+
+        }
+
+        File stars_f = new File("./src/main/data/StarsData.txt");
+        FileWriter fw = new FileWriter(stars_f);
+        for (Map.Entry<Star, String> elem : startable.entrySet()){
+            String txt = "$";
+            StringBuffer strb = new StringBuffer();
+            txt +=  elem.getValue() + "," + elem.getKey().getName() + "," +  elem.getKey().getDob();
+            fw.write(txt);
+        }
+
+        fw.close();
+
+        PreparedStatement statement = conn.prepareStatement(insertStars);
+
+        int rows_affected = statement.executeUpdate();
+
+        System.out.println(rows_affected);
+
+
+
+
+
     }
 }
