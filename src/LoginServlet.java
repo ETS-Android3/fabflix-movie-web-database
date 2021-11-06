@@ -119,6 +119,9 @@ public class LoginServlet extends HttpServlet {
                 // }
             }
 
+            statement.close();
+            rs.close();
+
         } catch (Exception e) {
 
             // Write error message JSON object to output

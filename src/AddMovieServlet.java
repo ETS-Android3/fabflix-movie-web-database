@@ -10,14 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.PreparedStatement;
+import java.sql.*;
 
-@WebServlet(name = "AddStarServlet", urlPatterns = "/api/add-star")
-public class AddStarServlet extends HttpServlet {
-
-    static int id_count = 1;
+@WebServlet(name = "AddMovieServlet", urlPatterns = "/api/add-movie")
+public class AddMovieServlet extends HttpServlet {
 
     // Create a dataSource which registered in web.
     private DataSource dataSource;
@@ -44,44 +40,30 @@ public class AddStarServlet extends HttpServlet {
             // // Declare our statement
             // Statement statement = conn.createStatement();
 
-            String star_name = request.getParameter("star_name");
-            String star_year = request.getParameter("new_star_year"); // can be null
-            String star_id = "ns"; // random star_id for new stars ; add id count to this
-            star_id += id_count;
-            star_id += star_name.length();
+            String movie_title = request.getParameter("movie-title");
+            String movie_director = request.getParameter("movie-director");
+            String movie_year = request.getParameter("movie-year");
+            String movie_star = request.getParameter("mstar_name");
+            String movie_genre = request.getParameter("movie-genre");
 
-            String query = "";
+            String query = "call add_movie(?,?,?,?,?,?)";
 
-            if (star_name != null) {
+            CallableStatement cstm = conn.prepareCall(query);
+            cstm.setString(1, movie_title);
+            cstm.setInt(2, Integer.parseInt(movie_year));
+            cstm.setString(3, movie_director);
+            cstm.setString(4, movie_star);
+            cstm.setString(5, movie_genre);
+            cstm.registerOutParameter(6, Types.VARCHAR);
+            cstm.execute();
 
-                if (!star_year.isEmpty()) {
-                    query = String.format("INSERT INTO stars(id, name, birthYear) VALUES ('%s', '%s', %s);", star_id,
-                            star_name, star_year);
-                } else {
-                    query = String.format("INSERT INTO stars(id, name) VALUES ('%s', '%s');", star_id, star_name);
-                }
-
+            String msg = cstm.getString(6);
+            JsonObject responseJsonObj = new JsonObject();
+            if (!msg.isEmpty() && msg != null) {
+                responseJsonObj.addProperty("message", msg);
+                out.write(responseJsonObj.toString());
             }
 
-            id_count++;
-
-            PreparedStatement statement = conn.prepareStatement(query);
-            int rows_affected = statement.executeUpdate();
-
-            JsonObject responseJsonObject = new JsonObject();
-
-            if (rows_affected == 1) {
-                responseJsonObject.addProperty("status", "success");
-                responseJsonObject.addProperty("message", String.format("%s was successfully added!", star_name));
-
-            } else {
-                responseJsonObject.addProperty("status", "failed");
-                responseJsonObject.addProperty("message", String.format("Could not add %s", star_name));
-
-            }
-
-            out.write(responseJsonObject.toString());
-            statement.close();
 
         } catch (Exception e) {
 

@@ -47,8 +47,12 @@ public class MetadataServlet extends HttpServlet {
                 JsonArray columns = new JsonArray();
                 columns.add(tableType); // first index will hold table_name!
                 while (rs.next()) {
+                    JsonObject jsonObj = new JsonObject();
                     String column = rs.getString("COLUMN_NAME");
-                    columns.add(column);
+                    String columnType = rs.getString("TYPE_NAME");
+                    jsonObj.addProperty("column", column);
+                    jsonObj.addProperty("type", columnType);
+                    columns.add(jsonObj);
                 }
 
                 out.write(columns.toString());

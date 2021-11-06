@@ -1,4 +1,5 @@
 let new_star_form = $("#new_star_form");
+let new_movie_form = $("#new_movie_form");
 
 function getParameterByName(target) {
     // Get request URL
@@ -16,15 +17,15 @@ function getParameterByName(target) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function handleAddStar(resultDataString){
+// ADD STAR 
+function handleAddStar(resultData){
     console.log("added star in backend");
-    let resultDataJson = JSON.parse(resultDataString);
-    console.log(resultDataJson);
+    console.log(resultData);
 
-    console.log(resultDataJson["message"]);
+    console.log(resultData["message"]);
 
     let rs_msg = document.getElementById('add_star_msg');
-    rs_msg.innerHTML = resultDataJson["message"];
+    rs_msg.innerHTML = resultData["message"];
 }
 
 function submitNewStar(formSubmitEvent){
@@ -38,6 +39,31 @@ function submitNewStar(formSubmitEvent){
     );
 }
 
+// ADD MOVIE
+
+function handleAddMovie(resultData){
+    console.log("added movie in backend");
+    console.log(resultData);
+
+    console.log(resultData["message"]);
+
+    let rs_msg = document.getElementById("add_movie_msg");
+    rs_msg.innerHTML = resultData["message"];
+
+}
+
+function submitNewMovie(formSubmitEvent){
+    console.log("submit new movie");
+    $.ajax(
+        "api/add-movie", {
+            method: "GET",
+            data: new_movie_form.serialize(),
+            success: (resultData) => handleAddMovie(resultData)
+        }
+    )
+}
+
+// VIEW METADATA
 function handleMetadata(resultData){
     console.log("getting metadata");
     console.log(resultData);
@@ -71,13 +97,16 @@ function handleMetadataType(resultData){
     
     table_body.innerHTML = "";
 
-    table_body.innerHTML += "<h2>";
-    table_body.innerHTML += resultData[0];
-    table_body.innerHTML += "</h2>";
-    
     let tables = "";
+
+    tables += "<h2>";
+    tables += resultData[0];
+    tables += "</h2><br>";
+    
+    
     for (let i = 1; i < resultData.length; i++){
-        tables += resultData[i];
+        tables += resultData[i]["column"];
+        tables += "(" + resultData[i]["type"] + ")";
         tables += "<br>";
     }
 
@@ -109,5 +138,6 @@ if (type != null){
 
 
 new_star_form.submit(submitNewStar);
+new_movie_form.submit(submitNewMovie);
 document.getElementById("metadata-btn").addEventListener('click', function(){
     submitMetadata()});

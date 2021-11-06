@@ -40,13 +40,15 @@
         <h2>Insert a New Star</h2>
         <form id="new_star_form" method="get" action="#">
             <label><b>Star Name</b></label>
+            <br>
             <label>
-                <input name="new_star_name" placeholder="(First, Last)" type="text" required>
+                <input name="star_name" placeholder="First, Last.. " type="text" required>
             </label>
             <br>
             <label><b>Birth Year</b></label>
+            <br>
             <label>
-                <input name="new_star_year" placeholder="(YYYY)" type="text">
+                <input name="new_star_year" placeholder="YYYY" type="text">
             </label>
             <br>
             <label>
@@ -56,6 +58,48 @@
         <br>
         <h3 id="add_star_msg"></h3>
 
+    </div>
+
+    <div class=insert_movie>
+        <h2>Insert a New Movie</h2>
+        <form id="new_movie_form" method="get" action="#">
+            <label><b>Title</b></label>
+            <br>
+            <label>
+                <input name="movie-title" placeholder="Movie Title.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Director</b></label>
+            <br>
+            <label>
+                <input name="movie-director" placeholder="Movie Director.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Year</b></label>
+            <br>
+            <label>
+                <input name="movie-year" placeholder="YYYY" type="text" required>
+            </label>
+            <br>
+            <label><b>Star</b></label>
+            <br>
+            <label>
+                <input name="mstar_name" placeholder="First, Last.. " type="text" required>
+            </label>
+            <br>
+            <label><b>Genre</b></label>
+            <br>
+            <label>
+                <input name="movie-genre" placeholder="Movie Genre.." type="text" required>
+            </label>
+            <br>
+            <label>
+                <input class="submit-btn" type="submit" value="Insert Movie">
+            </label>
+        </form>
+        <br>
+        <h3 id="add_movie_msg"></h3>
+        
     </div>
 
     <div>
