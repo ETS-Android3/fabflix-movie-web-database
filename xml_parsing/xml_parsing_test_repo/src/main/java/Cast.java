@@ -2,8 +2,9 @@ import java.util.ArrayList;
 
 public class Cast {
     public ArrayList<String> stars;
-    private int movie_id;
+    private String movie_id;
     private String movie_title;
+    private String movie_director;
 
 
     public Cast(){
@@ -11,15 +12,20 @@ public class Cast {
     }
 
     public String getMovieTitle() {return movie_title;}
-    public int getMovieId() {return movie_id;}
+    public String getMovieDirector() {return movie_director;}
+    public String getMovieId() {return movie_id;}
     public ArrayList<String> getStars() {return stars;}
 
-    public void setMovieId(int id) {
+    public void setMovieId(String id) {
         this.movie_id = id;
     }
 
     public void setTitle(String title) {
         this.movie_title = title;
+    }
+
+    public void setDirector(String director) {
+        this.movie_director = director;
     }
 
     public void addStar(String star) {

@@ -133,7 +133,7 @@ public class CastParser extends DefaultHandler{
             startable.put(rs_stars.getString("name"), rs_stars.getString("id"));
         }
 
-        String insertSIM = "LOAD DATA LOCAL INFILE './src/main/data/SIMData.txt'\n" +
+        String insertSIM = "LOAD DATA LOCAL INFILE './xml_parsing/data/SIMData.txt'\n" +
         "INTO TABLE stars_in_movies\n" +
         "FIELDS TERMINATED BY ','\n" +
         "LINES TERMINATED BY '$'\n" +
@@ -154,8 +154,8 @@ public class CastParser extends DefaultHandler{
             }
         }
 
-        File simf = new File("./src/main/data/SIMData.txt");
-        File simincf = new File("./src/main/data/SIMDataInconsistencies.txt");
+        File simf = new File("./xml_parsing/data/SIMData.txt");
+        File simincf = new File("./xml_parsing/data/SIMDataInconsistencies.txt");
         FileWriter sfw = new FileWriter(simf);
         FileWriter infw = new FileWriter(simincf);
         for (Map.Entry<String, ArrayList<String>> elem : gim.entrySet()){

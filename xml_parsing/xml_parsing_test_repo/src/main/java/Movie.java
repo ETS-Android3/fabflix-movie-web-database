@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Movie {
     private String id;
     private String title;
-    private int year;
+    private Integer year = 0;
     private String director;
     public ArrayList<String> genres;
 
@@ -13,7 +13,7 @@ public class Movie {
 
     public String getId() {return id;}
     public String getTitle() {return title;}
-    public int getYear() {return year;}
+    public Integer getYear() {return year;}
     public String getDirector() {return director;}
     public ArrayList<String> getGenres() {return genres;}
 

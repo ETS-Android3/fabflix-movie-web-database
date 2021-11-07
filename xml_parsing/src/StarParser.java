@@ -120,7 +120,7 @@ public class StarParser extends DefaultHandler{
 
         // INSERTING INTO DB
 //        String insertStars = "INSERT INTO stars VALUES (?, ?, ?)";
-        String insertStars = "LOAD DATA LOCAL INFILE './src/main/data/StarsData.txt'\n" +
+        String insertStars = "LOAD DATA LOCAL INFILE './xml_parsing/data/StarsData.txt'\n" +
                 "INTO TABLE stars\n" +
                 "FIELDS TERMINATED BY '*'\n" +
                 "LINES TERMINATED BY '$'\n" +
@@ -138,8 +138,8 @@ public class StarParser extends DefaultHandler{
 
         }
 
-        File stars_f = new File("./src/main/data/StarsData.txt");
-        File stars_fin = new File("./src/main/data/StarsDataInconsistencies.txt");
+        File stars_f = new File("./xml_parsing/data/StarsData.txt");
+        File stars_fin = new File("./xml_parsing/data/StarsDataInconsistencies.txt");
         FileWriter fw = new FileWriter(stars_f);
         FileWriter fwin = new FileWriter(stars_fin);
         for (Map.Entry<Star, String> elem : startable.entrySet()){
