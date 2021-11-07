@@ -157,14 +157,6 @@ public class StarParser extends DefaultHandler{
         fwin.close();
 
         PreparedStatement statement = conn.prepareStatement(insertStars);
-
-        int rows_affected = statement.executeUpdate();
-
-        System.out.println(rows_affected);
-
-
-
-
-
+        statement.executeQuery();
     }
 }
