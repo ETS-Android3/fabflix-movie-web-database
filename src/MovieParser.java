@@ -182,13 +182,13 @@ public class MovieParser extends DefaultHandler{
             genreSet.add(genre);
         }
 
-        String insertGenres = "LOAD DATA LOCAL INFILE './xml_parsing/data/GenreData.txt'\n" +
+        String insertGenres = "LOAD DATA LOCAL INFILE './src/GenreData.txt'\n" +
         "INTO TABLE genres\n" +
         "FIELDS TERMINATED BY ','\n" +
         "LINES TERMINATED BY '$'\n" +
         "(name);";
 
-        File genre_f = new File("./xml_parsing/data/GenreData.txt");
+        File genre_f = new File("./src/GenreData.txt");
         FileWriter gfw = new FileWriter(genre_f);
         for(String genre : genreSet){
             String txt = genre + "$";
@@ -219,13 +219,13 @@ public class MovieParser extends DefaultHandler{
             tempId = (Integer.parseInt(maxId.substring(maxId.length() - 7)) + 1);
         }
 
-        String insertMovies = "LOAD DATA LOCAL INFILE './xml_parsing/data/MovieData.txt'\n" +
+        String insertMovies = "LOAD DATA LOCAL INFILE './src/MovieData.txt'\n" +
         "INTO TABLE movies\n" +
         "FIELDS TERMINATED BY '*'\n" +
         "LINES TERMINATED BY '$'\n" +
         "(id, title, year, director);";
 
-        String insertGenresinMoviesString = "LOAD DATA LOCAL INFILE './xml_parsing/data/GIMData.txt'\n" +
+        String insertGenresinMoviesString = "LOAD DATA LOCAL INFILE './src/GIMData.txt'\n" +
         "INTO TABLE genres_in_movies\n" +
         "FIELDS TERMINATED BY ','\n" +
         "LINES TERMINATED BY '$'\n" +
@@ -263,8 +263,8 @@ public class MovieParser extends DefaultHandler{
             }
         }
 
-        File movie_f = new File("./xml_parsing/data/MovieData.txt");
-        File gim_f = new File("./xml_parsing/data/GIMData.txt");
+        File movie_f = new File("./src/MovieData.txt");
+        File gim_f = new File("./src/GIMData.txt");
         FileWriter mfw = new FileWriter(movie_f);
         FileWriter gimfw = new FileWriter(gim_f);
         for (Movie movie : insertedMovies){
@@ -280,7 +280,7 @@ public class MovieParser extends DefaultHandler{
             }
         }
 
-        File in = new File("./xml_parsing/data/MovieDataInconsistencies.txt");
+        File in = new File("./src/MovieDataInconsistencies.txt");
         FileWriter fw = new FileWriter(in);
         fw.write("Movie inconsistencies were related with directors that were:\nunknown, no publishing year, no title or was not categorized under stanford's category references:\nhttp://infolab.stanford.edu/pub/movies/doc.html#CATS\n\n");
         for(Movie m : movieparser.getMovieInconsistencies()){
