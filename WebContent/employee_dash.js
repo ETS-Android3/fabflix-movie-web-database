@@ -84,7 +84,7 @@ function handleMetadata(resultData){
 
     let tables = "";
     for (let i = 0; i < resultData.length; i++){
-        tables += '<a href="_dashboard.html?type=';
+        tables += '<a href="employee_dash.html?type=';
         tables += resultData[i];
         tables += '">';
         tables += resultData[i];
