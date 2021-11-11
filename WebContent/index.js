@@ -39,17 +39,18 @@ function handleLookup(query, doneCallback) {
  */
 function handleLookupAjaxSuccess(data, query, doneCallback) {
 	console.log("lookup ajax successful")
+	console.log(data);
 	
-	// parse the string into JSON
-	var jsonData = JSON.parse(data);
-	console.log(jsonData)
+	// // parse the string into JSON
+	// var jsonData = JSON.parse(data);
+	// console.log(jsonData)
 	
 	// TODO: if you want to cache the result into a global variable you can do it here
 
 	// call the callback function provided by the autocomplete library
 	// add "{suggestions: jsonData}" to satisfy the library response format according to
 	//   the "Response Format" section in documentation
-	doneCallback( { suggestions: jsonData } );
+	doneCallback( { suggestions: data } );
 }
 
 
@@ -64,7 +65,7 @@ function handleSelectSuggestion(suggestion) {
 	
     console.log("you select " + suggestion["value"] + " with ID " + suggestion["data"]["movieID"])
 
-    let redirect = "single_movie.html?id=" + suggestion["data"]["movieID"];
+    let redirect = "single-movie.html?id=" + suggestion["data"]["movieID"];
     window.location.replace(redirect);
 }
 
@@ -80,6 +81,7 @@ function handleSelectSuggestion(suggestion) {
  */
 // $('#autocomplete') is to find element by the ID "autocomplete"
 $('#autocomplete').autocomplete({
+	
 	// documentation of the lookup function can be found under the "Custom lookup function" section
     lookup: function (query, doneCallback) {
     		handleLookup(query, doneCallback)
@@ -90,7 +92,9 @@ $('#autocomplete').autocomplete({
     // set delay time
     deferRequestBy: 300,
     // there are some other parameters that you might want to use to satisfy all the requirements
-    // TODO: add other parameters, such as minimum characters
+	// TODO: add other parameters, such as minimum characters
+	minChars: 3
+	
 });
 
 

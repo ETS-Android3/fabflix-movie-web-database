@@ -22,6 +22,17 @@ import java.sql.PreparedStatement;
 public class MovieSuggestion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	// Create a dataSource which registered in web.
+	private DataSource dataSource;
+
+	public void init(ServletConfig config) {
+		try {
+			dataSource = (DataSource) new InitialContext().lookup("java:comp/env/jdbc/moviedb");
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+	}
+
 	/*
 	 * 
 	 * Match the query against movies and return a JSON response.
@@ -42,12 +53,24 @@ public class MovieSuggestion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		try {
+		try (Connection conn = dataSource.getConnection()) {
+
+			response.setContentType("application/json");
+
+			PrintWriter out = response.getWriter();
+
 			// setup the response json arrray
 			JsonArray jsonArray = new JsonArray();
 
 			// get the query string from parameter
 			String query = request.getParameter("query");
+			String[] queryList = query.split(" ");
+
+			query = "";
+			for (String elem : queryList) {
+				query += elem;
+				query += "* ";
+			}
 
 			// return the empty json array if query is null or empty
 			if (query == null || query.trim().isEmpty()) {
@@ -55,8 +78,7 @@ public class MovieSuggestion extends HttpServlet {
 				return;
 			}
 
-			// TODO: Test full text query
-			String searchQ = "SELECT id, title from movies where match (title) against (? IN BOOLEAN MODE)";
+			String searchQ = "SELECT id, title from movies where match (title) against (? IN BOOLEAN MODE) LIMIT 10";
 
 			PreparedStatement statement = conn.prepareStatement(searchQ);
 
@@ -67,10 +89,11 @@ public class MovieSuggestion extends HttpServlet {
 				String id = rs.getString("id");
 				String title = rs.getString("title");
 				jsonArray.add(generateJsonObject(id, title));
+
 			}
 
 			response.getWriter().write(jsonArray.toString());
-			return;
+
 		} catch (Exception e) {
 			System.out.println(e);
 			response.sendError(500, e.getMessage());
