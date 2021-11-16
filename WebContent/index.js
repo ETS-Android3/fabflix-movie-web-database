@@ -7,26 +7,35 @@
  */
 function handleLookup(query, doneCallback) {
 	console.log("autocomplete initiated")
-	console.log("sending AJAX request to backend Java Servlet")
 	
 	// TODO: if you want to check past query results first, you can do it here
 	
-	// sending the HTTP GET request to the Java Servlet endpoint hero-suggestion
-	// with the query data
-	jQuery.ajax({
-		"method": "GET",
-		// generate the request url from the query.
-		// escape the query string to avoid errors caused by special characters 
-		"url": "movie-suggestion?query=" + escape(query),
-		"success": function(data) {
-			// pass the data, query, and doneCallback function into the success handler
-			handleLookupAjaxSuccess(data, query, doneCallback) 
-		},
-		"error": function(errorData) {
-			console.log("lookup ajax error")
-			console.log(errorData)
-		}
-	})
+	if(sessionStorage.getItem(query) != null){
+		console.log("fetching session storage data")
+		var dataObj = JSON.parse(sessionStorage.getItem(query));
+		handleLookupAjaxSuccess(dataObj, query, doneCallback);
+	}
+	else{
+		console.log("sending AJAX request to backend Java Servlet")
+
+		// sending the HTTP GET request to the Java Servlet endpoint hero-suggestion
+		// with the query data
+		jQuery.ajax({
+			"method": "GET",
+			// generate the request url from the query.
+			// escape the query string to avoid errors caused by special characters 
+			"url": "movie-suggestion?query=" + escape(query),
+			"success": function(data) {
+				// pass the data, query, and doneCallback function into the success handler
+				sessionStorage.setItem(query, JSON.stringify(data))
+				handleLookupAjaxSuccess(data, query, doneCallback) 
+			},
+			"error": function(errorData) {
+				console.log("lookup ajax error")
+				console.log(errorData)
+			}
+		})
+	}
 }
 
 
@@ -104,6 +113,11 @@ $('#autocomplete').autocomplete({
 function handleNormalSearch(query) {
 	console.log("doing normal search with query: " + query);
 	// TODO: you should do normal search here
+	window.location.href = "movie-list.html?search_title=" + query;
+}
+
+function handleSearchButton() {
+	handleNormalSearch($('#autocomplete').val())
 }
 
 // bind pressing enter key to a handler function
@@ -117,4 +131,4 @@ $('#autocomplete').keypress(function(event) {
 
 
 // TODO: if you have a "search" button, you may want to bind the onClick event as well of that button
-$('#search-submit').click(handleNormalSearch)
+$('#search-submit').click(handleSearchButton)
