@@ -213,6 +213,7 @@ let searchDirector = getParameterByName('search_director');
 let searchStar = getParameterByName('search_star');
 let mvCount = getParameterByName('mvct') || 10;
 let page = getParameterByName('page') || 1;
+let fulltxt = getParameterByName('fulltxt');
 
 let sort = getParameterByName('sort') || 'Default';
 let tOrder = getParameterByName('title_order') || 'Default';
@@ -279,7 +280,8 @@ query += "mvct=" + mvCount + "&";
 query += "page=" + page + "&"; // starting item on page
 query += "sort=" + sort + "&";
 query += "title_order=" + tOrder + "&";
-query += "rating_order=" + rOrder;
+query += "rating_order=" + rOrder + "&";
+query += "fulltxt=" + fulltxt;
 
 // Makes the HTTP GET request and registers on success callback function handleStarResult
 

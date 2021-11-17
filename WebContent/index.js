@@ -106,18 +106,13 @@ $('#autocomplete').autocomplete({
 	
 });
 
-
 /*
  * do normal full text search if no suggestion is selected 
  */
 function handleNormalSearch(query) {
 	console.log("doing normal search with query: " + query);
 	// TODO: you should do normal search here
-	window.location.href = "movie-list.html?search_title=" + query;
-}
-
-function handleSearchButton() {
-	handleNormalSearch($('#autocomplete').val())
+	window.location.href = "movie-list.html?search_title=" + query + "&fulltxt=true";
 }
 
 // bind pressing enter key to a handler function
@@ -131,4 +126,6 @@ $('#autocomplete').keypress(function(event) {
 
 
 // TODO: if you have a "search" button, you may want to bind the onClick event as well of that button
-$('#search-submit').click(handleSearchButton)
+$('#search-submit').click(function(){
+	handleNormalSearch($('#autocomplete').val());
+})

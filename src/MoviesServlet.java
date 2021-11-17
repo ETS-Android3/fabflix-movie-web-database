@@ -53,8 +53,9 @@ public class MoviesServlet extends HttpServlet {
         String year = request.getParameter("search_year");
         String director = request.getParameter("search_director");
         String star = request.getParameter("search_star");
+        String fulltxt = request.getParameter("fulltxt");
 
-        if (title != null && !title.isEmpty() && !title.equals("null")) {
+        if (title != null && !title.isEmpty() && !title.equals("null") && fulltxt == null) {
             title = "%" + title + "%";
         }
         if (director != null && !director.isEmpty() && !director.equals("null")) {
@@ -88,51 +89,57 @@ public class MoviesServlet extends HttpServlet {
         // connection after usage.
         try (Connection conn = dataSource.getConnection()) {
 
-            String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies " +
-                            "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) " +
-                            "AND (movies.year LIKE ? or ? is null) " +
-                            "AND (movies.director LIKE ? or ? is null)";
+            String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies "
+                    + "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) "
+                    + "AND (movies.year LIKE ? or ? is null) " + "AND (movies.director LIKE ? or ? is null)";
+
+            String query = ""; // for full text
+
+            if (fulltxt != null) {
+                // get the query string from parameter
+                String[] queryList = title.split(" ");
+
+                for (String elem : queryList) {
+                    query += elem;
+                    query += "* ";
+                }
+
+                query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE match(title) against (? IN BOOLEAN MODE) AND movies.id = ratings.movieId";
+
+            }
 
             if (genre != null && !genre.isEmpty() && !genre.equals("null")) {
-                query1 = "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres " +
-                        "WHERE genres.name = ?" +
-                        "AND genres.id = gim.genreId AND gim.movieId = movies.id";
-            }
-            else if (star != null && !star.isEmpty() && !star.equals("null")) {
-                query1 = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars " +
-                        "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) " +
-                        "AND (movies.year LIKE ? or ? is null) " +
-                        "AND (movies.director LIKE ? or ? is null) " +
-                        "AND stars.name LIKE ? " +
-                        "AND stars.id = sim.starId AND sim.movieId = movies.id";
+                query1 = "SELECT movies.* FROM (" + query1 + ") as movies, genres_in_movies as gim, genres "
+                        + "WHERE genres.name = ?" + "AND genres.id = gim.genreId AND gim.movieId = movies.id";
+            } else if (star != null && !star.isEmpty() && !star.equals("null")) {
+                query1 = "SELECT DISTINCT movies.* FROM (SELECT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies, stars_in_movies as sim, stars "
+                        + "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) "
+                        + "AND (movies.year LIKE ? or ? is null) " + "AND (movies.director LIKE ? or ? is null) "
+                        + "AND stars.name LIKE ? " + "AND stars.id = sim.starId AND sim.movieId = movies.id";
             }
 
             if (sort != null && !sort.isEmpty() && sort.equals("title")) {
                 query1 += " ORDER BY movies.title";
-                if(tOrder.equals("desc")){
+                if (tOrder.equals("desc")) {
                     query1 += " DESC, movies.rating";
-                }
-                else{
+                } else {
                     query1 += " ASC, movies.rating";
                 }
-                if(rOrder.equals("asc")){
+                if (rOrder.equals("asc")) {
                     query1 += " ASC";
-                }
-                else{
+                } else {
                     query1 += " DESC";
                 }
             } else if (sort != null && !sort.isEmpty() && sort.equals("rating")) {
                 query1 += " ORDER BY movies.rating";
-                if(rOrder.equals("asc")){
+                if (rOrder.equals("asc")) {
                     query1 += " ASC, movies.title";
-                }
-                else{
+                } else {
                     query1 += " DESC, movies.title";
                 }
-                if(tOrder.equals("desc")){
+                if (tOrder.equals("desc")) {
                     query1 += " DESC";
-                }
-                else{
+                } else {
                     query1 += " ASC";
                 }
             } else {
@@ -146,11 +153,10 @@ public class MoviesServlet extends HttpServlet {
 
             // count query from https://stackoverflow.com/a/53212180
             String query2 = "SELECT stars.id, stars.name, s.movieId "
-                    + "FROM stars, (SELECT sim.*, counter.count FROM (SELECT stars_in_movies.* FROM stars_in_movies, (" + query1 + ") as q "
-                    + "WHERE stars_in_movies.movieId = q.id) as sim "
+                    + "FROM stars, (SELECT sim.*, counter.count FROM (SELECT stars_in_movies.* FROM stars_in_movies, ("
+                    + query1 + ") as q " + "WHERE stars_in_movies.movieId = q.id) as sim "
                     + "LEFT JOIN (SELECT starId, COUNT(starId) as count FROM stars_in_movies GROUP BY starId) as counter "
-                    + "ON counter.starId = sim.starId) as s "
-                    + "WHERE stars.id = s.starId "
+                    + "ON counter.starId = sim.starId) as s " + "WHERE stars.id = s.starId "
                     + "ORDER BY s.movieId, s.count DESC, stars.name ASC";
 
             String query3 = "SELECT genres.name, g.movieId " + "FROM genres, genres_in_movies as g, " + "(" + query1
@@ -170,16 +176,14 @@ public class MoviesServlet extends HttpServlet {
                 if (!sort.isEmpty() && sort.equals("title")) {
                     if (sorting) {
                         String orderString = "ORDER BY q.title "; // tOrder, rOrder
-                        if(tOrder.equals("desc")){
+                        if (tOrder.equals("desc")) {
                             orderString += "DESC, q.rating ";
-                        }
-                        else{
+                        } else {
                             orderString += "ASC, q.rating ";
                         }
-                        if(rOrder.equals("asc")){
+                        if (rOrder.equals("asc")) {
                             orderString += "ASC, ";
-                        }
-                        else{
+                        } else {
                             orderString += "DESC, ";
                         }
                         query2 += orderString + "s.count DESC, stars.name ASC";
@@ -191,16 +195,14 @@ public class MoviesServlet extends HttpServlet {
                 } else if (!sort.isEmpty() && sort.equals("rating")) {
                     if (sorting) {
                         String orderString = "ORDER BY q.rating ";
-                        if(rOrder.equals("asc")){
+                        if (rOrder.equals("asc")) {
                             orderString += "ASC, q.title ";
-                        }
-                        else{
+                        } else {
                             orderString += "DESC, q.title ";
                         }
-                        if(tOrder.equals("desc")){
+                        if (tOrder.equals("desc")) {
                             orderString += "DESC, ";
-                        }
-                        else{
+                        } else {
                             orderString += "ASC, ";
                         }
                         query2 += orderString + "s.count DESC, stars.name ASC";
@@ -219,7 +221,6 @@ public class MoviesServlet extends HttpServlet {
                     ResultSet.CONCUR_READ_ONLY);
             PreparedStatement statement3 = conn.prepareStatement(query3, ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
-
 
             int i = 1;
 
@@ -255,9 +256,13 @@ public class MoviesServlet extends HttpServlet {
                     statement3.setString(i, index);
                     i++;
                 }
-            }
-            else{
-                if (title != null && !title.isEmpty() && !title.equals("null")) {
+            } else {
+                if (fulltxt != null) {
+                    statement1.setString(1, query);
+                    statement2.setString(1, query);
+                    statement3.setString(1, query);
+                    i++;
+                } else if (title != null && !title.isEmpty() && !title.equals("null")) {
                     statement1.setString(i, title);
                     statement2.setString(i, title);
                     statement3.setString(i, title);
@@ -272,8 +277,7 @@ public class MoviesServlet extends HttpServlet {
                     statement2.setString(i, title);
                     statement3.setString(i, title);
                     i++;
-                }
-                else{
+                } else {
                     statement1.setNull(i, java.sql.Types.VARCHAR);
                     statement2.setNull(i, java.sql.Types.VARCHAR);
                     statement3.setNull(i, java.sql.Types.VARCHAR);
@@ -296,54 +300,51 @@ public class MoviesServlet extends HttpServlet {
                 statement2.setString(i, year);
                 statement3.setString(i, year);
                 i++;
-    
+
                 statement1.setString(i, year);
                 statement2.setString(i, year);
                 statement3.setString(i, year);
                 i++;
-            }
-            else{
+            } else if (fulltxt == null) {
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
                 i++;
-    
+
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
                 i++;
             }
 
-            if (director != null && !director.isEmpty() && !director.equals("null")) {  
+            if (director != null && !director.isEmpty() && !director.equals("null")) {
                 statement1.setString(i, director);
                 statement2.setString(i, director);
                 statement3.setString(i, director);
                 i++;
-    
+
                 statement1.setString(i, director);
                 statement2.setString(i, director);
                 statement3.setString(i, director);
                 i++;
-            }
-            else{
+            } else if (fulltxt == null) {
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
                 i++;
-    
+
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
                 i++;
             }
 
-            if (genre != null && !genre.isEmpty() && !genre.equals("null")) {
+            if (genre != null && !genre.isEmpty() && !genre.equals("null") && fulltxt == null) {
                 statement1.setString(i, genre);
                 statement2.setString(i, genre);
                 statement3.setString(i, genre);
                 i++;
-            }
-            else if (star != null && !star.isEmpty() && !star.equals("null")) {
+            } else if (star != null && !star.isEmpty() && !star.equals("null") && fulltxt == null) {
                 statement1.setString(i, star);
                 statement2.setString(i, star);
                 statement3.setString(i, star);
