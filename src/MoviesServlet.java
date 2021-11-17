@@ -95,7 +95,7 @@ public class MoviesServlet extends HttpServlet {
 
             String query = ""; // for full text
 
-            if (fulltxt != null) {
+            if (!fulltxt.equals("null")) {
                 // get the query string from parameter
                 String[] queryList = title.split(" ");
 
@@ -104,7 +104,7 @@ public class MoviesServlet extends HttpServlet {
                     query += "* ";
                 }
 
-                query1 = "SELECT movies.*, ratings.rating FROM movies, ratings WHERE match(title) against (? IN BOOLEAN MODE) AND movies.id = ratings.movieId";
+                query1 = "SELECT * FROM (SELECT movies.*, ratings.rating FROM movies, ratings WHERE match(title) against (? IN BOOLEAN MODE) AND movies.id = ratings.movieId) as movies";
 
             }
 
@@ -257,12 +257,12 @@ public class MoviesServlet extends HttpServlet {
                     i++;
                 }
             } else {
-                if (fulltxt != null) {
-                    statement1.setString(1, query);
-                    statement2.setString(1, query);
-                    statement3.setString(1, query);
+                if (!fulltxt.equals("null")) {
+                    statement1.setString(i, query);
+                    statement2.setString(i, query);
+                    statement3.setString(i, query);
                     i++;
-                } else if (title != null && !title.isEmpty() && !title.equals("null")) {
+                } else if (title != null && !title.isEmpty() && !title.equals("null") && fulltxt.equals("null")) {
                     statement1.setString(i, title);
                     statement2.setString(i, title);
                     statement3.setString(i, title);
@@ -305,7 +305,7 @@ public class MoviesServlet extends HttpServlet {
                 statement2.setString(i, year);
                 statement3.setString(i, year);
                 i++;
-            } else if (fulltxt == null) {
+            } else if (fulltxt.equals("null")) {
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
@@ -327,7 +327,7 @@ public class MoviesServlet extends HttpServlet {
                 statement2.setString(i, director);
                 statement3.setString(i, director);
                 i++;
-            } else if (fulltxt == null) {
+            } else if (fulltxt.equals("null")) {
                 statement1.setNull(i, java.sql.Types.VARCHAR);
                 statement2.setNull(i, java.sql.Types.VARCHAR);
                 statement3.setNull(i, java.sql.Types.VARCHAR);
@@ -339,12 +339,12 @@ public class MoviesServlet extends HttpServlet {
                 i++;
             }
 
-            if (genre != null && !genre.isEmpty() && !genre.equals("null") && fulltxt == null) {
+            if (genre != null && !genre.isEmpty() && !genre.equals("null") && fulltxt.equals("null")) {
                 statement1.setString(i, genre);
                 statement2.setString(i, genre);
                 statement3.setString(i, genre);
                 i++;
-            } else if (star != null && !star.isEmpty() && !star.equals("null") && fulltxt == null) {
+            } else if (star != null && !star.isEmpty() && !star.equals("null") && fulltxt.equals("null")) {
                 statement1.setString(i, star);
                 statement2.setString(i, star);
                 statement3.setString(i, star);

@@ -11,7 +11,7 @@ function handleLookup(query, doneCallback) {
 	// TODO: if you want to check past query results first, you can do it here
 	
 	if(sessionStorage.getItem(query) != null){
-		console.log("fetching session storage data")
+		console.log("using front-end cache to fetch suggestion list")
 		var dataObj = JSON.parse(sessionStorage.getItem(query));
 		handleLookupAjaxSuccess(dataObj, query, doneCallback);
 	}
