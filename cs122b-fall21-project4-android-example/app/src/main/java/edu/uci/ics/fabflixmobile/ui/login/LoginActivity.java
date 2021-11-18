@@ -30,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
     private TextView message;
 
     /*
-      In Android, localhost is the address of the device or the emulator.
-      To connect to your machine, you need to use the below IP address
+     * In Android, localhost is the address of the device or the emulator. To
+     * connect to your machine, you need to use the below IP address
      */
     private final String host = "10.0.2.2";
     private final String port = "8080";
@@ -51,7 +51,8 @@ public class LoginActivity extends AppCompatActivity {
         message = binding.message;
         final Button loginButton = binding.login;
 
-        //assign a listener to call a function to handle the user request when clicking a button
+        // assign a listener to call a function to handle the user request when clicking
+        // a button
         loginButton.setOnClickListener(view -> login());
     }
 
@@ -61,24 +62,20 @@ public class LoginActivity extends AppCompatActivity {
         // use the same network queue across our application
         final RequestQueue queue = NetworkManager.sharedManager(this).queue;
         // request type is POST
-        final StringRequest loginRequest = new StringRequest(
-                Request.Method.POST,
-                baseURL + "/api/login",
-                response -> {
-                    // TODO: should parse the json response to redirect to appropriate functions
-                    //  upon different response value.
-                    Log.d("login.success", response);
-                    //Complete and destroy login activity once successful
-                    finish();
-                    // initialize the activity(page)/destination
-                    Intent MovieListPage = new Intent(LoginActivity.this, MovieListActivity.class);
-                    // activate the list page.
-                    startActivity(MovieListPage);
-                },
-                error -> {
-                    // error
-                    Log.d("login.error", error.toString());
-                }) {
+        final StringRequest loginRequest = new StringRequest(Request.Method.POST, baseURL + "/api/login", response -> {
+            // TODO: should parse the json response to redirect to appropriate functions
+            // upon different response value.
+            Log.d("login.success", response);
+            // Complete and destroy login activity once successful
+            finish();
+            // initialize the activity(page)/destination
+            Intent MovieListPage = new Intent(LoginActivity.this, MovieListActivity.class);
+            // activate the list page.
+            startActivity(MovieListPage);
+        }, error -> {
+            // error
+            Log.d("login.error", error.toString());
+        }) {
             @Override
             protected Map<String, String> getParams() {
                 // POST request form data
