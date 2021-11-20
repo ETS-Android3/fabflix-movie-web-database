@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
      * In Android, localhost is the address of the device or the emulator. To
      * connect to your machine, you need to use the below IP address
      */
-    private final String host = "3.12.241.15";
+    private final String host = "18.218.233.185";
     private final String port = "8443";
     private final String domain = "cs122b-fall21-project4-team-5";
     private final String baseURL = "https://" + host + ":" + port + "/" + domain;
