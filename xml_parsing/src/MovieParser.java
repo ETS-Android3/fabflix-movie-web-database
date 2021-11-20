@@ -216,7 +216,7 @@ public class MovieParser extends DefaultHandler{
         ResultSet rs_ids = movieIds.executeQuery();
         while(rs_ids.next()){
             maxId = rs_ids.getString("maxID");
-            tempId = (Integer.parseInt(maxId.substring(maxId.length() - 7)) + 1);
+            tempId = (Integer.parseInt(maxId.substring(maxId.length() - 6)) + 1);
         }
 
         String insertMovies = "LOAD DATA LOCAL INFILE './xml_parsing/data/MovieData.txt'\n" +
