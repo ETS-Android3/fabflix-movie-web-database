@@ -37,10 +37,15 @@ public class SingleMovieActivity extends AppCompatActivity{
     private TextView single_genres;
     private TextView single_stars;
 
-    private final String host = "10.0.2.2";
-    private final String port = "8080";
-    private final String domain = "cs122b-fall21-project1-team-5";
-    private final String baseURL = "http://" + host + ":" + port + "/" + domain;
+    private final String host = "3.12.241.15";
+    private final String port = "8443";
+    private final String domain = "cs122b-fall21-project4-team-5";
+    private final String baseURL = "https://" + host + ":" + port + "/" + domain;
+
+//    private final String host = "10.0.2.2";
+//    private final String port = "8080";
+//    private final String domain = "cs122b-fall21-project4-team-5";
+//    private final String baseURL = "http://" + host + ":" + port + "/" + domain;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
