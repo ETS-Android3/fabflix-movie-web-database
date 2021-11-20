@@ -8,7 +8,7 @@
  *      2. Use jQuery to talk to backend API to get the json data.
  *      3. Populate the data to correct html elements.
  */
-function handleCartInfo(movieId){
+ function handleCartInfo(movieId){
 
     $.ajax("api/movies", {
         dataType: "json",
@@ -56,8 +56,8 @@ function handleResult(resultData) {
 
     let genres = [];
     for(let i=0; i < resultData["movie_genres"].length; ++i){
-        genres.push('<a href="movie-list.html?genre=' + resultData["movie_genres"][i] + '">' +
-                    resultData["movie_genres"][i] + '</a>');
+        genres.push('<a href="movie-list.html?genre=' + resultData["movie_genres"][i]["name"] + '">' +
+                    resultData["movie_genres"][i]["name"] + '</a>');
     }
     // append two html <p> created to the h3 body, which will refresh the page
     movieInfoElement.append("<p>Movie Title: " + resultData["movie_title"] + "</p>" +

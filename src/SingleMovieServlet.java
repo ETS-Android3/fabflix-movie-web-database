@@ -109,8 +109,11 @@ public class SingleMovieServlet extends HttpServlet {
             JsonArray genres = new JsonArray();
 
             while (rs_genres.next()) {
+                JsonObject genre_obj = new JsonObject();
                 String rs_genre = rs_genres.getString("name");
-                genres.add(rs_genre);
+                genre_obj.addProperty("name", rs_genre);
+
+                genres.add(genre_obj);
             }
 
             // Create a JsonObject based on the data we retrieve from rs

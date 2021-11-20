@@ -72,6 +72,15 @@ public class MoviesServlet extends HttpServlet {
         String tOrder = request.getParameter("title_order");
         String rOrder = request.getParameter("rating_order");
 
+        if (mvct == null && page == null && sort == null && tOrder == null && rOrder == null) {
+            mvct = "10";
+            page = "1";
+            sort = "Default";
+            tOrder = "Default";
+            rOrder = "Default";
+            fulltxt = "null";
+        }
+
         boolean sorting = false;
         if (!sort.equals("Default")) {
             sorting = true;
@@ -401,9 +410,11 @@ public class MoviesServlet extends HttpServlet {
                         rs_genres.previous();
                         break;
                     }
-
+                    JsonObject genre_obj = new JsonObject();
                     String rs_genre = rs_genres.getString("name");
-                    genres.add(rs_genre);
+                    genre_obj.addProperty("name", rs_genre);
+
+                    genres.add(genre_obj);
                 }
 
                 // Create a JsonObject based on the data we retrieve from rs
