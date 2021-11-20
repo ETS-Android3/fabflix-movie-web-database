@@ -1,4 +1,5 @@
-1. https://youtu.be/gnQBwMgywIs (Project 3 regrade video)
+1. https://youtu.be/quHgILBUwio (Project 4 video link)
+   https://youtu.be/gnQBwMgywIs (Project 3 regrade video link)
 
 2. Deploying our application with Tomcat involved packaging our maven project
    which resulted in a war file being created that can moved into the tomcat
