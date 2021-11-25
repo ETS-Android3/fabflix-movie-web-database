@@ -93,6 +93,8 @@ public class MovieSuggestion extends HttpServlet {
 			}
 
 			response.getWriter().write(jsonArray.toString());
+			rs.close();
+			statement.close();
 
 		} catch (Exception e) {
 			System.out.println(e);

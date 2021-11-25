@@ -89,6 +89,7 @@ public class AddStarServlet extends HttpServlet {
 
             out.write(responseJsonObject.toString());
             statement.close();
+            rs.close();
 
         } catch (Exception e) {
 

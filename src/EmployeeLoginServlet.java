@@ -96,6 +96,8 @@ public class EmployeeLoginServlet extends HttpServlet {
                 // } else {
                 // responseJsonObject.addProperty("message", "incorrect password");
                 // }
+                rs.close();
+                statement.close();
             }
 
         } catch (Exception e) {
