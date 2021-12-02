@@ -1,3 +1,4 @@
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -13,12 +14,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-// import java.sql.Statement;
 import java.sql.PreparedStatement;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.BufferedWriter;
 
 // Declaring a WebServlet called StarsServlet, which maps to url "/api/stars"
 @WebServlet(name = "MoviesServlet", urlPatterns = "/api/movies")
 public class MoviesServlet extends HttpServlet {
+
+    long TJstartTime;
+    long TJelapsedTime;
+    long TSstartTime;
+    long TSelapsedTime;
 
     // Create a dataSource which registered in web.
     private DataSource dataSource;
@@ -39,8 +47,9 @@ public class MoviesServlet extends HttpServlet {
 
         response.setContentType("application/json"); // Response mime type
 
-        // browse features
+        TSstartTime = System.nanoTime();
 
+        // browse features
         String genre = request.getParameter("genre");
         String index = request.getParameter("char");
 
@@ -97,6 +106,8 @@ public class MoviesServlet extends HttpServlet {
         // Get a connection from dataSource and let resource manager close the
         // connection after usage.
         try (Connection conn = dataSource.getConnection()) {
+
+            TJstartTime = System.nanoTime();
 
             String query1 = "SELECT movies.* FROM (SELECT DISTINCT movies.*, ratings.rating FROM movies LEFT OUTER JOIN ratings ON movies.id = ratings.movieId) as movies "
                     + "WHERE (movies.title LIKE ? or ? is null or movies.title REGEXP ?) "
@@ -445,6 +456,8 @@ public class MoviesServlet extends HttpServlet {
             // Set response status to 200 (OK)
             response.setStatus(200);
 
+            TJelapsedTime = System.nanoTime() - TJstartTime;
+
         } catch (Exception e) {
 
             // Write error message JSON object to output
@@ -454,8 +467,29 @@ public class MoviesServlet extends HttpServlet {
 
             // Set response status to 500 (Internal Server Error)
             response.setStatus(500);
+
         } finally {
             out.close();
+            TSelapsedTime = System.nanoTime() - TSstartTime;
+            String path = request.getServletContext().getRealPath("/") + "log.txt";
+
+            try {
+                File file = new File(path);
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+
+                FileWriter fw = new FileWriter(file, true);
+                BufferedWriter bufferedWriter = new BufferedWriter(fw);
+                // bufferedWriter.write("TS: " + TSelapsedTime + ", TJ: " + TJelapsedTime);
+                bufferedWriter.write(TSelapsedTime + "," + TJelapsedTime);
+                bufferedWriter.newLine();
+                bufferedWriter.close();
+                // fw.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         // Always remember to close db connection after usage. Here it's done by
