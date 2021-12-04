@@ -2,7 +2,7 @@
 
   - #### Overview:
 
-    A movie database that offers searching through movies as well as showing movie details such as associated actors, directors, and publishing date
+    A movie database that offers searching through movies as well as showing movie details such as associated actors, directors, and publishing date.
 
     **Technical Features:**  
 
@@ -11,7 +11,7 @@
       requests to the backend using Java Servlets. This web application is hosted on Apache Tomcat and
       is able to utilize Apache2 to handle load balancing for large scale user traffic.
 
-      **Notable features of this web application:**
+      **Notable features of this web application:**  
         - HTTPS redirection  
         - Full-text search and Autocomplete  
         - MySQL Replication  
@@ -26,7 +26,7 @@
     Deploying this application with Tomcat requires Maven which using
     ```mvn package```
     will create a war file which deploying in Tomcat webapps directory
-    will launch and run this web application
+    will launch and run this web application.
 
 - # JMeter TS/TJ Time Measurement Report
 
