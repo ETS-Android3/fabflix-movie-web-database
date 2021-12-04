@@ -4,16 +4,18 @@
 
     A movie database that offers searching through movies as well as showing movie details such as associated actors, directors, and publishing date.
 
-    **Technical Features:**  
+    **Technical Features:**
 
       A full-stack web application using the RESTful API that utilizes MySQL for the database.
       For the front-end, this web application uses HTML, CSS, and JavaScript using AJAX to send
       requests to the backend using Java Servlets. This web application is hosted on Apache Tomcat and
-      is able to utilize Apache2 to handle load balancing for large scale user traffic.
+      is able to utilize Apache2 to handle load balancing for large scale user traffic. This web
+      application also features an android app that displays this web application on Android.
 
       **Notable features of this web application:**  
         - HTTPS redirection  
         - Full-text search and Autocomplete  
+        - Android App Platform
         - MySQL Replication  
         - Load Balancing using Apache2  
         - Connection Pooling  
