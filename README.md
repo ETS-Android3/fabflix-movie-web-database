@@ -32,7 +32,7 @@
     [context.xml](WebContent/META-INF/context.xml)  
     [AddMovieServlet.java](src/AddMovieServlet.java)  
     [AddStarServlet.java](src/AddStarServlet.java)  
-    
+      
     The Master Instance IP was saved in [context.xml](WebContent/META-INF/context.xml) which the AddMovie and AddStar servlets used for querying the MySQL server
 
   - #### How read/write requests were routed to Master/Slave SQL?
