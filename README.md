@@ -30,8 +30,9 @@
 
   - #### Include the filename/path of all code/configuration files in GitHub of routing queries to Master/Slave SQL.
     [context.xml](WebContent/META-INF/context.xml)  
-    [context.xml](src/AddMovieServlet.java)  
-    [context.xml](src/AddStarServlet.java)  
+    [AddMovieServlet.java](src/AddMovieServlet.java)  
+    [AddStarServlet.java](src/AddStarServlet.java)  
+    The Master Instance IP was saved in [context.xml](WebContent/META-INF/context.xml) which the AddMovie and AddStar servlets used for querying the MySQL server
 
   - #### How read/write requests were routed to Master/Slave SQL?
     Read requests were routed to localhost on both Master and Slave SQL servers since reading can be done on any database. 
