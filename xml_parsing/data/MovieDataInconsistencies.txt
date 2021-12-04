@@ -1,0 +1,4311 @@
+Movie inconsistencies were related with directors that were:
+unknown, no publishing year, no title or was not categorized under stanford's category references:
+http://infolab.stanford.edu/pub/movies/doc.html#CATS
+
+Number Thirteen, 1922, Hitchcock
+The Passionate Adventure, 1924, Hitchcock
+The Blackguard, 1925, Hitchcock
+La Premiere Seance du Salon Indien au Grand Caf\'e, 1895, A.Lumiere
+Le Gouter de B\'eb\'e, 1895, A.Lumiere
+Boules, 1895, A.Lumiere
+L'assissinatat du Duc de Guise, 1908, A.Lumiere
+The Little Train Robbery, 1905, E.S.Porter
+The Kleptomaniac, 1905, E.S.Porter
+An American Citizen, 1913, E.S.Porter
+A Good Little Devil, 1913, E.S.Porter
+In The Bishop's Carriage, 1913, E.S.Porter
+Caprice, 1913, E.S.Porter
+Hearts Adrift, 1913, E.S.Porter
+L'Escamontage d'une Dame, 1896, Melies
+L'Homme orchestre, 1900, Melies
+Cinderella, 1900, Melies
+An Impossible Voyage, 1904, Melies
+L'Homme a la Tete en Caoutchouc, 1906, Melies
+Hamlet, 1900, Unknown0
+Romea and Juliet, 1900, Unknown0
+King Lear, 1905, Unknown0
+Julius Cesar, 1907, Unknown0
+Othello, 1907, Unknown0
+Macbeth, 1908, Unknown0
+Richard III, 1908, Unknown0
+The Magic Sword or A Medieval Mystery, 1891, Booth
+La Passion, 1902, Pathe
+Too Many Millions, 1918, Cruze
+Hollywood, 1918, Cruze
+Washington Merry Go Round, 1932, Cruze
+I Cover the Waterfront, 1933, Cruze
+Sutter's Gold, 1936, Cruze
+The Last Days of Pompeii, 1908, Maggi
+Nero and the Burning of Rome, 1909, Maggi
+At the French Ball, 1908, Griffith
+Calamitous Elopement, 1908, Griffith
+The Adventures of Dolly, 1908, Griffith
+For the Love of Gold, 1908, Griffith
+The Call of the Wild, 1908, Griffith
+Lines of White on a Sullen Sea, 1908, Griffith
+Love Among the Roses, 1910, Griffith
+The Lonedale Operator, 1911, Griffith
+Paradise Lost, 1911, Griffith
+The Cowboy Doctor, 1911, Griffith
+Man's Genesis, 1912, Griffith
+The Musketeers of Pig Alley, 1912, Griffith
+The New York Hat, 1912, Griffith
+Hearts of the World, 1918, Griffith
+One Exciting Night, 1922, Griffith
+Screen Snapshots, 1926, Griffith
+Romeo and Juliet, 1908, Unknown2
+Romeo and Juliet, 1908, Unknown2
+Romeo and Juliet, 1908, Unknown2
+Romeo and Juliet, 1911, Unknown2
+Romeo and Juliet, 1911, Unknown2
+Romeo and Juliet, 1916, Unknown2
+Romeo and Juliet, 1916, Unknown2
+Le Binetoscope, 1909, Cohl
+Marin Valiero, Doge of Venice, 1909, deLiguoro
+Gertie the Dino, 1909, Mackay
+Young Woodley, 1930, Bentley
+Those Were the Days, 1934, Bentley
+The Old Curiosity Shop, 1935, Bentley
+Lucky to Me, 1939, Bentley
+Dante's Inferno, 1911, Padovan
+L'Enfant de Paris, 1913, Perret
+Clios and Phyletes, 1911, Mentasti
+Custer's Last Fight, 1912, Th.Ince
+Civilization, 1915, Th.Ince
+Human Wreckage, 1924, Th.Ince
+Suez, 1938, Dwan
+The Three Musketeers, 1939, Dwan
+Sands of Iwo Jima, 1949, Dwan
+The Ghost Breaker, 1922, A.E.Green
+I Loved a Woman, 1933, A.E.Green
+Step On It, 1922, Conway
+The Unholy Three, 1930, Conway
+Ars\`ene Lupin, 1932, Conway
+Sarasota, 1937, Conway
+A Yank at Oxford, 1938, Conway
+Too Hot To Handle, 1938, Conway
+Lady of the Tropics, 1939, Conway
+Boom Town, 1940, Conway
+Love Crazy, 1940, Conway
+Honky Tonk, 1940, Conway
+Dragon Seed, 1944, Conway
+The Hucksters, 1947, Conway
+Alias Jimmy Valentine, 1915, M.Tourneur
+Au nom de la loi, 1931, M.Tourneur
+The Dumb Girl of Portici, 1916, Weber
+The Dance of Love, 1920, Weber
+Shoes, 1920, Weber
+Nelson, 1919, Elvey
+The Elusive Pimpernel, 1912, Elvey
+The Hound of the Baskervilles, 1921, Elvey
+Balalava, 1928, Elvey
+The School for Scandal, 1930, Elvey
+The Tunnel, 1934, Elvey
+Beware of Pity, 1946, Elvey
+My Wife's Lodger, 1952, Elvey
+Vampyren, 1912, M.Stiller
+Sir Arne's Treasure, 1919, M.Stiller
+The Blizzard, 1926, M.Stiller
+Hotel Imperial, 1927, M.Stiller
+Street of Sin, 1928, M.Stiller
+From the Manger to the Cross, 1912, Olcott
+Monsieur Beaucaire, 1924, Olcott
+The Phantom Carriage, 1920, Seastrom
+He Who gets Slapped, 1924, Seastrom
+Within the Law, 1912, UnYear12
+Within the Law, 1917, UnYear12
+Within the Law, 1923, UnYear12
+Il Cadavere Vivente, 1913, Oxilia
+Call of the North, 1915, DeMille
+The Wild Goose Chase, 1915, DeMille
+The Warrens of Virginia, 1915, DeMille
+The Arab, 1915, DeMille
+The Goose Girl, 1915, DeMille
+Maria Rosa, 1915, DeMille
+Adam's Rib, 1923, DeMille
+Madame Satan, 1930, DeMille
+The Godless Girl, 1931, DeMille
+The Crusades, 1935, DeMille
+Union Pacific, 1939, DeMille
+Ivanhoe, 1913, Brenon
+Neptune's Daughter, 1914, Brenon
+The Kreuzer Sonata, 1913, Brenon
+War Brides, 1916, Brenon
+The Passing of the Third Floor Back, 1918, Brenon
+The Sign on the Door, 1921, Brenon
+The Spanish Dancer, 1923, Brenon
+Beau Geste, 1926, Brenon
+Beau Ideal, 1931, Brenon
+The Student of Prag, 1913, Wegener
+R\"ubezahls Hochzeit, 1916, Wegener
+Der Rattenf\"anger von Hameln, 1918, Wegener
+Der Golem, 1920, Wegener
+Tarzan the Ape Man, 1913, Unknown42
+Romance of Tarzan, 1918, Unknown42
+Return of Tarzan, 1920, Unknown42
+Son of Tarzan, 1920, Unknown42
+Adventures of Tarzan, 1921, Unknown42
+Tarzan and the Golden Lion, 1927, Unknown42
+Tarzan the Mighty, 1928, Unknown42
+The Duped Journalist, 1914, A.Korda
+The Man with the Golden Touch, 1918, A.Korda
+The Prince and the Pauper, 1920, A.Korda
+The Private Life of Helen of Troy, 1927, A.Korda
+Her Private Life, 1929, A.Korda
+The Princess and the Plumber, 1931, A.Korda
+The Private Life of Henry VIII, 1933, A.Korda
+The Girl from Maxim's, 1933, A.Korda
+Rembrandt, 1936, A.Korda
+The Adventurer, 1917, Chaplin
+City Lights, 1931, Chaplin
+Modern Times, 1936, Chaplin
+The Gold Rush, 1942, Chaplin
+A King in New York, 1957, Chaplin
+A Countess from Hong Kong, 1966, Chaplin
+Malombra, 1917, Gallone
+Maman poupee, 1920, Gallone
+Pawns of Passion, 1928, Gallone
+Madame Butterfly, 1939, Gallone
+Manon Lescaut, 1940, Gallone
+La Traviata, 1947, Gallone
+Faust and the Devil, 1949, Gallone
+La Forza del Destino, 1951, Gallone
+Tosca, 1956, Gallone
+Michel Strogoff, 1959, Gallone
+Cathage in Flames, 1959, Gallone
+The Spoilers, 1914, C.Campbell
+Die Puppe, 1919, Lubitsch
+Rosita, 1923, Lubitsch
+The Patriot, 1928, Lubitsch
+The Love Parade, 1929, Lubitsch
+The Man I Killed, 1932, Lubitsch
+If I had a Million, 1932, Lubitsch
+Design For Living, 1933, Lubitsch
+Angel, 1937, Lubitsch
+The Final Judgement, 1915, Carewe
+The trail to Yesterday, 1918, Carewe
+Rio Grande, 1920, Carewe
+San of the Sahara, 1924, Carewe
+Resurrection, 1927, Carewe
+Ramona, 1928, Carewe
+Evangeline, 1929, Carewe
+Are We Civilized?, 1934, Carewe
+Les Soeurs Ennemies, 1915, Dulac
+Geo le Mysterieux, 1916, Dulac
+Venus Victrix, 1916, Dulac
+La Fete Espanole, 1919, Dulac
+La Belle Dame Sans Merci, 1920, Dulac
+La Souriante Madame Beudet, 1923, Dulac
+La Coquille et le Clergyman, 1926, Dulac
+The Little Red Schoolhouse, 1923, Adolfi
+The Phantom Express, 1925, Adolfi
+The Man Who Played God, 1932, Adolfi
+Nero, 1922, G Edwards
+Music in the Air, 1934, J.May
+The House of Seven Gables, 1940, J.May
+Johnny Doen't Live Here Any More, 1944, J.May
+Fantomas, 1916, Feuillade
+Judex, 1917, Feuillade
+What Price Glory, 1926, Walsh
+Sadie Thompson, 1928, Walsh
+The Man Who Came Back, 1930, Walsh
+The Big Trail, 1930, Walsh
+The Yellow Ticket, 1931, Walsh
+They Drive by Night, 1940, Walsh
+High Sierra, 1941, Walsh
+Manpower, 1941, Walsh
+Northern Pursuit, 1943, Walsh
+Objective Burma, 1945, Walsh
+White Heat, 1949, Walsh
+Sea Devils, 1953, Walsh
+A Distant Trumpet, 1964, Walsh
+Ceux de Chez Nous, 1915, Guitry
+La Voyante, 1925, Guitry
+Les Deaux Couverts, 1932, Guitry
+Bonne Chance, 1935, Guitry
+Quadrille, 1938, Guitry
+Ils Etaient Neuf Celibataires, 1939, Guitry
+Donne-moi Tes Yeux, 1943, Guitry
+La Diable Boiteux, 1948, Guitry
+Le Comedien, 1949, Guitry
+Debureau, 1951, Guitry
+Napoleon, 1955, Guitry
+Le Vie a Dieux, 1957, Guitry
+Tom Sawyer, 1917, W.D.Taylor
+Huck and Tom, 1918, W.D.Taylor
+Huckleberry Finn, 1920, W.D.Taylor
+Two Orphans, 1915, Unknown15
+The Clemenceau Case, 1915, Unknown15
+The Stain, 1915, Unknown15
+Lady Audley's Secret, 1915, Unknown15
+The Vixen, 1916, Unknown15
+A Fool There Was, 1916, Unknown15
+Sin, 1916, Unknown15
+The Light, 1916, Unknown15
+Destruction, 1916, Unknown15
+Gold and the Woman, 1916, Unknown15
+The Serpent, 1916, Unknown15
+Eternal Sappho, 1916, Unknown15
+Her Double Life, 1916, Unknown15
+Cleopatra, 1917, Unknown15
+Madame Du Barry, 1917, Unknown15
+Under Two Flags, 1917, Unknown15
+Camille, 1917, Unknown15
+Heart and Soul, 1917, Unknown15
+The Tiger Woman, 1917, Unknown15
+Salome, 1918, Unknown15
+When A Woman Sins, 1918, Unknown15
+The Forbidden Path, 1918, Unknown15
+The She Devil, 1918, Unknown15
+Rose of the Blood, 1918, Unknown15
+Kathleen Mavourneen, 1919, Unknown15
+La Belle Russe, 1919, Unknown15
+When Men Desire, 1919, Unknown15
+The Siren's Song, 1919, Unknown15
+A Woman There Was, 1920, Unknown15
+The Price of Silence, 1921, Unknown15
+Her Greatest Love, 1921, Unknown15
+The Unchastened Woman, 1925, Unknown15
+Madame Mystery, 1926, Unknown15
+The Dancer of Paris, 1928, Unknown15
+Perfido Incanto, 1916, A.Bragaglia
+Thais, 1916, A.Bragaglia
+J'accuse, 1919, Gance
+La Roue, 1922, Gance
+Magirama, 1955, Gance
+Austerlitz, 1960, Gance
+Sunshine, 1916, Cline
+His Bread and Butter, 1916, Cline
+Her First Beau, 1916, Cline
+Training for Husbands, 1918, Cline
+Training for Husbands, 1921, Cline
+Circus Day, 1923, Cline
+Off His Trolley, 1924, Cline
+Galloping Bungalows, 1924, Cline
+The Plumber, 1924, Cline
+Little Robinson Crusoe, 1924, Cline
+When a Man is a Man, 1924, Cline
+The Good Bad Boy, 1924, Cline
+Captain January, 1924, Cline
+Along Came Ruth, 1924, Cline
+Tee for Two, 1925, Cline
+A Love Sunday, 1926, Cline
+The Girls from Everywher, 1927, Cline
+Ladies Night in Turkish Bath, 1928, Cline
+Love at First Flight, 1928, Cline
+Crash, 1928, Cline
+Broadway Fever, 1929, Cline
+Don't Bite Your Dentist, 1930, Cline
+In Conference, 1931, Cline
+Million Dollar Legs, 1932, Cline
+So This is Africa, 1933, Cline
+Peck's Bad Boy, 1934, Cline
+The Cowboy Millionaire, 1935, Cline
+When a Man's a Man, 1935, Cline
+F-Man, 1936, Cline
+On Again - Off Again, 1937, Cline
+High Flyers, 1937, Cline
+Hawaii Calls, 1938, Cline
+The Villain Still Pursued Her, 1940, Cline
+The Bank Dick, 1940, Cline
+Meet The Chump, 1941, Cline
+The Sucker, 1941, Cline
+What's Cooking, 1942, Cline
+Night Club Girl, 1944, Cline
+Penthouse Rhythm, 1945, Cline
+Bringing Up Father, 1946, Cline
+Jiggs and Maggie in Society, 1948, Cline
+Jiggs and Maggie in Court, 1948, Cline
+Who Pays?, 1916, H.King
+Tol'able David, 1921, H.King
+The White Sister, 1923, H.King
+Lloyd's of London, 1936, H.King
+Ramona, 1936, H.King
+Maryland, 1940, H.King
+Chad Hanna, 1940, H.King
+A Yank in the RAF, 1941, H.King
+The Black Swan, 1942, H.King
+Margie, 1946, H.King
+Tender is the Night, 1961, H.King
+T\^etes de Femmes, Femmes de T\^ete, 1916, Feyder
+L'Atlantide, 1921, Feyder
+Les Noveuax Messieurs, 1929, Feyder
+La Lois du Nord, 1939, Feyder
+Tess of the D'Ubervilles, 1925, Neilan
+Sweethearts on Parade, 1930, Neilan
+Dark Angel, 1935, S.Franklin
+Nice People, 1922, W.DeMille
+Craig's Wife, 1928, W.DeMille
+The House of Rothschild, 1934, Werker
+The Adventures of Sherlock Holmes, 1939, Werker
+One Week, 1920, B.Keaton
+Convict 13, 1920, B.Keaton
+The Scarecrow, 1920, B.Keaton
+The Goat, 1921, B.Keaton
+Hard Luck, 1921, B.Keaton
+The High Sign, 1921, B.Keaton
+The Playhouse, 1921, B.Keaton
+The Boat, 1921, B.Keaton
+The Paleface, 1921, B.Keaton
+The Blacksmith, 1921, B.Keaton
+Cops, 1922, B.Keaton
+The Electric House, 1922, B.Keaton
+My Wife's Relations, 1922, B.Keaton
+Day Dreams, 1922, B.Keaton
+The Baloonatic, 1923, B.Keaton
+The Love Nest, 1923, B.Keaton
+Life in Sometown, USA, 1938, B.Keaton
+Hollywood Handicap, 1938, B.Keaton
+Streamlined Swing, 1938, B.Keaton
+Oliver Twist, 1922, F.Lloyd
+Passport to Hell, 1932, F.Lloyd
+Blood on the Sun, 1945, F.Lloyd
+The Ghost Breakers, 1940, Geo.Marshall
+Murder He Says, 1944, Geo.Marshall
+Monsieur Beaucaire, 1946, Geo.Marshall
+Fancy Pants, 1950, Geo.Marshall
+Grand-Ma's Boy, 1922, H.Lloyd
+Men Without Women, 1930, J.Ford
+Arrowsmith, 1931, J.Ford
+The Lost Patrol, 1934, J.Ford
+The Informer, 1935, J.Ford
+The Prisoner of Shark Island, 1936, J.Ford
+The Grapes of Wrath, 1940, J.Ford
+The Long Voyage Home, 1940, J.Ford
+December 7, 1942, J.Ford
+My Darling Clementine, 1946, J.Ford
+The Sun Shines Bright, 1954, J.Ford
+The Wings of Eagles, 1957, J.Ford
+Captain of the Guard, 1930, Robertson
+The Black Mantilla, 1917, Baldwin
+A Dream of Egypt, 1917, Baldwin
+A Romany Rose, 1917, Baldwin
+Little Mariana's Triumph, 1917, Baldwin
+Amelita's Friend, 1917, Baldwin
+The Good Bad Girl, 1931, R.W.Neill
+Black Angel, 1946, R.W.Neill
+The Girl with the Hatbox, 1927, Boleslawski
+Clive of India, 1935, Boleslawski
+Theodora Goes Wild, 1935, Boleslawski
+The Garden of Allah, 1936, Boleslawski
+The Return of Peter Grimm, 1926, Schertzinger
+So Big, 1923, Brabin
+The Bridge of San Luis Rey, 1923, Brabin
+The Devil's Passkey, 1919, vonStroheim
+Foolish Wives, 1921, vonStroheim
+Greed, 1999, vonStroheim
+Queen Kelly, 1928, vonStroheim
+Sex, 1920, Niblo
+Camille, 1927, Niblo
+Husbands and Lovers, 1923, Stahl
+The Keys of the Kingdom, 1944, Stahl
+Oh You Beautiful Doll, 1949, Stahl
+The Turn in the Road, 1918, K.Vidor
+The Big Parade, 1925, K.Vidor
+Hallelujah, 1929, K.Vidor
+Billy the Kid, 1930, K.Vidor
+Street Scene, 1930, K.Vidor
+The Champ, 1931, K.Vidor
+Our Daily Bread, 1934, K.Vidor
+The Citadel, 1938, K.Vidor
+My Son My Son, 1940, K.Vidor
+War and Peace, 1956, K.Vidor
+The Virgin of Stamboul, 1920, T.Browning
+Under Two Flags, 1922, T.Browning
+West of Zanzibar, 1928, T.Browning
+The Unholy Three, 1929, T.Browning
+The Unholy Three, 1930, T.Browning
+Boy Crazy, 1922, Seiter
+Girl Crazy, 1932, Seiter
+This Is My Affair, 1937, Seiter
+Broadway, 1942, Seiter
+The Affairs of Susan, 1945, Seiter
+Trader Horn, 1930, VanDyke
+Tarzan the Ape Man, 1932, VanDyke
+San Francisco, 1936, VanDyke
+I Married an Angel, 1942, VanDyke
+The Way of Terror, 1921, Curtiz
+The Third Degree, 1926, Curtiz
+Mammy, 1930, Curtiz
+Doctor X, 1932, Curtiz
+Twenty-Thousand Years in Sing Sing, 1933, Curtiz
+British Agent, 1934, Curtiz
+Black Fury, 1935, Curtiz
+Front Page Woman, 1935, Curtiz
+Fight for Gold, 1938, Curtiz
+The Sea Hawk, 1940, Curtiz
+Virginia City, 1940, Curtiz
+Casablanca, 1942, Curtiz
+This is The Army, 1943, Curtiz
+Hara Kiri, 1919, F.Lang
+Der M\"ude Tod, 1921, F.Lang
+Die Frau im Mond, 1928, F.Lang
+Das Testament des Dr. Mabuse, 1932, F.Lang
+Liliom, 1933, F.Lang
+You only Live Once, 1937, F.Lang
+Hangmen Also Die, 1942, F.Lang
+Human Desire, 1954, F.Lang
+Moonfleet, 1955, F.Lang
+While the City Sleeps, 1955, F.Lang
+Beyond a Reasonable Doubt, 1956, F.Lang
+Der Tiger von Ischnapur, 1958, F.Lang
+Das Indische Grabmal, 1958, F.Lang
+Die Tausend Augen des Dr. Mabuse, 1960, F.Lang
+Why Worry, 1923, Newmeyer
+Hot Water, 1924, Newmeyer
+The Freshman, 1925, Newmeyer
+General Spanky, 1936, Newmeyer
+College Coquette, 1929, Archainbaud
+Bella Donna, 1923, Fitzmaurice
+Dark Angel, 1925, Fitzmaurice
+The Kansan, 1943, Fitzmaurice
+Main Street, 1923, H.Beaumont
+Beau Brummel, 1924, H.Beaumont
+Babbitt, 1924, H.Beaumont
+Our Dancing Daughters, 1928, H.Beaumont
+Broadway Melody, 1929, H.Beaumont
+When Ladies Meet, 1933, H.Beaumont
+The Great Day, 1920, H.Ford
+The Call of Youth, 1920, H.Ford
+Poil de Carotte, 1925, Duvivier
+Poil de Carotte, 1932, Duvivier
+Maria Chapdelaine, 1933, Duvivier
+Le Golem, 1935, Duvivier
+La Belle Equipe, 1936, Duvivier
+Une Carnet de Bal, 1937, Duvivier
+La Fin de Jour, 1939, Duvivier
+La Fin de Jour, 1939, Duvivier
+Lydia, 1941, Duvivier
+Anna Karenina, 1948, Duvivier
+Don Camillo, 1952, Duvivier
+The Man in the Raincoat, 1957, Duvivier
+Pot-Boullie, 1957, Duvivier
+Around The World in 80 Days, 1919, Schunzel
+Amphityron, 1937, Schunzel
+Rich Man, Poor Girl, 1938, Schunzel
+The Great Awakening, 1941, Schunzel
+Pagu, 1916, R.Oswald
+I Was A Criminal, 1941, R.Oswald
+Isle of Missing Men, 1942, R.Oswald
+Genuine, 1920, Wiene
+Raskolnikov, 1923, Wiene
+The Goose Woman, 1925, Cl.Brown
+Night Flight, 1933, Cl.Brown
+Anna Karenina, 1935, Cl.Brown
+The Human Comedy, 1943, Cl.Brown
+Leaves from Satan's Book, 1920, Dreyer
+Once Upon a Time, 1922, Dreyer
+Devotion, 1944, Bernhardt
+My Reputation, 1946, Bernhardt
+A Stolen Life, 1946, Bernhardt
+Liliom, 1930, Borzage
+Moonrise, 1949, Borzage
+The Prude's Fall, 1923, Cutts
+The Rat, 1927, Cutts
+The Sign of Four, 1932, Cutts
+The Rat, 1927, Cutts
+Aren't Men Beasts, 1937, Cutts
+Just William, 1927, Cutts
+Peddlin' in Society, 1946, Righelli
+Nell Gwynn, 1924, H.Wilcox
+Dawn, 1928, H.Wilcox
+Bitter Sweet, 1933, H.Wilcox
+Nurse Edith Cavell, 1939, H.Wilcox
+Sunny, 1939, H.Wilcox
+Spring in Park Lane, 1948, H.Wilcox
+Odette, 1950, H.Wilcox
+Le Silence, 1921, Delluc
+Fi\`evre, 1921, Delluc
+Le Chemin d'Enroa, 1921, Delluc
+Le Tonnerre, 1921, Delluc
+La femme de nulle part, 1922, Delluc
+L'innodation, 1924, Delluc
+Bluebeard's Eighth Wife, 1923, S.Wood
+Our Town, 1940, S.Wood
+Ivy, 1947, S.Wood
+Command Decision, 1948, S.Wood
+Ambush, 1950, S.Wood
+The Virginian, 1929, V.Fleming
+The Wet Parade, 1932, V.Fleming
+Test Pilot, 1938, V.Fleming
+The Wizard of Oz, 1939, V.Fleming
+Dr. Jekyll and Mr. Hyde, 1941, V.Fleming
+Within Our Gates, 1920, UnYear20
+The Man Without Desire, 1923, Brunel
+Blighty, 1927, Brunel
+L'Uomo Meccanico, 1921, Deed
+The Passionate Plumber, 1932, Sedgwick
+Filmstudie, 1926, Richter
+Dreams That Money Can Buy, 1946, Richter
+dadascope, 1961, Richter
+Abraham Lincoln, 1925, Rosen
+The Man Who Made Diamonds, 1937, R.Ince
+The Four Horsemen of the Apocalypse, 1921, Rex Ingram
+Prisoner of Zenda, 1922, Rex Ingram
+Scaramouche, 1923, Rex Ingram
+Mare Nostrum, 1926, Rex Ingram
+The Garden of Allah, 1927, Rex Ingram
+Love in Morocco, 1933, Rex Ingram
+My Best Girl, 1927, Sam Taylor
+The Woman Disputed, 1927, Sam Taylor
+The Bedbug, 1929, Mayakowski
+The Great Impersonation, 1921, UnYear21
+High Speed, 1922, D.Murphy
+Ballet Mechanique, 1922, D.Murphy
+Emperor Jones, 1933, D.Murphy
+Coeur Fidele, 1923, J.Epstein
+The Three Paneled Mirror, 1927, J.Epstein
+Finis Terrae, 1928, J.Epstein
+Mor Vran, 1930, J.Epstein
+Le Tempestaire, 1947, J.Epstein
+Sleeping Partners, 1926, Se.Hicks
+The Secret of the Loch, 1934, Se.Hicks
+Vintage Wine, 1935, Se.Hicks
+Pastor Hall, 1939, Se.Hicks
+Silk Stockings, 1927, Ruggles
+I'm No Angel, 1933, Ruggles
+I met him in Paris, 1937, Ruggles
+True Confessions, 1937, Ruggles
+Sing you Sinners, 1938, Ruggles
+The Beloved Rogue, 1927, Crosland
+In Old San Francisco, 1927, Crosland
+The Jazz Singer, 1927, Crosland
+Glorious Betsy, 1928, Crosland
+None so Blind, 1923, B.King
+Min and Bill, 1930, G.Hill
+The Secret Six, 1931, G.Hill
+Tarzan the Fearless, 1933, G.Hill
+Secrets of a Soul, 1926, G.W.Pabst
+The Love of Jeanne Ney, 1927, G.W.Pabst
+Die B\"uchse der Pandora, 1928, G.W.Pabst
+Westfront 1918, 1930, G.W.Pabst
+Feuertaufe, 1933, G.W.Pabst
+M\"adchen in Uniform, 1939, G.W.Pabst
+Der Proze\ss, 1948, G.W.Pabst
+Ten Days to Die, 1954, G.W.Pabst
+M\"adchen in Uniform, 1957, G.W.Pabst
+Die Strasse, 1923, Grune
+At the Edge of the World, 1927, Grune
+Waterloo, 1928, Grune
+Abdul the Damned, 1935, Grune
+Pagliacci, 1935, Grune
+A Paper Doll's Whisper in the Spring, 1925, Mizoguchi
+The Gorge Between Love and Hate, 1932, Mizoguchi
+Osaka elegy, 1936, Mizoguchi
+Sisters of the Gion, 1936, Mizoguchi
+The Story of the Last Chrysanthemums, 1939, Mizoguchi
+Woman of Osaka, 1940, Mizoguchi
+The Fourty-nine Ronin, 1942, Mizoguchi
+The Life of O'Haru, 1952, Mizoguchi
+Streets of Shame, 1956, Mizoguchi
+Retour \'a la raison, 1923, Man Ray
+Emak Bakia, 1927, Man Ray
+L'Etoile de mer, 1929, Man Ray
+The Crazy Ray, 1923, Clair
+Entr'acte, 1924, Clair
+The Imaginary Voyage, 1925, Clair
+Un Chapeau de Paille d'Italie, 1927, Clair
+Two Timid Souls, 1928, Clair
+Sous les Toits de Paris, 1930, Clair
+It Happened Tomorrow, 1944, Clair
+Farewell Again, 1937, Whelan
+St. Martin's Lane, 1938, Whelan
+Q Planes, 1938, Whelan
+Twin Beds, 1942, Whelan
+Sparrows, 1926, Beaudine
+Penrod and Sam, 1931, Beaudine
+Breaking into Society, 1923, Stromberg
+The Public Enemy, 1931, Wellman
+Beau Geste, 1939, Wellman
+Roxie Hart, 1942, Wellman
+The Track of the Cat, 1954, Wellman
+The Perfect Crime, 1928, Worsley
+Le ballet mechanique, 1924, F.Leger
+Charleston, 1927, J.Renoir
+The Little Match-seller, 1928, J.Renoir
+Toni, 1934, J.Renoir
+La Nuit du Carrefour, 1934, J.Renoir
+Le Crime de Monsieur Lange, 1935, J.Renoir
+Les Bas Fonds, 1936, J.Renoir
+La Grande Illusion, 1937, J.Renoir
+The River, 1951, J.Renoir
+Lunch on the Grass, 1959, J.Renoir
+The Vanishing Corporal, 1961, J.Renoir
+C'est la Revolution, 1967, J.Renoir
+Le Petit Theatre de Jean Renoir, 1969, J.Renoir
+The Man Who Laughs, 1928, Leni
+Glumov's Diary, 1924, Eisenstein
+Strike, 1924, Eisenstein
+Catherine, 1924, Dieudonne
+\UN, 1925, Fanck
+The Man in the Box, 1925, Ch.Reisner
+Reducing, 1932, Ch.Reisner
+The Show-Off, 1934, Ch.Reisner
+Sophie Lang Goes West, 1937, Ch.Reisner
+The Cobra Strikes, 1948, Ch.Reisner
+One-Run B.Keaton, 1935, Lamont
+Tars and Stripes, 1935, Lamont
+Grand Slam Opera, 1936, Lamont
+The Trespasser, 1929, E.Goulding
+The Flame Within, 1935, E.Goulding
+That Certain Woman, 1936, E.Goulding
+The Dawn Patrol, 1938, E.Goulding
+We Are Not Alone, 1939, E.Goulding
+The Great Lie, 1941, E.Goulding
+Claudia, 1943, E.Goulding
+We're not Married, 1952, E.Goulding
+The Primrose Path, 1940, LaCava
+Sky Hawk, 1929, Blystone
+Tolable David, 1930, Blystone
+Great Guy, 1936, Blystone
+It's a Small World, 1935, I.Cummings
+Little Miss Broadway, 1936, I.Cummings
+Down Argentine Way, 1940, I.Cummings
+The Dolly Sisters, 1945, I.Cummings
+Two Arabian Knights, 1930, Milesstone
+Hallelujah, I'm a Bum Again, 1933, Milesstone
+Paris in the Spring, 1935, Milesstone
+The General died at Dawn, 1936, Milesstone
+Les Mis\'erables, 1952, Milesstone
+Ocean's Eleven, 1960, Milesstone
+The Salvation Hunters, 1925, Sternberg
+Underworld, 1927, Sternberg
+Der Blaue Engel, 1930, Sternberg
+Dishonoured, 1931, Sternberg
+Shanghai Express, 1932, Sternberg
+The Devil is a Woman, 1935, Sternberg
+Crime and Punishment, 1936, Sternberg
+Jet Pilot, 1950, Sternberg
+Macao, 1951, Sternberg
+The Saga of Anatahan, 1953, Sternberg
+The High Command, 1936, Dickinson
+The Arsenal Stadium Mystery, 1939, Dickinson
+Gaslight, 1939, Dickinson
+The Prime Minister, 1941, Dickinson
+Next of Kin, 1941, Dickinson
+Men of Two Worlds, 1945, Dickinson
+The Queen of Spades, 1947, Dickinson
+Hill 24 Doesn't Answer, 1955, Dickinson
+Hell's Heroes, 1929, Wyler
+A House Divided, 1931, Wyler
+The Good Fairy, 1935, Wyler
+The Letter, 1940, Wyler
+The Little Foxes, 1941, Wyler
+Detective Story, 1951, Wyler
+The Friendly Persuasion, 1956, Wyler
+The Pride of the Yankees', 1957, Wyler
+Ben Hur, 1959, Wyler
+The Collector, 1965, Wyler
+Rien que les Heures, 1926, Cavalcanti
+En Rade, 1927, Cavalcanti
+Sea Fever, 1929, Cavalcanti
+North Sea, 1938, Cavalcanti
+Men of the Lightship, 1941, Cavalcanti
+Champagne Charlie, 1945, Cavalcanti
+They made Me a Fugitive, 1947, Cavalcanti
+The First Gentleman, 1948, Cavalcanti
+For Them That Trespass, 1949, Cavalcanti
+O Canto do Mar, 1953, Cavalcanti
+Herr Puntila, 1955, Cavalcanti
+La Prima Notte, 1958, Cavalcanti
+Yerma, 1962, Cavalcanti
+Svengali, 1931, Mayo
+Ever in My Heart, 1931, Mayo
+Gambling Lady, 1936, Mayo
+Charley's Aunt, 1941, Mayo
+A Night in Casablanca, 1945, Mayo
+Angel On My Shoulder, 1946, Mayo
+Mamba, 1932, Rogell
+Argentine Nights, 1940, Rogell
+Trouble Chaser, 1940, Rogell
+Tight Shoes, 1942, Rogell
+In Old Oklahoma, 1943, Rogell
+Heaven Only Knows, 1947, Rogell
+Northwest Stampade, 1948, Rogell
+The Admiral Was a Lady, 1943, Rogell
+Men Agains Speed, 1958, Rogell
+The Lost World, 1925, Schoedsack
+The Creation, 1926, Schoedsack
+Chang, 1927, Schoedsack
+The Hounds of Zaroff, 1932, Schoedsack
+Dr. Cyclops, 1939, Schoedsack
+The Younger Generation, 1928, Capra
+You Can't Take It With You, 1938, Capra
+Mr. Smith goes to Washington, 1939, Capra
+Meet John Doe, 1941, Capra
+Die Kreuzer Sonate, 1926, Machaty
+Within the Law, 1939, Machaty
+Maciste in Hell, 1926, Brignone
+Scarface, 1932, Hawks
+Road to Glory, 1936, Hawks
+The Big Sky, 1952, Hawks
+Monkey Business, 1952, Hawks
+Man's Favorite Sport, 1964, Hawks
+Red Line 7000, 1965, Hawks
+The Singing Fool, 1928, Bacon
+Miss Pinkerton, 1932, Bacon
+Picture Snatcher, 1933, Bacon
+Wonder Bar, 1934, Bacon
+Here Comes the Navy, 1934, Bacon
+Devil Dogs of the Air, 1935, Bacon
+San Quentin, 1937, Bacon
+Boy Meets Girl, 1938, Bacon
+Wings of the Navy, 1939, Bacon
+Action in the North Atlantic, 1943, Bacon
+Sunday Dinner for a Soldier, 1944, Bacon
+Po Zakonu, 1926, Kuleshov
+The Journalist, 1927, Kuleshov
+Zoo in Budapest, 1933, R.V.Lee
+Tower of London, 1939, R.V.Lee
+The Bridge of San Luis Rey, 1944, R.V.Lee
+Dick Tracy, 1937, Ray Taylor
+The End of St. Petersburg, 1927, Pudovkin
+Storm Over Asia, 1928, Pudovkin
+The Deserter, 1933, Pudovkin
+General Suorov, 1941, Pudovkin
+Ludwig, 1929, Dieterle
+Satan meets a Lady, 1932, Dieterle
+Lawyer Man, 1932, Dieterle
+A Midsummernight's Dream, 1935, Dieterle
+Another Dawn, 1937, Dieterle
+The Life of Emile Zola, 1937, Dieterle
+Dr. Ehrlich's Magic Bullet, 1940, Dieterle
+A Dispatch from Reuters, 1940, Dieterle
+Kismet, 1944, Dieterle
+Volcano, 1950, Dieterle
+Peking Express, 1951, Dieterle
+Salome, 1953, Dieterle
+Mademoiselle from Armentieres, 1926, Unknown55
+Lili Marlene, 1927, Unknown55
+The Noose, 1927, Jacobson
+Moskow In October, 1927, Barret
+Treasure Island, 1950, Haskin
+From the Earth to the Moon, 1958, Haskin
+Captain Sinbad, 1963, Haskin
+Feet First, 1930, Bruckman
+The Man on The Flying Trapeze, 1935, Bruckman
+A Conneticut Yankee, 1931, D.Butler
+Caught in the Draft, 1941, D.Butler
+Road to Morocco, 1942, D.Butler
+They Got Me Covered, 1943, D.Butler
+My Wild Irish Rose, 1947, D.Butler
+Calamity Jane, 1953, D.Butler
+Get Your Man, 1927, Arzner
+Merrily We Go to Hell, 1932, Arzner
+Craig's Wife, 1936, Arzner
+Double Alibi, 1927, D.MacDonald
+This Man is News, 1938, D.MacDonald
+Spies of the Air, 1939, D.MacDonald
+One Sixth of the World, 1927, Vertov
+The Man With the Movie Camera, 1928, Vertov
+Three Songs of Lenin, 1934, Vertov
+I Stole a Million, 1939, Tuttle
+Hell on Frisco Bay, 1955, Tuttle
+Western Gold, 1937, Bretherton
+The Shamrock and the Rose, 1927, J.Nelson
+Silk Legs, 1927, Tinling
+The Man Who Could Work Miracles, 1936, L.Mendes
+The International Squadron, 1941, L.Mendes
+Flight for Freedom, 1943, L.Mendes
+Air Circus, 1928, Seiler
+Crime School, 1938, Seiler
+You Can't Get Away With Murder, 1939, Seiler
+La Sir\`ene des Tropiques, 1927, DeKobra
+Little Caesar, 1930, M.LeRoy
+Five Star Final, 1932, M.LeRoy
+Tugboat Annie, 1932, M.LeRoy
+Two Seconds, 1932, M.LeRoy
+Oil for the Lamps of China, 1933, M.LeRoy
+Heat Lightning, 1934, M.LeRoy
+Three Men on a Horse, 1936, M.LeRoy
+They Won't Forget, 1936, M.LeRoy
+Waterloo Bridge, 1940, M.LeRoy
+Madame Curie, 1943, M.LeRoy
+Little Women, 1949, M.LeRoy
+Any Number Can Play, 1949, M.LeRoy
+East Side West Side, 1950, M.LeRoy
+A Majority of One, 1960, M.LeRoy
+One Hour of Love, 1929, Florey
+Murders in the Rue Morgue, 1932, Florey
+The Raven, 1935, Florey
+The Magnificent Fraud, 1939, Florey
+Flesh and Fantasy, 1943, Florey
+God is my Co-Pilot, 1944, Florey
+The Beast with Five Fingers, 1946, Florey
+Monsieur Verdoux, 1947, Florey
+Swing Your Lady, 1937, Enright
+Gold Diggers in Paris, 1938, Enright
+It's in the Bag, 1945, Ri.Wallace
+The Divorcee, 1930, Leonard
+Strange Interval, 1932, Leonard
+Maytime, 1938, Leonard
+B.F.'s Daughter, 1948, Leonard
+The Arcadians, 1927, V.Saville
+Roses of Picardy, 1928, V.Saville
+Woman to Woman, 1929, V.Saville
+The Good Companions, 1932, V.Saville
+Evergreen, 1934, V.Saville
+The Iron Duke, 1936, V.Saville
+South Riding, 1938, V.Saville
+Tonight and Every Night, 1944, V.Saville
+The Green Years, 1946, V.Saville
+If Winter Comes, 1947, V.Saville
+The Long Wait, 1954, V.Saville
+Evergreen, 1934, V.Saville
+The Green Hat, 1928, Arlen
+The Blue Bird, 1939, W.Lang
+Star Dust, 1940, W.Lang
+The Great Profile, 1940, W.Lang
+Tin Pan Alley, 1940, W.Lang
+Moon over Miami, 1941, W.Lang
+Greenwich Village, 1944, W.Lang
+Sitting Pretty, 1948, W.Lang
+Cheaper by the Dozen, 1950, W.Lang
+With a Song in my Heart, 1951, W.Lang
+Call me Madam, 1953, W.Lang
+L'Arp\`ete, 1928, Donatien
+Passing Fancy, 1933, Ozu
+A Mother should be Loved, 1934, Ozu
+Late Spring, 1949, Ozu
+Early Summer, 1951, Ozu
+The Flavor of Green Tea Over Rice, 1952, Ozu
+Tokyo Monogatari, 1953, Ozu
+Early Spring, 1956, Ozu
+Late Autumn, 1961, Ozu
+Early Autumn, 1962, Ozu
+Shooting Stars, 1928, Asquith
+Underground, 1930, Asquith
+French Without Tears, 1939, Asquith
+Quiet Wedding, 1940, Asquith
+The Demi-Paradise, 1943, Asquith
+Fanny by Gaslight, 1944, Asquith
+The Way to the Stars, 1945, Asquith
+The Winslow Boy, 1948, Asquith
+The Browning Version, 1950, Asquith
+Orders to Kill, 1958, Asquith
+The Big Trees, 1952, Feist
+Dante's Inferno, 1935, Lachman
+Our Relations, 1936, Lachman
+They Came by Night, 1940, Lachman
+The Loves of Edgar Allen Poe, 1941, Lachman
+The Chaser, 1928, Langdon
+Un Chien Andalou, 1928, Bunuel
+El grand cavalcodos, 0, Bunuel
+The Adventures of Robinson Crusoe, 1952, Bunuel
+Viridiana, 1961, Bunuel
+El Angel Exterminador, 1962, Bunuel
+Simon of the Desert, 1965, Bunuel
+Cet obscur objet du d\'esir, 1977, Bunuel
+The Price of Fear, 1928, Jason
+Wolves of the City, 1929, Jason
+High Gear, 1933, Jason
+Model Wife, 1941, Jason
+Nine Girls, 1944, Jason
+Out of the Blue, 1947, Jason
+Okinawa, 1952, Jason
+Swiss Tour, 1949, Lindtberg
+Die Vier Im Jeep, 1951, Lindtberg
+Unser Dorf, 1953, Lindtberg
+Daughter of the Storm, 1954, Lindtberg
+Their Kingdom, 1928, Kalatozov
+Salt for Sventia, 1930, Kalatozov
+A Nail in a Boat, 1932, Kalatozov
+The Conspiracy of the Doomed, 1950, Kalatozov
+The Cranes are Flying, 1957, Kalatozov
+The Unsent Letter, 1960, Kalatozov
+I am Cuba, 1964, Kalatozov
+The Red Tent, 1969, Kalatozov
+Lucky Boy, 1928, Taurog
+A Yank at Eton, 1942, Taurog
+Girl Crazy, 1942, Taurog
+The Hoodlum Saint, 1946, Taurog
+Please Believe Me, 1950, Taurog
+The Birds and the Bees, 1956, Taurog
+Don't Give Up the Ship, 1959, Taurog
+Palm Springs Weekend, 1963, Taurog
+Tickle Me, 1965, Taurog
+Sergeant Deadhead, 1965, Taurog
+Speedway, 1967, Taurog
+The Earl of Chicago, 1940, R.Thorpe
+Tarzan's Secret Treasure, 1941, R.Thorpe
+Tarzan's New York Adventure, 1942, R.Thorpe
+The Sun Comes Up, 1949, R.Thorpe
+Challenge to Lassie, 1949, R.Thorpe
+Ivanhoe, 1952, R.Thorpe
+Ivanhoe, 1953, R.Thorpe
+Knights of the Round Table, 1954, R.Thorpe
+China Seas, 1935, Garnett
+Love is News, 1937, Garnett
+The Slave Ship, 1937, Garnett
+The Black Knight, 1954, Garnett
+The Delta Factor, 1970, Garnett
+Saloon Bar, 1940, W.Forde
+Atlantic Ferry, 1941, W.Forde
+It's that Man Again, 1942, W.Forde
+Flowers and Trees, 1932, Disney
+Snow White and the Seven Dwarfs, 1937, Disney
+Pinocchio, 1939, Disney
+Fantasia, 1940, Disney
+The Three Caballeros, 1945, Disney
+Aerograd, 1935, Dovzhenko
+Life in Blossom, 1947, Dovzhenko
+The Informer, 1929, Robinson
+The Wise Sex, 1931, Viertel
+Der Teufelsreporter, 1929, E.Laemmle
+Manslaughter, 1930, Abbott
+Boy Meets Girl, 1938, Abbott
+The Wonderful Life of Nina Petrovna, 1929, Schwarz
+Tom Sawyer, 1930, Cromwell
+Since You Went Away, 1944, Cromwell
+The Company She Keeps, 1951, Cromwell
+Kismet, 1930, Dillon
+Call Her Savage, 1932, Dillon
+Blue Express, 1929, Trauberg
+Million Dollar Baby, 1934, Santley
+Remember Pearl Harbor, 1942, Santley
+The Green Ghost, 1929, Barrymore
+His Glorious Night, 1930, Barrymore
+The Rogue Song, 1930, Barrymore
+Ten Cents A dance, 1931, Barrymore
+The Milky Way, 1936, McCarey
+Going My Way, 1944, McCarey
+Heaven Knows Mr. Allison, 1957, McCarey
+The Third Eye, 1929, Rogers
+Busman's Holiday, 1936, Rogers
+Woman to Woman, 1946, Rogers
+The Story of Shirley Yorke, 1949, Rogers
+Johnny on the Spot, 1954, Rogers
+Not a Hope in Hell, 1960, Rogers
+The Pigeon, 1929, Donskoi
+Alien Shore, 1930, Donskoi
+Fire, 1931, Donskoi
+How the Steel was Tempered, 1942, Donskoi
+The Rainbow, 1944, Donskoi
+The Village teacher, 1947, Donskoi
+Mother, 1956, Donskoi
+Gordeyev's Family, 1959, Donskoi
+A Mother's Heart, 1966, Donskoi
+A Mother's Devotion, 1967, Donskoi
+Nadyezhda, 1973, Donskoi
+Streets of London, 1929, N.Lee
+Pride of the Force, 1932, N.Lee
+French Leave, 1937, N.Lee
+Almost a Honeymoon, 1938, N.Lee
+Murder in Soho, 1939, N.Lee
+The Monkey's Paw, 1948, N.Lee
+The Case of Chatles Peace, 1949, N.Lee
+The Girl who Couldn't Quite, 1950, N.Lee
+Terror, 1931, delRuth
+Blessed Event, 1932, delRuth
+Upperworld, 1934, delRuth
+Thanks a Million, 1935, delRuth
+He Married his Wife, 1940, delRuth
+Topper Returns, 1941, delRuth
+Topper Returns, 1941, delRuth
+West Point Story, 1950, delRuth
+City Streets, 1931, Mamoulian
+Song of Songs, 1933, Mamoulian
+Oklahoma, 1934, Mamoulian
+We Live Again, 1934, Mamoulian
+Becky Sharp, 1935, Mamoulian
+The Gay Desperado, 1936, Mamoulian
+Golden Boy, 1939, Mamoulian
+The Mark of Zorro, 1940, Mamoulian
+Rings on her Fingers, 1942, Mamoulian
+Pi\`eges, 1939, R.Siodmak
+Cobra Woman, 1944, R.Siodmak
+The Dark Mirror, 1946, R.Siodmak
+The Spiral Staircase, 1948, R.Siodmak
+The Crimson Pirate, 1952, R.Siodmak
+Whoppee, 1930, Freeland
+Be Yourself, 1930, Freeland
+Too Many Blondes, 1941, Freeland
+Lottery Lover, 1934, Thiele
+Black and Tan, 1929, Unknown49
+St. Louis Blues, 1929, Unknown49
+Hi de Ho, 1930, Unknown49
+Jitterbig Party, 1931, Unknown49
+Bundle of Blues, 1933, Unknown49
+Symphony in Black, 1935, Unknown49
+The Impassive Footman, 1932, Dean
+Java Head, 1934, Dean
+Sing as We Go, 1934, Dean
+Lorna Doone, 1935, Dean
+Twenty-one Days, 1939, Dean
+The Chinese Bungalow, 1930, J.B.Williams
+Virtous Sin, 1930, Cukor
+Girls About Town, 1931, Cukor
+One Hour with You, 1932, Cukor
+Little Women, 1933, Cukor
+Camille, 1936, Cukor
+Zaza, 1938, Cukor
+Susan and God, 1940, Cukor
+Her Cardboard Lover, 1942, Cukor
+Keeper of the Flame, 1943, Cukor
+Winged Victory, 1944, Cukor
+Desire Me, 1947, Cukor
+A Double Life, 1947, Cukor
+A Life of her Own, 1950, Cukor
+The Model and the Marriage Broker, 1952, Cukor
+The Marrying Kind, 1952, Cukor
+The Actress, 1953, Cukor
+It Should Happen to You, 1954, Cukor
+Wild is the Wind, 1957, Cukor
+Heller in Pink Tights, 1959, Cukor
+Let's Make Love, 1960, Cukor
+The Chapman Report, 1962, Cukor
+Justine, 1969, Cukor
+Travels with my Aunt, 1973, Cukor
+Love Among the Ruins, 1975, Cukor
+The Blue Bird, 1976, Cukor
+The Corn is Green, 1979, Cukor
+Vendetta, 1950, H.Hughes
+Harmony at Home, 1930, MacFadden
+Escape to Glory, 1940, Brahm
+The Undying Monster, 1942, Brahm
+Tonight We Raid Calais, 1942, Brahm
+Wintertime, 1943, Brahm
+Hot Rods to Hell, 1967, Brahm
+Le Sang d'un Po\'ete, 1930, Cocteau
+La Belle et la B\^ete, 1946, Cocteau
+Sing, Sister, Sing, 1935, Parrott
+Z\'ero de Conduite, 1932, Vigo
+Waterloo Bridge, 1931, Whale
+Remember Last Night, 1935, Whale
+Port of Seven Seas, 1938, Whale
+The Man in the Iron Mask, 1939, Whale
+Green Hell, 1940, Whale
+No, or the Vain Glory of Command, 1990, deOliveira
+Die Verkaufte Braut, 1932, Max Ophuls
+Une Histoire d'Ammour, 1933, Max Ophuls
+Trouble With Money, 1934, Max Ophuls
+Yoshimara, 1937, Max Ophuls
+The Reckless Moment, 1949, Max Ophuls
+Banana Peel, 1968, Max Ophuls
+Holiday Inn, 1942, Sandrich
+Here Come the Waves, 1944, Sandrich
+Tarakanova, 1930, Bernard
+Superman, 1948, Bennet
+Batman and Robin, 1948, Bennet
+The Bounty Killer, 1965, Bennet
+They Knew What They Wanted, 1928, Unknown11
+They Knew What They Wanted, 1930, Unknown11
+The Second Floor Mystery, 1930, UnYear30
+Too Young to Marry, 1931, UnYear30
+Law and Order, 1932, E.L.Cahn
+The Four Skulls of Jonathan Drake, 1959, E.L.Cahn
+Riot in Juvenile Prison, 1959, E.L.Cahn
+Invisible Invaders, 1959, E.L.Cahn
+Vice Raid, 1959, E.L.Cahn
+Inside the Mafia, 1959, E.L.Cahn
+Train of the Suicides, 1931, Greville
+So Ein M\"adel Vergisst Man Nicht, 1933, Kortner
+Lysistrata, 1962, Kortner
+Out of the Blue, 1931, Gerrard
+Too Many Crooks, 1931, G.King
+Candlelight in Algeria, 1942, G.King
+The Shop at Sly Corner, 1946, G.King
+Paradise Alley, 1931, Argyle
+Smiling Along, 1931, Argyle
+Send For Paul Temple, 1931, Argyle
+Flight to Hong Kong, 1956, J.Newman
+Tarzan, The Ape Man, 1959, J.Newman
+Secret Service, 1931, J.W.Ruben
+The Phantom of Crestwood, 1932, J.W.Ruben
+Java Head, 1935, J.W.Ruben
+Public Hero Number One, 1935, J.W.Ruben
+Rose France, 1919, LHerbier
+L'inhumaine, 1923, LHerbier
+Fanny, 1932, M.Allegret
+Almost a Honeymoon, 1931, Banks
+Tonight's the Night, 1932, Banks
+No Limit, 1935, Banks
+We're Going to be Rich, 1938, Banks
+Great Guns, 1941, Banks
+Alice In Wonderland, 1933, McLeod
+Topper Takes a Trip, 1938, McLeod
+The Eagle and the Hawk, 1933, S.Walker
+Bulldog Drummond's Bride, 1939, S.Walker
+Almost Married, 1932, Menzies
+Une Si Jolie Petite Plage, 1948, Y.Allegret
+Nie wieder Liebe, 1932, Litvak
+Mayerling, 1936, Litvak
+The Woman I Love, 1937, Litvak
+Confessions of a Nazi Spy, 1939, Litvak
+City for Conquest, 1940, Litvak
+The Long Night, 1947, Litvak
+Decision before Dawn, 1952, Litvak
+Going to Town, 1935, A.Hall
+The Doctor Takes a Wife, 1940, A.Hall
+He Stayed for Breakfast, 1940, A.Hall
+This Thing Called Love, 1940, A.Hall
+My Sister Eileen, 1942, A.Hall
+Because You're Mine, 1952, A.Hall
+Let's do it Again, 1953, A.Hall
+Virtue, 1932, Buzzell
+Ann Carver's Profession, 1933, Buzzell
+Cross Country Cruise, 1934, Buzzell
+Transient Lady, 1935, Buzzell
+As Good as Married, 1937, Buzzell
+Ship ahoy, 1942, Buzzell
+The Youngest Profession, 1940, Buzzell
+The Getaway, 1946, Buzzell
+Easy To Wed, 1946, Buzzell
+Song of the Thin Man, 1947, Buzzell
+A Woman of Distinction, 1950, Buzzell
+Confidentially Connie, 1953, Buzzell
+Aint Misbehavin', 1955, Buzzell
+Mary Had a Little, 1961, Buzzell
+The Mouthpiece, 1932, Nugent
+Three Cornered Moon, 1933, Nugent
+My Favourite Brunette, 1947, Nugent
+My Girl Tisa, 1948, Nugent
+A Christmas Carol, 1938, E.Marin
+Race Street, 1948, E.Marin
+Canadian Pacific, 1949, E.Marin
+The Man Who Reclaimed His Head, 1934, Ludwig
+That Certain Age, 1938, Ludwig
+The Man Who Lost Himself, 1941, Ludwig
+The Fighting Seabees, 1944, Ludwig
+Wake of the Red Witch, 1948, Ludwig
+Sangaree, 1953, Ludwig
+The Gun Hawk, 1963, Ludwig
+Bring Them Back Alive, 1932, Buck
+Wild Cargo, 1934, Buck
+Fang and Claw, 1936, Buck
+Jungle Menace, 1937, Buck
+Icare, Killer of the Amazon, 1942, Buck
+Play Girl, 1932, Woodruff
+Lady Scarface, 1941, Woodruff
+Sun Valley Serenade, 1941, Humberstone
+Wonder Man, 1945, Humberstone
+Fury at Furnace Creek, 1948, Humberstone
+East of Java, 1949, Humberstone
+Peter Ibbetson, 1935, Hathaway
+Johnny Apollo, 1940, Hathaway
+Sheppard of the Hills, 1941, Hathaway
+Down to the Sea in Ships, 1949, Hathaway
+Prince Valiant, 1954, Hathaway
+North to Alaska, 1960, Hathaway
+The Man I Married, 1940, Pichel
+Hudson's Bay, 1940, Pichel
+The Moon is Down, 1943, Pichel
+Santa Fe, 1951, Pichel
+The Big Cage, 1933, K.Neumann
+Island of Lost Men, 1939, K.Neumann
+Olympische Spiele 1936, 1938, Riefenstahl
+Sarumba, 1950, Gering
+Fallen Angel, 1946, Preminger
+The Moon is Blue, 1953, Preminger
+Saint Joan, 1957, Preminger
+Porgy and Bess, 1959, Preminger
+The Cardinal, 1963, Preminger
+In Harm's Way, 1965, Preminger
+Bunny Lake is Missing, 1965, Preminger
+Rosebud, 1979, Preminger
+Stolen Life, 1939, Czinner
+Romeo and Juliet, 1966, Czinner
+L'Affaire est dans le Sac, 1932, Prevert
+Adieu Leonard, 1943, Prevert
+The Man Who Changed His Mind, 1936, Stevenson
+To the Ends of the Earth, 1948, Stevenson
+Darby O'Gill and the Little People, 1959, Stevenson
+The Shaggy Dog, 1959, Stevenson
+Mary Poppins, 1964, Stevenson
+That Darn Cat, 1965, Stevenson
+Gnome-Mobile, 1967, Stevenson
+The Love Bug, 1969, Stevenson
+Bedknobs and Broomsticks, 1971, Stevenson
+The Shaggy DA, 1976, Stevenson
+Island at the Top of the World, 1981, Stevenson
+The Hound of the Baskervilles, 1939, Lanfield
+Swanee River, 1939, Lanfield
+You'll Never Get Rich, 1941, Lanfield
+The Lady Has Plans, 1941, Lanfield
+My Favorite Blonde, 1942, Lanfield
+Star of Midnight, 1935, S.Roberts
+The Man Who Broke the Bank at Monte Carlo, 1935, S.Roberts
+Social Decay, 1932, Tatassopoulos
+The Silent Witness, 1932, Mr.Varnel
+Girls Will Be Boys, 1934, Mr.Varnel
+Good Morning Boys, 1936, Mr.Varnel
+Alf's Button Afloat, 1938, Mr.Varnel
+Old Bones of the River, 1938, Mr.Varnel
+Ask a Policeman, 1939, Mr.Varnel
+The Frozen Limits, 1939, Mr.Varnel
+The Ghost of St.Michaels, 1941, Mr.Varnel
+King Arthur was a Gentleman, 1942, Mr.Varnel
+This Man is Mine, 1946, Mr.Varnel
+Babbitt, 1934, Keighley
+G-men, 1935, Keighley
+Valley of the Giants, 1938, Keighley
+Brother Rat, 1938, Keighley
+Cash, 1932, Z.Korda
+Sanders of the River, 1935, Z.Korda
+The Four Feathers, 1939, Z.Korda
+Fric Frac, 1939, AutantLara
+Marguerite de la Nuit, 1955, AutantLara
+En Cas de Malheur, 1957, AutantLara
+Le Meurtier, 1963, AutantLara
+The Woman In White, 1965, AutantLara
+Le Rouge et le Blanc, 1970, AutantLara
+Destination Tokyo, 1943, Daves
+The Red House, 1947, Daves
+Bird of Paradise, 1951, Daves
+Never Let Me Go, 1952, Daves
+Horatius, 1953, Daves
+Demetrius and the Gladiators, 1954, Daves
+Parrish, 1961, Daves
+Berlin Correspondent, 1942, E.Forde
+Quality Street, 1937, G.Stevens sr.
+Penny Serenade, 1941, G.Stevens sr.
+Woman of the Year, 1941, G.Stevens sr.
+I Remember Mama, 1947, G.Stevens sr.
+Turnabout, 1941, H.Roach
+La Maternelle, 1933, BenoitLevy
+Helene, 1937, BenoitLevy
+La Mort du Cygne, 1938, BenoitLevy
+Fire in the Straw, 1933, BenoitLevy
+La Maternelle, 1933, M.Epstein
+La Mort du Cygne, 1938, M.Epstein
+Cradle Song, 1933, Leisen
+Death Takes a Holiday, 1933, Leisen
+Thirteen Hours by Air, 1936, Leisen
+Remember the Night, 1940, Leisen
+Arise, My Love, 1940, Leisen
+Hold Back the Dawn, 1941, Leisen
+No Time for Love, 1943, Leisen
+Practically Yours, 1944, Leisen
+Kitty, 1945, Leisen
+The Mating Season, 1951, Leisen
+The Girl Most Likely, 1957, Leisen
+On Secret Service, 1934, A.Woods
+Radio Parade, 1935, A.Woods
+Drake of England, 1935, A.Woods
+The Dark Stairway, 1937, A.Woods
+The Return of Carol Deane, 1938, A.Woods
+They Drive by Night, 1938, A.Woods
+The Nursemaid Who Disappeared, 1939, A.Woods
+California Straight Ahead, 1937, Lubin
+Risky Business, 1938, Lubin
+Francis, 1950, Lubin
+Rhubarb, 1951, Lubin
+Star of India, 1956, Lubin
+Tarzan and his Mate, 1934, C.Gibbons
+Bank Holiday, 1938, C.Reed
+The Stars Look Down, 1939, C.Reed
+The Young Mr. Pitt, 1942, C.Reed
+An Outcast of the Islands, 1951, C.Reed
+The Man Between, 1953, C.Reed
+A Kid For two Farthings, 1955, C.Reed
+Our Man in Havana, 1959, C.Reed
+Oliver!, 1968, C.Reed
+April, April, 1935, Sirk
+Das Hofkonzert, 1936, Sirk
+La Habanera, 1937, Sirk
+Home is Calling, 1937, Sirk
+Hitler's Madman, 1943, Sirk
+Lured, 1947, Sirk
+Sleep My Love, 1948, Sirk
+Slightly French, 1949, Sirk
+Shockproof, 1949, Sirk
+Weekend with Father, 1951, Sirk
+Has Anybody Seen My Gal?, 1952, Sirk
+Take Me to Town, 1953, Sirk
+There's Always Tomorrow, 1955, Sirk
+All that Heaven Allows, 1955, Sirk
+Battle Hymn, 1956, Sirk
+Strange Illusion, 1945, Ulmer
+The Strange Woman, 1946, Ulmer
+The Man from Planet X, 1951, Ulmer
+Atlantis, The Lost Kingdom, 1962, Ulmer
+Johnny Belinda, 1948, Negulesco
+The Mudlark, 1950, Negulesco
+The Mudlark, 1951, Negulesco
+Titanic, 1953, Negulesco
+How to Marry a Millionaire, 1953, Negulesco
+Woman's World, 1954, Negulesco
+A Royal Divorce, 1938, Raymond
+The Mind of Mr. Reeder, 1939, Raymond
+The Russian Question, 1948, Romm
+Ordinary Fascism, 1964, Romm
+Cesar, 1934, Pagnol
+La Fille du Puisatier, 1946, Pagnol
+The Weaker Sex, 1948, R.W.Baker
+I'll Never Forget You, 1951, R.W.Baker
+Inferno, 1952, R.W.Baker
+Passage Home, 1954, R.W.Baker
+Jaqueline, 1956, R.W.Baker
+Tiger in the Smoke, 1956, R.W.Baker
+The Singer Not the Song, 1960, R.W.Baker
+Flame in the Streets, 1961, R.W.Baker
+The Valiant, 1961, R.W.Baker
+Two Left Feet, 1964, R.W.Baker
+The Anniversary, 1968, R.W.Baker
+Scars of Dracula, 1971, R.W.Baker
+Asylum, 1972, R.W.Baker
+And Now the Screaming Starts, 1973, R.W.Baker
+The Scoundrel, 1935, Hecht
+Soak the Rich, 1936, MacArthur
+Once in a Blue Moon, 1936, MacArthur
+The Young Lions, 1958, Dmytryk
+Mirage, 1965, Dmytryk
+Alvarez Kelly, 1966, Dmytryk
+The Master Race, 1935, H.Biberman
+Frankie and Johnny, 1935, Auer
+Women in War, 1940, Auer
+Gangway for Tomorrow, 1943, Auer
+Angel on the Amazon, 1948, Auer
+The Avengers, 1950, Auer
+Thunderbirds, 1952, Auer
+City That Never Sleeps, 1953, Auer
+Hell's Half Acre, 1953, Auer
+The Eternal City, 1953, Auer
+The Man from Music Mountain, 1938, Kane
+The Cheaters, 1945, Kane
+The Plunderers, 1948, Kane
+Rock Island Trail, 1950, Kane
+Transcontinent Express, 1950, Kane
+California Passage, 1951, Kane
+Jubilee Trail, 1953, Kane
+Spoilers of the Forest, 1953, Kane
+A Fine Mess, 1935, Parent
+Mimi, 1935, P.Stein
+The House on the Square, 1935, UnYear35
+Tony Rome, 1967, G.Douglas
+The Detective, 1968, G.Douglas
+Lady in Cement, 1968, G.Douglas
+Viva Knievel, 1977, G.Douglas
+Dear Octopus, 1943, French
+English Without Tears, 1943, French
+Mr. Emanuel, 1944, French
+Quiet Weekend, 1946, French
+My Brother Jonathan, 1947, French
+Rob Roy the Highland Rogue, 1953, French
+The Man Who Loved Redheads, 1955, French
+The Farmer's Daughter, 1947, H.Potter
+His Lordship, 1936, Mason
+Flight from Folly, 1945, Mason
+One Hundred Men and a Girl, 1937, Koster
+Spring Parade, 1940, Koster
+It Started with Eve, 1941, Koster
+Luck of the Irish, 1947, Koster
+Night Mail, 1936, Watt
+Nine Men, 1936, Watt
+Where No Vultures Fly, 1951, Watt
+West of Zanzibar, 1953, Watt
+We're Only Human, 1936, Flood
+Hotel du Nord, 1938, Carne
+Les Visiteur du Soir, 1942, Carne
+Terrain Vague, 1960, Carne
+Kreuzer Sonata, 1936, Harlan
+Der Grosse Konig, 1941, Harlan
+Opfergang, 1943, Harlan
+Die Baue Stunde, 1951, Harlan
+The Third Sex, 1957, Harlan
+Man Hunt, 1936, Clemens
+Here Comes Carter, 1936, Clemens
+Accidents Will Happen, 1938, Clemens
+Devil's Island, 1940, Clemens
+She Couldn't say No, 1941, Clemens
+Burgtheater, 1936, Forst
+Bel Ami, 1939, Forst
+Mine Own Executioner, 1947, Kimmins
+L'Espoir, 1937, A.Malraux
+Black Magic, 1957, Ratoff
+Abdullah the Great, 1957, Ratoff
+Oscar Wilde, 1960, Ratoff
+Pastor Hall, 1939, J.Boulting
+Thunder Rock, 1942, J.Boulting
+Journey Together, 1945, J.Boulting
+Fame is the Spur, 1946, J.Boulting
+Brighton Rock, 1946, J.Boulting
+The Guinea Pig, 1949, J.Boulting
+Seven Days to Noon, 1950, J.Boulting
+Private's Progress, 1954, J.Boulting
+Brother's in Law, 1956, J.Boulting
+Lucky Jim, 1957, J.Boulting
+Heavens Above, 1963, J.Boulting
+Endless Night, 1971, J.Boulting
+Five Came Back, 1939, Farrow
+Married and in Love, 1940, Farrow
+A Bill of Divorcement, 1940, Farrow
+China, 1943, Farrow
+Calcutta, 1947, Farrow
+Plunder of the Sun, 1954, Farrow
+Back from Eternity, 1956, Farrow
+Ebb Tide, 1938, J.Hogan
+Snow White and the Seven Dwarfs, 1937, Hand
+The Bandit of Sherwood Forest, 1946, G.Sherman
+Son of Robin Hood, 1958, G.Sherman
+Abus de Confiance, 1937, Decoin
+Les Iconnus dans la Maison, 1942, Decoin
+La Fille du Diable, 1946, Decoin
+Three Telegrams, 1950, Decoin
+The Truth About Bebe Donge, 1952, Decoin
+The Lovers of Toledo, 1953, Decoin
+Razzia sur la Chnouf, 1955, Decoin
+Charmants Garcons, 1957, Decoin
+The Face of the Cat, 1958, Decoin
+Outcasts of Glory, 1964, Decoin
+The Thief of Baghdad, 1940, M.Powell
+One of our Aircraft is Missing, 1942, M.Powell
+The Volunteer, 1943, M.Powell
+A Matter of Life and Death, 1946, M.Powell
+Black Narcissus, 1946, M.Powell
+The Elusive Pimpernel, 1951, M.Powell
+The Wild Heart, 1952, M.Powell
+The Battle of the River Plate, 1956, M.Powell
+The Age of Consent, 1969, M.Powell
+Best Friends, 1975, N.Nosseck
+Youngblood, 1978, N.Nosseck
+Dreamer, 1979, N.Nosseck
+King of the Mountain, 1981, N.Nosseck
+Night Partners, 1983, N.Nosseck
+Virginity, 1937, Vavra
+A Girl with Ideas, 1937, S.Simon
+Four Girls in White, 1939, S.Simon
+Whistling in the Dark, 1941, S.Simon
+Song of the Open Road, 1944, S.Simon
+Son of Lassie, 1945, S.Simon
+Her Husband's Affairs, 1947, S.Simon
+I Love Trouble, 1948, S.Simon
+The Lust for Gold, 1949, S.Simon
+The Last Musketeer, 1952, Witney
+Juvenile Jungle, 1958, Witney
+Two Sisters, 1938, Blake
+Symphonie Fantastique, 1942, ChristianJaque
+Un Revenant, 1946, ChristianJaque
+Boule de Suif, 1945, ChristianJaque
+Nana, 1954, ChristianJaque
+Tous les Gars du Monde, 1955, ChristianJaque
+Babette goes to War, 1959, ChristianJaque
+Madame Sans G\^ene, 1961, ChristianJaque
+The Black Tulip, 1963, ChristianJaque
+Secret Agents, 1966, ChristianJaque
+The Saint Versus ..., 1966, ChristianJaque
+Two Tickets to Mexico, 1967, ChristianJaque
+Lady Hamilton, 1967, ChristianJaque
+A Man to Remember, 1938, Kanin
+Next Time I Marry, 1938, Kanin
+The Great Man Votes, 1938, Kanin
+My Favorite Wife, 1940, Kanin
+Tom, Dick and Harry, 1941, Kanin
+Some Kind of a Nut, 1970, Kanin
+Mystery Plane, 1939, Waggner
+Frisco Sal, 1945, Waggner
+Shady Lady, 1945, Waggner
+Tangier, 1946, Waggner
+Island in the Sky, 1938, Leeds
+The Cisco Kid and the Lady, 1939, Leeds
+Time to Kill, 1943, Leeds
+Met My Love Again, 1956, J.Logan
+South Pacific, 1958, J.Logan
+Tall Story, 1960, J.Logan
+Fanny, 1960, J.Logan
+Ensign Pulver, 1964, J.Logan
+The Dybbuk, 1938, Waszynski
+Woman Against Woman, 1938, Sinclair
+Dramatic School, 1938, Sinclair
+Mr. and Mrs. North, 1941, Sinclair
+Mr._District Attorney, 1946, Sinclair
+Julie, 1956, And.Stone
+Cry Terror, 1958, And.Stone
+The Secret of my Success, 1965, And.Stone
+Song of Norway, 1969, And.Stone
+Gulliver's Travels, 1939, D.Fleischer
+Mr. Bug goes to Town, 1941, D.Fleischer
+In Jenen Tagen, 1947, Kautner
+Rotation, 1949, Kautner
+Des Teufels General, 1955, Kautner
+Young Dr. Kildare, 1939, Bucquet
+On Borrowed Time, 1939, Bucquet
+The Saint in London, 1939, Carstairs
+Weekend With Lulu, 1961, Carstairs
+Experiment Perilous, 1944, J.Tourneur
+That's Right, You're Wrong, 1939, Kern
+You'll Find Out, 1940, Kern
+Thank Your Lucky Stars, 1943, Kern
+The Doughgirls, 1944, Kern
+Never Say Goodbye, 1946, Kern
+Stallion Road, 1947, Kern
+April Showers, 1948, Kern
+Two Tickets to Broadway, 1951, Kern
+The Woman in White, 1948, Godfrey
+Please Murder Me, 1956, Godfrey
+British Intelligence, 1940, Morse
+Monkey on my Back, 1957, deToth
+Gold for the Caesars, 1964, deToth
+Major Barbara, 1940, G.Pascal
+The Bachelor and the Bobbysoxer, 1947, Reis
+All My Sons, 1948, Reis
+So Dark the Night, 1946, J.H.Lewis
+The Al Jolson Story, 1946, J.H.Lewis
+The Undercover Man, 1949, J.H.Lewis
+Gun Crazy, 1949, J.H.Lewis
+Terror in a Texas Town, 1958, J.H.Lewis
+Dieu a besoin des Hommes, 1949, Delannoy
+Le Garcon Sauvage, 1951, Delannoy
+The Moment of Truth, 1952, Delannoy
+Marie Antoinette, 1956, Delannoy
+Inspector Maigret, 1957, Delannoy
+Le Soleil des Voyous, 1967, Delannoy
+The Immortal Story, 1969, Welles
+The Deep, 1969, Welles
+The Great McGinty, 1940, P.Sturges
+Sullivan's Travels, 1941, P.Sturges
+The Great Moment, 1943, P.Sturges
+Mad Wednesday, 1946, P.Sturges
+Unfaithfully Yours, 1948, P.Sturges
+Salon-Kitty, 1960, Brass
+The Captive Heart, 1946, B.Dearden
+I Believe in You, 1952, B.Dearden
+Sapphire, 1959, B.Dearden
+All Night Long, 1961, B.Dearden
+The Bullfighter and The Lady, 1951, Boetticher
+East of Sumatra, 1953, Boetticher
+Buchanan Rides Alone, 1958, Boetticher
+The Rise and Fall of Legs Diamond, 1960, Boetticher
+Arruza, 1968, Boetticher
+Dumbo, 1941, Sharpsteen
+Young Veterans, 1941, Ch.Crichton
+Dance Hall, 1950, Ch.Crichton
+Hunted, 1952, Ch.Crichton
+Law and Disorder, 1958, Ch.Crichton
+The Battle of the Sexes, 1958, Ch.Crichton
+The Third Secret, 1964, Ch.Crichton
+Who Rides a Tiger, 1965, Ch.Crichton
+Twelve to the Moon, 1960, Bradley
+Billy the Kid, 1941, D.Miller
+Sudden Fear, 1953, D.Miller
+The Harvey Girls, 1946, Sidney
+Sacaramouche, 1952, Sidney
+Jeanne Eagles, 1957, Sidney
+The Gay Sisters, 1942, Rapper
+The Adventures of Mark Twain, 1944, Rapper
+The Voice of the Turtle, 1948, Rapper
+The Glass Menagerie, 1950, Rapper
+Another Man's Poison, 1952, Rapper
+The Miracle, 1959, Rapper
+The African Queen, 1951, J.Huston
+Freud, 1962, J.Huston
+The Life and Times of Judge Roy Bean, 1972, J.Huston
+Wise Blood, 1979, J.Huston
+Victory, 1981, J.Huston
+Annie, 1982, J.Huston
+Under the Volcano, 1984, J.Huston
+When We are Married, 1942, Comfort
+Pimpernel Smith, 1941, L.Howard
+The Gentle Sex, 1943, L.Howard
+Something Money Can't Buy, 1952, P.Jackson
+The Feminine Touch, 1955, P.Jackson
+Virgin Island, 1958, P.Jackson
+Don't Talk to Strange Men, 1962, P.Jackson
+Seventy Deadly Pills, 1964, P.Jackson
+Heavenly Creatures, 1995, P.Jackson
+Un Colpa di Pistola, 1941, R.Castellani
+The Gay City, 1941, R.Murphy
+Mrs. Wiggs of the Cabbage Patch, 1942, R.Murphy
+Rainbow Island, 1944, R.Murphy
+The Man from Half Moon Street, 1944, R.Murphy
+Desert Rats, 1953, R.Murphy
+The Lady in the Iron Mask, 1953, R.Murphy
+Along Came Jones, 1945, Heisler
+Time Bomb, 1953, Tetzlaff
+Miracle in Milan, 1950, deSica
+The Roof, 1956, deSica
+Yesterday, Today and Tomorrow, 1964, deSica
+Marriage Italian Style, 1964, deSica
+Madame San G\^ene, 1941, Richebe
+Next of Kin, 1944, Unknown41
+The Foreman went to France, 1942, Unknown41
+Went Well the Day, 1942, Unknown41
+The First of the Few, 1942, Unknown41
+The Moon and Sixpence, 1942, Lewin
+The Picture of Dorian Gray, 1944, Lewin
+Pandora and the Flying Dutchman, 1951, Lewin
+Strategic Air Command, 1955, Ant.Mann
+Men in War, 1957, Ant.Mann
+God's Little Acre, 1958, Ant.Mann
+The Road to Heaven, 1942, Sjoberg
+Only a Mother, 1949, Sjoberg
+Miss Julie, 1951, Sjoberg
+Barabbas, 1953, Sjoberg
+Karin Mansdotter, 1954, Sjoberg
+Wild Birds, 1955, Sjoberg
+The Judge, 1960, Sjoberg
+The Island, 1966, Sjoberg
+San Demetrio London, 1943, Frend
+Scott of The Antarctic, 1948, Frend
+In Which We Serve, 1942, Lean
+Oliver Twist, 1948, Lean
+Hobson's Choice, 1954, Lean
+Dr. Zhivago, 1965, Lean
+A Passage to India, 1984, Lean
+Die Gezeichneten, 1947, Zinneman
+From Here to Eternity, 1953, Zinneman
+Behold a Pale Horse, 1964, Zinneman
+A Man for All Seasons, 1966, Zinneman
+Five Days One Summer, 1982, Zinneman
+Martin Roumagnac, 1946, Lacombe
+We, The Living, 1942, Alessandrini
+Quai des Orf\`evres, 1947, Clouzot
+Dick Tracy vs. Cueball, 1946, Rawlins
+Dick Tracy's Dilemma, 1947, Rawlins
+Dick Tracy Meets Gruesome, 1947, Rawlins
+null, 1947, Dassin
+Circle of Two, 1980, Dassin
+Killer Bat, 1942, Yarborough
+The Seven Faces of Dr.Lao, 1995, Yarborough
+Falbalas, 1944, J.Becker
+Rue de l'Estrapade, 1952, J.Becker
+Les aventure d'Arsene Lupin, 1957, J.Becker
+Ali Baba, 1957, J.Becker
+Le Trou, 1960, J.Becker
+The Man in Grey, 1943, Arliss
+Love Story, 1944, Arliss
+A Man about the House, 1947, Arliss
+Miss Tulip Stays the Night, 1955, Arliss
+Death in Venice, 1971, Visconti
+Conversation Piece, 1976, Visconti
+Crime Doctor, 1943, M.Gordon
+Crime Doctor's Strangest Case, 1943, M.Gordon
+Crime Doctor's Strangest Case, 1943, M.Gordon
+Shadows in the Night, 1944, M.Gordon
+Crime Doctor's Courage, 1944, M.Gordon
+Crime Doctor's Warning, 1945, M.Gordon
+Crime Doctor's Manhunt, 1946, M.Gordon
+Just Before Dawn, 1946, M.Gordon
+the Millerson Case, 1947, M.Gordon
+The Web, 1947, M.Gordon
+Crime Doctor's Gamble, 1948, M.Gordon
+Another Part of the Forest, 1948, M.Gordon
+An Act of Murder, 1948, M.Gordon
+Crime Doctor's Diary, 1949, M.Gordon
+I can get it for you Wholesale, 1951, M.Gordon
+Move Over, Darling, 1963, M.Gordon
+The Most Beautiful, 1944, Kurosawa
+The Men Who Tread on the Tiger's Tail, 1945, Kurosawa
+No Regrets for Our Youth, 1946, Kurosawa
+One Wonderful Sunday, 1947, Kurosawa
+Drunken Angel, 1948, Kurosawa
+Quiet Duel, 1949, Kurosawa
+Stray Dog, 1949, Kurosawa
+Scandal, 1950, Kurosawa
+Record of a Living Being, 1955, Kurosawa
+Throne of Blood, 1956, Kurosawa
+The Lower Depths, 1957, Kurosawa
+The Hidden Fortress, 1958, Kurosawa
+The Bad Sleep Well, 1960, Kurosawa
+Dodeskaden, 1970, Kurosawa
+Madadayo, 1993, Kurosawa
+Courage of Lassie, 1946, F.M.Wilcox
+The Hills of Home, 1948, F.M.Wilcox
+Non Mi Muovo!, 1943, Simonelli
+The Mating of Millie, 1948, Levin
+Belles on their Toes, 1952, Levin
+Journey to the Center of the Earth, 1959, Levin
+The Wonderful World of the Brothers Grimm, 1962, Levin
+Come Fly With Me, 1963, Levin
+Honeymoon Hotel, 1964, Levin
+Genghis Kahn, 1965, Levin
+Murderers' Row, 1967, Levin
+My Friend Flicka, 1943, Schuster
+Thunderhead - Son of Flicka, 1945, Schuster
+Bedlam, 1946, Robson
+Champion, 1949, Robson
+Bright Victory, 1951, Robson
+The Bridges at Toko-Ri, 1954, Robson
+Phffft, 1954, Robson
+Von Ryan's Express, 1965, Robson
+Valley of the Dolls, 1967, Robson
+Earthquake, 1974, Robson
+Hanover Street, 1979, Hyams
+Outland, 1981, Hyams
+Stay Tuned, 1990, Hyams
+The Star Chamber, 1991, Hyams
+The Quest, 1993, Hyams
+Time Cop, 1995, Hyams
+Bataille du Rail, 1943, Clement
+Gervaise, 1955, Clement
+Les affaires publiques, 1934, Bresson
+L'Anges du Peche, 1943, Bresson
+Une Femme Douce, 1969, Bresson
+Lancelot du Lac, 1974, Bresson
+L'Diable probalement, 1977, Bresson
+Waterloo Road, 1944, Gilliat
+Only Two Can Play, 1962, Gilliat
+The Great St. Trinians Train Robbery, 1965, Gilliat
+Mr. Drake's Duck, 1951, V.Guest
+The Runaway Bus, 1954, V.Guest
+Expresso Bongo, 1960, V.Guest
+Brigadoon, 1954, Minnelli
+Kismet, 1955, Minnelli
+Auf Wiedersehen Francisca, 1943, UnYear43
+Woman in White, 1949, Mattsson
+The Lady in White, 1962, Mattsson
+Escape in the Desert, 1945, Blatt
+Seven Doors to Death, 1944, Clifton
+Those Endearing Young Charms, 1946, L.Allan
+Another Time, Another Place, 1958, L.Allan
+Scandal Sheet, 1952, Karlson
+Kansas City Confidential, 1953, Karlson
+99 River Street, 1953, Karlson
+The Phenix City Story, 1955, Karlson
+The Young Doctors, 1961, Karlson
+The Silencers, 1966, Karlson
+Hornet's Nest, 1969, Karlson
+Walking Tall, 1973, Karlson
+Desert Victory, 1944, R.Boulting
+The Last Word, 1973, R.Boulting
+The Curse of the Cat People, 1944, R.Wise
+The House on Telegraph Hill, 1951, R.Wise
+Executive Suite, 1954, R.Wise
+Run Silent, Run Deep, 1958, R.Wise
+Sand Pebbles, 1966, R.Wise
+Audrey Rose, 1977, R.Wise
+Kutuov/1812, 1944, Petrov
+The First Front, 1949, Petrov
+The Seventh Veil, 1945, Bennett
+That Forsythe Woman, 1949, Bennett
+King Solomon's Mines, 1950, Bennett
+The Seventh Veil, 1945, Bennett
+Hitler Lives, 1945, D.Siegel
+Private Hell 36, 1954, D.Siegel
+Riot in Cell Block 11, 1954, D.Siegel
+Baby Face Nelson, 1957, D.Siegel
+The Lineup, 1958, D.Siegel
+The Killers, 1964, D.Siegel
+Cogan's Bluff, 1968, D.Siegel
+The Beguiled, 1970, D.Siegel
+Dirty Harry, 1972, D.Siegel
+The Shootist, 1976, D.Siegel
+Escape from Alcatraz, 1979, D.Siegel
+The Dead Pool, 1988, D.Siegel
+Boomerang, 1947, E.Kazan
+Panic in the Streets, 1950, E.Kazan
+Spain, 1979, E.Kazan
+Her Kind of Man, 1946, deCordova
+Bedtime for Bonzo, 1951, deCordova
+Bonzo Goes to College, 1952, deCordova
+The Country Girl, 1954, Seaton
+The Pleasure of his Company, 1961, Seaton
+Airport, 1970, Seaton
+Road to Utopia, 1945, Walker
+Road to Bali, 1952, Walker
+The Naked Night, 1955, I.Bergman
+Smiles of a Summer Night, 1955, I.Bergman
+The Seventh Seal, 1956, I.Bergman
+Ansiktet, 1958, I.Bergman
+Through a Glass Darkly, 1961, I.Bergman
+Winter Light, 1962, I.Bergman
+In the Presence of a Clown, 1997, I.Bergman
+La Cabalgata del Circo, 1945, Soffici
+Spendthrift, 1945, Soffici
+In the Name of the Law, 1949, Germi
+Man of Iron, 1956, Germi
+Maledotto Imbroglio, 1959, Germi
+The Birds, the Bees and the Italians, 1965, Germi
+Alfredo Alfredo, 1973, Germi
+School for Scoundrels, 1960, Hamer
+The Miracle, 1948, Rossellini
+Europa, 1951, Rossellini
+Dick Tracy, 1945, Berke
+Du Rififi chez les Femmes, 1959, A.Joffe
+Sister Kenney, 1946, D.Nichols
+Deadline at Dawn, 1946, Clurman
+The Sin of Harold Diddlebock, 1947, J.Sturges
+The Magnificent Seven, 1960, J.Sturges
+Marooned, 1969, J.Sturges
+The Eagle Has Landed, 1977, J.Sturges
+The Cicero Affair, 1952, J.L.Mankiewicz
+The Quiet American, 1957, J.L.Mankiewicz
+The Longest Day, 1962, Annakin
+The Informers, 1963, Annakin
+The Fast Lady, 1963, Annakin
+Battle of the Bulge, 1965, Annakin
+To Live in Peace, 1946, Zampa
+City on Trial, 1952, Zampa
+The Woman of Rome, 1954, Zampa
+Fear in the Night, 1946, Shane
+The Naked Street, 1955, Shane
+School for Secrets, 1946, Ustinov
+Vice Versa, 1948, Ustinov
+Private Angelo, 1949, Ustinov
+Hammersmith is Out, 1972, Ustinov
+Theodora, Slave Express, 1954, Freda
+The Terror of Dr. Hitchcock, 1962, Freda
+Il magnifico avventurio, 1964, Freda
+Coplan FX 18 Casse Tout, 1965, Freda
+La morte non conta i dollari, 1967, Freda
+The Happy Time, 1952, R.Fleischer
+The Boston Strangler, 1968, R.Fleischer
+Che!, 1969, R.Fleischer
+The Last Run, 1971, R.Fleischer
+Mr. Majestyk, 1974, R.Fleischer
+The Jazz Singer, 1980, R.Fleischer
+The New Centurions, 1980, R.Fleischer
+Amityville, 1983, R.Fleischer
+Tough Enough, 1983, R.Fleischer
+Conan the Destroyer, 1984, R.Fleischer
+The Lady in The Lake, 1946, Montgomery
+Ride the Pink Horse, 1947, Montgomery
+Die M\"order sind unter uns, 1946, W.Staudte
+Film Ohne Titel, 1947, W.Staudte
+Die S\"underin, 1951, W.Staudte
+Nachts auf den Strassen, 1951, W.Staudte
+Decision Before Dawn, 1952, W.Staudte
+Alraune, 1952, W.Staudte
+Die Dreigroschenoper, 1963, W.Staudte
+Wartezimmer zum Jenseits, 1964, W.Staudte
+Jeder stirbt f\"ur sich Allein, 1973, W.Staudte
+Der G\"artner von Toulouse, 1982, W.Staudte
+Catherine of Russia, 0, W.Staudte
+Pretty Baby, 1951, Windust
+The Enforcer, 1951, Windust
+The Pied Piper of Hamelin, 1957, Windust
+It Had To Be You, 1947, Hartman
+Mr. Imperium, 1947, Hartman
+Giuseppina, 1961, J.Hill
+Born Free, 1966, J.Hill
+Black Beauty, 1971, J.Hill
+Angel and the Badman, 1947, J.E.Grant
+Albert RN, 1953, L.Gilbert
+The Good Die Young, 1954, L.Gilbert
+Reach for the Sky, 1956, L.Gilbert
+Sink the Bismarck, 1960, L.Gilbert
+Flying Leathernecks, 1951, N.Ray
+The Million Pound Note, 1953, Neame
+The Horse's Mouth, 1959, Neame
+The Poseidon Adventure, 1972, Neame
+The Odessa File, 1974, Neame
+The Brave Bulls, 1950, Rossen
+Mambo, 1954, Rossen
+They Came to Cordura, 1980, Rossen
+Rome 11 O'Clock, 1952, DeSantis
+Leon Morin Priest, 1961, Melville
+The Samurai, 1967, Melville
+Dirty Money, 1972, Melville
+Marry Me, 1949, Fisher
+Sherlock Holmes and the Deadly Necklace, 1962, Fisher
+Combat America, 1947, UnYear47
+Dangerous Years, 1948, Unknown4
+A Ticket to Tomahawk, 1950, Unknown4
+The Fireball, 1950, Unknown4
+Right Cross, 1950, Unknown4
+Home Town Story, 1951, Unknown4
+As Young as You Feel, 1951, Unknown4
+Love Nest, 1951, Unknown4
+Let's Make it Legal, 1951, Unknown4
+We're not Married, 1952, Unknown4
+O'Henry's Full House, 1952, Unknown4
+As Young as You Feel, 1951, Unknown4
+Let's Make Love, 1960, Unknown4
+Something Got to Give, 1962, Unknown4
+Bond Street, 1948, Parry
+Innocents in Paris, 1952, Parry
+Tread Softly, Stranger, 1958, Parry
+The Galloping Major, 1951, Cornelius
+Next to No Time, 1957, Cornelius
+Law and Disorder, 1958, Cornelius
+The Prowler, 1950, Losey
+The Intimate Stranger, 1956, Losey
+The Damned, 1961, Losey
+Eva, 1962, Losey
+The Sevant, 1963, Losey
+Modesty Blaise, 1966, Losey
+Accident, 1967, Losey
+The Assination of Trotsky, 1972, Losey
+A Doll's House, 1973, Losey
+Galileo, 1974, Losey
+Mr. Klein, 1977, Losey
+The Trout, 1982, Losey
+Olivia, 1951, Audry
+Mitsou, 1957, Audry
+Soledad, 1966, Audry
+Manhandled, 1949, L.R.Foster
+The Bold and the Brave, 1956, L.R.Foster
+Tonka, 1958, L.R.Foster
+Doctor in The House, 1954, R.Thomas
+Campbell's Kingdom, 1957, R.Thomas
+Doctor At Large, 1957, R.Thomas
+A Tale of Two Cities, 1957, R.Thomas
+The Thirty-nine Steps, 1959, R.Thomas
+Deadlier Than the Male, 1966, R.Thomas
+Some Girls Do, 1968, R.Thomas
+No Orchids for Miss Blandish, 1948, Clowes
+One Night With You, 1948, T.Young
+The Shadow on the Window, 1957, W.Asher
+Night Into Morning, 1951, F.Markle
+The Incredible Journey, 1963, F.Markle
+Le Sang des B\^etes, 1949, Franju
+H\^otel des Invalides, 1951, Franju
+Le Grand Melies, 1951, Franju
+La T\^ete contre les Murs, 1958, Franju
+Judex, 1963, Franju
+Les Rideaux Blancs, 1965, Franju
+La Faute de l'Abb\'e Mouret, 1970, Franju
+Invitation to the Dance, 1956, Gene Kelly
+The Happy Road, 1957, Gene Kelly
+The Tunnel of Love, 1958, Gene Kelly
+The Female Animal, 1958, Keller
+Town on Trial, 1956, Guillermin
+I was Monty's Double, 1958, Guillermin
+Shaft in Africa, 1973, Guillermin
+The Towering Inferno, 1974, Guillermin
+King Kong Lives, 1986, Guillermin
+God, Man, and Devil, 1949, Seiden
+Man in The Dark, 1953, Landers
+Derniere heure, edition speciale, 1949, deCanonge
+Sammy Going South, 1962, Mackendrick
+On the Town, 1949, Donen
+Arabesque, 1966, Donen
+Blame it on Rio, 1984, Donen
+null, 1949, W.Jackson
+Cinderella, 1949, W.Jackson
+Alice In Wonderland, 1951, W.Jackson
+Begegnung mit Werther, 1949, Stroux
+Crows and Sparrows, 1949, Junil
+Satyricon, 1969, Fellini
+Voices of the Moon, 1990, Fellini
+Decameron Nights, 1953, Fregonese
+The Hitch Hiker, 1953, Lupino
+The Bigamist, 1953, Lupino
+The Trouble With Angels, 1966, Lupino
+Babes in Toyland, 1961, Donohue
+Un Chant d'Amour, 1950, Genet
+The Thief's Journal, 1955, Genet
+The Yellow Balloon, 1952, LeeThompson
+Taras Bulba, 1962, LeeThompson
+Conquest of the Planet of the Apes, 1972, LeeThompson
+MacKenna's Gold, 1980, LeeThompson
+The Ambassador, 1984, LeeThompson
+Undercover Girl, 1950, Pevney
+Il deserto rosso, 1963, Antonioni
+Zabbriskie Point, 1970, Antonioni
+Par-dela les Nuages, 1994, Antonioni
+The Reformer and the Redhead, 1950, Frank
+That Certain Feeling, 1956, Frank
+The Facts of Life, 1961, Frank
+Road to Hong Kong, 1962, Frank
+A Touch of Class, 1972, Frank
+Lost and Found, 1979, Frank
+The Quiller Memorandum, 1966, M.Anderson
+Logan's Run, 1976, M.Anderson
+Dominique is Dead, 1979, M.Anderson
+The Martian Chronicles I/II/III, 1979, M.Anderson
+Murder by Phone, 1982, M.Anderson
+The Last Hunt, 1956, R.Brooks
+Lord Jim, 1965, R.Brooks
+Happy Ending, 1970, R.Brooks
+Dollars, 1971, R.Brooks
+Bite the Bullet, 1975, R.Brooks
+Wrong is Right, 1981, R.Brooks
+Caroline Ch\'erie, 1950, Pottier
+Blackout, 1950, R.S.Baker
+The Treasure of Monte Christo, 1961, R.S.Baker
+Buta to Gunkan, 1961, Imamura
+Akai Satsui, 1964, Imamura
+Jinruigaku Nyumon, 1966, Imamura
+Vengeance is Mine, 1980, Imamura
+Ballad of Narayama, 1981, Imamura
+The Eel, 1998, Imamura
+Mr. Frenchie, 1950, UnYear50
+Last Year at Marienbad, 1960, Resnais
+Try and Get Me, 1951, Endfield
+Bannerline, 1951, D.Weis
+Ride the High Iron, 1951, D.Weis
+Looking For Love, 1964, D.Weis
+Billie, 1965, D.Weis
+Pajama Party in A Haunted House, 1966, D.Weis
+The King's Pirate, 1966, D.Weis
+Jungle Gents, 1954, Bernds
+Bitter Bread, 1951, Grigoriou
+The Painted Hills, 1951, Kress
+Lassie's Great Adventure, 1962, Kress
+Wolf Larsen, 1958, H.Jones
+Alice In Wonderland, 1951, Bunin
+For Men Only, 1951, Henreid
+A Woman's Devotion, 1957, Henreid
+Live Fast, Die Young, 1958, Henreid
+Girls on the Loose, 1958, Henreid
+A Town Called Hell, 1971, Parrish
+Rainbow Round My Shoulder, 1951, Quine
+So This is Paris, 1951, Quine
+Sunny Side of the Street, 1951, Quine
+My Sister Eileen, 1955, Quine
+Bell, Book, and Candle, 1958, Quine
+The World of Suzie Wong, 1960, Quine
+Sex and The Single Girl, 1964, Quine
+Sweet Charity, 1968, Fosse
+The Koumiko Mystery, 1965, Marker
+The Train Rolls On, 1974, Marker
+La Jete\'ee, 1978, Marker
+The Koumiko Mystery, 1965, Marker
+First to Fight, 1967, Nyby
+Come Back Little Sheba, 1952, Dan.Mann
+The Teahouse of the August Moon, 1956, Dan.Mann
+The Last Angry Man, 1959, Dan.Mann
+Ada, 1961, Dan.Mann
+Johann Mouse, 1952, Quimby
+Tendres Cousines, 1983, G.Hamilton
+Hello, Elephant, 1952, Franciolini
+The Wild Party, 1956, Horner
+Atomic City, 1952, J.Hopper
+Hurricane Smith, 1952, J.Hopper
+The Private War Of Major Benson, 1955, J.Hopper
+Go Man, Go, 1952, Howe
+Joe Macbeth, 1955, K.Hughes
+The Trials of Oscar Wilde, 1960, K.Hughes
+Of Human Bondage, 1964, K.Hughes
+Cromwell, 1970, K.Hughes
+The Happy Family, 1952, Box
+The Truth About Women, 1957, Box
+Law and Order, 1953, Juran
+Attack of the 50-foot Woman, 1957, Juran
+Hellcats of the Navy, 1957, Juran
+The Seventh Voyage of Sinbad, 1958, Juran
+Jack the Giant Killer, 1962, Juran
+Siege of the Saxons, 1962, Juran
+Tell Me Lies, 1967, Brook
+Meetings with Remarkable Men, 1972, Brook
+The Brave Don't Cry, 1952, Ph.Leacock
+The Kidnappers, 1953, Ph.Leacock
+Escapade, 1955, Ph.Leacock
+High Tide at Noon, 1957, Ph.Leacock
+Innocent Sinners, 1958, Ph.Leacock
+Take a Giant Step, 1961, Ph.Leacock
+13 West Street, 1962, Ph.Leacock
+Adam's Woman, 1970, Ph.Leacock
+The Birdmen, 1971, Ph.Leacock
+The Curse of King Tut's Tomb, 1980, Ph.Leacock
+To Woody Allen with Love, 1983, Delvaux
+Five Boys from Barska, 1953, A.Ford
+The Great Adventure, 1953, Sucksdorff
+Cat Women of the Moon, 1953, Hilton
+The Hunters, 1958, D.Powell
+I, The Jury, 1953, Essex
+The Glass Web, 1953, Arnold
+Savages, 1972, Ivory
+Children of Hiroshima, 1953, Shindo
+The Wolf, 1956, Shindo
+Ningen, 1963, Shindo
+Onibaba, 1964, Shindo
+Kuroneko, 1967, Shindo
+Bread, Love, and Dreams, 1953, Comencini
+Brittania Hospital, 1982, L.Anderson
+The Whales of August, 1987, L.Anderson
+Zorba the Greek, 1965, Cacoyannis
+Beggone Dull Care, 1953, McLaren
+Black Widow, 1954, Nunally J.
+The World of Henry Orient, 1964, Nunally J.
+Apache, 1954, Aldrich
+Kiss Me, Deadly, 1955, Aldrich
+Attack!, 1957, Aldrich
+Sodom and Gomorrah, 1962, Aldrich
+Whatever Happened to Baby Jane?, 1962, Aldrich
+Dirty Dozen, 1966, Aldrich
+The Killing of Sister George, 1968, Aldrich
+Too Late the Hero, 1969, Aldrich
+Grissom Gang, 1971, Aldrich
+Twilight's Last Gleaming, 1976, Aldrich
+The Choirboys, 1977, Aldrich
+Fear and Desire, 1953, Kubrick
+Full Metal Jacket, 1987, Kubrick
+Ghost Ship, 1953, Sewell
+Lotna, 1959, Wajda
+Everything for Sale, 1967, Wajda
+The Wedding, 1972, Wajda
+The Promised Land, 1974, Wajda
+Man of Marble, 1977, Wajda
+Orchestra Conductor, 1980, Wajda
+Man of Iron, 1980, Wajda
+The Possessed, 1988, Wajda
+Korczak, 1990, Wajda
+Crime and Punishment, 1990, Wajda
+Hamlet IV, 1991, Wajda
+The Horse Hair Ring, 1992, Wajda
+River Beat, 1954, Guy Green
+SOS Pacific, 1959, Guy Green
+The Mark, 1960, Guy Green
+The Angry Silence, 1960, Guy Green
+Diamond Head, 1963, Guy Green
+Tempest, 1963, Schaefer
+Big House USA, 1954, Koch
+The Girl in Black Stockings, 1957, Koch
+The Fast and Furious, 1954, J.Ireland
+Fantasia 2000, 1999, Algar
+Dragnet, 1954, J.Webb
+The D.I., 1957, J.Webb
+-30-, 1959, J.Webb
+The Last Time I Saw Archie, 1962, J.Webb
+Dragnet, 1966, J.Webb
+The Heart, 1954, Ichikawa
+The Punishment Room, 1955, Ichikawa
+Odd Obsessions, 1958, Ichikawa
+Fires on the Plain, 1959, Ichikawa
+The Sin, 1961, Ichikawa
+An Actor's Revenge, 1963, Ichikawa
+Alone in the Pacific, 1966, Ichikawa
+To Love Again, 1971, Ichikawa
+The Wanderers, 1973, Ichikawa
+I am a Cat, 1975, Ichikawa
+The Inugami Family, 1976, Ichikawa
+Matababi, 1977, Ichikawa
+Queen Bee, 1978, Ichikawa
+Devil's Island, 1978, Ichikawa
+The Phoenix, 1977, Ichikawa
+Secret Agent, 1980, Truman
+Magic City, 1954, Koundouros
+Summer and Smoke, 1960, Glenville
+Attilo Flagello di Dio, 1954, Francisci
+Le Fatiche di Ercole, 1957, Francisci
+The Postmaster, 1961, S.Ray
+Samapti, 1961, S.Ray
+Monihara, 1961, S.Ray
+Kapurush o Mahapurush, 1965, S.Ray
+Aranyer Din Ratri, 1969, S.Ray
+After the Curfew, 1954, Ismael
+My Mother's Castle, 1981, Y.Robert
+My Father's Glory, 1982, Y.Robert
+The Indiscreet Mrs. Jarvis, 1955, Alan Smithee
+Fade In, 1968, Alan Smithee
+Stitches, 1985, Alan Smithee
+Appointment with Fear, 1985, Alan Smithee
+Let's Get Harry, 1986, Alan Smithee
+Morgan Stewart's Coming Home, 0, Alan Smithee
+Ghost Fever, 1987, Alan Smithee
+I Love New York, 1988, Alan Smithee
+Starfire, 1990, Alan Smithee
+The Shrimp on the Barbie, 1990, Alan Smithee
+Brother Future, 1992, Alan Smithee
+Boy Meets Girl, 1994, Alan Smithee
+Raging Angels, 0, Alan Smithee
+Music, Poverty, and Pride, 1955, Sakellarios
+Bring your Smile Along, 1955, B.Edwards
+He Laughed Last, 1956, B.Edwards
+Mister Cory, 1957, B.Edwards
+The Perfect Furlough, 1959, B.Edwards
+What Did you Do in the War Daddy, 1966, B.Edwards
+Gunn, 1967, B.Edwards
+Darling Lili, 1970, B.Edwards
+Wild Rovers, 1971, B.Edwards
+The Carey Treatment, 1972, B.Edwards
+Tamarind Seed, 1974, B.Edwards
+Mickey and Maude, 1984, B.Edwards
+A Fine Mess, 1986, B.Edwards
+That's Life!, 1986, B.Edwards
+Blind Date, 1987, B.Edwards
+Sunset, 1988, B.Edwards
+Justin Case, 1988, B.Edwards
+Peter Gunn, 1971, B.Edwards
+Female Jungle, 1955, VeSota
+Bonjour Sourire, 1955, Sautet
+The Big Risk, 1960, Sautet
+Head First, 1964, Sautet
+Une Histoire Simple, 1978, Sautet
+Mado, 1978, Sautet
+Un Mauvais Fils, 1980, Sautet
+Garcon!, 1983, Sautet
+Strom Fear, 1955, C.Wilde
+Maracaibo, 1958, C.Wilde
+No Blade of Grass, 1971, C.Wilde
+Shark's Treasure, 1975, C.Wilde
+The Bachelor Party, 1957, Del.Mann
+The Dark at the Top of the Stairs, 1960, Del.Mann
+Separate Tables, 1983, Del.Mann
+The Rebel Set, 1959, Fowler
+Lady and the Tramp, 1955, Luske
+Les Amants du Tage, 1955, Verneuil
+Des Gens sans Importance, 1955, Verneuil
+The Story of Mankind, 1957, I.Allen
+The Swarm, 1978, I.Allen
+Room at The Top, 1958, Clayton
+The Pumpkin Eater, 1964, Clayton
+Something Wicked This Way Comes, 1983, Clayton
+The Maltese Bippy, 1969, Panama
+Prince of Players, 1955, Ph.Dunne
+Lisa, 1962, Ph.Dunne
+Blindfold, 1966, Ph.Dunne
+Contraband Spain, 1955, P.Saville
+Stop the World - I Want to Get Off, 1966, P.Saville
+Oedipus the King, 1968, P.Saville
+The Best House in London, 1969, P.Saville
+Secrets, 1971, P.Saville
+Those Glory, Glory Days, 1983, P.Saville
+Shadey, 1987, P.Saville
+Wonderland, 1989, P.Saville
+Fellow Traveller, 1989, P.Saville
+Max and Helen, 1990, P.Saville
+Brewster McCloud, 1971, Altman
+3 Women, 1978, Altman
+Popeye, 1980, Altman
+Come Back to the Five and Dime, Jimmy Dean, Jimmy Dean, 1982, Altman
+Streamers, 1983, Altman
+Cry Baby Killer, 1957, Corman
+Not of This Earth, 1957, Corman
+Carnival Rock, 1957, Corman
+Machine Gun Kelly, 1958, Corman
+I, Mobster, 1958, Corman
+The Intruder, 1962, Corman
+Tower of London, 1962, Corman
+The Raven, 1963, Corman
+The Wild Angels, 1966, Corman
+The St. Valentine's Day Massacre, 1967, Corman
+The Trip, 1967, Corman
+von Richthoven and Brown, 1971, Corman
+Komal Gandhar, 1964, Ghatak
+Subarnarekha, 1965, Ghatak
+The Big Caper, 1957, R.Stevens
+I Thank A Fool, 1962, R.Stevens
+In the Cool of the Day, 1963, R.Stevens
+Not as a Stranger, 1955, St.Kramer
+On the Beach, 1959, St.Kramer
+Inherit the Wind, 1960, St.Kramer
+Ship of Fools, 1965, St.Kramer
+The Secret of Santa Vittoria, 1969, St.Kramer
+R.P.M., 1971, St.Kramer
+Bless the Beasts and Children, 1971, St.Kramer
+Oklahoma Crude, 1973, St.Kramer
+The Runner Stumbles, 1979, St.Kramer
+Kanojo to Kare, 1963, Hani
+Te o Tanagu Kora, 1963, Hani
+Hatsui Jigokuhen, 1968, Hani
+Will Penny, 1968, Gries
+Glass House, 1972, Gries
+Lady Ice, 1973, Gries
+Breakout, 1975, Gries
+QB VII, 1980, Gries
+The Price of Fear, 1956, A.Biberman
+The Young Guns, 1956, Band
+McLintock, 1963, McLaglen
+Hellfighters, 1971, McLaglen
+One More Train to Rob, 1971, McLaglen
+Something Big, 1971, McLaglen
+The Abductors, 1971, McLaglen
+The Train Robbers, 1973, McLaglen
+Fantastic Journey, 1977, McLaglen
+Nothing But the Best, 1963, C.Donner
+Here we go Round the Mulberry Bush, 1967, C.Donner
+Luv, 1967, C.Donner
+The Thief of Bagdad, 1981, C.Donner
+The Scarlet Pimpernel, 1982, C.Donner
+A Christmas Carol, 1982, C.Donner
+Johnny Concho, 1956, McGuire
+Big Hand for a Little Lady, 1966, F.Cook
+How to Save A Marriage, 1967, F.Cook
+Prudence and the Pill, 1968, F.Cook
+This Is The West That Was, 1974, F.Cook
+Murder She Said, 1963, Pollock
+null, 1999, Pollock
+Kiss Before Dying, 1956, G.Oswald
+Screaming Mimi, 1958, G.Oswald
+Agent for H.A.R.M., 1966, G.Oswald
+The Third Voice, 1959, Cornfield
+title, 1956, Cornfield
+The Shop on Main Street, 1964, Kadar
+The Matchmaker, 1958, Anthony
+Tomorrow, 1972, Anthony
+Le Coup du Berger, 1956, Rivette
+Paris Nous Appartient, 1960, Rivette
+La Religieuse, 1956, Rivette
+La Vengeresse, 1976, Rivette
+Merry Go Round, 1978, Rivette
+Hurlevent, 1985, Rivette
+Frantic, 1957, Malle
+The Lovers, 1958, Malle
+Le fue Follet, 1963, Malle
+Le Voleur, 1967, Malle
+Lacombe Lucien, 1975, Malle
+Crackers, 1984, Malle
+Alamo Bay, 1987, Malle
+Liza, 1972, Ferreri
+Blowout, 1975, Ferreri
+Edge of the City, 1956, Ritt
+No Down Payment, 1957, Ritt
+The Sound and the Fury, 1959, Ritt
+Fallen Angel, 1980, R.Lewis
+If Things Were Different, 1980, R.Lewis
+Hang 'Em High, 1967, Post
+Magnum Force, 1973, Post
+The Baby, 1973, Post
+Go Tell the Spartans, 1978, Post
+Good Guys Wear Black, 1978, Post
+Diary of a Teenage Hitchhiker, 1979, Post
+The Trapp Family Singers, 1956, Unknown56
+The Wonderful Country, 1956, Unknown56
+Love Story, 1970, Hiller
+Plaza Suite, 1971, Hiller
+Man of La Mancha, 1972, Hiller
+The Lonely Guy, 1984, Hiller
+Carnival Night, 1957, Ryazanov
+Nowhere Man, 1960, Ryazanov
+Look Out For Cars, 1963, Ryazanov
+Garage, 1979, Ryazanov
+A Ruthless Romance, 1985, Ryazanov
+Dear Elena Sergeivna, 1987, Ryazanov
+A Forgotten Tune for the Flute, 1987, Ryazanov
+Girls for the Summer, 1960, Molinaro
+The Gentle Art of Seduction, 1964, Molinaro
+Sunday Lovers, 1980, Molinaro
+La Sfida, 1957, Rosi
+The Moment of Truth, 1964, Rosi
+More Than a Miracle, 1968, Rosi
+Dimenticare Palermo, 1990, Rosi
+Vicious Circle, 1957, G.Thomas
+The Young Stranger, 1957, Frankenheimer
+The Train, 1965, Frankenheimer
+Grand Prix, 1967, Frankenheimer
+The Train, 1969, Frankenheimer
+The Iceman Cometh, 1973, Frankenheimer
+The French Connection II, 1975, Frankenheimer
+Black Sunday, 1976, Frankenheimer
+The Challenge, 1982, Frankenheimer
+Cat Chaser, 1984, Frankenheimer
+Stick, 1984, Frankenheimer
+52 Pickup, 1986, Frankenheimer
+Year of the Gun, 1991, Frankenheimer
+Brainscan, 1996, Frankenheimer
+The Island of Dr.Moreau, 1996, Frankenheimer
+War of the Monsters, 1966, Honda
+Under Fire, 1957, J.B.Clark
+Sierra Baron, 1958, J.B.Clark
+The Sad Horse, 1960, J.B.Clark
+A Dog of Flanders, 1960, J.B.Clark
+A Foot in Hell, 1960, J.B.Clark
+Misty, 1961, J.B.Clark
+Flipper, 1963, J.B.Clark
+Island of the Blue Dolphins, 1964, J.B.Clark
+My Side of the Mountain, 1968, J.B.Clark
+The Little Ark, 1971, J.B.Clark
+The System, 1964, Winner
+I'll Never Forget Whatshisname, 1967, Winner
+Lawman, 1970, Winner
+The Nightcomer, 1970, Winner
+The Mechanic, 1972, Winner
+Death Wish, 1974, Winner
+Won Ton Ton, The Dog Who Saved Hollywood, 1976, Winner
+Sentinel, 1976, Winner
+The Stone Killer, 1980, Winner
+Death Wish II, 1982, Winner
+Davy, 1957, Relph
+Three Fugitives, 1957, Acub
+Operation Snatch, 1962, R.Day
+Initiation of Sarah, 1978, R.Day
+Love With the Proper Stranger, 1964, Mulligan
+Baby, The Rain Must Fall, 1965, Mulligan
+Inside Daisy Clover, 1965, Mulligan
+Summer of '42, 1971, Mulligan
+The Ipcress File, 1965, Furie
+Hit!, 1976, Furie
+The Boys in Company C, 1977, Furie
+Purple Hearts, 1984, Furie
+The Fugitive Kind, 1960, Lumet
+The Pawnbroker, 1965, Lumet
+The Hill, 1965, Lumet
+Network, 1976, Lumet
+Just Tell Me What You Want, 1980, Lumet
+The Wiz, 1978, Lumet
+Death Trap, 1982, Lumet
+Q and A, 1990, Lumet
+A Stranger Among Us, 1992, Lumet
+The Last Train Wreck, 1957, Spielberg
+Amblin', 1969, Spielberg
+Something Evil, 1972, Spielberg
+Savage, 1972, Spielberg
+E.T., 1983, Spielberg
+Twilight Zone, 1983, Spielberg
+Indiana Jones and the Temple of Doom, 1984, Spielberg
+Empire of the Sun, 1987, Spielberg
+Always, 1990, Spielberg
+Hook, 1991, Spielberg
+To Wong Foo, Thanks for Everything, Julie Newmar, 1995, Spielberg
+The Lost World: Jurrasic Park, 1997, Spielberg
+Kuchizuki, 1957, Masumura
+Seisaku no Tsuma, 1965, Masumura
+Adelaide, 1957, UnYear57
+Nathan Detroit, 1957, UnYear57
+Far Behind Enemy Lines, 1957, UnYear57
+Stage Struck, 1957, UnYear57
+The Miracle Worker, 1962, A.Penn
+Bonnie and Clyde, 1967, A.Penn
+Alice's Restaurant, 1969, A.Penn
+Four Friends, 1981, A.Penn
+Thunder Road, 1958, Ripley
+The Helicopter Spies, 1968, Sagal
+Le Beau Serge, 1958, Chabrol
+The Cousins, 1959, Chabrol
+Ophelia, 1967, Chabrol
+Landru, 1967, Chabrol
+La femme infidele, 1968, Chabrol
+The Road to Corinth, 1968, Chabrol
+Ophelia, 1973, Chabrol
+Alice, 1977, Chabrol
+The Swindle, 1998, Chabrol
+Merci pour le Chocolat, 2000, Chabrol
+Eye of The Cat, 1969, Rich
+The Concorde - Airport 79, 1979, Rich
+A Family Upside Down, 1980, Rich
+Cosmic Monster, 1958, Dunn
+The Eyes of Laura Mars, 1978, Kershner
+The Empire Strikes Back, 1980, Kershner
+Robocop II, 1990, Kershner
+Robocop III, 1991, Kershner
+Beware! The Blob, 1972, Yeaworthy
+Five Gates to Hell, 1958, Clavell
+Walk like A Dragon, 1960, Clavell
+The Sweet and the Bitter, 1962, Clavell
+Where's Jack, 1969, Clavell
+The Last Valley, 1971, Clavell
+Saturday Night and Sunday Morning, 1960, Reisz
+Isadora, 1968, Reisz
+The French Luitenant's Woman, 1981, Reisz
+Sweet Dreams, 1985, Reisz
+Everybody Wins, 1989, Reisz
+Uli, le Valet de ferme, 1960, Fruh
+tom thumb, 1958, Foder
+Black Orpheus, 1958, Camus
+L'Amour Existe, 1958, Pialat
+L'Enfance Nue, 1968, Pialat
+We Will Not Grow Old Together, 1972, Pialat
+La Guele Ouverte, 1973, Pialat
+Police, 1985, Pialat
+Frankenstein's Daughter, 1958, Cunha
+Missile to the Moon, 1959, Cunha
+Payroll, 1961, Hayers
+Station Six Sahara, 1963, S.Holt
+Monsieur Lecoq, 1968, S.Holt
+Cairo Station, 1958, Chahine
+Saladin, 1963, Chahine
+The Land, 1969, Chahine
+Once Upon a Time the Nile, 1970, Chahine
+The Choice, 1970, Chahine
+The Sparrow, 1973, Chahine
+Solaris, 1972, Tarkovsky
+Mirror, 1978, Tarkovsky
+The Sacrifice, 1986, Tarkovsky
+Witchcraft, 1964, D.Sharp
+Rocket to the Moon, 1967, D.Sharp
+The Thirty-nine Steps, 1978, D.Sharp
+The Bramble Bush, 1959, Petrie
+The Main Attraction, 1963, Petrie
+Eleanor and Franklin, 1976, Petrie
+Eleanor and Franklin, The White House Years, 1977, Petrie
+Fort Apache, The Bronx, 1981, Petrie
+Mystic Pizza, 1988, Petrie
+Toy Soldiers, 1990, Petrie
+Le Signe du Lion, 1959, Rohmer
+La Boulangerie de Monceau, 1963, Rohmer
+La Carriere de Suzanne, 1964, Rohmer
+La Collectioneuse, 1967, Rohmer
+Love in the Afternoon, 1972, Rohmer
+Perceval Le Gallois, 1978, Rohmer
+The Spy with my Face, 1967, Newland
+Une Femme Mari\'ee, 1964, Godard
+Weekend, 1968, Raoul Coulard
+Vivre Sa Vie, 1970, Raoul Coulard
+Une Femme est une femme, 1971, Raoul Coulard
+Tout Va Bien, 1972, Raoul Coulard
+Numero Deux, 1975, Raoul Coulard
+Germany Year 90 Nine Zero, 1991, Raoul Coulard
+Histoire(s) du Cinema, 1997, Raoul Coulard
+Make Mine Mink, 1960, R.Asher
+The Intelligence Man, 1965, R.Asher
+Destiny of Man, 1959, Bondartchuk
+War and Peace, 1964, Bondartchuk
+The Laughing Policeman, 1973, Rosenberg
+Amityville Horror, 1979, Rosenberg
+The Charge of the Light Brigade, 1968, T.Richardson
+Ned Kelly, 1970, T.Richardson
+A Delicate Balance, 1973, T.Richardson
+Dead Cert, 1974, T.Richardson
+The Hotel New Hampshire, 1984, T.Richardson
+Lonelyhearts, 1959, Donehue
+Sunrise at Campobello, 1960, Donehue
+Ma Barker's Killer Brood, 1960, Karn
+Le Propre de l'homme, 1960, Lelouch
+Une Fille et des Fusils, 1963, Lelouch
+Avec des Si, 1964, Lelouch
+Secret Paris, 1964, Lelouch
+Un homme et une femme, 1966, Lelouch
+Vivre Pour vivre, 1967, Lelouch
+Challenge in the snow, 1968, Lelouch
+Far from Vietnam, 1969, Lelouch
+A Man I Like, 1969, Lelouch
+Life Love Death, 1969, Lelouch
+Le Rose et le Noir, 1970, Lelouch
+The Crook, 1971, Lelouch
+Smic, Smac, Smoc, 1971, Lelouch
+Simon the Swiss, 1971, Lelouch
+Adventure is Adventure, 1972, Lelouch
+La Bonne Anne\'e, 1973, Lelouch
+And now My Love, 1975, Lelouch
+Seven Suspects for Murder, 1977, Lelouch
+Another Man, another Chance, 1977, Lelouch
+The Good and the Bad, 1977, Lelouch
+A Nos Deux, 1979, Lelouch
+Les Uns et les autres, 1980, Lelouch
+Edith and Marcel, 1983, Lelouch
+Between Two Rivers, 1960, D.Potter
+Stand Up, Nigel Barton, 1965, D.Potter
+Son of Man, 1969, D.Potter
+Follow the Yellow Brick Road, 1972, D.Potter
+Double Date, 1974, D.Potter
+The Battle of Algiers, 1966, Pontocorvo
+Le Corniaud, 1964, Oury
+Le Coup de Parapluie, 1980, Oury
+Terminus, 1960, Schlesinger
+Billy Liar, 1963, Schlesinger
+Darling, 1965, Schlesinger
+Midnight Cowboy, 1969, Schlesinger
+The Innocent, 1993, Schlesinger
+Cold Comfort Farm, 1996, Schlesinger
+Lola, 1960, J.Demy
+The Model Shop, 1970, J.Demy
+The Pied Piper, 1971, J.Demy
+L'Evenement le plus important depuis que l'homme marchr sur la lune, 1973, J.Demy
+Donkey Skin, 1975, J.Demy
+A Slightly Pregnant Man, 1978, J.Demy
+Lady Oscar, 1979, J.Demy
+L'Naissance du Jour, 1981, J.Demy
+The Green Berets, 1968, J.Wayne
+Private Property, 1960, L.Stevens
+Ultimi Giorni di Pompeii, 1960, Bonnard
+Romulus and Remus, 1961, Bonnard
+The War of Troy, 1961, Bonnard
+Coriolanus, 1966, Bonnard
+The Legend of Aneus, 1962, Bonnard
+Scipio, the African, 1967, Bonnard
+Nihon no Yoru to Kiri, 1960, Oshima
+Shinjuku Dorobo Nikki, 1966, Oshima
+Tokyo Senso Sengo Hiwa, 1970, Oshima
+Spetters, 1981, P.Verhoeven
+The 4th Man, 1983, P.Verhoeven
+Robocop, 1988, P.Verhoeven
+Total Recall, 1990, P.Verhoeven
+Primary, 1960, Ri.Leacock
+The Chair, 1962, Ri.Leacock
+Quints, 1963, Ri.Leacock
+Chiefs, 1968, Ri.Leacock
+The Wackiest Ship in the Army, 1960, Rich.Murphy
+The Savage Seven, 1963, Rush
+Psych-Out, 1965, Rush
+Hell's Angels on Wheels, 1967, Rush
+Getting Straight, 1970, Rush
+The Mikado, 1967, Burge
+The L-shaped Room, 1962, B.Forbes
+Seance on a Wet Afternoon, 1964, B.Forbes
+King Rat, 1965, B.Forbes
+The Whisperers, 1967, B.Forbes
+The Slipper and The Rose, 1976, B.Forbes
+The Assassin, 1961, Petri
+The Evil of Frankenstein, 1961, Francis
+They Came from Beyond Space, 1966, Francis
+The Golden Voyage of Sinbad, 1974, Hessler
+Comrade X, 1940, G.Reinhardt
+Command Decision, 1948, G.Reinhardt
+The Great Sinner, 1949, G.Reinhardt
+The Red Badge of Courage, 1951, G.Reinhardt
+null, 1954, G.Reinhardt
+null, 1954, G.Reinhardt
+Pitfall, 1961, Teshigahara
+Kwaidan, 1965, Teshigahara
+Silence, 1965, Teshigahara
+Tanin no Kao, 1966, Teshigahara
+The Man Without a Map, 1968, Teshigahara
+Out of Work for Years, 1975, Teshigahara
+Too Late Blues, 1962, JCassavetes
+A Child Is Waiting, 1962, JCassavetes
+Husbands, 1970, JCassavetes
+Minnie and Moskowitz, 1971, JCassavetes
+Opening Night, 1978, JCassavetes
+Gloria, 1980, JCassavetes
+Love Streams, 1983, JCassavetes
+Something Wild, 1961, Garfein
+Chronique d'un \'Et\'e, 1961, Rouch
+Decameron, 1970, Pasolini
+The Canterbury Tales, 1971, Pasolini
+The Arabian Nights, 1974, Pasolini
+Chouans !, 1987, DeBroca
+Trash, 1970, Morrissey
+Andy Warhols's Frankenstein, 1973, Morrissey
+Beethoven' Nephew, 1986, Morrissey
+Padro Padrone, 1977, Taviani
+The Knack, 1965, R.Lester
+Petulia, 1968, R.Lester
+The Three Musketeers, 1973, R.Lester
+The Four Musketeers, 1975, R.Lester
+Superman II, 1980, R.Lester
+Superman III, 1983, R.Lester
+Knife in the Water, 1961, Polanski
+Cul-de-Sac, 1966, Polanski
+Straw Dogs, 1971, Peckinpah
+The Getaway, 1972, Peckinpah
+Killer Elite, 1975, Peckinpah
+Cross of Iron, 1977, Peckinpah
+Convoy, 1978, Peckinpah
+Major Dundee, 1980, Peckinpah
+The Osterman Weekend, 1983, Peckinpah
+The Last Days of Pompeii, 1959, S.Leone
+The Good, The Bad, and The Ugly, 1968, S.Leone
+Once Upon A Time in America, 1984, S.Leone
+Sledge, 1961, Morrow
+101 Dalmatians, 1961, Reitherman
+The Jungle Book, 1967, Reitherman
+The Aristocats, 1970, Reitherman
+The Many Adventures of Winnie-the-Pooh, 1983, Reitherman
+The Great Mouse Detective, 1986, Reitherman
+Daffy Duck's Quackbusters, 1988, Reitherman
+The Golden Arrow, 1962, Margheriti
+L'immortelle, 1962, RobbeGrillet
+A hundred and one nights, 1998, Varda
+Partner, 1968, Bertolucci
+Luna, 1979, Bertolucci
+Besieged, 1999, Bertolucci
+Preparez Vos Mouchoirs, 1978, Bt.Blier
+Buffet Froid, 1980, Bt.Blier
+Menage, 1982, Bt.Blier
+Going Places, 1985, Bt.Blier
+Anne of a Thousand Days, 1970, Jarrot
+Mary, Queen of Scots, 1972, Jarrot
+Condor Man, 1981, Jarrot
+The Amateur, 1982, Jarrot
+The Car, 1977, Silverstein
+Barravento, 1962, Rocha
+Slaughterhouse Five, 1972, G.R.Hill
+Matrimonial Warfare, 1975, deAndrade
+Batman, 1962, Martinson
+Robbery, 1967, Yates
+Bullit, 1968, Yates
+The Hot Rock, 1972, Yates
+The Friends of Eddie Coyle, 1973, Yates
+For Pete's Sake, 1980, Yates
+Eyewitness, 1981, Yates
+The Dresser, 1983, Yates
+An Innocent Man, 1998, Yates
+X-15, 1962, R.Donner
+Superman, 1978, R.Donner
+Inside Moves, 1980, R.Donner
+The Toy, 1982, R.Donner
+NKT, 1984, R.Donner
+Lady Luck, 1985, R.Donner
+Lethal Weapon, 1987, R.Donner
+Scrooged, 1988, R.Donner
+Lethal Weapon II, 1989, R.Donner
+Lethal Weapon III, 1992, R.Donner
+Lethal Weapon 4, 1998, R.Donner
+The Man at the Carleton Towers, 1962, Tronson
+The Traitors, 1962, Tronson
+On the Run, 1963, Tronson
+Castle Keep, 1964, S.Pollack
+The Slender Thread, 1965, S.Pollack
+This Property is Condemmed, 1966, S.Pollack
+The Yakuza, 1975, S.Pollack
+Sleep, 1963, Warhol
+Vinyl, 1964, Warhol
+The Chelsea Girls, 1966, Warhol
+Bike Boy, 1967, Warhol
+The Nude Restaurant, 1967, Warhol
+Come Blow Your Horn, 1963, Bud Yorkin
+The Thief Who Came to Dinner, 1973, Bud Yorkin
+Raven's End, 1963, Widerberg
+Elvira Madigan, 1967, Widerberg
+Joe Hill, 1971, Widerberg
+Man on the Roof, 1977, Widerberg
+Ganga Zumba, 1963, Digues
+Voyage to a Prehstoric Planet, 1964, Harrington
+Killer Bees, 1974, Harrington
+Jason and the Argonauts, 1963, Chaffey
+You're a Big Boy Now, 1966, Coppola
+The Rain People, 1969, Coppola
+The Godfather, 1972, Coppola
+The Godfather, Part II, 1974, Coppola
+Apocalypse Now, 1979, Coppola
+Rumblefish, 1983, Coppola
+The Best Man, 1964, Schaffner
+The War Lord, 1965, Schaffner
+The Double Man, 1967, Schaffner
+Planet of the Apes, 1968, Schaffner
+Nicholas and Alexandra, 1971, Schaffner
+Airport 75, 1974, Smight
+Midway, 1976, Smight
+Fastbreak, 1979, Smight
+Sparrows Can't Sing, 1963, Littlewood
+The Lizards, 1963, Wertmuller
+The Seduction of Mimi, 1972, Wertmuller
+Love and Anarchy, 1973, Wertmuller
+Summer Night, 1987, Wertmuller
+Saturday, Sunday, and Monday, 1990, Wertmuller
+The Sorrow and the Pity, 1969, Marcle Ophuls
+Fourty Pounds of Trouble, 1963, Jewison
+The Russians are Coming,the Russians are Coming, 1966, Jewison
+Jesus Christ Superstar, 1973, Jewison
+Rollerball, 1975, Jewison
+F.I.S.T., 1978, Jewison
+And Justice for All, 1979, Jewison
+Best Friends, 1982, Jewison
+The Wanderers, 1980, Ph.Kaufman
+Stop Train 349, 0, Haedrich
+They Came to Rob Las Vegas, 1969, Isasmendi
+Take the Bit in Your Teeth, 1964, Kennedy
+Le Vieil Homme et l'Enfant, 1967, Cl.Berri
+She-Devils on Wheels, 1968, H.G.Lewis
+Fantasies, 1981, Derek
+Born to Win, 1971, Passer
+Law and Disorder, 1974, Passer
+Crime and Passion, 1976, Passer
+Cutter's Way, 1981, Passer
+Rollercoaster, 1977, Goldstone
+The Music Lovers, 1970, K.Russell
+Altered States, 1980, K.Russell
+Crimes of Passion, 1984, K.Russell
+Gothic, 1987, K.Russell
+Salome's Last Dance, 1988, K.Russell
+Whore, 1991, K.Russell
+Prisoner of Honor, 1991, K.Russell
+They Don't Werar Black Tie, 1981, Hirszman
+Hold Me, Thrill Me, Kiss Me, 1992, Hirszman
+Alligator, 1981, Teague
+Navy Seals, 1990, Teague
+Agatha, 1979, Apted
+Fireman's Ball, 1967, Forman
+Taking Off, 1971, Forman
+Ragtime, 1981, Forman
+Scrubbers, 1982, Zetterling
+Sunday in New York, 1964, Tewkesbury
+The Vampire of Dusseldorf, 1964, Hossein
+Stories of the revolution, 1964, Alea
+Death of a Bureaucrat, 1967, Alea
+The Last Supper, 1970, Alea
+Sorcerer, 1977, Friedkin
+Cruising, 1980, Friedkin
+To Live and Die in LA, 1985, Friedkin
+Jade, 1995, Friedkin
+Rules of Engagement, 1999, Friedkin
+Dog Star Man, 1964, UnYear64
+Furia a Bahia pour OSS 117, 1965, Hunebelle
+The Rip Off, 1981, Dawson
+The Stranger and the Gunfighter, 1982, Dawson
+Un Homme de Trop, 1967, CostaGavras
+State of Siege, 1972, CostaGavras
+Special Section, 1975, CostaGavras
+Let's talk About Women, 1965, Scola
+The Devil in Love, 1966, Scola
+The Pizza Triangle, 1970, Scola
+Passione d'Amore, 1981, Scola
+The Looking Glass War, 1980, Pierson
+Somebody Has to Shoot the Picture, 1989, Pierson
+Point Blank, 1967, Boorman
+Hell in the Pacific, 1969, Boorman
+Exorcist II: The Heretic, 1973, Boorman
+Zardoz, 1974, Boorman
+Excalibur, 1981, Boorman
+The Emerald Forest, 1985, Boorman
+Hope and Glory, 1987, Boorman
+The Crazy Quilt, 1965, Korty
+The Autobiography of Miss Jane Pittman, 1965, Korty
+Some Call it Loving, 1973, J.B.Harris
+Boiling Point, 1993, J.B.Harris
+The Emigrants, 1971, Troell
+Zandy's Bride, 1974, Troell
+Bang!, 1977, Troell
+The Flight of the Eagle, 1978, Troell
+Up the Junction, 1965, Loach
+Cathy Come Home, 1966, Loach
+Kes, 1969, Loach
+Singing the Blues in Red, 1986, Loach
+Salto nel Vuato, 1979, Bellocchio
+The Pince of Homburg, 1997, Bellocchio
+Cat from Outer Space, 1978, Tokar
+The Saragossa Manuscript, 1965, Has
+Thunder in Dixie, 1965, Naud
+Hot Rod Hullabaloo, 1966, Naud
+La Fayette, 1965, Dreville
+Until the Ship Sails, 1966, Damianos
+Beau Geste, 1966, Heyes
+One of Our Spies is Missing, 1966, Hallenbeck
+Flood!, 1976, Bellamy
+Fire!, 1977, Bellamy
+The Hiding Place, 1977, F.Beyer
+The Champ, 1979, Zeffirelli
+Sweet Love, Bitter, 1966, Danska
+Pharaon, 1966, Kawalarowicz
+Bronstein's Children, 1990, Kawalarowicz
+Closely Watched Trains, 1966, Menzel
+Report on the Party and its Guests, 1966, Nemec
+Oratorio for Prague, 1966, Nemec
+Martyrs of Love, 1973, Nemec
+In the Heat of Royal Love, 1991, Nemec
+One Spy Too Many, 1966, Sargent
+The Spy in the Green Hat, 1967, Sargent
+Taking of Pelham 1, 2, 3, 1974, Sargent
+Hustling, 1975, Sargent
+Goldengirl, 1979, Sargent
+The Barrier, 1966, Skolimowski
+The Departure, 1967, Skolimowski
+Habds Up, 1967, Skolimowski
+The Adventures of Gerard, 1970, Skolimowski
+Deep End, 1971, Skolimowski
+King, Queen, Knave, 1972, Skolimowski
+The Shout, 1978, Skolimowski
+Tevye and his Seven Daughters, 1968, Golan
+Diamonds, 1976, Golan
+Lepke, 1977, Golan
+Eagles Attack at Dawn, 1978, Golan
+The Magician of Lubin, 1979, Golan
+Delta Force, 1986, Golan
+Who's afraid of Virginia Woolf, 1966, M.Nichols
+Catch 22, 1970, M.Nichols
+Carnal Knowledge, 1971, M.Nichols
+The Day of the Dolphin, 1973, M.Nichols
+Joanna, 1967, Sarne
+The Baltimore Bullet, 1980, R.E.Miller
+The Payoff, 1978, Corbucci
+Who Are You, Polly Magoo?, 1966, Klein
+The Model Couple, 1976, Klein
+Mode in France, 1985, Klein
+The French, 1985, Klein
+A Degree of Murder, 1967, Schlondorff
+The Tin Drum, 1966, Schlondorff
+Hotel de la Paix, 1983, Schlondorff
+Swann in Love, 1984, Schlondorff
+The Ogre, 1998, Schlondorff
+Castro Street, 1966, UnYear66
+Requiem for a Secret Agent, 1966, UnYear66
+The Fortune Cookie, 1966, UnYear66
+Dead Heat in the Merrygoround, 1966, UnYear66
+The Shakiest Gun in the West, 1967, Rafkin
+Breakdown, 1967, Bn.Blier
+The Karate Killers, 1967, Shear
+Wild in the Streets, 1968, Shear
+The Jerk, 1983, C.Reiner
+Summer School, 1986, C.Reiner
+The Vengeance of She, 1967, Owen
+The Return of She, 1983, Owen
+Cactus Flower, 1969, Saks
+Last of the Red Hot Lovers, 1972, Saks
+Karate Kid, 0, J.G.Avildsen
+Neighbors, 1981, J.G.Avildsen
+Karate Kid III, 1989, J.G.Avildsen
+Rocky V, 1990, J.G.Avildsen
+Assassins, 1995, J.G.Avildsen
+The Hiding Place, 1975, J.Collier
+The Venetian Affair, 1967, J.Thorpe
+The Mackenzie Break, 1970, L.Johnson
+You'll like My Mother, 1972, L.Johnson
+Foxes, 1980, L.Johnson
+Crisis at Central High, 1980, L.Johnson
+Spacehunter: Adventures in the Forbidden Zone, 1983, L.Johnson
+Downhill Racer, 1967, M.Ritchie
+The Candidate, 1972, M.Ritchie
+An Almost Perfect Affair, 1979, M.Ritchie
+Divine Madness, 1980, M.Ritchie
+The Survivors, 1983, M.Ritchie
+Diggstown, 1992, M.Ritchie
+Wavelength, 1967, Snow
+The Story of a Three Day Pass, 1967, MlVanPeebles
+Watermelon Man, 1969, MlVanPeebles
+Sweet Sweetback's Badasssss Song, 1971, MlVanPeebles
+Don't Play Us Cheap, 1972, MlVanPeebles
+Identity Crisis, 1989, MlVanPeebles
+The Italian Job, 1969, Collinson
+The House on Garibaldi Street, 1979, Collinson
+Out of It, 1969, P.Williams
+The Revolutionary, 1970, P.Williams
+Dealing: Or the Berkeley-to-Boston Forty-Brick Lost-Bag Blues, 1972, P.Williams
+Nunzio, 1978, P.Williams
+The Theatre of M. and Mme. Kobal, 1967, Borowczyck
+Goto, Island of Love, 1968, Borowczyck
+Blanche, 1972, Borowczyck
+The Story of Sin, 1974, Borowczyck
+La Bete, 1975, Borowczyck
+The Streetwalker, 1976, Borowczyck
+Dr. Jekyll and the Women, 1981, Borowczyck
+Even Dwarfs Started Small, 1970, Herzog
+Aguirre, the Wrath of God, 1973, Herzog
+Cpacabana Fools Me, 1968, daFontoura
+Inadmissable Evidence, 1968, A.Page
+The Lady Vanishes, 1979, A.Page
+NKT, 1968, B.dePalma
+Scarface, 1983, B.dePalma
+Wise Guys, 1984, B.dePalma
+The Untouchables, 1987, B.dePalma
+Mission Impossible, 1996, B.dePalma
+Krakatoa, East of Java, 1968, Kowalski
+Riot, 1968, Kulik
+Brian's Song, 1970, Kulik
+Shamus, 1973, Kulik
+The Hunter, 1980, Kulik
+Yellow Submarine, 1968, Dunning
+Knightriders, 1981, Romero
+Beru et ces Dames, 1968, Lefranc
+Thank You, Mask Man, 1968, J.Hale
+The Bofors Gun, 1968, Gold
+The National Health, 1973, Gold
+The Medusa Touch, 1978, Gold
+The Tenth Man, 1988, Gold
+Adieu L'Ami!, 1968, J.Herman
+The Christmas Tree, 1968, J.Clark
+Every Home Should Have One, 1970, J.Clark
+Think Dirty, 1970, J.Clark
+Rentadick, 1972, J.Clark
+David Holzman's Diary, 1968, McBride
+Breathless, 1983, McBride
+The Big Easy, 1986, McBride
+30 is a Dangerous Age, Cynthia, 1980, McGrath
+Don't Raise the Bridge - Lower the River, 1968, Paris
+How to Break Up a Happy Divorce, 1980, Paris
+The Light at the Edge of the World, 1971, Billington
+Virus, 1980, Fukasaku
+Silent Movie, 1976, Mel Brooks
+History of the World Part I, 1981, Mel Brooks
+Blue Skies Again, 1982, Mel Brooks
+Harry and Walter Go to New York, 1976, Rydell
+Daisy Miller, 1974, Bogdanovich
+At Long Last Love, 1975, Bogdanovich
+Texasville, 1989, Bogdanovich
+Rachel, Rachel, 1968, P.Newman
+Sometimes A Great Notion, 1971, P.Newman
+Harry and Son, 1984, P.Newman
+How to Steal the World, 1968, Roley
+The Loners, 1974, Roley
+The Subject was Roses, 1968, Grosbard
+Who is Henry Kellerman and Why Is He Saying Those Terrible Things About Me?, 1971, Grosbard
+Straight Time, 1978, Grosbard
+Jessi's Girls, 1983, Adamson
+Souveniers d'en France, 1975, Techine
+Barocco, 1977, Techine
+Wild Reeds, 1993, Techine
+Where Eagles Dare, 1969, B.Hutton
+Kelly's Heroes, 1970, B.Hutton
+First Deadly Sin, 1980, B.Hutton
+More, 1969, Schroeder
+The Valley, 1972, Schroeder
+Maitresse, 1975, Schroeder
+Extreme Measures, 1997, Schroeder
+Jeanne Dielman, 1969, Akerman
+23 Quai du Commerce, 1970, Akerman
+Lovers and Other Strangers, 1970, C.Howard
+Performance, 1969, Cammell
+Easy Rider, 1969, D.Hopper
+Backtrack, 1988, D.Hopper
+The Wild Racers, 1973, Haller
+The Owl and the Pussycat, 1970, H.Ross
+The Sunshine Boys, 1975, H.Ross
+The Goodbye Girl, 1980, H.Ross
+I Ought to be in Pictures, 1982, H.Ross
+Cry-Baby, 1990, Waters
+Pecker, 1998, Waters
+Blood of the Condor, 1969, Sanjines
+Whatever Happened to Aunt Alice?, 1969, Katzin
+Le Mans, 1971, Katzin
+Man from Atlantis, 1977, Katzin
+The Bell Jar, 1979, Peerce
+Bad Timing, 1979, Roeg
+Eureka, 1983, Roeg
+Insignificance, 1984, Roeg
+Track 29, 1988, Roeg
+1776, 1972, P.Hunt
+Death Hunt, 1981, P.Hunt
+Oh What a Lovely War, 1969, Attenborough
+Magic, 1978, Attenborough
+Too Much Sun, 1990, Downey
+The American Soldier, 1970, Fassbinder
+Whity, 1970, Fassbinder
+The American Soldier, 1970, Fassbinder
+Satansbraten, 1976, Fassbinder
+Mother K\"usters Goes to Heaven, 1976, Fassbinder
+Chinese Roulette, 1976, Fassbinder
+Bolwieser, 1977, Fassbinder
+Martha, 1977, Fassbinder
+The Third Generation, 1979, Fassbinder
+Lola, 1979, Fassbinder
+Berlin-Alexanderplatz, 1979, Fassbinder
+Veronica Voss, 1982, Fassbinder
+Querelle, 1982, Fassbinder
+Interiors, 1978, Woody Allen
+Another Woman, 1988, Woody Allen
+Small Time Crooks, 2000, Woody Allen
+Are You in the House Alone?, 1978, Grauman
+The Great Battle, 1969, Ozerov
+Battle of Britain, 1969, UnYear69
+The Incredible Two-headed Monster, 1970, Lanza
+The Postman Always Rings Twice, 1981, Rafelson
+The Bird with the Crystal Plumage, 1970, Argento
+Inferno, 1979, Argento
+Edgar Allan Poe, 1992, Argento
+The Winds of War, 1976, D.Curtis
+War and Remembrance, 1988, D.Curtis
+Crimes of the Future, 1970, Cronenberg
+Squirm, 1974, Cronenberg
+Shivers, 1975, Cronenberg
+Rabid, 1977, Cronenberg
+Fast Company, 1985, Cronenberg
+Naked Lunch, 1991, Cronenberg
+Jim - the World's Greatest, 1970, Coscarelli
+Kenny and Co., 1971, Coscarelli
+The Beastmaster, 1982, Coscarelli
+Ishtar, 1987, E.May
+Abracadabra, 1970, Back
+Inon ou Las Conquete du Feu, 1971, Back
+La Creation des Oiseaux, 1973, Back
+Illusion, 1974, Back
+Taratata, 1977, Back
+Tout Rien, 1978, Back
+Crac, 1981, Back
+L'Homme qui plantait Les Arbres, 1987, Back
+Le Fleuve aux Grandes Eaux, 1993, Back
+the Devil's Playground, 1976, Schepisi
+Iceman, 1984, Schepisi
+Mr. Baseball, 1992, Schepisi
+Urban Cowboy, 1980, Bridges
+Bright Lights, Big City, 1989, Bridges
+Scarecrow, 1973, Schatzberg
+The Land that Time Forgot, 1974, Connor
+The People that Time Forgot, 1977, Connor
+An Arabian Adventure, 1979, Connor
+The Amazing Mr. Blunden, 1972, Jeffries
+Baxter, 1972, Jeffries
+Wombling Free, 1978, Jeffries
+The Eternal City, 0, Scorsese
+Who's That Knocking on My Door, 1970, Scorsese
+Boxcar Bertha, 1972, Scorsese
+White Line Fever, 1974, Scorsese
+The Color of Money, 1986, Scorsese
+Il Dolce Vita, 2000, Scorsese
+Gangs of New York, 2001, Scorsese
+The Lonely Lady, 1983, Sasdy
+When Women Had Tails, 1970, Campanile
+When Women Lost Their Tails, 1971, Campanile
+Bob and Carol and Ted and Alice, 1970, Mazursky
+Harry and Tonto, 1974, Mazursky
+Next Stop, Greenwich Village, 1976, Mazursky
+Willie and Phil, 1980, Mazursky
+The Tempest, 1982, Mazursky
+Moon Over Parador, 1988, Mazursky
+The Return of the Man from UNCLE, 1983, Austin
+Kramer vs. Kramer, 1979, Benton
+Places in the Heart, 1983, Benton
+Billy Bathgate, 1991, Benton
+Devil's Rain, 1975, Fuest
+Robert Having His Nipple Pierced, 1970, Daley
+Reconstruction, 1970, Angelopoulos
+Die Waderschauspieler, 1975, Angelopoulos
+The beekeeper, 1993, Angelopoulos
+A Bird in the Hand, 1992, McEveety
+Scream 3, 2000, W.Craven
+Rollover, 1981, Pakula
+The Devil's Own, 1997, Pakula
+La Salamandre, 1971, Tanner
+A Flame in My Heart, 1987, Tanner
+Magic Mountain, 1973, Jodorowsky
+Topo, 1975, Jodorowsky
+The Gauntlet, 1977, Eastwood
+Firefox, 1982, Eastwood
+Honkytonk Man, 1982, Eastwood
+Sudden Impact, 1983, Eastwood
+Straight No Chaser, 1986, Eastwood
+Pink Cadillac, 1989, Eastwood
+Rookie, 1990, Eastwood
+A Perfect World, 1993, Eastwood
+What Did You Do in the War, Thanassis?, 1971, Katsouridis
+Shaft, 1971, Parks
+Superfly, 1972, Parks
+Shaft's Big Score, 1972, Parks
+A Safe Place, 1971, Jaglom
+Someone to Love, 1988, Jaglom
+Last summer in the Hamptons, 1996, Jaglom
+Whose Life is it Anyway?, 1981, Badham
+Blue Thunder, 1983, Badham
+Another Stakeout, 1992, Badham
+Point of No Return, 1993, Badham
+Treasure Island, 1971, Hough
+Meatballs, 1980, Reitman
+Quest for Fire, 1971, Annaud
+Coup de Tete, 1978, Annaud
+The Beau, 1988, Annaud
+Angels Die Hard, 1971, Viola
+Angels Hard as They Come, 1971, Viola
+Topsy-Turvy, 1999, Leigh
+Villain, 1971, Tuchner
+The Hunchback of Notre Dame, 1981, Tuchner
+Trenchcoat, 1983, Tuchner
+The Misadventures of Mr. Wilt, 1990, Tuchner
+Little Ladies of the Night, 1977, Chomsky
+Experience Preferred...But Not Essential, 1982, Duffell
+Experience Preferred...But Not Essential, 1971, Duffell
+Chandler, 1971, Magwood
+The Mosquito Coast, 1986, Weir
+Heavy Traffic, 1973, Bakshi
+The Nine Lives of Fritz the Cat, 1975, Bakshi
+Coonskin, 1975, Bakshi
+Wizards, 1977, Bakshi
+Lord of The Ring, 1978, Bakshi
+American Pop, 1981, Bakshi
+Hey Good Lookin', 1982, Bakshi
+Beavis and Butthead do America, 1996, Bakshi
+Bobby, 1973, Kapoor
+Big Foot, 1971, Slatzer
+Buck and the Preacher, 1971, Poitier
+Stir Crazy, 1981, Poitier
+Gumshoe, 1971, Frears
+Tomata Ketchup Senso, 1971, Terayama
+Sho o Suteyo, Machie Deyo, 1972, Terayama
+Den-En Ni Shisu, 1974, Terayama
+Porky's, 1981, B.Clark
+The Mad Bomber, 1972, Gordon
+Charlotte's Web, 1972, C.Nichols
+Mail, 1972, F.Levinson
+Trial of the Catonsville 9, 1972, G.Davidson
+Marjoe, 1972, H.Smith
+Airport '77, 1977, Jameson
+Bone, 1972, L.Cohen
+Daughter of Frankenstein, 1972, M.Welles
+Butterflies are Free, 1972, Katselas
+Forty Carats, 1973, Katselas
+Strangers: The Story of a Mother and Daughter, 1979, Katselas
+Cannonball, 1976, Bartel
+The Assassin, 1973, Crane
+The Krays, 1990, Medak
+Let Him Have It, 1991, Medak
+Romeo is Bleeding, 1993, Medak
+A Christmas Carol, 1972, R.Williams
+Rooster Cogburn, 1975, St.Millar
+Alice's Adventures in Wonderland, 1972, Sterling
+La F\'ee aux choix, 1896, Guy
+NKT, 1906, Guy
+Pink Floyd: The Wall, 1982, A.Parker
+On s'Est Tromp\'e d'Histoire de l'Amour, 1973, Serreau
+Why Not, 1978, Serreau
+U-turn, 1973, Kaczender
+In Praise of Older Women, 1978, Kaczender
+Mass Appeal, 1984, G.Jordan
+Bang the Drum Slowly, 1973, Hancock
+Dillinger, 1973, Milius
+Red Dawn, 1984, Milius
+The Young Dragons, 1973, Woo
+Countdown in Kung Fu, 1973, Woo
+A Better Tomorrow, 1986, Woo
+Hard Target, 1993, Woo
+Hard Boiled, 1995, Woo
+Broken Arrow, 1996, Woo
+The Nelson Affair, 1973, J.C.Jones
+Cleopatra Jones, 1973, Starrett
+Scalawag, 1973, K.Douglas
+Invasion of the Girl Snatchers, 1973, L.Jones
+Thunderbolt and Lightfoot, 1974, Cimino
+The First Great Train Robbery, 1978, M.Crichton
+Amsterdam Kill, 1977, Clouse
+Run Stranger, Run, 1980, Clouse
+Macon County Line, 1973, Compton
+Return to Macon County, 1975, Compton
+Fantastic Planet, 1973, Laloux
+Light Years, 1987, Laloux
+Tidal Wave, 1975, Moritani
+L'amour bracque, 1984, Zulawski
+La femme publique, 1986, Zulawski
+Mes Nuits sont plus belles que vos jours, 1988, Zulawski
+Pacific Palisades, 1990, Zulawski
+La note bleu, 1991, Zulawski
+La fidelite, 2000, Zulawski
+The Watchmaker of Saint Paul, 1974, Tavernier
+Que La Fete Commence, 1975, Tavernier
+The Judge and the Assasin, 1976, Tavernier
+Death Watch, 1980, Tavernier
+Coup de Torchon, 1982, Tavernier
+A Week's Vacation, 1982, Tavernier
+Beatrice, 1988, Tavernier
+L.627, 1994, Tavernier
+Freaky Friday, 1976, Gary Nelson
+Enigma, 1982, Gary Nelson
+Rambo: First Blood Part Two, 1985, Cosmatos
+Cobra, 1986, Cosmatos
+Rambo III, 1988, Cosmatos
+Shadow Conspiracy, 1997, Cosmatos
+Dark Star, 1974, Carpenter
+Assault on Precinct 13, 1976, Carpenter
+Halloween, 1978, Carpenter
+The Fog, 1979, Carpenter
+Christine, 1983, Carpenter
+Caged Heat, 1974, J.Demme
+Stop Making Sense, 1984, J.Demme
+Kotch, 1974, Lemmon
+Crossing Delancy, 1988, J.M.Silver
+Stepkids, 1991, J.M.Silver
+Supergirl, 1984, Szwarc
+Emmanuelle, The Joys of a Woman, 1975, Jaeckin
+The Spell, 1977, Phillips
+Louis Armstrong Chicago Style, 1980, Phillips
+The Star Spangled Girl, 1974, N.Simon
+The Widow Coudere, 1974, GranierDeferre
+Eaten Alive, 1977, T.Hooper
+Poltergeist, 1982, T.Hooper
+The Treasure of Jamaica Reef, 1974, V.Stone
+The Count of Monte Cristo, 1974, Greene
+It's My Turn, 1975, Weill
+Black Bird, 1975, Giler
+Chesty Anderson, U.S. Navy, 1975, E.Forsyth
+Cousin, Cousine, 1975, Tacchella
+White Line Fever, 1975, J.Kaplan
+Mr. Billion, 1976, J.Kaplan
+Over the Edge, 1980, J.Kaplan
+Heart Like a Wheel, 1982, J.Kaplan
+Death Ride to Osaka, 1983, J.Kaplan
+Love Field, 1992, J.Kaplan
+Le Sauvage, 1975, Rappeneau
+A Boy and His Dog, 1975, L.Q.Jones
+The Flesh of the Orchid, 1975, Chereau
+Big Top Pee-Wee, 1987, Kleiser
+Getting it Right, 1989, Kleiser
+The Midnight Man, 1975, Kibbee
+Monty Python and the Holy Grail, 1975, Gilliam
+Jabberwocky, 1977, Gilliam
+Life of Brian, 1979, Gilliam
+Time Bandits, 1981, Gilliam
+Brazil, 1985, Gilliam
+The Adventures of Baron Munchhausen, 1988, Gilliam
+Twelfth Night, 1996, Nunn
+Hard Times, 1975, W.Hill
+The Driver, 1978, W.Hill
+The Warriors, 1979, W.Hill
+The Long Riders, 1980, W.Hill
+48 Hrs., 1982, W.Hill
+Streets of Fire, 1984, W.Hill
+Another 48 Hrs., 1982, W.Hill
+Trespass, 1992, W.Hill
+Moses, 1975, deBosio
+Afterglow, 1997, Rudolph
+One Tough Cop, 1998, B.Barreto
+Barry McKenzie On His Own, 1985, Beresford
+Silent Fall, 1994, Beresford
+Gator, 1976, B.Reynolds
+The End, 1978, B.Reynolds
+Sharky's Machine, 1981, B.Reynolds
+Cop and a Half, 1992, B.Reynolds
+La Dentelliere, 1981, Goretta
+Eat My Dust!, 1976, C.Griffith
+Gumball Rally, 1976, Bail
+The Best Way to Walk, 1976, C.Miller
+Dites-lui que Je L'Aime, 1977, C.Miller
+The Hit Men, 1976, DiLeo
+The Kidnap Syndicate, 1978, DiLeo
+Rulers of the City, 1980, DiLeo
+Thieves, 1976, Gardner
+Rolling Thunder, 1976, J.Flynn
+Defiance, 1980, J.Flynn
+Best Seller, 1987, J.Flynn
+Lock Up, 1989, J.Flynn
+Brainscan, 1994, J.Flynn
+The Enforcer, 1976, Fargo
+Forced Vengance, 1982, Fargo
+Creature from Black Lake, 1976, Houck
+Innerspace, 1987, Dante
+Hick Chick, 1993, Carlino
+The Loneliest Runner, 1976, M.Landon
+Street People, 1976, Lucidi
+Jackson County Jail, 1976, M.Miller
+Silent Rage, 1982, M.Miller
+Car Wash, 1976, Schultz
+Carbon Copy, 1981, Schultz
+The Little Girl Who Lives Down the Lane, 1976, Gessner
+It Rained All Night the Day I Left, 1983, Gessner
+To the Devil...A Daughter, 1976, Sykes
+I, The Jury, 1982, Heffron
+Grand Theft Auto, 1976, R.Howard
+Willow, 1987, R.Howard
+Backdraft, 1991, R.Howard
+Far and Away, 1992, R.Howard
+The Paper, 1994, R.Howard
+The Ice Pirates, 1984, Raffill
+Fun with Dick and Jane, 1976, Kotcheff
+First Blood, 1982, Kotcheff
+Uncommon Valor, 1983, Kotcheff
+Kings of the Road, 1976, Wenders
+Alice in the Cities, 1977, Wenders
+The American Friend, 1977, Wenders
+Wings of Desire, 1988, Wenders
+Until the End of the World, 1992, Wenders
+The End of Violence, 1997, Wenders
+Buena Vista Social Club, 0, Wenders
+Amelia Earhart, 1976, Unknown34
+The Day After Trinity, 1981, Unknown34
+Enola Gay, 1980, Unknown34
+The Manhattan Project, 1986, Unknown34
+Golden Rendezvous, 1977, A.Lazarus
+Alice, Sweet Alice, 1977, Sole
+Nightjohn, 1997, Burnett
+Elisa, vida mia, 1977, Saura
+Cria!, 1977, Saura
+Horas Dulces, 1981, Saura
+Antoineta, 1982, Saura
+Ay, Carmela!, 1991, Saura
+Tango, 1998, Saura
+Smokey and the Bandit, 1977, H.Needham
+Hooper, 1978, H.Needham
+Smokey and the Bandit II, 1980, H.Needham
+The Cookies, 1977, Seria
+The Two Jakes, 1990, J.Nicholson
+Wolf, 1994, J.Nicholson
+The Bad News Bears in Breaking Training, 1977, M.Pressman
+Tentacles, 1977, O.Hellman
+Sleeping Dogs, 1977, Donaldson
+Dante's Peak, 1997, Donaldson
+Family Enforcer, 1977, R.DeVito
+For the Love of the Game, 1999, Raimi
+I-Omante, 1977, Himena
+Every Which Way But Loose, 1978, vanHorn
+Any Which Way You Can, 1980, vanHorn
+Thunder and Lightning, 1977, C.Allen
+Avalanche, 1978, C.Allen
+Jubilee, 1978, Jarman
+The Angelic Conversation, 1985, Jarman
+The Last of England, 1987, Jarman
+Wittgenstein, 1993, Jarman
+Blue, 1994, Jarman
+Mulholland Drive, 0, D.Lynch
+Gates of Heaven, 1978, E.Morris
+Vernon, Florida, 1981, E.Morris
+Mad Max, 1987, Geo.Miller
+The Man from Snowy River, 1982, Geo.Miller
+The Road Warrior, 1982, Geo.Miller
+Mad Max: Beyond Thunderdome, 1986, Geo.Miller
+The Witches of Eastwick, 1987, Geo.Miller
+Hearts of the West, 1975, Zieff
+Private Benjamin, 1980, Zieff
+Return Engagement, 1978, J.Hardy
+Finger, 1978, Toback
+Love and Money, 1982, Toback
+The First Fight, 1978, Besson
+Le Grand Bleu, 1985, Besson
+Subway, 1990, Besson
+Moonshadow, 1995, Besson
+The Messenger, 1999, Besson
+Cat People, 1982, Schrader
+Light Sleeper, 1992, Schrader
+Mishima, 1995, Schrader
+Night of the Juggler, 1980, R.Butler
+Night Cries, 1978, R.Lang
+Change of Seasons, 1980, R.Lang
+The Mountain Men, 1980, R.Lang
+Thank God it's Friday, 1978, Klane
+Legend, 1985, R.Scott
+Black Rain, 1989, R.Scott
+Thelma and Louise, 1989, R.Scott
+Blackhawk Down, 2001, R.Scott
+Under the Rainbow, 1981, Rash
+Cheech and Chong's Nice Dreams, 1981, Chong
+It Came from Hollywood, 1982, Chong
+Still Smokin', 1983, Chong
+Cheech and Chong's The Corsican Brothers, 1984, Chong
+Cat in the Cage, 1978, Zarindast
+Guns and Fury, 1982, Zarindast
+Reds, 1981, Beatty
+Dick Tracy, 1990, Beatty
+Modern Romance, 1981, A.Brooks
+Fort Saganne, 1983, Corneau
+Smokey and the Hotwire Gang, 1979, Cardoza
+Cloud Dancer, 1979, Ba.Brown
+More American Graffiti, 1979, Norton
+Eye of the Eagle III, 1990, Santiago
+Hot Stuff, 1979, DeLuise
+The Onion Field, 1979, H.Becker
+Black Marble, 1976, H.Becker
+Mercury Rising, 1998, H.Becker
+Penitentiary, 1979, Fanaka
+Going in Style, 1979, Brest
+Mean Dog Blues, 1979, M.Stuart
+The Keep, 1983, M.Mann
+The Dragonslayer, 1981, Robbins
+Time After Time, 1979, N.Meyer
+The Day After, 1983, N.Meyer
+A Force of One, 1979, Aaron
+On The Yard, 1979, R.D.Silver
+Walk on the Moon, 1985, R.D.Silver
+A Shining Season, 1979, Margolin
+The Odd Angry Shot, 1979, Jeffrey
+Monty Python's Life of Brian, 1979, T.Jones
+Monty Python's the Meaning of Life, 1983, T.Jones
+The Gunslinger, 1980, Ascot
+Tatoo, 1980, B.Brooks
+Lifepod, 1980, Bryant
+Wilma, 1980, Greenspan
+Black Stallion, 1980, C.Ballard
+La boum 2, 1982, Pinoteau
+L'etudiante, 1988, Pinoteau
+Naked Massacre, 1980, Heroux
+C.H.U.D., 1980, Irving
+C.H.U.D. II, Bud the Chud, 1984, Irving
+Maenner, 1980, Dorrie
+Ich und Er, 1983, Dorrie
+Variety, 1985, Dorrie
+Keiner liebt mich, 1990, Dorrie
+Bin Ich schoen?, 1998, Dorrie
+The Octagon, 1980, Karsen
+Angel Town, 1989, Karsen
+Nemesis, 1992, Karsen
+Body and Soul, 1981, Bowers
+From Hell to Victory, 1980, Peppard
+Goodbye Pork Pie, 1980, G.Murphy
+Don't Look Back, 1996, G.Murphy
+Meatballs part II, 1980, Mendelux
+Meatballs part III, 1980, Mendelux
+Touched by Love, 1980, Trikonis
+Wholly Moses, 1980, Weis
+Gideon's Trumpet, 1980, Houseman
+The Long Good Friday, 1980, Mackenzie
+The Dogs of War, 1980, Irvin
+Ghost Story, 1981, Irvin
+Hamburger Hill, 1987, Irvin
+Lianna, 1980, Sayles
+Baby, It's You, 1980, Sayles
+Return of the Secaucus 7, 1980, Sayles
+8 Men Out, 1984, Sayles
+Make One, 1986, Sayles
+Limbo, 1999, Sayles
+Middle-age Crazy, 1980, Trent
+The Exterminator, 1980, Glickenhaus
+The Soldier, 1982, Glickenhaus
+The Protector, 1990, Glickenhaus
+The Adventures of Ford Fairlane, 1989, Abrahams
+D.C. Cab, 1984, Schumacher
+Cousins, 1989, Schumacher
+The Client, 1993, Schumacher
+Falling Down, 1993, Schumacher
+Batman Forever, 1995, Schumacher
+Batman and Robin, 1997, Schumacher
+Seems Like Old Times, 1980, J.Sandrich
+Earth Girls Are Easy, 1989, Temple
+The Mango Tree, 1980, Dobson
+Stuckey's Last Stand, 1980, Goldfarb
+Terraces, 1980, Garrett
+Hey, I'm Alive, 1980, Schiller
+The Oak, 1991, Pintilie
+Lovesick, 1983, M.Brickman
+Yellowbeard, 1983, Damski
+Paper Wedding, 1989, Brault
+The Awakening, 1980, Newell
+The Good Father, 1985, Newell
+Siesta, 1994, Newell
+A Fine Romance, 1995, Newell
+Union City, 1980, Reichert
+Dark Passion, 1981, Almodovar
+Labyrinth of Passion, 1982, Almodovar
+Law of Desire, 1986, Almodovar
+Touch and Go, 1980, P.Maxwell
+Take It To The Limit, 1980, Starr
+Massacre at Central High, 1980, Daalder
+Gettysburg, 1993, R.Maxwell
+Shogun Assassin, 1980, Houston
+Caged Fear, 1990, Houston
+and the Band Played On, 1993, Spottiswoode
+The Adventures of Tin Tin: The Lure of Black Gold, 1990, Bernasconi
+Mad Dog, 1980, Grieco
+Actress, 1991, Kwan
+Red Rose White Rose, 1995, Kwan
+Spring Break, 1983, Cunningham
+Brussels Transit, 1980, Szlingerbaum
+Against All Odds, 1983, Hackford
+Everybody's All-American, 1988, Hackford
+The Devils Advocate, 1997, Hackford
+My Bodyguard, 1980, Bill
+Six Weeks, 1982, Bill
+Untamed Heart, 1993, Bill
+Feuer, Eis, und Dynamit, 1982, Bogner
+Stalk the Wild Child, 1980, W.Hale
+Keep Cool, 1997, YM.Zhang
+The Family Game, 1984, Morita
+Sexworld, 1980, Unknown28
+Ms. 45, 1981, Ferrara
+King of New York, 1990, Ferrara
+Bad Luitenant, 1992, Ferrara
+Dangerous Game, 1993, Ferrara
+The Blackout, 1997, Ferrara
+Deadline, 1981, Nicholson
+Nighthawks, 1981, Malmouth
+Candy, 1981, C.Marquand
+East of Elephant Rock, 1981, D.Boyd
+Clash of the Titans, 1981, Davis
+Defence of the Realm, 1985, Makavejev
+Taxi zum Klo, 1981, Ripploh
+Cleopatra, 1999, Roddam
+La Che\`evre, 1981, Veber
+Les Fugitifs, 1986, Veber
+The Double McGuffin, 1981, Camp
+Raggedy Man, 1981, Fisk
+All Night Long, 1981, Tramont
+Butterfly, 1981, Cimber
+Power Play, 1981, Burke
+Platoon, 1986, Ol.Stone
+Wall Street, 1988, Ol.Stone
+Born on the Fourth of July, 1989, Ol.Stone
+Natural Born Killers, 1994, Ol.Stone
+Any Given Sunday, 1999, Ol.Stone
+Sugarbaby, 1984, Adlon
+Five Last Days, 1985, Adlon
+The White Rose, 1986, Adlon
+Nobody's Perfekt, 1981, Bonerz
+Lonely Hearts, 1981, P.Cox
+Man of Flowers, 1983, P.Cox
+Cactus, 1986, P.Cox
+A Woman's Tale, 1989, P.Cox
+Don't Cry It's Only Thunder, 1981, Werner
+Bad Boys, 1983, Rick Rosenthal
+Terry Fox Story, 1983, R.L.Thomas
+Who Framed Roger Rabbit, 1988, Zemeckis
+Cast Away, 1999, Zemeckis
+The Shooting Party, 1984, S.Gordon
+Forever Young, 1992, Miner
+The Reanimator, 1985, St.Gordon
+Attack Force Z, 1981, Burstall
+Das Boot, 1981, Petersen
+Shattered, 1991, Petersen
+Android, 1982, Lipstadt
+Loser, 2000, Heckerling
+The Sword and the Sorcerer, 1982, Pyun
+The Natural, 1984, B.Levinson
+Le Retour de Martin Guerre, 1982, DaV
+Ein Sack Voll Flohe, 1982, Risi
+Cannery Row, 1982, D.S.Ward
+The Last Horror Film, 1982, Winters
+Vice Squad, 1982, G.A.Sherman
+Gleaming the Cube, 1985, Clifford
+Chariots of Fire, 1981, Hudson
+The Final Option, 1982, I.Sharp
+Far East, 1982, Duigan
+Lawn Dogs, 1998, Duigan
+Dragon Lord, 1982, J.Chan
+A Very Moral Night, 1983, ? [Makk
+Lily in Love, 1984, ? [Makk
+Blind Chance, 1982, Kieslovski
+Decalogue, 1988, Kieslovski
+Demons in the Garden, 1982, Aragon
+The House on Sorority Row, 1982, Rosman
+The Company of Wolves, 1984, N.Jordan
+The Butcher Boy, 1998, N.Jordan
+Full Circle, 1982, Loncraine
+The Missionary, 1982, Loncraine
+The Intruder, 1982, S.Leroy
+Smithereens, 1982, S.Seidelman
+She-Devil, 1986, S.Seidelman
+Behind the Mosquito Net, 1982, Karya
+Vigilante, 1982, Lustig
+Stuck on You!, 1982, Herz
+La Vie Continue, 1982, UnYear82
+Portrait of a Hitman, 1983, Buckhantz
+Song of the Exile, 1990, Hui
+Mickey's Christmas Carol, 1983, Mattinsson
+Sweet Poison, 1991, B.Grant
+La Balance, 1983, Swaim
+Ator the Fighting Eagle, 1983, Hills
+Mr. Murder, 1990, Lowry
+Dark Crystal, 1983, Oz
+Short Time, 1983, Champion
+Sub Down, 1997, Champion
+Koyaanisqatsi, 1983, Reggio
+Powaqqatsi, 1988, Reggio
+Permanent Vacation, 1983, Jarmusch
+Stranger Than Paradise, 1984, Jarmusch
+Down By Law, 1986, Jarmusch
+Revenge of the Nerds, 1984, Kanew
+Un Elephant Ca Trompe Enormement, 1983, Dabadie
+Miles of Smiles, Years of Struggle, 1983, Santino
+Hercules, 1983, Coates
+Young Warriors, 1983, Foldes
+Testament, 1983, Littman
+All the Right Moves, 1983, Chapman
+Stranger's Kiss, 1984, Chapman
+Pride - Unmei no Toki, 1998, Kobayashi
+The Grey Fox, 1983, Borsos
+A Zed and Two Naughts, 1985, Greenaway
+The Belly of an Architect, 1987, Greenaway
+8 1/2 Women, 1999, Greenaway
+The American President, 1995, R.Reiner
+The Ghosts of Missisippi, 1996, R.Reiner
+Deathgames, 1983, Dimsey
+Angelo My Love, 1983, Duvall
+Afterburn, 1992, Markowitz
+Country, 1984, Pearce
+Angel, 1983, ONeil
+Revenge of the Ninja, 1983, Firstenberg
+Slayground, 1983, Bedford
+Deep in the Heart, 1983, T.Garrett
+Top Gun, 1986, T.Scott
+Days of Thunder, 1986, T.Scott
+True Romance, 1990, T.Scott
+Angels in the Outfield, 1994, Dear
+Sid and Nancy, 1986, A.Cox
+Family Viewing, 1987, Egoyan
+Speaking Parts, 1989, Egoyan
+The Adjuster, 1991, Egoyan
+Montreal Vue Par, 1991, Egoyan
+Gross Misconduct, 1993, Egoyan
+Sarabande, 0, Egoyan
+The Dress, 1996, vanWarmerdam
+Little Tony, 1998, vanWarmerdam
+A Woman's Pale Blue Handwriting, 1984, Corti
+Savage Attraction, 1984, Shields
+Into the Sun, 1992, Kiersch
+Two Minute Warning, 1984, G
+Holy Smoke, 1999, Campion
+Blood Simple, 1985, J.Coen
+Raising Arizona, 1987, J.Coen
+Miller's Crossing, 1990, J.Coen
+Things to do in Denver When You're Dead, 1995, J.Coen
+The Big Lebowski, 1997, J.Coen
+A Taxing Woman's Return, 1989, Itami
+A-Ge-man, 1990, Itami
+Reckless, 1984, J.Foley
+Glengarry Glen Ross, 1992, J.Foley
+The Good Mother, 1988, Nimoy
+Funny About Love, 1990, Nimoy
+The Good Mother, 1988, Nimoy
+Thus spake Bellavista, 1984, deCrescenzo
+A Private Function, 1984, Mobray
+Out Cold, 1989, Mobray
+Old Enough, 1984, M.Silver
+Picone sent me, 1984, Loy
+Scugnizzi, 1989, Loy
+The Good Fight, 1984, Buckner
+Scandalous, 1984, R.Cohen
+Dragonheart, 1996, R.Cohen
+Daylight, 1996, R.Cohen
+Out of Bounds, 1986, Tuggle
+Lassiter, 1984, Rg.Young
+Gulag, 1985, Rg.Young
+Topos, 1985, Angelidi
+Girls Just Want To Have Fun, 1985, Metter
+Police Academy 7, 1994, Metter
+No One Writes to the Colonel, 1999, Ripstein
+Say Anything, 1989, C.Crowe
+A Chinese Ghost Story, 1985, Ching
+The Terra-Cotta Warrior, 1990, Ching
+Silver Bullet, 1985, Attias
+The Black Cauldron, 1985, Trousdale
+Oliver and Company, 1988, Trousdale
+The Little Mermaid, 1989, Trousdale
+Beauty and the Beast, 1992, Trousdale
+Ferngully, The Last Rainforest, 1992, Trousdale
+Kazaam, 1996, Trousdale
+The Hunchback of Notre Dame, 1996, Trousdale
+The Children of the Cold War, 1985, Justiniano
+Germany Pale Mother, 1985, SandersBrahms
+Apfelb\"aume, 1992, SandersBrahms
+Honoring Wallaby, 1985, Lasseter
+Buskers Down Under, 1990, Lasseter
+Geri's Game, 1992, Lasseter
+Toy Story, 1995, Lasseter
+A Bug's Life, 1998, Lasseter
+Toy Story 2, 1999, Lasseter
+Mephisto, 1981, Szabo
+Colonel Redl, 1985, Szabo
+Hanussen, 1985, Szabo
+Eubie!, 1985, J.Boyd
+The Other Eye, 1985, Heer
+Flaming Creatures, 1985, J.Smith
+No Life King, 1985, Ichikawa
+Blue Steel, 1985, Bigelow
+Strange Days, 1996, Bigelow
+Life on a String, 1985, K.Chen
+Inventory, 1985, Zanussi
+Thirteen at Dinner, 1985, Antonio
+Bar Salon, 1985, Forcier
+An Imaginary Tale, 1985, Forcier
+Town Alive, 1985, Koike
+The Phiadelphia Attraction, 1985, Gardos
+On the Edge, 1985, Nilsson
+Locked-Up Time, 1985, Schonemann
+Sudden Death, 1985, SigShore
+The Hour of the Star, 1985, Amaral
+Batman, 1989, T.Burton
+Batman Returns, 1992, T.Burton
+Flashpoint, 1985, Tannen
+Heroes, 1985, Tannen
+Liberty, Equality, Sauerkraut, 1985, Yanne
+An American Tail, 1986, Bluth
+The Land Before Time, 1988, Bluth
+All Dogs Go To Heaven, 1989, Bluth
+An American Tail 2: Fievel Goes West, 1991, Bluth
+Rock-A-Doodle, 1991, Bluth
+Hans Christian Andersen's Thumbelina, 1994, Bluth
+Dreamchild, 1986, G.Millar
+Rent-a-Cop, 1986, city
+Le paltoquet, 1986, ? [deVille
+Crocodile Dundee, 1986, Faiman
+School Daze, 1988, Spike Lee
+New York City, 1992, Spike Lee
+Peking Opera Blues, 1986, Hark
+A Promise, 1986, Y.Yoshida
+Less Than Zero, 1987, B.Ellis
+American Psycho, 1989, B.Ellis
+Johnny Be Good, 1987, Bud.Smith
+Bicentennial Man, 1999, Columbus
+Harry Potter and the Sorcerer's Stone, 2001, Columbus
+Couples and Robbers, 1987, Peploe
+Wish You Were Here, 1987, Leland
+House of Games, 1987, Mamet
+The Emperor's Naked Army Marches On, 1987, Hara
+Twilight of the Cockroaches, 1987, K.Yoshida
+Naga Bonar, 1987, Risyaf
+The Incredible Hulk, 1987, Corea
+The Return of the Incredible Hulk, 1988, Corea
+Oblomov, 1989, Mikhalkov
+I've Heard the Mermaids Singing, 1987, Rozema
+Ruby in Paradise, 1993, Nunez
+Cry and Cry Again, 1987, Kovacs
+Project X, 1987, UnYear87
+Burning Secret, 1988, Birkin
+Above the Law, 1988, A.Davis
+Code of Silence, 1988, A.Davis
+The Package, 1991, A.Davis
+Under Siege, 1992, A.Davis
+The Big Heat, 1988, Kam
+Pour Sacha, 1988, Arcady
+Caspar, 1995, Silberling
+Nenette and Boni, 1997, Denis
+Mr. North, 1988, D.Huston
+Throw Momma from the Train, 1988, D.deVito
+Cocktail Roadhouse, 1985, vanSant
+Mala Noche, 1988, vanSant
+Drugstore Cowboy, 1989, vanSant
+Thanksgiving Prayer, 1990, vanSant
+My Own Private Idaho, 1991, vanSant
+Psycho, 1998, vanSant
+Cop and a Half, 1993, H.Winkler
+Reunion at Fairborough, 1988, H.Wise
+Act of Piracy, 1988, Caros
+Crocodile Dundee II, 1988, Cornell
+Die Hard, 1988, McTiernan
+Hunt for Red October, 1991, McTiernan
+Medicine Man, 1992, McTiernan
+Last Action Hero, 1993, McTiernan
+Akira, 1988, Otomo
+Stripped to Kill, 1988, K.S.Ruben
+Elements of Crime, 1984, vonTrier
+The Kingdom, 1998, vonTrier
+The Idiots, 0, vonTrier
+Stormy Monday, 1988, Figgis
+The Browning Version, 1994, Figgis
+The Loss of Sexual Innocence, 1999, Figgis
+Dreams of Hind and Camilla, 1988, Khan
+Diary for My Loves, 1988, Meszaros
+A Month in the Country, 1988, OConnor
+Dancing at Lughnasa, 1998, OConnor
+Tumbleweeds, 1999, OConnor
+Super Mario Bros., 1993, Morton
+Igla, 1988, Nougmanov
+Diki Vostok, 1993, Nougmanov
+Ratboy, 1988, Locke
+Nightsongs, 1988, Fucci
+Purple Haze, 1989, Fucci
+Spalding Gray - Terors of Pleasure, 1988, Schlamme
+Miss Firecracker, 1989, Schlamme
+Crazy From The Heart, 1991, Schlamme
+You so Crazy, 1994, Schlamme
+Hard to Kill, 1990, Unknown18
+Marked for Death, 1990, Unknown18
+Out for Justice, 1991, Unknown18
+Vice Academy, 1988, Unknown48
+Vice Academy, part 2, 1990, Unknown48
+Surf II, 1988, Unknown54
+Running Hot, 1988, Unknown54
+The New Kids, 1988, Unknown54
+Code Name: Emerald, 1988, Unknown54
+Some Kind of Wonderful, 1988, Unknown54
+Sister Sister, 1988, Unknown54
+Manifesto, 1988, Unknown54
+Haunted Summer, 1988, Unknown54
+Illegally Yours, 1988, Unknown54
+The Fly II, 1988, Unknown54
+Sleep with Me, 1994, Unknown54
+God's Army, 1995, Unknown54
+Romero, 1988, Unknown3
+Entertaining Angels: The Dorothy Day Story, 1996, Unknown3
+The Jazz Singer, 1990, UnYear88
+In Glass, 1989, Villaronga
+Crush, 1995, MacLean
+The Supernaturals, 1989, Mastroianni
+Everything's for you, 1989, Ravett
+The Guard, 1989, Rogoschkin
+Raggedy Rawney, 1989, Hoskins
+Attack of the 50-foot Woman, 1993, Ch.Guest
+Ripoux contre Ripoux, 1989, Zidi
+Jesus of Montreal, 1989, Arcand
+Woman of Courage, 1989, Djarot
+Chicago, 1995, Zwick
+Siege, 1998, Zwick
+Never, Nowhere, To No-one, 1989, Teglasy
+Everybody's Fine, 1990, Tornatore
+Star Maker, 1996, Tornatore
+Let It Be, 1989, Brode
+Jumanji, 1995, Johnston
+Hay Algo Alla Afuera, 1989, Maldonado
+Love's Labor Lost, 1999, Branagh
+Zero City, 1989, Shaknazarov
+Salaam Bombay!, 1991, Nair
+Kama Sutra, A Tale of Love, 1997, Nair
+Scandal, 1989, CatonJones
+The Jackal, 1997, CatonJones
+Field of Dreams, 1989, P.A.Robinson
+The Saint, 1997, Noyce
+Out of Sight, 1998, Soderbergh
+Ocean's Eleven, 2001, Soderbergh
+Poison, 1991, Haynes
+Safe, 1995, Haynes
+Fear, Anxity, and Depression, 1998, Solondz
+The Four Deuces, 1989, Busnell
+Legal Eagles, 1989, UnYear89
+Love in the Time of Hysteria, 1990, Cuaron
+The Little Princess, 1995, Cuaron
+Pump Up the Volume, 1990, Moyle
+New Waterford Girl, 2000, Moyle
+The Shooting Gallery, 1990, Sopsits
+Allegro Non Troppo, 1990, Bozetto
+A Single Girl, 1995, Jacquot
+The School of Flesh, 1999, Jacquot
+The German Chainsaw Massacre, 1990, Schlingensief
+Kracht, 1990, Fokkema
+Miami Blues, 1990, Armitage
+Simple Men, 1992, Hartley
+Joe Versus the Volcano, 1990, Shanley
+Desert Kickboxer, 1991, Florentine
+Living in the World, 1990, J.Gibbons
+Fugitive in Paris, 1991, J.Gibbons
+La Zoo Nuit, 1990, Lauzon
+Little Sister, 1990, Zeilinger
+The Mind's Eye, 1990, Nickman
+Third Stone From the Sun, 1990, Nickman
+Entrapment, 1999, Amiel
+La Promesse, 1996, Dardenne
+The Fool, 1990, Kaul
+Siddheshwari, 1992, Kaul
+Marleneken, 1990, Brandauer
+After Life, 1999, Hirokazu
+Misplaced, 1990, Yansen
+Dream Machine, 1990, Dayton
+Force of Circumstance, 1990, L.Baer
+L.A. Story, 1991, M.Jackson
+The Bodyguard, 1992, M.Jackson
+Volcano, 1997, M.Jackson
+Luv, 1990, Shisgal
+Radioland Murders, 1994, M.Smith
+Le Petit Criminel, 1990, Spinosa
+Elisa, 1996, Spinosa
+The Return, 1990, vonTrotta
+Fire Festival, 1990, Yanagimachi
+Farewell to the Land, 1991, Yanagimachi
+Queen of Diamonds, 1990, Menkes
+Six Degrees of Seperation, 1990, Guare
+Irma Vep, 1997, Assayas
+The Preacher's Wife, 1996, P.Marshall
+State of Grace, 1990, Joanou
+Taxi Blues, 1990, Lungin
+Die Hard 2, 1990, Harlin
+Trouble Behind, 1990, R.Henson
+Road House, 1990, Herrington
+Gladiator, 1992, Herrington
+Striking Distance, 1992, Herrington
+Write to Kill, 1990, Preuss
+A Few Good Men, 1992, Regan
+Teenage Mutant Ninja Turtles, 1990, Barron
+Teenage Mutant Ninja Turtles 2, 1992, Barron
+Teenage Mutant Ninja Turtles 3, 1994, Barron
+The Color of Pomegranates, 1990, Parajanov
+Police Story III: Supercop, 1990, Tong
+Drunken Master, 1994, Tong
+Rumble in the Bronx, 1996, Tong
+Distant Voices, Still Lives, 1990, T.Davies
+Satan, 1990, Aristov
+Grim Prarie Tales, 1990, W.Coe
+Pool of Thanatos, 1990, McCandless
+Chloe, 1998, Stillman
+Last Call, 1990, Yosha
+A Rough Sketch of a Spiral, 1990, Kojima
+Beijing Bastards, 1990, Y.Zhang
+Sons, 1992, Y.Zhang
+The Square, 1994, Y.Zhang
+East Palace, West Palace, 1998, Y.Zhang
+Not One Less, 1999, Y.Zhang
+Shower, 2000, Y.Zhang
+The Wonder Years, 1990, UnYear90
+China Beach, 1990, UnYear90
+The Experts, 1990, UnYear90
+Jetsons: The Movie, 1990, UnYear90
+Vito e gli Altri, 1991, Capuano
+Ta Dona, 1991, Drabo
+Star Time, 1991, Cassini
+Hoodlum, 1997, B.Duke
+Body Talk, 1991, Nube
+A World Apart, 1991, Menges
+The Little Prince Said, 1991, C.Pascal
+Feast of the Gods, 1991, D.Sutherland
+Juice, 1991, Dickerson
+Surviving the Game, 1994, Dickerson
+Brute Charm, 1991, Breer
+A Summer for Love, 1991, Yang
+Three Days To A Kill, 1991, F.williamon
+London Kills Me, 1992, Kureishi
+Slow Bob in the Third Dimension, 1991, Selick
+The Nightmare Before Christmas, 1993, Selick
+Higher Learning, 1993, J.Singleton
+Red Corner, 1997, Avnet
+Run of the House, 1991, Felter
+Elementary School, 1991, Sverak
+Zoo Radio, 1991, J.Roach
+Mystery Alaska, 1999, J.Roach
+Bounty Hunter, 1991, K.Anderson
+Restoration, 1995, M.Hoffman
+A Midsummer Nights Dream, 1999, M.Hoffman
+Mobsters, 1991, Karbelnikoff
+Ostkreuz, 1991, Klier
+The King and I, 1999, M.Rich
+I Thought It Was Love, 1991, Troisi
+Toubab Bi, 1991, Toure
+Creature Comforts, 1991, Park
+The Wrong Trousers, 1993, Park
+Chicken Run, 2000, Park
+Gizli Y\"uz, 1991, Kavur
+Fathers and Sons, 1991, Mones
+Universal Soldier, 1992, Emmerich
+Suburbia, 1997, Linklater
+The `O' Case, 1991, R.Simon
+The Indian Runner, 1991, S.Penn
+The Crossing Guard, 1994, S.Penn
+Bloody Morning, 1991, Li
+Predator II, 1991, S.Hopkins
+Blown Away, 1994, S.Hopkins
+Double Impact, 1991, Lettich
+Lionheart, 1992, Lettich
+Knock Off, 1998, Lettich
+The Cherry Orchard, 1991, Nakahara
+Being John Malkovich, 1999, Jonze
+The Iron Giant, 1999, T.Hughes
+Hana-Bi, 1995, Kitano
+Fireworks, 1998, Kitano
+And You Thought Your Parents Were Weird, 1991, Cookson
+Murder in New Hampshire, 1991, UnYear91
+Fanfan, 1992, Jardin
+Anna Karenine, 1996, B.Rose
+Bebe's Kids, 1992, B.Smith
+One False Move, 1992, C.Franklin
+Fairy Tale: A True Story, 0, Sturridge
+Seven, 1995, Fincher
+Sarafina!, 1992, Roodt
+Final Round, 1993, Erschbamer
+Paar, 1992, Ghose
+Romper Stomper, 1992, G.Wright
+Trojan Edge, 1995, MacKinnon
+Mediterraneo, 1992, Salvatores
+Return to the Promised Land, 1992, Katchatrian
+Samba Traore, 1992, Ouedraogo
+Kyodai Makes the Big Time, 1992, Kerkhof
+The Dead Man 2: Return of the Dead Man, 1994, Kerkhof
+Aladdin, 1992, Musker
+Hercules, 1997, Musker
+Beck, 1992, Bijl
+Celine, 1992, Brisseau
+Daughters of the Dust, 1992, Dash
+L'Etat des Lieux, 1992, Richet
+Cross my Heart, 1992, Fansten
+De terre et de sang, 1992, Goddard
+King Lear, 1997, Goddard
+Piemule, 1992, Sevcikova
+Jakub, 1992, Sevcikova
+Bangkok Hilton, 1992, K.Cameron
+Rain Killer, 1992, K.Stein
+Happy Together, 1997, Wong
+The Big Hit, 1998, Wong
+In the Mood for Love, 2000, Wong
+Gito the Ungrateful, 1992, Ngabo
+The Shining, 1997, Garris
+The Fall Guy, 1992, Mitz
+Cremaster 5, 1992, Barney
+Household Saints, 1992, Svoboda
+Reservoir Dogs, 1992, Tarantino
+Man Bites Dog, 1992, R.Belvaux
+Night Eyes II, 1992, R.MacDonald
+Mariachi, 1992, Rodriguez
+Desperado, 1995, Rodriguez
+From Dusk to Dawn, 1996, Rodriguez
+Road Racers, 1997, Rodriguez
+The Linguini Incident, 1992, Shepard
+Tank Girl, 1995, Talalay
+Requiem pour un Beau Sanscoeur, 1992, Morin
+Only The Brave, 1992, Dolz
+The Ox, 1992, Nykvist
+None but the Lonely, 1992, Hanks
+From the Earth to the Moon, 1998, Hanks
+Caged Heat, 1974, T.Demme
+Monument Ave., 1998, T.Demme
+Denial, 1992, Verheul
+Daisies, 1992, Chytilova
+Passages, 1992, Arslan
+Beyond Justice, 1992, UnYear92
+Frankenstein Conquers the World, 1992, UnYear92
+School Ties, 1992, UnYear92
+The Rating Game, 1992, UnYear92
+Life according to Agfa, 1993, Dayan
+The Electric Blanket, 1995, Dayan
+In the Soup, 1993, Rockwell
+Ride with the Devil, 1999, A.Lee
+Sidekicks, 1993, Norris
+Batman, Mask of The Phantasm, 1993, Melniker
+Knight Moves, 1993, Schenkel
+Mannen Pa Balkongen, 1993, Afredson
+We're Back! A Dinosaur Story, 1993, D.Zondag
+RoboCop 3, 1993, Dekker
+Sankofa, 1993, Gerima
+Happily Ever After, 1993, Howley
+Mrs. Brown, 1997, Madden
+Barjo, 1993, Boivin
+Quartier Mozart, 1993, Bekolo
+Oedipus Rex, 1993, Taymor
+Disney's The Kid, 2000, Turteltaub
+Sniper, 1993, Llosa
+Floating World, 1998, Hatta
+Jack the Bear, 1993, Herskovitz
+Dangerous Beauty, 1998, Herskovitz
+Demolition Man, 1993, Brambilla
+Butterfly Kiss, 1993, Winterbottom
+Jude, 1995, Winterbottom
+Hurricane Streets, 1997, Freeman
+Bank Robber, 1993, Mead
+Black Rider, 1993, Danquart
+Lord of the Rings, 2002, PeterJackson
+Damned in the U.S.A., 1993, Yule
+The Hitcher, 1993, Harmon
+Road Scholar, 1993, Weisberg
+Quick, 1993, R.King
+For a Lost Soldier, 1993, Kerbosch
+Je suis le seignur du chateau, 0, Wargnier
+Free Willy, 1993, Wincer
+Watch It, 1993, T.Flynn
+Cyclo, 1997, Hung
+Life With Mikey, 1993, UnYear93
+Traces of Red, 1993, UnYear93
+Consenting Adults, 1993, UnYear93
+Silent Cries, 1993, UnYear93
+Chicken Hawk, 1994, Sideman
+Nickle and Dime, 1994, Moses
+Three Ninjas Kick Back, 1994, Kanganis
+Gunmen, 1994, Serafian
+Go, 1999, Liman
+The Bourne Identity, 2002, Liman
+The Green Mile, 1999, Darabont
+Desperado, 1995, Trueba
+Cronos, 1994, delToro
+Moonlighting, 1996, Caron
+In Custody, 1994, Merchant
+Where the River Flows North, 1994, J.Craven
+The Haunting of Hill House, 1999, DeBont
+Cows, 1994, Medem
+The Princess and the Goblin, 1994, Gemes
+The Advocate, 1994, Megahey
+Lush Life, 1994, Elias
+Murder in the First, 1994, Rocco
+No Escape, 1994, M.Campbell
+GoldenEye, 1995, M.Campbell
+Caf\'e au Lait, 1994, Kassovitz
+The Madness of King George, 1994, Hytner
+Amongst Friends, 1994, Weiss
+The Lion King, 1994, Allers
+Pocahontas, 1995, Allers
+La Scorta, 1994, Tognazzi
+On Deadly Ground, 1994, Seagal
+What Happened Was ..., 1994, T.Noonan
+The Plague, 1994, Cottard
+Day of the Beast, 1995, delaIglesia
+Highlander: the Final Dimension, 1995, Morahan
+Vercingetorix, the Druid King, 1996, Morahan
+Son of the Shark, 1995, Merlet
+Dangerous Beauty, 1997, Merlet
+The Assassins, 1997, Wachowski
+NKT, 1995, Cheiton
+The Brothers McMullen, 1995, E.Burns
+Long Time, Nothing New, 1997, E.Burns
+Hope Floats, 1998, Whitaker
+Maborosi, 1995, Koreada
+The Quest for Camelot, 1998, Pytka
+null, 0, Dowling
+Chasing Amy, 1997, K.Smith
+NKT, 1997, Berovici
+Bad Boys, 1995, Bay
+The Rock, 1996, Bay
+Armageddon, 1998, Bay
+Stonewall, 1995, Finch
+A Man of no Importance, 1995, Krishnamma
+Johnny Suede, 1995, diCillo
+Box of Moonlight, 1997, diCillo
+Safe Men, 1997, diCillo
+Jerry and Tom, 0, diCillo
+Lawn Dogs, 1998, diCillo
+Firelight, 1995, W.Nicholson
+Street of Crocodiles, 1995, Quay
+Colonel Chabert, 1995, Angelo
+City of Joy, 1995, UnYear95
+Desperate Remedies, 1995, UnYear95
+The Basketball Diaries, 1995, UnYear95
+Fair Game, 1995, UnYear95
+Money Train, 1995, UnYear95
+Dreamgirls, 1995, UnYear95
+Clubbed to Death, 1995, UnYear95
+The Shanghai Triad, 0, UnYear95
+Two if by Sea, 1995, UnYear95
+Through the Olive Trees, 1996, Kiarostami
+Taste of Cherry, 0, Kiarostami
+August, 1996, A.Hopkins
+Mute Witness, 1996, Waller
+Watermelon Woman, 1996, Dunye
+The Big Fall, 1996, Howell
+Veronica Barbwire, 1996, Hogan
+Now and Then, 1996, D.Moore
+Little Indian, Big City, 1996, Palud
+The Glimmerman, 1996, J.Gray
+Cop Land, 1997, Mangold
+Calendar Girl, 1996, Whitesell
+Femme Fatale, 1998, Cruper
+Cosi, 1996, M.Joffe
+Gabbeh, 1996, Makmalbaf
+I Shot Andy Warhol, 1996, Harron
+American Psycho, 2000, Harron
+Three Lives and Only One Death, 1996, Ruiz
+Darker than Amber, 1996, Clause
+Parting Glances, 1996, Buscemi
+Little Book of Love, 1996, Werneck
+Frisk, 1996, Verow
+Marquise, 1996, Belmont
+Wittstock, Wittstock, 1996, Koepp
+Bottle Rocket, 1996, W.Anderson
+Clueless, 1996, UnYear96
+The Frighteners, 1996, UnYear96
+Fled, 1996, UnYear96
+Eye for an Eye, 1996, UnYear96
+Pagemaster, 1996, UnYear96
+Kiss of Death, 1996, UnYear96
+Liar, 1996, UnYear96
+Metro, 1996, UnYear96
+Georgia, 1996, UnYear96
+The Long Kiss Goodnight, 1996, UnYear96
+Pursuit, 1996, UnYear96
+Drive By Kiss, 1996, UnYear96
+Citizen Ruth, 1997, Payne
+Harriet, 1997, B.Hughes
+The Spy, 1998, B.Hughes
+Of Love and Shadows, 1996, B.Kaplan
+Rush Hour, 1999, Ratner
+De Versterking, 1998, vanLieshout
+When the Cat' Away, 1997, Klapisch
+The Grass Harp, 1997, Mahlin
+Pippi Longstocking, 1997, C.Smith
+Diary of a Seducer, 1997, DuBroux
+Wish You Were Here, 1997, Leland
+The Landgirls, 1998, Leland
+Dream With the Fishes, 1997, F.Taylor
+Soul Food, 1997, Tillman
+Gummo, 1997, Korine
+The Brave, 1997, Depp
+Kull the Conqueror, 1997, Nicolella
+Mulan, 1998, Pasquin
+Playing God, 1997, Maslin
+Conspirators of Pleasure, 1997, Svankmajer
+Crocodile, 1997, Kim
+Albino Alligator, 1997, Spacey
+The Incedibly True Adventures of Two Girls n Love, 1997, Maggenti
+Cinemas d'Europe, Les virtuoses, 1997, M.Herman
+The Peacemaker, 1997, M.Leder
+Deep Impact, 1998, M.Leder
+Nurse Betty, 2000, LaBute
+Comrades, A Love Story, 1997, P.Chan
+Waving, Not Drowning, 1997, S.Marshall
+Con Air, 1997, S.West
+Eye of God, 1997, Nelson
+8 Heads in a Duffel Bag, 1997, Schulman
+La Vie en Rose, 1997, Furtlinger
+Ermo, 1997, Zhou
+In and Out, 1997, UnYear97
+Paradise Road, 1997, UnYear97
+Copland, 1997, UnYear97
+The Prince of Egypt, 1998, UnYear97
+The Night Porter, 1997, UnYear97
+The Cherry Orchard, 1997, UnYear97
+A chinese Ghost Story: The Tsui Hark Animation, 1998, A.Chen
+Priest, 1998, Bird
+La vie de Jesus, 1998, Dumont
+L'Humanite, 1999, Dumont
+I Married a Strange Person, 1998, Plympton
+PI, 1998, Aronofsky
+Ten Benny, 1998, Bross
+Quest for Camelot, 1998, duChau
+The Negotiator, 1998, G.Gray
+Hope, 1998, Hawn
+Minus Man, 1998, Sancher
+Swiri, 1999, Kan
+H.C. Andersen og den Skoeve Skygge, 1998, Hastrup
+SLC Punk!, 1999, Merendino
+Zero Effect, 1998, J.Kasdan
+The Prince of Egypt, 1998, Katzenberg
+Waking Ned Divine, 1998, K.Jones
+All is Routine, 0, M.Judge
+Unmade Beds, 1998, N.Barker
+The Parent Trap, 1998, Meyers
+The Rugrats Movie, 1998, Virgien
+Bugis Street, 1998, Yonfan
+Bishonen, 1999, Yonfan
+Elizabeth, 1998, Kapur
+Bruno, 1998, MacLaine
+Whatever, 1998, Skoog
+Mighty, 1998, S.Stone
+South Park: Bigger, Longer and Uncut, 1999, T.Parker
+Lola Rennt, 1998, Tykwer
+American History X, 1998, Kaye
+Madeline, 1998, vonScherlerMayer
+Central Station, 1998, Salos
+The Scalper, 1998, UnYear98
+Merlin, 1998, UnYear98
+Major League, Back to the Minors, 1998, UnYear98
+Might Joe Young, 1998, UnYear98
+The Perfect Crime, 1998, UnYear98
+The Mighty, 1998, UnYear98
+Waking Ned Devine, 1998, UnYear98
+Permanent Midnight, 1998, UnYear98
+Playing by Heart, 1998, UnYear98
+Man of the Century, 1999, Abraham
+Crazy in Alabama, 1999, Banderas
+The Old Man and the Sea, 1999, A.Petrov
+Moloch, 1999, Sokurov
+All the Pretty Horses, 1999, Thornton
+My Mother Dreams the Satan's Disciples in New York, 1999, Schock
+Iris Blond, 1999, Verdone
+Last September, 1999, D.Warner
+xxx, 1999, Huffman
+Leila, 1999, Mehrjui
+Edge of Seventeen, 1999, Moreton
+Lock, Stock, and Two Smoking Barrels, 1999, Ritchie
+Princess Mononoke, 1999, Miyazaki
+Drole de Felix, 2000, Martineau
+A Week in the Life of a Man, 1999, Stuhr
+Lola and Billy the Kid, 1999, Ataman
+Mickey Blue Eyes, 1999, Makin
+A Dog of Flanders, 1999, Brodie
+Made Men, 1999, Morneau
+The Best Man, 1999, M.Lee
+Chicken Ron, 1999, P.Lord
+Metroland, 1999, P.Saville
+Broken Vessels, 1999, Ziehl
+Shiloh 2: Shiloh Season, 1999, Tung
+Karnaval, 1999, T.Vincent
+Red Dwarf, 1999, Le Moine
+The Color of Courage, 1999, UnYear99
+Sachem Farm, 1999, UnYear99
+Circle of Friends, 1999, UnYear99
+The Thirteenth Floor, 1999, UnYear99
+Music from the Heart, 1999, UnYear99
+The Hurricane, 1999, UnYear99
+Topsy-Turvy, 1999, UnYear99
+The Red Violin, 1999, UnYear99
+Tarzan, 1999, UnYear99
+Boiler Room, 2000, Younger
+La Poison, 2000, J.Becker2
+Knockout, 2000, Doumani
+Crime  Punsihment in Suburbia, 2000, Schmidt
+Le retour de l'Idiot, 2000, Gedeon
+Monster's Ball, 2002, Jes.Nelson

@@ -4,7 +4,7 @@
 
   - #### Names: Tristin Bui, Soobin Woo
 
-  - #### Project 5 Video Demo Link:
+  - #### Project 5 Video Demo Link: https://youtu.be/CeCvSlJNv04
 
   - #### Instruction of deployment:
 
