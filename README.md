@@ -1,57 +1,32 @@
 - # General
 
-  - #### Team#: 5
+  - #### Overview:
 
-  - #### Names: Tristin Bui, Soobin Woo
+    A movie database that offers searching through movies as well as showing movie details such as associated actors, directors, and publishing date
 
-  - #### Project 5 Video Demo Link: https://youtu.be/CeCvSlJNv04
+    **Technical Features**  
+
+      A full-stack web application using the RESTful API that utilizes MySQL for the database.
+      For the front-end, this web application uses HTML, CSS, and JavaScript using AJAX to send
+      requests to the backend using Java Servlets. This web application is hosted on Apache Tomcat and
+      is able to utilize Apache2 to handle load balancing for large scale user traffic.
+
+      Notable features of this web application:
+        - HTTPS redirection
+        - Full-text search and Autocomplete
+        - MySQL Replication
+        - Load Balancing using Apache2
+        - Connection Pooling
+        - ReCAPTCHA
+        - Prepared Statements to prevent MySQL injection attacks
+        - Stored Procedures
 
   - #### Instruction of deployment:
 
-    Deploying our application with Tomcat involved packaging our maven project
-    which resulted in a war file being created that can moved into the tomcat
-    webapp directory which can post the live web application on the tomcat
-    server.
-
-  - #### Collaborations and Work Distribution:
-    Tristin Bui: SQL Master-Slave Replication, Load Balancing, JMeter
-    Soobin Woo: Connection Pooling, TS/TJ Logs, log_processing script
-
-- # Connection Pooling
-
-  - #### Include the filename/path of all code/configuration files in GitHub of using JDBC Connection Pooling.
-    [AddMovieServle.java](src/AddMovieServle.java)  
-    [AddStarServlet.java](src/AddStarServlet.java)  
-    [EmployeeLoginServlet.java](src/EmployeeLoginServlet.java)  
-    [GenreServlet.java](src/GenreServlet.java)  
-    [LoginServlet.java](src/LoginServlet.java)  
-    [MetadataServlet.java](src/MetadataServlet.java)  
-    [MovieServlet.java](src/MovieServlet.java)  
-    [MovieSuggestion.java](src/MovieSuggestion.java)  
-    [SingleMovieServlet.java](src/SingleMovieServlet.java)  
-    [SingleStarServlet.java](src/SingleStarServlet.java)
-  - #### Explain how Connection Pooling is utilized in the Fabflix code.
-    We specify in context.xml to utilize connection pooling for each JDBC DataSource in the servlets. When each servlet runs and needs to connect to the database, it can grab a connection from a preallocated pool of connections that can be utilized to send a query to the database. When the application is done getting the database results, the application will close the connection which will go back to the pool to be used by another datasource.
-  - #### Explain how Connection Pooling works with two backend SQL.
-    The two backend SQLS are the master instance which reads/writes and the slave instance which reads in which each resource acts as our connection pool. Our main instance uses Apache to send requests to either the master or slave instances which is possible because of the load balancer member that was added to both slave and master instances.
-
-- # Master/Slave
-
-  - #### Include the filename/path of all code/configuration files in GitHub of routing queries to Master/Slave SQL.
-    [context.xml](WebContent/META-INF/context.xml)  
-    [AddMovieServlet.java](src/AddMovieServlet.java)  
-    [AddStarServlet.java](src/AddStarServlet.java)  
-      
-    The Master Instance IP was saved in [context.xml](WebContent/META-INF/context.xml) which the AddMovie and AddStar servlets used for querying the MySQL server
-
-  - #### How read/write requests were routed to Master/Slave SQL?
-    Read requests were routed to localhost on both Master and Slave SQL servers since reading can be done on any database. 
-    Write requests were routed to the Master SQL database by labeling the IP address of the Master in [context.xml](WebContent/META-INF/context.xml) which all
-    writes routed to this database, the Master database.
-- # JMeter TS/TJ Time Logs
-
-  - #### Instructions of how to use the `log_processing.*` script to process the JMeter logs.
-    Ensure that the log files are in the same directory as the log_processing.java script if it is not already. Compile log_processing.java and run the file.
+    Deploying this application with Tomcat requires Maven which using
+    ```mvn package```
+    will create a war file which deploying in Tomcat webapps directory
+    will launch and run this web application
 
 - # JMeter TS/TJ Time Measurement Report
 
