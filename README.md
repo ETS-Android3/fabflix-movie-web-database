@@ -20,7 +20,16 @@
 - # Connection Pooling
 
   - #### Include the filename/path of all code/configuration files in GitHub of using JDBC Connection Pooling.
-    AddMovieServle.java, AddStarServlet.java, EmployeeLoginServlet.java, GenreServlet.java, LoginServlet.java, MetadataServlet.java, MovieServlet.java, MovieSuggestion.java, SingleMovieServlet.java, SingleStarServlet.java
+    [AddMovieServle.java](src/AddMovieServle.java)  
+    [AddStarServlet.java](src/AddStarServlet.java)  
+    [EmployeeLoginServlet.java](src/EmployeeLoginServlet.java)  
+    [GenreServlet.java](src/GenreServlet.java)  
+    [LoginServlet.java](src/LoginServlet.java)  
+    [MetadataServlet.java](src/MetadataServlet.java)  
+    [MovieServlet.java](src/MovieServlet.java)  
+    [MovieSuggestion.java](src/MovieSuggestion.java)  
+    [SingleMovieServlet.java](src/SingleMovieServlet.java)  
+    [SingleStarServlet.java](src/SingleStarServlet.java)
   - #### Explain how Connection Pooling is utilized in the Fabflix code.
     We specify in context.xml to utilize connection pooling for each JDBC DataSource in the servlets. When each servlet runs and needs to connect to the database, it can grab a connection from a preallocated pool of connections that can be utilized to send a query to the database. When the application is done getting the database results, the application will close the connection which will go back to the pool to be used by another datasource.
   - #### Explain how Connection Pooling works with two backend SQL.
@@ -39,7 +48,6 @@
     Read requests were routed to localhost on both Master and Slave SQL servers since reading can be done on any database. 
     Write requests were routed to the Master SQL database by labeling the IP address of the Master in [context.xml](WebContent/META-INF/context.xml) which all
     writes routed to this database, the Master database.
-
 - # JMeter TS/TJ Time Logs
 
   - #### Instructions of how to use the `log_processing.*` script to process the JMeter logs.
