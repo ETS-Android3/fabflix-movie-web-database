@@ -29,8 +29,14 @@
 - # Master/Slave
 
   - #### Include the filename/path of all code/configuration files in GitHub of routing queries to Master/Slave SQL.
+    [context.xml](WebContent/META-INF/context.xml) 
+    [context.xml](src/AddMovieServlet.java) 
+    [context.xml](src/AddStarServlet.java) 
 
   - #### How read/write requests were routed to Master/Slave SQL?
+    Read requests were routed to localhost on both Master and Slave SQL servers since reading can be done on any database. 
+    Write requests were routed to the Master SQL database by labeling the IP address of the Master in [context.xml](WebContent/META-INF/context.xml) which all
+    writes routed to this database, the Master database.
 
 - # JMeter TS/TJ Time Logs
 
