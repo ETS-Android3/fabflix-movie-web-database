@@ -29,8 +29,8 @@
     ```mvn package```
     will create a war file which deploying in Tomcat webapps directory
     will launch and run this web application.
-    <br />
-
+    <br><br>
+    
 - # JMeter TS/TJ Time Measurement Report
 
 | **Single-instance Version Test Plan**         | **Graph Results Screenshot**  | **Average Query Time(ms)** | **Average Search Servlet Time(ms)** | **Average JDBC Time(ms)** | **Analysis**                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
