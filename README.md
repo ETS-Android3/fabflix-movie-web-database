@@ -28,7 +28,7 @@
     Deploying this application with Tomcat requires Maven which using
     ```mvn package```
     will create a war file which deploying in Tomcat webapps directory
-    will launch and run this web application.
+    will launch and run this web application. 
 
 - # JMeter TS/TJ Time Measurement Report
 
